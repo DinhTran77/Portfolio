@@ -47,23 +47,29 @@ $nav-background:#212529;
   // justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: red;
+  background-color: transparent;
   padding: 0;
   margin: 0;
   border: 0;
+
+  .slicknav_brand{
+    // background-color: pink;
+    flex-grow: 1;
+  }
+  .slicknav_btn {
+    background-color: transparent;
+    display:flex;
+    justify-content: flex-end;
+    margin: 0;
+    border: 0;
+  }
+  
+  .slicknav_icon-bar{
+    box-shadow: none;
+    background-color: $linkColor;
+  }
 }
 
-.slicknav_brand{
-  background-color: pink;
-  flex-grow: 1;
-}
-.slicknav_btn {
-  background-color: blue;
-  display:flex;
-  justify-content: flex-end;
-  margin: 0;
-  border: 0;
-}
 
 
 #logo{
@@ -73,7 +79,7 @@ $nav-background:#212529;
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     text-decoration: none;    
-   background-color: purple;
+  //  background-color: purple;
  &:focus{
       color: $linkActiveColor;
     }
