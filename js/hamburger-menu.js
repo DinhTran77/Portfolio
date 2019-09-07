@@ -1,8 +1,8 @@
 
 		$(function() {
             $('#menu').slicknav({
-              label: ""
-              ,brand: '<a href="#" id="logo">Dinh Tran</a>',
+              label: "",
+              brand: '<a href="#" id="text_logo">Dinh Tran</a>',
               init: function() {
                 $bg = $('.slicknav_menu');
             },
@@ -10,7 +10,7 @@
                 $bg.css({'background': '#212529'});
             },
             afterClose: function(){
-                $bg.css({'background': '#212529'});
+                $bg.css({'background': 'rgb(151, 151, 151)'});
             }
             });
         });

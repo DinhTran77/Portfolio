@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
  
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
@@ -68,6 +68,59 @@ table {
       border-spacing: 0;
 }
 
+body {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: green;
+  }
+}
+
+#about-section {
+  z-index: 16000;
+  height: 50vh;
+  background-color: pink;
+  height: 150px;
+  position: relative;
+}
+
+#about-section #about-text {
+  font-size: .5em;
+  color: #3d3c3c;
+  background-image: url("../../images/about/profile-pic-small.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#about-section .overlay-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  z-index: 100;
+  opacity: .3;
+}
+
+#container-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-section {
+  padding: 2vh 3vw 2vh 3vw;
+}
+
 #heroOverlay {
   background: -webkit-radial-gradient(#d8d8d8, #a3a3a3);
   position: absolute;
@@ -82,36 +135,66 @@ table {
   display: none;
 }
 
-.slicknav_menu {
-  width: 100%;
-}
-
-.slicknav_menu {
+#nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  background-color: red;
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 
-.slicknav_brand {
-  background-color: pink;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.slicknav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  -webkit-animation: nav-bar-fade-in forwards;
+          animation: nav-bar-fade-in forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+
+.slicknav_menu .slicknav_icon {
+  padding: 0;
+  margin: 0;
+  width: 1.125em;
+  height: .8em;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fed136;
+}
+
+@-webkit-keyframes nav-bar-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nav-bar-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .slicknav_btn {
-  background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,52 +202,113 @@ table {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0;
-  border: 0;
+  padding: 3px;
+  margin-right: 12px;
+  background-color: transparent;
+  text-shadow: none;
 }
 
-#logo {
+#text_logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   color: #fed136;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
-  background-color: purple;
 }
 
-#logo:focus {
+#text_logo:focus {
   color: #feb836;
 }
 
-#logo:hover {
+#text_logo:hover {
   color: red;
 }
 
-#logo:active {
+#text_logo:active {
   color: #feb836;
 }
 
-.container-header {
+#header-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 22vw;
 }
 
 #logoImage {
   position: relative;
-  top: 8vh;
-  width: 60vw;
-  height: 60vw;
+  width: 20vw;
+  height: 20vw;
+  -webkit-animation: logo_fade_in forwards;
+          animation: logo_fade_in forwards;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes logo_fade_in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes logo_fade_in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
 }
 
 #heroOverlay {
-  background: -webkit-radial-gradient(#d8d8d8, #a3a3a3);
+  background: radial-gradient(#e7e7e7, #b9b9b9);
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -5;
   top: 0;
   left: 0;
+  -webkit-animation-name: background-fade-in;
+          animation-name: background-fade-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes background-fade-in {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes background-fade-in {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -173,16 +317,6 @@ table {
   }
   #menu {
     display: block;
-  }
-}
-
-body {
-  color: red;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    color: green;
   }
 }
 /*# sourceMappingURL=main.css.map */

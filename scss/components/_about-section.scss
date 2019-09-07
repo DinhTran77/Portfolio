@@ -1,0 +1,40 @@
+@import '../../scss/utilities/maxins';
+@import '../../scss/utilities/functions';
+@import '../../scss/utilities/variables';
+
+.paragraph-font{
+        $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";      
+        }
+
+
+#about-section{
+                z-index: 16000;
+                height: 50vh;
+                background-color: pink;
+                height: 150px;
+                position: relative;
+
+                #about-text{
+                        font-size: .5em;
+                        color: rgb(61, 60, 60);
+                        background-image: url('../../images/about/profile-pic-small.jpg');
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        }
+
+        
+                .overlay-blue{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: blue;
+                        z-index: 100;
+                        opacity: .3;
+                        }
+                }

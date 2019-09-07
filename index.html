@@ -18,9 +18,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 		
- 	 <!-- Normalize css -->
-	<link rel="stylesheet" href="./css/normalize.css">
-
 	<!-- jQuery -->
 	<script src='./js/jquery-3.4.1.min.js'></script>
 
@@ -33,10 +30,12 @@
 </head>
 
 
-<body>
-	<header class='container-header'>
-
+<body id='container-page'>
+	<header id='header-section'>
+		
 		<nav id='nav-bar'>
+			<!-- <a href="#" id="text_logo">Dinh Tran</a> -->
+			<img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo">
 			<ul id='menu'>	
 				<li><a id='nav-link' href="#">About</a></li>
 				<li><a id='nav-link' href="#">Skills</a></li>
@@ -47,13 +46,34 @@
 
 		<div id='heroOverlay' data-aos="fade-in" data-aos-delay="2s"></div>
 
-		<img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo">
+		
 
 	</header>
 
 
-	<!-- Initialize Slick Nav for hamburger menu -->
-	<script type="text/javascript" src="./js/hamburger-menu.js"></script>
+	<!-- <section id='about-section'>
+		<section id='about-text' >
+
+			<div class='overlay-blue'></div>
+
+			<section id='about-section-with-text' class='container-section'>
+				<h2 class='h2-font'>
+					Hello! My name is Dinh Tran
+				</h2>
+				
+				<p class='paragraph-font'>
+				Clean, maintainable code from scratch. So help me God.
+				</p>
+			</section>
+
+		</section>
+	</section> -->
+
+
+
+	<!----------------------Scripts------------------------------------------->
+		<!--Initialize Slick Nav for hamburger menu -->
+		<script type="text/javascript" src="./js/hamburger-menu.js"></script>
 </body>
 
 

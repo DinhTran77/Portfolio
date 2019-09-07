@@ -1,14 +1,27 @@
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@import '../../scss/utilities/maxins';
+@import '../../scss/utilities/functions';
+@import '../../scss/utilities/variables';
 
-  $linkColor: #fed136;
+
+$linkColor: #fed136;
 // $linkActiveColor: #fce40b;
 $linkActiveColor: #feb836;
 
 $nav-background:#212529;
+
+$logo-fade-in-time: .8s;
+
+$logo-image-height: 20vw;    
+$logo-image-width: 20vw;
+
+#container-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-section{
+  padding: 2vh 3vw 2vh 3vw;
+}
 
 #heroOverlay {
   background: -webkit-radial-gradient(rgb(216, 216, 216), rgb(163, 163, 163));
@@ -21,59 +34,73 @@ $nav-background:#212529;
 }
 
 #menu {
-    display:none;
-    // background-color: red;
-    
+    display:none;  
 }
 
 #nav-bar{
-    // display: flex;
-    // align-items: center;
-}
-
-.slicknav_menu{
-  width: 100%;
-  // background-color: $nav-background;
-  // background-color: none;
-//   display: flex;
-//   // align-items: center;
-//   justify-content: center;
-//  height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .slicknav_menu {
   display: flex;
   justify-content: flex-end;
-  // justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: red;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+  // align-items: center;
+  // width: 30px;
+  // flex-grow: 1;
+  // background-color: rgb(190, 189, 189);
+    background-color:blue;
 
-.slicknav_brand{
-  background-color: pink;
-  flex-grow: 1;
-}
+  @include padding-margin-zero;
+
+  opacity: 0;
+  animation: nav-bar-fade-in forwards;
+  animation-duration: 1s;
+  animation-delay: $logo-fade-in-time * .6;
+
+
+        .slicknav_icon{
+          @include padding-margin-zero;
+          width: 1.125em;
+          height: .8em;
+        }
+
+        .slicknav_icon-bar{
+          box-shadow: none;
+          background-color: $linkColor;
+        }
+
+        @keyframes nav-bar-fade-in{
+            from{
+              opacity: 0;
+            }
+
+            to{
+              opacity: 1;
+            }
+        }
+  }
+
 .slicknav_btn {
-  background-color: blue;
   display:flex;
   justify-content: flex-end;
   margin: 0;
-  border: 0;
+  padding: 3px;
+  margin-right: 12px;
+  background-color: transparent;
+  text-shadow: none;
 }
 
 
-#logo{
+#text_logo{
+  flex-grow: 1;
   color: $linkColor;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-    text-decoration: none;    
-   background-color: purple;
+    text-decoration: none; 
+    
+ 
  &:focus{
       color: $linkActiveColor;
     }
@@ -85,36 +112,70 @@ $nav-background:#212529;
    &:active{
       color: $linkActiveColor;
     }
-  
   }
 
 
-.container-header{
+#header-section{
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: $logo-image-height * 1.1;
 }
 
 
 
 #logoImage{
     position: relative;
-    top: 8vh;
-    width: 60vw;
-    height: 60vw;
+    width: $logo-image-width;
+    height: $logo-image-height;
+    animation: logo_fade_in forwards;
+    animation-duration: $logo-fade-in-time;
+
+    // filter: drop-shadow(-1.5px 2.2px 1.3px rgb(124, 124, 124));
+    @keyframes logo_fade_in
+      {
+        from{
+          opacity: 0;
+          transform: translateY(100vh)
+        }
+        to{
+          opacity: 1;
+          transform: translateY(0vh)
+        }
+      }
 }
 
-  
 
   #heroOverlay {
-    background: -webkit-radial-gradient(rgb(216, 216, 216), rgb(163, 163, 163));
+    background: radial-gradient(rgb(231, 231, 231), rgb(185, 185, 185));
     position: absolute;
     width: 100vw;
     height: 100vh;
     z-index: -5;
     top: 0;
     left: 0;
+    animation-name: background-fade-in;
+    animation-duration: 3s;
+
+      @keyframes background-fade-in{
+        from{
+          opacity: .2;
+        }
+        to{
+          opacity: 1;
+        }
   }
 
+
+
+}
+
+
+
+
+
+// Large Screens
 @media only screen and (min-width: 600px) {
     .slicknav_menu {
         display:none;
