@@ -100,7 +100,6 @@ table {
   background-color: transparent;
   padding: 0;
   margin: 0;
-  border: 0;
 }
 
 .slicknav_menu .slicknav_brand {
@@ -111,14 +110,15 @@ table {
 
 .slicknav_menu .slicknav_btn {
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   border: 0;
+  margin-right: 6px;
 }
 
 .slicknav_menu .slicknav_icon-bar {

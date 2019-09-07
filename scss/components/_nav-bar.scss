@@ -1,10 +1,7 @@
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@import '../utilities/maxins';
 
-  $linkColor: #fed136;
+
+$linkColor: #fed136;
 // $linkActiveColor: #fce40b;
 $linkActiveColor: #feb836;
 
@@ -21,47 +18,34 @@ $nav-background:#212529;
 }
 
 #menu {
-    display:none;
-    // background-color: red;
-    
+    display:none;  
 }
 
 #nav-bar{
-    // display: flex;
-    // align-items: center;
 }
 
 .slicknav_menu{
   width: 100%;
-  // background-color: $nav-background;
-  // background-color: none;
-//   display: flex;
-//   // align-items: center;
-//   justify-content: center;
-//  height: 50px;
 }
 
 .slicknav_menu {
   display: flex;
   justify-content: flex-end;
-  // justify-content: center;
   align-items: center;
   width: 100%;
   background-color: transparent;
-  padding: 0;
-  margin: 0;
-  border: 0;
+  @include padding-margin-zero;
 
   .slicknav_brand{
-    // background-color: pink;
     flex-grow: 1;
   }
   .slicknav_btn {
     background-color: transparent;
-    display:flex;
     justify-content: flex-end;
+    display:flex;
     margin: 0;
     border: 0;
+    margin-right: 6px;
   }
   
   .slicknav_icon-bar{
