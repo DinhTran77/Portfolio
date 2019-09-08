@@ -25,6 +25,13 @@
 	<link rel="stylesheet" href="./css/slicknav.min.css">
 	<script src="./js/jquery.slicknav.min.js"></script>
 
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script src="./js/hamburger-menu.js"></script>
+
+
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="./scss/main.css">
 </head>
@@ -33,17 +40,25 @@
 <body id='container-page'>
 	<header id='header-section'>
 		
-		<nav id='nav-bar'>
+		 <!-- Top Navigation Menu -->
+		<div class="topnav">
+
+			<a href="#" id='text_logo'>Dinh Tran</a>
+			<a id='logo_image' href="#home" class="active"><img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo"></a>
 			
-			<ul id='menu'>	
-				<li><a id='nav-link' href="#">About</a></li>
-				<li><a id='nav-link' href="#">Skills</a></li>
-				<li><a id='nav-link' href="#">Porfolio</a></li>	
-				<li><a id='nav-link' href="#">Resume</a></li>	
-			</ul>		
-		</nav>
-		<img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo">
-		<div id='heroOverlay' data-aos="fade-in" data-aos-delay="2s"></div>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div> 
+		<!-- <div id='heroOverlay' data-aos="fade-in" data-aos-delay="2s"></div> -->
 
 		
 
