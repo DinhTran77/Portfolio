@@ -7,10 +7,10 @@
                 $bg = $('.slicknav_menu');
             },
             afterOpen: function(){
-                $bg.css({'background': '#212529'});
+                $bg.css({'background': 'transparent'});
             },
             afterClose: function(){
-                $bg.css({'background': 'rgb(151, 151, 151)'});
+                $bg.css({'background': 'transparent'});
             }
             });
         });

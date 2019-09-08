@@ -11,8 +11,8 @@ $nav-background:#212529;
 
 $logo-fade-in-time: .8s;
 
-$logo-image-height: 20vw;    
-$logo-image-width: 20vw;
+$logo-image-height: 60vw;    
+$logo-image-width: 60vw;
 
 #container-page{
   display: flex;
@@ -35,28 +35,28 @@ $logo-image-width: 20vw;
 
 #menu {
     display:none;  
+    // flex-grow:1;
 }
 
 #nav-bar{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    // background-color: pink;
 }
 
 .slicknav_menu {
   display: flex;
-  justify-content: flex-end;
-  // align-items: center;
-  // width: 30px;
-  // flex-grow: 1;
-  // background-color: rgb(190, 189, 189);
-    background-color:blue;
-
+  align-items: center;
+  // background-color: green;
   @include padding-margin-zero;
 
   opacity: 0;
   animation: nav-bar-fade-in forwards;
   animation-duration: 1s;
   animation-delay: $logo-fade-in-time * .6;
+  background-color: transparent;
 
 
         .slicknav_icon{
@@ -79,22 +79,33 @@ $logo-image-width: 20vw;
               opacity: 1;
             }
         }
+
+    
+        .slicknav_btn {
+            margin: 0;
+            padding: 3px;
+            margin-right: 22px;
+            background-color: transparent;
+            text-shadow: none;
+        
+            // background-color: blue;
+        
+          }
+
+          .slicknav_brand{
+            margin-left: 12px;
+            flex-grow: 2;
+            // background-color: grey
+          }
   }
 
-.slicknav_btn {
-  display:flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 3px;
-  margin-right: 12px;
-  background-color: transparent;
-  text-shadow: none;
-}
+
 
 
 #text_logo{
-  flex-grow: 1;
+  // flex-grow: 1;
   color: $linkColor;
+  // background-color: purple;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -131,6 +142,7 @@ $logo-image-width: 20vw;
     height: $logo-image-height;
     animation: logo_fade_in forwards;
     animation-duration: $logo-fade-in-time;
+    flex-grow: 1;
 
     // filter: drop-shadow(-1.5px 2.2px 1.3px rgb(124, 124, 124));
     @keyframes logo_fade_in
