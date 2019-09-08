@@ -3,7 +3,7 @@
 @import '../../scss/utilities/variables';
 
 
-$linkColor: #fed136;
+$linkColor: #fdcb17;
 // $linkActiveColor: #fce40b;
 $linkActiveColor: #feb836;
 
@@ -13,11 +13,16 @@ $logo-fade-in-time: .8s;
 
 $logo-image-height: 60vw;    
 $logo-image-width: 60vw;
+$about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
 
 #container-page{
   display: flex;
   flex-direction: column;
 }
+
+
 
 .container-section{
   padding: 2vh 3vw 2vh 3vw;
@@ -54,11 +59,19 @@ $logo-image-width: 60vw;
 
   opacity: 0;
   animation: nav-bar-fade-in forwards;
-  animation-duration: 1s;
+  animation-duration: .3s;
   animation-delay: $logo-fade-in-time * .6;
   background-color: transparent;
 
 
+  .slicknav_nav a{
+    font-size: 1em;
+    margin: 2px;
+    padding: 2px;
+    color: rgb(196, 196, 196);
+    font-family: $about-secton-font;
+  }
+  
         .slicknav_icon{
           @include padding-margin-zero;
           width: 1.125em;
@@ -86,10 +99,7 @@ $logo-image-width: 60vw;
             padding: 3px;
             margin-right: 22px;
             background-color: transparent;
-            text-shadow: none;
-        
-            // background-color: blue;
-        
+            text-shadow: none;      
           }
 
           .slicknav_brand{
@@ -130,7 +140,7 @@ $logo-image-width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  // overflow: hidden;
   height: $logo-image-height * 1.1;
 }
 
@@ -144,7 +154,6 @@ $logo-image-width: 60vw;
     animation-duration: $logo-fade-in-time;
     flex-grow: 1;
 
-    // filter: drop-shadow(-1.5px 2.2px 1.3px rgb(124, 124, 124));
     @keyframes logo_fade_in
       {
         from{
@@ -160,7 +169,9 @@ $logo-image-width: 60vw;
 
 
   #heroOverlay {
-    background: radial-gradient(rgb(231, 231, 231), rgb(185, 185, 185));
+    // background: radial-gradient(circle at center, red 0, blue, green 100%);
+    // background: radial-gradient(rgb(231, 231, 231), rgb(185, 185, 185));
+
     position: absolute;
     width: 100vw;
     height: 100vh;
