@@ -1,3 +1,4 @@
+@import '../base/normalize';
 @import '../../scss/utilities/maxins';
 @import '../../scss/utilities/functions';
 @import '../../scss/utilities/variables';
@@ -7,7 +8,6 @@ $linkColor: #fdcb17;
 // $linkActiveColor: #fce40b;
 $linkActiveColor: #feb836;
 
-$nav-background:#212529;
 
 $logo-fade-in-time: .8s;
 
@@ -17,16 +17,84 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol", "Noto Color Emoji";
 
+  $logo_hamburger_padding: 28px;
 
+  #home{
+    display: flex;
+    flex-direction: column;
+    background-color: #c5c5c5;
+    height: 100vh;
+    // background-image: url('../../images/Homepage_sample.PNG');
+    background-size: 100% auto; 
+  }
 
+  #hero_heading{
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: bold;
+    color: #012040;
+    display: flex;
+    justify-content: center;
+    // background-color: blue;
+    // height: 100%;
+    padding: 27px 12% 0 12%;
+    text-align: center;
+    }
+
+    
+ 
+  
+
+    #hero_text{
+      font-size: .9em;
+      font-weight: bold;
+      line-height: 1.3em;
+      color: #4b4d58;
+      padding: 18px 18% 0 18%;
+      // background-color: green;
+      text-align: center;
+    }
 
  /* Style the navigation menu */
  .topnav {
   display: flex;
-  // flex-grow: 1;
   overflow: hidden;
-  background-color: #333;
-  position: relative;
+  background-color: transparent;
+  padding: 32px 0 32px 0;
+  align-items: center;
+  
+
+  a#hamburger-icon{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 1.5em;
+  }
+  #navigation-links{
+    background-color: orange;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+
+  #myLinks { /* Hide the links inside the navigation menu (except for logo/home) */
+    display: none;
+    // background-color: blue;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2244;
+    width: 100px;
+    a{
+      font-family: $about-secton-font;
+    }
+  }
+  
+
 }
 
 #logo_image{
@@ -34,56 +102,38 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
   flex-basis: 0;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  // flex-grow: 1;
-  display: none;
-}
 
-.fa-bars{
-  display: flex;
-  align-items: center;
-  // background-color: pink;
-  @include padding-margin-zero;
-  padding-right: 25px;
-}
-/* Style navigation menu links */
-.icon {
+// hamburger icon container
+#hamburger-icon {
+  // background-color: orange;
   color:$linkColor;
-  // padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  
+  @include padding-margin-zero;
 
-  @include padding-margin-zero
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  // background: black;
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  flex-basis: 0;
-  // background-color: blue;
-
-  // height: 100%;
-  // position: absolute;
-  // right: 0;
-  // top: 0;
+    #hamburger_font{
+      display: flex;
+      align-items: center;
+      // background-color: pink;
+      @include padding-margin-zero;
+      padding-right: $logo_hamburger_padding;
+    } 
 }
 
 
 #text_logo{
-  font-size: .8em;
-  padding-left: 25px;
+  background-color: blue;
+  color: $linkColor;
+  font-size: 1.36em;
+  padding-left: $logo_hamburger_padding;
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
   align-items: center;
   justify-content: flex-start;
-  color: $linkColor;
-  // background-color: purple;
+  // color: $linkColor;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -105,7 +155,7 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: transparent;
   color: black;
 }
 
@@ -155,12 +205,13 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
 
 
 #header-section{
-  height: $logo-image-height * 1.1;
+  height: $logo-image-height * 1.5;
 }
 
 
 
 #logoImage{
+    background-color: green;
     position: relative;
     width: $logo-image-width;
     height: $logo-image-height;
