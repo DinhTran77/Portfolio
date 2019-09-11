@@ -5,9 +5,11 @@
 
 
 $linkColor: #fdcb17;
+$logo-text-size: 1.3em;
+$nav-text-size: .65em;
+
 // $linkActiveColor: #fce40b;
 $linkActiveColor: #feb836;
-
 
 $logo-fade-in-time: .8s;
 
@@ -17,14 +19,23 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol", "Noto Color Emoji";
 
-  $logo_hamburger_padding: 28px;
 
-  #home{
+
+  
+
+  #container-page{
     display: flex;
     flex-direction: column;
     background-color: #c5c5c5;
+  }
+
+  #homePage{
+    width: 100vw;
     height: 100vh;
-    // background-image: url('../../images/Homepage_sample.PNG');
+    display: flex;
+    justify-content: center;
+    // background-color: green;
+    // background-image: url('../../images/sketch.png');
     background-size: 100% auto; 
   }
 
@@ -40,12 +51,9 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
     padding: 27px 12% 0 12%;
     text-align: center;
     }
-
-    
- 
-  
-
-    #hero_text{
+   
+   
+ #hero_text{
       font-size: .9em;
       font-weight: bold;
       line-height: 1.3em;
@@ -56,208 +64,76 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
     }
 
  /* Style the navigation menu */
- .topnav {
-  display: flex;
-  overflow: hidden;
-  background-color: transparent;
-  padding: 32px 0 32px 0;
-  align-items: center;
-  
-
-  a#hamburger-icon{
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    flex-basis: 0;
-    font-size: 1.5em;
-  }
-  #navigation-links{
-    background-color: orange;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-
-
-  #myLinks { /* Hide the links inside the navigation menu (except for logo/home) */
-    display: none;
-    // background-color: blue;
-    justify-content: space-around;
-    flex-direction: column;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 2244;
-    width: 100px;
-    a{
-      font-family: $about-secton-font;
-    }
-  }
-  
-
-}
-
-#logo_image{
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-
-// hamburger icon container
-#hamburger-icon {
-  // background-color: orange;
-  color:$linkColor;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  
-  @include padding-margin-zero;
-
-    #hamburger_font{
+ #topnav_area {
       display: flex;
       align-items: center;
-      // background-color: pink;
-      @include padding-margin-zero;
-      padding-right: $logo_hamburger_padding;
-    } 
-}
-
-
-#text_logo{
-  background-color: blue;
-  color: $linkColor;
-  font-size: 1.36em;
-  padding-left: $logo_hamburger_padding;
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
-  align-items: center;
-  justify-content: flex-start;
-  // color: $linkColor;
-  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    text-decoration: none; 
-    
+      justify-content: center;
+      width: 100vw;
+      overflow: hidden;
+      background-color:#212529;
+      // background-color:red;
+      height: 79px;
  
- &:focus{
-      color: $linkActiveColor;
-    }
+      .container-navbar
+          {
+          width: 88vw;
+          display: flex;
+          align-items: center;
+          // background-color: green;
+          // height: 50%;
 
-   &:hover {
-      color:red;
-    }
+          #logo_text{
+            @include padding-margin-zero;
+            display: flex;
+            flex-grow: 1;
+            // background-color: blue;
+            color: $linkColor;
+            font-size: $logo-text-size;
+            line-height:1em;
+            font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+              text-decoration: none; 
+              
+            &:focus{color: $linkActiveColor;}
+            
+            &:hover {color:red;}
+            
+            &:active{color: $linkActiveColor;}
+            } //end logo_text 
 
-   &:active{
-      color: $linkActiveColor;
-    }
-  }
+          #nav-links {
+                    // background-color: purple;
+                    margin-left: auto;
+                    margin: 0;
+                    display: flex;
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: transparent;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  // background-color: #4CAF50;
-  display: flex;
-  align-items: center;
-  color: white;
-} 
-
-
-#container-page{
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.container-section{
-  padding: 2vh 3vw 2vh 3vw;
-}
-
-#heroOverlay {
-  background: -webkit-radial-gradient(rgb(216, 216, 216), rgb(163, 163, 163));
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-  top: 0;
-  left: 0;
-}
-
-#menu {
-    display:none;  
-    // flex-grow:1;
-}
-
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    // background-color: pink;
-}
+                    align-items: flex-end;
+                    line-height: 1em;
+                    height: 1em;
+                    display: inline-block;
+      
+                    li{
+                        a{  
+                          display: flex;
+                          align-items: flex-end;
+                          padding-left: 2.05em; 
+                          font-family: 'Montserrat', sans-serif;
+                          font-size: $nav-text-size;
+                          color:$linkColor;
+                          line-height: 100%;
+                          height: 100%;
+                          min-height: 1px;
+                          }             
+                        }//end of <li>
+      }//end nav 
+                
+ 
+      //     }//end container
+}//end top nav
 
 
-
-#header-section{
-  height: $logo-image-height * 1.5;
-}
-
-
-
-#logoImage{
-    background-color: green;
-    position: relative;
-    width: $logo-image-width;
-    height: $logo-image-height;
-    animation: logo_fade_in forwards;
-    animation-duration: $logo-fade-in-time;
-    flex-grow: 1;
-    flex-basis: 0;
-
-    @keyframes logo_fade_in
-      {
-        from{
-          opacity: 0;
-          transform: translateY(100vh)
-        }
-        to{
-          opacity: 1;
-          transform: translateY(0vh)
-        }
-      }
-}
-
-
-  #heroOverlay {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -5;
-    top: 0;
-    left: 0;
-    animation-name: background-fade-in;
-    animation-duration: 3s;
-
-      @keyframes background-fade-in{
-        from{
-          opacity: .2;
-        }
-        to{
-          opacity: 1;
-        }
-  }
-
-
-
-}
-
-
+      
 
 
 
@@ -271,3 +147,4 @@ $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", R
         display:block;
     }
   }
+ }

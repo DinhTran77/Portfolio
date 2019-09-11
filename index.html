@@ -29,8 +29,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-	<script src="./js/hamburger-menu.js"></script>
-
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
 
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="./scss/main.css">
@@ -39,39 +39,25 @@
 
 <body id='container-page'>
 
-	<section id='home'>
-		<header id='header-section'>
-			
+	<section id='homePage'>	
 			<!-- Top Navigation Menu -->
-			<div class="topnav">
+			<nav id="topnav_area">
+				<div class='container-navbar'>
+					<a href="#" id="logo_text">Dinh Tran</a>			
+					<ul id="nav-links">
+						<li><a href="#contact">Skills</a></li>
+						<li><a href="#about">Portfolio</a></li>
+						<li><a href="#about">Contact</a></li>
+					</ul>	
+				</div>
+			</nav>
+			<!-- <a id='logo_image' href="#home" class="active"><img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo"></a> -->
 
-				<a href="#" id='text_logo'>Dinh Tran</a>
-				<a id='logo_image' href="#home" class="active"><img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo"></a>
-				
-
-				<section id='navigation-links'>
-					<!-- Navigation links (hidden by default) -->
-					<ul id="myLinks">
-						<a href="#about">News</a>
-						<a href="#contact">Skills</a>
-						<a href="#about">Portfolio</a>
-						<a href="#about">Contact</a>
-					</ul>
-
-					<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-					<a href="javascript:void(0);" id="hamburger-icon" onclick="myFunction()">
-						<i id='hamburger_font' class="fa fa-bars"></i>
-					</a>
-				</section>
-			
-			</div>
-		</header>
-
-
+<!-- 
 		<section id='hero'>
 			<p id='hero_heading'>Designing through the night <br> to bring wise ideas to light.</p>
 			<p id='hero_text'>With your vision, my design savvy, and a hefty amount of coffee, we can create a digital experience that is creative, beautiful, and memorable.</p>
-		</section>
+		</section> -->
 	</section>
 
 
