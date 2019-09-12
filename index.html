@@ -39,55 +39,198 @@
 
 <body id='container-page'>
 
+	<!------------------ Home page -------------------->
 	<section id='homePage'>	
-			<!-- Top Navigation Menu -->
+			
+			<!-- Nav Bar -->
 			<nav id="topnav_area">
 				<div class='container-navbar'>
 					<a href="#" id="logo_text">Dinh Tran</a>			
 					<ul id="nav-links">
-						<li><a href="#contact">Skills</a></li>
-						<li><a href="#about">Portfolio</a></li>
-						<li><a href="#about">Contact</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>	
 				</div>
 			</nav>
-			<!-- <a id='logo_image' href="#home" class="active"><img id='logoImage' src="./images/logos/Logo_good-spinning.svg" alt="Logo"></a> -->
 
-<!-- 
-		<section id='hero'>
-			<p id='hero_heading'>Designing through the night <br> to bring wise ideas to light.</p>
-			<p id='hero_text'>With your vision, my design savvy, and a hefty amount of coffee, we can create a digital experience that is creative, beautiful, and memorable.</p>
-		</section> -->
+
+			<!-- Hero -->
+			<section id='hero_section'>
+				<a  href="#home" class="active"><img id='logoImage' src="./images/logos/Logo_black.svg" alt="Logo"></a>
+				<p id='hero_heading'>Clean code, <br>so help me God.</p>
+				<p id='hero_text'>Hello! I’m Dinh Tran. I develope responsive front-ends from scratch.  I have a passion for translating complex, creative ideas into elegant, maintainable code. </p>	
+				<button id="button_contact">Get in touch</button> 
+			</section>
+
+
+			<!-- Footer -->
+			<!-- <footer id='footer'></footer> -->
+		
 	</section>
 
 
 
+	<!------------------ Skills Page-------------------->
+	<section id='skillsPage' class='container'>
+			
+
+			<div class='section-title-area'>
+				<h2 class="section-heading">Skills</h2>
+				<h3 class="section-subheading">Front-end skills</h3>  
+			</div>
+			
+			<section id='progress-bars-section'>
+				<section class='progress-bar-container'>	
+					<h4 class='skill-name'>HTML & CSS</h4>
+					<div class='progress-bar'>
+						<div class='container-progress-percentage'>
+							<div class='progressPercentage html' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">80%</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>SCSS</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage scss' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Javascript</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage javascript' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">60%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>jQuery</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage jQuery' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">65%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Bootstrap</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage bootstrap' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
+							</div>
+						</div>
+				</section>
 
 
 
-	<!-- <section id='about-section'>
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Responsive Design</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage responsive-design' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">65%</div>
+							</div>
+						</div>
+				</section>
+		
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>REACT</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage react' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
+							</div>
+						</div>
+				</section>
+
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Jest</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage jest ' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Typescript</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage typescript' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">50%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Node</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage node' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Express</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage express' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">20%</div>
+							</div>
+						</div>
+				</section>
+
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Agile</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage agile' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">90%</div>
+							</div>
+						</div>
+				</section>
+
+				<section class='progress-bar-container'>	
+						<h4 class='skill-name'>Git</h4>
+						<div class='progress-bar'>
+							<div class='container-progress-percentage'>
+								<div class='progressPercentage git' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
+							</div>
+						</div> 
+				</section>
+			</section>
+
+
+		
+	</section>
+
+
+	<!------------------ About Page-------------------->
+	<!-- <section id='about-section' class='container-section'>
+
 		<section id='about-text' >
 
-			<div class='overlay-blue'></div>
-
 			<section id='about-section-with-text' class='container-section'>
-				<h2 class='h2-font'>
-					Hello! My name is Dinh Tran
-				</h2>
-				
-				<p class='paragraph-font'>
-				Clean, maintainable code from scratch. So help me God.
-				</p>
+				<h2 class='h2-font'>Hello! My name is Dinh Tran</h2>		
+				<p class='paragraph-font'>Clean, maintainable code from scratch. So help me God.</p>
 			</section>
 
 		</section>
 	</section> -->
 
-
-
-	<!----------------------Scripts------------------------------------------->
-		<!--Initialize Slick Nav for hamburger menu -->
-		<script type="text/javascript" src="./js/hamburger-menu.js"></script>
 </body>
 
 
