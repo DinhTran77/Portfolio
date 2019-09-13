@@ -1,0 +1,58 @@
+#portfolioPage
+        {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        background-color: $grey-background;
+        background-repeat: no-repeat;
+        background-size: 100vw auto;
+
+
+        #projects
+        {
+                
+                .project-container{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:  flex-end;
+                        width: 87vw;
+                        height: 87vw;
+                        position: relative;
+                        background-image: url('../../images/portfolio/01-thumbnail.jpg');
+                        
+                        &:not(:last-child){margin-bottom: 3em;}
+
+                        .project-image{width: 100%;}
+
+                        .project-text
+                                {
+                                width: 100%;
+                                height: 25%;
+                                background-color: white;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                h4
+                                        {
+                                        color: red;
+                                        font-size: .65em;
+                                        text-align: center;
+                                        font-family: $monsterrat-font;
+                                        color: $font_dark_grey;
+                                        }
+
+                                h5
+                                        {
+                                        text-align: center; 
+                                        font-family: $droid-font;   
+                                        font-style: italic;
+                                        color: $font_light_grey;
+                                        padding-top: 5.5px;
+                                        font-size: .45em;
+                                        }
+                                }
+                        }//end  project-container 
+                }//end projects            
+        }

@@ -1,0 +1,36 @@
+.container
+        {
+        padding: 7vh 7vw 7vh 7vw;
+        }
+
+
+.section-title-area
+        {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.5em ;
+        }
+
+
+h2.section-heading 
+        {
+        font-size: 1em;
+        margin-top: 0;
+        text-transform: uppercase !important;
+        color: $font_dark_grey;
+        font-weight: 600;
+        font-family: $about-secton-font;
+        }
+
+
+h3.section-subheading 
+        {
+        font-size: .5em;
+        font-weight: 400;
+        font-style: italic;
+        color: $font_light_grey;
+        text-transform: none;
+        font-family: $droid-font;
+        }
+

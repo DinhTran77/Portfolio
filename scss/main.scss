@@ -4,6 +4,8 @@
 @import './utilities/maxins';
 @import './utilities/variables';
 
+// Styles used on all pages
+@import './base/shared';
 
 @import './layout/media-queries';
 @import './layout/grid';
@@ -11,7 +13,9 @@
 //import external css libraries
 @import './vendors/bootstrap';
 
-//import components scss
-@import './components/about-section';
-@import './components/nav-bar';
-@import './layout/_container'
+//SCSS for individual pages
+@import './pages/homePage';
+@import './pages/about-section';
+@import './layout/_container';
+@import './pages/skillsPage';
+@import './pages/portfolioPage';
