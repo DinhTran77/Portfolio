@@ -4,28 +4,14 @@
 @import '../../scss/utilities/variables';
 
 
-$linkColor: #fdcb17;
-$logo-text-size: 6vw;
-$nav-text-size: 3vw;
-
-$linkActiveColor: #feb836;
-$nav-area-color:#212529;
-$logo-fade-in-time: .8s;
-
-$nav-bar-font: 'Montserrat', sans-serif;
-$hero_text_padding: 0px 10% 0 10%;
-
-$logo-image-width: 73vw;
-// $about-secton-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol", "Noto Color Emoji";
-
-
+$logo-image-width: 60vw;
 
 
   #homePage
   {
       background-color: $grey-background;
       width: 100vw;
-      height: 100vh;
+      // height: 100vh;
       display: flex;
       flex-direction: column;
       color: red;
@@ -33,95 +19,20 @@ $logo-image-width: 73vw;
       // background-image: url('../../images/sketch.PNG');
       background-repeat: none;
 
-      #topnav_area 
-            {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            overflow: hidden;
-            background-color:$nav-area-color;
-            height: $nav_bar_height;
-            box-shadow: .4px .4px 2.5px 1px  #313131;
-            position: fixed;
-            z-index: 100;
-            top: 0; 
-            
-            .container-navbar
-                {
-                width: 90vw;
-                display: flex;
-                position: relative;
-                align-items: center;
-
-                #logo_text
-                    {
-                          @include padding-margin-zero;
-                          display: flex;
-                          flex-grow: 1;
-                          flex-shrink: 1;
-                          width: 0;
-                          flex-basis: 1;
-                          color: $linkColor;
-                          font-size: $logo-text-size;
-                          line-height:1em;
-                          height: 100%;
-                          font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                          text-decoration: none; 
-                    } //end logo_text 
-
-                  
-                #nav-links 
-                    {
-                          display: flex;
-                          justify-content: flex-end;
-                          align-items: center;
-                          flex-grow: 1;
-                          flex-shrink: 1;
-                          flex-basis: 1;
-                          width: 0;
-                          line-height: 1em;
-                          height: 1em;
-
-
-                          li{
-                                a{  
-                                  display: flex;
-                                  align-items: flex-end;
-                                  padding-left: 1.3em;
-                                  font-family: $nav-bar-font;
-                                  font-size: $nav-text-size; 
-                                  line-height: 100%;
-                                  height: 100%;
-                                  color:$linkColor;
-                                  // color: green;
-            
-                                }
-
-                                .current{
-                                  color: #ffffff;
-                                  background:#f1d74c;
-                               }
-                            }//end of <li>
-            }//end nav 
-      }//end top nav
-      }//end topnav_area
-
-  
       #hero_section
-          {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
+            {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
             #logoImage
               {
-                width: $logo-image-width;
-                margin: 9vh 0 6vh 0;
+              width: $logo-image-width;
+              margin: 5.5em 0 4em 0;
               }
               
-
+            
             #hero_heading
               {
               font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,14 +44,14 @@ $logo-image-width: 73vw;
               width: 100%;
               text-align: center;
               }
-        
-        
+            
+            
             #hero_text
               {
               font-size: .9em;
               font-weight: bold;
               line-height: 1.5em;
-              margin: 2vh 0 3vh 0;
+              margin: .8em 0 0 0;
               color: #3c4247;;
               padding: $hero_text_padding;
               text-align: center;
@@ -148,22 +59,21 @@ $logo-image-width: 73vw;
             
             #button_contact
               {
-              font-family: $nav-bar-font;
+              font-family: Georgia, 'Times New Roman', Times, serif;;
               font-weight: bold;
               font-size: .7em;
               background-color: $nav-area-color;
               background-color: $linkColor;
               border: none;
-              color: white;
-              padding: .6em 3.9em;
+              color: $nav-area-color;
+              padding: .7em 3em;
               text-align: center;
               text-decoration: none;
               display: inline-block;
-              margin: 4px 2px;
+              margin: 4em 0 6em 0;
               cursor: pointer;
               border-radius: 5px;
               }
+ 
       }//end hero section
   }//end homepage
-
-

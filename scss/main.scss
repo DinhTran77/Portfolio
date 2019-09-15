@@ -13,6 +13,10 @@
 //import external css libraries
 @import './vendors/bootstrap';
 
+
+//Components
+@import './components/navBar';
+
 //SCSS for individual pages
 @import './pages/homePage';
 @import './pages/about-section';
