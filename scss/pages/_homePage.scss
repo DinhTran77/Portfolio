@@ -41,32 +41,36 @@ $logo-image-width: 73vw;
             width: 100vw;
             overflow: hidden;
             background-color:$nav-area-color;
-            height: 79px;
-            box-shadow: .4px .4px 2.5px 1px  #616060;
-
-      
+            height: $nav_bar_height;
+            box-shadow: .4px .4px 2.5px 1px  #313131;
+            position: fixed;
+            z-index: 100;
+            top: 0; 
+            
             .container-navbar
                 {
                 width: 90vw;
                 display: flex;
+                position: relative;
                 align-items: center;
 
                 #logo_text
-                  {
-                  @include padding-margin-zero;
-                  display: flex;
-                  flex-grow: 1;
-                  flex-shrink: 1;
-                  width: 0;
-                  flex-basis: 1;
-                  color: $linkColor;
-                  font-size: $logo-text-size;
-                  line-height:1em;
-                  height: 100%;
-                  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                  text-decoration: none; 
-                  } //end logo_text 
+                    {
+                          @include padding-margin-zero;
+                          display: flex;
+                          flex-grow: 1;
+                          flex-shrink: 1;
+                          width: 0;
+                          flex-basis: 1;
+                          color: $linkColor;
+                          font-size: $logo-text-size;
+                          line-height:1em;
+                          height: 100%;
+                          font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                          text-decoration: none; 
+                    } //end logo_text 
 
+                  
                 #nav-links 
                     {
                           display: flex;
@@ -76,11 +80,9 @@ $logo-image-width: 73vw;
                           flex-shrink: 1;
                           flex-basis: 1;
                           width: 0;
-                          // align-items: center;
-                          // justify-content: center;
                           line-height: 1em;
                           height: 1em;
-                          // display: inline-block;
+
 
                           li{
                                 a{  
@@ -92,10 +94,14 @@ $logo-image-width: 73vw;
                                   line-height: 100%;
                                   height: 100%;
                                   color:$linkColor;
-                                  &:hover {
-                                    color:blue !important;
-                                  }  
+                                  // color: green;
+            
                                 }
+
+                                .current{
+                                  color: #ffffff;
+                                  background:#f1d74c;
+                               }
                             }//end of <li>
             }//end nav 
       }//end top nav

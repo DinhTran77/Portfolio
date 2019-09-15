@@ -215,8 +215,11 @@ table {
   overflow: hidden;
   background-color: #212529;
   height: 79px;
-  -webkit-box-shadow: .4px .4px 2.5px 1px  #616060;
-          box-shadow: .4px .4px 2.5px 1px  #616060;
+  -webkit-box-shadow: .4px .4px 2.5px 1px  #313131;
+          box-shadow: .4px .4px 2.5px 1px  #313131;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 
 #homePage #topnav_area .container-navbar {
@@ -224,6 +227,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -288,8 +292,9 @@ table {
   color: #fdcb17;
 }
 
-#homePage #topnav_area .container-navbar #nav-links li a:hover {
-  color: blue !important;
+#homePage #topnav_area .container-navbar #nav-links li .current {
+  color: #ffffff;
+  background: #f1d74c;
 }
 
 #homePage #hero_section {

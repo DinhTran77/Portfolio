@@ -30,6 +30,8 @@
 </head>
 
 
+
+
 <body id='container-page'>
 
 	<!------------------ Home page -------------------->
@@ -40,8 +42,8 @@
 				<div class='container-navbar'>
 					<a href="#" id="logo_text">Dinh Tran</a>			
 					<ul id="nav-links">
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#skillsPage">Skills</a></li>
+						<li><a href="#portfolioPage">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>	
 				</div>
@@ -254,6 +256,16 @@
 
 		</section>
 	</section>
+
+
+	<script>
+	$("a").each(function() {
+    if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+        $(this).addClass('activeMenuItem');
+    }
+});
+
+	</script>
 </body>
 
 
