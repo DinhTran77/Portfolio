@@ -12,3 +12,4 @@ $('a[href^="#"]').on('click', function(event) {
       }, 500);
   }
 });
+

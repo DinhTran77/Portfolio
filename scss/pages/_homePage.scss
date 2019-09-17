@@ -4,33 +4,56 @@
 @import '../../scss/utilities/variables';
 
 
-$logo-image-width: 60vw;
 
+$logo-image-width: 47vw;
 
   #homePage
   {
-      background-color: $grey-background;
+
+     
       width: 100vw;
-      // height: 100vh;
+      height: 100vw * 1.618;
       display: flex;
       flex-direction: column;
-      color: red;
       background-size: 100% auto; 
-      // background-image: url('../../images/sketch.PNG');
+      // background-image: url('../../images/sketch-home.png');
       background-repeat: none;
+      background-color: #ffd306;
+      // background-color: $nav-area-color;
+      
+      #menu{
+        position: absolute;
 
-      #hero_section
-            {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+      }
+
             
-            #logoImage
-              {
-              width: $logo-image-width;
-              margin: 5.5em 0 4em 0;
-              }
+            #logo-container{
+                  display: flex;
+                  justify-content: center;
+
+                  height: $logo-image-width*1.5;
+                  // position: relative;
+                  // background-color: pink;
+                  width: 100%;
+                  height: 100%;
+                  // animation: logMove 2s 800ms forwards ease-out;
+                  
+      
+              
+                  #logoImage
+                  {
+                  // background-color: red;
+                  width: $logo-image-width;
+                  margin-top:48px;
+                  }
+                
+
+
+
+ 
+            
+            
+              
               
             
             #hero_heading

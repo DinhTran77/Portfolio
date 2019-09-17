@@ -69,6 +69,19 @@ table {
       border-spacing: 0;
 }
 
+#menu {
+  display: none;
+}
+
+@media screen and (min-width:  600px) {
+  .slicknav_menu  {
+    display: none;
+  }
+  #menu  {
+    display: block;
+  }
+}
+
 .container {
   padding: 7vh 7vw 7vh 7vw;
 }
@@ -113,102 +126,6 @@ body {
   body {
     color: green;
   }
-}
-
-#topnav_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #212529;
-  height: 69px;
-  -webkit-box-shadow: .4px .4px 2.5px 1px  #313131;
-          box-shadow: .4px .4px 2.5px 1px  #313131;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-}
-
-#topnav_area .container-navbar {
-  width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#topnav_area .container-navbar #logo_text {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  width: 0;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
-  color: #fdcb17;
-  font-size: 6vw;
-  line-height: 1em;
-  height: 100%;
-  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-decoration: none;
-}
-
-#topnav_area .container-navbar #nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
-  width: 0;
-  line-height: 1em;
-  height: 1em;
-}
-
-#topnav_area .container-navbar #nav-links li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-left: 1.3em;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3vw;
-  line-height: 100%;
-  height: 100%;
-  color: #fdcb17;
-}
-
-#topnav_area .container-navbar #nav-links li .current {
-  color: #ffffff;
-  background: #f1d74c;
 }
 
 html {
@@ -282,8 +199,8 @@ table {
 }
 
 #homePage {
-  background-color: #dbdbdb;
   width: 100vw;
+  height: 161.8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,31 +208,33 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: red;
   background-size: 100% auto;
   background-repeat: none;
+  background-color: #ffd306;
 }
 
-#homePage #hero_section {
-  height: 100%;
+#homePage #menu {
+  position: absolute;
+}
+
+#homePage #logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70.5vw;
+  width: 100%;
+  height: 100%;
 }
 
-#homePage #hero_section #logoImage {
-  width: 60vw;
-  margin: 5.5em 0 4em 0;
+#homePage #logo-container #logoImage {
+  width: 47vw;
+  margin-top: 48px;
 }
 
-#homePage #hero_section #hero_heading {
+#homePage #logo-container #hero_heading {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.1em;
   line-height: 1.3em;
@@ -326,7 +245,7 @@ table {
   text-align: center;
 }
 
-#homePage #hero_section #hero_text {
+#homePage #logo-container #hero_text {
   font-size: .9em;
   font-weight: bold;
   line-height: 1.5em;
@@ -336,7 +255,7 @@ table {
   text-align: center;
 }
 
-#homePage #hero_section #button_contact {
+#homePage #logo-container #button_contact {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: .7em;
@@ -390,7 +309,6 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 69px;
 }
 
 .container-section {
@@ -403,7 +321,6 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3vh 4vw 0  4vw;
 }
 
 #skillsPage {
@@ -569,6 +486,16 @@ table {
   background-size: 100vw auto;
 }
 
+#portfolioPage #projects .e-commerce {
+  background-image: url("../../images/portfolio/ecommerce.PNG");
+  background-size: 100% auto;
+}
+
+#portfolioPage #projects .drum-machine {
+  background-image: url("../../images/portfolio/drum-machine.PNG");
+  background-size: 100% auto;
+}
+
 #portfolioPage #projects .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +510,6 @@ table {
   width: 87vw;
   height: 87vw;
   position: relative;
-  background-image: url("../../images/portfolio/01-thumbnail.jpg");
 }
 
 #portfolioPage #projects .project-container:not(:last-child) {

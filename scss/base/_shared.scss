@@ -1,3 +1,18 @@
+#menu{
+        display:none;
+}
+
+@media screen and (min-width: 600px){
+   
+.slicknav_menu {
+display:none;
+}
+#menu {
+display:block;
+}
+}
+
+
 .container
         {
         padding: 7vh 7vw 7vh 7vw;

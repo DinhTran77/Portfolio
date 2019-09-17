@@ -4,7 +4,7 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        background-color: $grey-background;
+        background-color: $background-color;
         background-repeat: no-repeat;
         background-size: 100vw auto;
 
@@ -12,6 +12,16 @@
         #projects
         {
                 
+                .e-commerce{
+                        background-image: url('../../images/portfolio/ecommerce.PNG');
+                        background-size: 100% auto;
+                }
+
+                .drum-machine{
+                        background-image: url('../../images/portfolio/drum-machine.PNG');
+                        background-size: 100% auto;
+                }
+
                 .project-container{
                         display: flex;
                         flex-direction: column;
@@ -19,7 +29,7 @@
                         width: 87vw;
                         height: 87vw;
                         position: relative;
-                        background-image: url('../../images/portfolio/01-thumbnail.jpg');
+                      
                         
                         &:not(:last-child){margin-bottom: 3em;}
 
