@@ -1,23 +1,26 @@
-$background-color:rgb(219, 219, 219);
 
-$nav-area-color:#212529;
+
 $monsterrat-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol", "Noto Color Emoji";
 $droid-font:"Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+$nav-area-color:#212529;
+$color_background_grey:#f5f5f5;
+$color_background_yellow: #ffd306;
 $font_dark_grey:  #212529;
 $font_light_grey: #6c757d;
+$linkColor: #fdcb17;
+$linkActiveColor: #feb836;
+// $color_page_background: #ffd306;
+$color_blue_logo: #1f2329;
 
 $nav_bar_height:  69px;
 
-$linkColor: #fdcb17;
 $logo-text-size: 6vw;
 $nav-text-size: 3vw;
-
-$linkActiveColor: #feb836;
-
 
 $logo-fade-in-time: .8s;
 
 $nav-bar-font: 'Montserrat', sans-serif;
 $hero_text_padding: 0px 10% 0 10%;
 
+$progress-percentage-font-size: .4em;

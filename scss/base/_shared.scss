@@ -2,6 +2,10 @@
         display:none;
 }
 
+html{
+   scroll-behavior: smooth;     
+}
+
 @media screen and (min-width: 600px){
    
 .slicknav_menu {
@@ -15,7 +19,7 @@ display:block;
 
 .container
         {
-        padding: 7vh 7vw 7vh 7vw;
+        padding: 2.3em 1em 2em 1em;
         }
 
 
@@ -24,7 +28,7 @@ display:block;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2.5em ;
+        margin-bottom: 1.7rem ;
         }
 
 

@@ -1,11 +1,11 @@
-$progress-percentage-font-size: .6em;
+
 
 #skillsPage
         {
         // background-image: url('../../images/sketch_skills.PNG');
         background-size: 100% auto;
         background-repeat: no-repeat;
-
+        background-color: $color_background_grey;
 
           #progress-bars-section
                 {
@@ -18,24 +18,24 @@ $progress-percentage-font-size: .6em;
                     display: flex;
                     align-items: center;
                     // background-color: green;
-                    height: $progress-percentage-font-size*1.2;
+                    height: $progress-percentage-font-size*1.4;
                     width: 100%;
-                    margin-bottom: .6em;
+                    margin-bottom: .5em;
 
 
                         .skill-name
                           {
                           display: flex;
                           align-items: flex-end;
-                          flex-grow: 4;
+                          flex-grow: 3;
                           flex-basis: 1;
                           width: 0;
-                          font-size: .5em;
+                          font-size: .4em;
                           font-family: $droid-font;
-                          color:$font_dark_grey;
+                          color: grey;
                           // background-color: orange;
                           height: 100%;
-                          line-height: $progress-percentage-font-size*1.5;
+                          line-height: 100%;
                           overflow: visible
                           }
                         
@@ -47,22 +47,24 @@ $progress-percentage-font-size: .6em;
                           flex-basis: 1;
                           width: 0;
                           flex-direction: row;
-                          // height: 2em;
+                          // height: $progress-percentage-font-size*1.5;
+                          height: 100%;
+
                           // align-items: flex-end;
                           // justify-content: flex-start; 
                           // align-items: flex-end;
-                          background-color: blue;
+                          // background-color: blue;
                         
 
                                 .container-progress-percentage
                                 {
                                 width: 100%;
                                 height: 100%;
-                                background-color: #bebec0;
+                                background-color: #e2e2e2;
                                 overflow: hidden;
                                 display: flex;
                                 align-items: flex-end;
-
+                                
 
                                       .progressPercentage 
                                           {

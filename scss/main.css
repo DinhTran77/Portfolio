@@ -73,6 +73,10 @@ table {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (min-width:  600px) {
   .slicknav_menu  {
     display: none;
@@ -83,7 +87,7 @@ table {
 }
 
 .container {
-  padding: 7vh 7vw 7vh 7vw;
+  padding: 2.3em 1em 2em 1em;
 }
 
 .section-title-area {
@@ -97,7 +101,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.7rem;
 }
 
 h2.section-heading {
@@ -208,68 +212,57 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-size: 100% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-repeat: none;
   background-color: #ffd306;
 }
 
-#homePage #menu {
-  position: absolute;
+#homePage #logoImage {
+  width: 80vw;
+  margin-top: 12vh;
+  margin-bottom: .5em;
 }
 
-#homePage #logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 70.5vw;
-  width: 100%;
-  height: 100%;
+#homePage #hero_message {
+  width: 100px;
+  text-align: center;
 }
 
-#homePage #logo-container #logoImage {
-  width: 47vw;
-  margin-top: 48px;
-}
-
-#homePage #logo-container #hero_heading {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.1em;
-  line-height: 1.3em;
-  font-weight: bold;
+#homePage #hero_text {
   color: #212529;
-  padding: 0px 10% 0 10%;
-  width: 100%;
-  text-align: center;
+  font-family: 'Special Elite', cursive;
+  font-size: .7rem;
 }
 
-#homePage #logo-container #hero_text {
-  font-size: .9em;
-  font-weight: bold;
-  line-height: 1.5em;
-  margin: .8em 0 0 0;
-  color: #3c4247;
-  padding: 0px 10% 0 10%;
-  text-align: center;
-}
-
-#homePage #logo-container #button_contact {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: .7em;
-  background-color: #212529;
-  background-color: #fdcb17;
-  border: none;
-  color: #212529;
-  padding: .7em 3em;
-  text-align: center;
-  text-decoration: none;
+#homePage #cursor {
   display: inline-block;
-  margin: 4em 0 6em 0;
-  cursor: pointer;
-  border-radius: 5px;
+  vertical-align: middle;
+  width: 2px;
+  height: 15px;
+  background-color: #212529;
+  -webkit-animation: blink .75s step-end infinite;
+          animation: blink .75s step-end infinite;
+  opacity: .6;
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
 }
 
 #about-section {
@@ -301,31 +294,10 @@ table {
   opacity: .3;
 }
 
-#container-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container-section {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 #skillsPage {
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #f5f5f5;
 }
 
 #skillsPage #progress-bars-section {
@@ -345,9 +317,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 0.72em;
+  height: 0.56em;
   width: 100%;
-  margin-bottom: .6em;
+  margin-bottom: .5em;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .skill-name {
@@ -357,17 +329,17 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
   width: 0;
-  font-size: .5em;
+  font-size: .4em;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #212529;
+  color: grey;
   height: 100%;
-  line-height: 0.9em;
+  line-height: 100%;
   overflow: visible;
 }
 
@@ -385,13 +357,13 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: blue;
+  height: 100%;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
   width: 100%;
   height: 100%;
-  background-color: #bebec0;
+  background-color: #e2e2e2;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +386,7 @@ table {
   color: grey;
   padding-left: 5px;
   font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
@@ -481,19 +453,36 @@ table {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background-color: #dbdbdb;
-  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  background-color: white;
   background-size: 100vw auto;
 }
 
-#portfolioPage #projects .e-commerce {
-  background-image: url("../../images/portfolio/ecommerce.PNG");
+#portfolioPage #projects a {
+  color: red;
+}
+
+#portfolioPage #projects a:hover {
+  color: blue !important;
+}
+
+#portfolioPage #projects a:active {
+  color: orange;
+}
+
+#portfolioPage #projects .portfolio-site {
   background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#portfolioPage #projects .e-commerce {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 #portfolioPage #projects .drum-machine {
-  background-image: url("../../images/portfolio/drum-machine.PNG");
   background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 #portfolioPage #projects .project-container {
@@ -522,8 +511,8 @@ table {
 
 #portfolioPage #projects .project-container .project-text {
   width: 100%;
-  height: 25%;
-  background-color: white;
+  height: 26%;
+  background-color: #f8f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
