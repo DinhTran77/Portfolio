@@ -548,21 +548,6 @@ table {
   font-size: .45em;
 }
 
-.slicknav_btn {
-  position: relative;
-  display: block;
-  vertical-align: middle;
-  float: left;
-  /* padding: 0.438em 0.625em 0.438em 0.625em; */
-  line-height: 1.125em;
-  cursor: pointer;
-  background-color: red;
-}
-
-.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
-  margin-top: 1.8vw;
-}
-
 .slicknav_menu {
   *zoom: 1;
   font-size: 1rem;
@@ -576,13 +561,14 @@ table {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   left: 0;
+  background-color: purple;
   /* height: 100%; */
   /* opacity: 0;
   animation: fadeIn 2s 500ms forwards; */
@@ -650,12 +636,49 @@ table {
   text-shadow: 0 1px 3px #000;
 }
 
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: left;
+  /* padding: 0.438em 0.625em 0.438em 0.625em; */
+  line-height: 1.125em;
+  cursor: pointer;
+  background-color: red;
+  width: 10vw;
+  height: 10vw;
+  text-decoration: none;
+  background-color: transparent;
+  background-color: #1f2329;
+  background-color: #9cb9bc;
+  opacity: 1;
+}
+
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 1.8vw;
+}
+
 .slicknav_nav {
   clear: both;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* padding-top: 12px; */
+  /* background-color: #9cb9bc; */
 }
 
 .slicknav_nav ul {
   display: block;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0 20px;
 }
 
 .slicknav_nav li {
@@ -664,6 +687,19 @@ table {
 
 .slicknav_nav a {
   display: block;
+  font-family: Montserrat;
+  font-family: 'Special Elite', cursive;
+  font-size: .5em;
+  padding: 5px 15px;
+  /* margin: 5px 5px; */
+  text-decoration: none;
+  color: #2b2a2a;
+  /* background-color: green; */
+}
+
+.slicknav_nav a:hover {
+  background: #ccc;
+  color: #222;
 }
 
 .slicknav_nav .slicknav_parent-link a {
@@ -685,45 +721,6 @@ table {
 
 .slicknav_nav .slicknav_row {
   display: block;
-}
-
-.slicknav_brand {
-  float: left;
-}
-
-.slicknav_btn {
-  width: 10vw;
-  height: 10vw;
-  text-decoration: none;
-  background-color: transparent;
-  background-color: #1f2329;
-  background-color: #9cb9bc;
-  opacity: 1;
-}
-
-.slicknav_nav {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  font-size: 0.875em;
-  list-style: none;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* padding-top: 12px; */
-  /* background-color: #9cb9bc; */
-  /* link style */
-}
-
-.slicknav_nav ul {
-  list-style: none;
-  overflow: hidden;
-  padding: 0;
-  margin: 0 0 0 20px;
-}
-
-.slicknav_nav .slicknav_row {
   padding: 5px 10px;
   margin: 2px 5px;
 }
@@ -731,22 +728,6 @@ table {
 .slicknav_nav .slicknav_row:hover {
   background: #ccc;
   color: #fff;
-}
-
-.slicknav_nav a {
-  font-family: Montserrat;
-  font-family: 'Special Elite', cursive;
-  font-size: .5em;
-  padding: 5px 15px;
-  /* margin: 5px 5px; */
-  text-decoration: none;
-  color: #2b2a2a;
-  /* background-color: green; */
-}
-
-.slicknav_nav a:hover {
-  background: #ccc;
-  color: #222;
 }
 
 .slicknav_nav .slicknav_txtnode {
@@ -769,5 +750,6 @@ table {
   line-height: 30px;
   padding: 7px 12px;
   height: 44px;
+  float: left;
 }
 /*# sourceMappingURL=main.css.map */
