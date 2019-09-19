@@ -21,7 +21,90 @@ $logo-image-width: 80vw;
       background-color: $color_background_yellow;
       // background-color: $nav-area-color;
 
-      
+      $height_nav-bar: 6vw;
+
+#nav-bar{
+        background: red;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: $height_nav-bar;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        #menu 
+        {
+        visibility: hidden;
+        background: green;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        // left: -50%;
+        z-index: 2;
+
+
+        li
+        {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+                a
+                {
+                text-decoration: none;
+                color: grey;
+                font-size: $height_nav-bar*.5;
+                // background-color: yellow;
+           
+                padding: 0 2vw;
+                        &:hover{color: red;}
+                }
+        }
+}//end #menu
+                        #hamburger-icon
+                        {
+                                width: $height_nav-bar;
+                                height: $height_nav-bar;
+                                background: blue;
+                                display: flex;
+                                justify-content: center;
+                                z-index: 3;
+                                align-items: center;
+                                        i//hamburger icon from font-awesome
+                                        { 
+                                        font-size: $height_nav-bar*.7;    
+                                        }  
+                        }
+
+                        .slide-in
+                                {
+                                animation: slide-in 1.5s forwards;
+                                
+                                @keyframes slide-in 
+                                        {
+                                        from{left: -50%}
+                                        to{left: 0%}       
+                                        }   
+                                }
+                        
+                        .slide-out
+                                {
+                                animation: slide-out 1.5s forwards;
+                                
+                                @keyframes slide-out
+                                        {
+                                        from{left: 0%}
+                                        to{left:-50% }       
+                                        }   
+                                }
+
+
+}
     
       #logoImage
       {

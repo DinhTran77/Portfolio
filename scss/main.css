@@ -229,6 +229,126 @@ table {
   background-color: #ffd306;
 }
 
+#homePage #nav-bar {
+  background: red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#homePage #nav-bar #menu {
+  visibility: hidden;
+  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#homePage #nav-bar #menu li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#homePage #nav-bar #menu li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 3vw;
+  padding: 0 2vw;
+}
+
+#homePage #nav-bar #menu li a:hover {
+  color: red;
+}
+
+#homePage #nav-bar #hamburger-icon {
+  width: 6vw;
+  height: 6vw;
+  background: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage #nav-bar #hamburger-icon i {
+  font-size: 4.2vw;
+}
+
+#homePage #nav-bar .slide-in {
+  -webkit-animation: slide-in 1.5s forwards;
+          animation: slide-in 1.5s forwards;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+#homePage #nav-bar .slide-out {
+  -webkit-animation: slide-out 1.5s forwards;
+          animation: slide-out 1.5s forwards;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -50%;
+  }
+}
+
 #homePage #logoImage {
   width: 80vw;
   margin-top: 12vh;
