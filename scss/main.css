@@ -92,7 +92,7 @@ html {
 }
 
 .container {
-  padding: 2.3em 1em 2em 1em;
+  padding: 11.3vw 3vw 5.6vw 3vw;
 }
 
 .section-title-area {
@@ -106,23 +106,27 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.7rem;
+  margin-bottom: 3.3vw;
 }
 
 h2.section-heading {
-  font-size: 1em;
+  font-size: 4.59vw;
   margin-top: 0;
   text-transform: uppercase !important;
   color: #212529;
+  color: blue;
   font-weight: 600;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h3.section-subheading {
-  font-size: .5em;
+  font-size: 1.85vw;
   font-weight: 400;
+  margin-top: 1vw;
+  margin-bottom: 3.5vw;
   font-style: italic;
   color: #6c757d;
+  color: red;
   text-transform: none;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -323,9 +327,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 0.56em;
+  height: 2.73vw;
   width: 100%;
-  margin-bottom: .5em;
+  margin-bottom: 2.1vw;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .skill-name {
@@ -335,13 +339,14 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 3.5;
+      -ms-flex-positive: 3.5;
+          flex-grow: 3.5;
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
   width: 0;
-  font-size: .4em;
+  font-size: 2.1vw;
+  font-weight: 400;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: grey;
   height: 100%;
@@ -390,9 +395,9 @@ table {
           align-items: center;
   background-color: #fdcb17;
   color: grey;
-  padding-left: 5px;
+  padding-left: 1.5vw;
   font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.4em;
+  font-size: 1.89vw;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
@@ -553,8 +558,7 @@ table {
   font-size: 1rem;
   /* size of hamburger */
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 12px 12px 0px;
+          box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,14 +570,12 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: absolute;
   left: 0;
-  background-color: purple;
-  /* height: 100%; */
-  /* opacity: 0;
-  animation: fadeIn 2s 500ms forwards; */
-  /* This is the container for the 3 hamburger lines */
-  /* hamburger lines */
+  /* Container for the 3 hamburger lines */
 }
 
 .slicknav_menu .slicknav_menutxt {
@@ -584,18 +586,15 @@ table {
 
 .slicknav_menu .slicknav_icon {
   float: left;
-  width: 1.125em;
-  height: 0.875em;
   margin: 0.188em 0 0 0.438em;
 }
 
 .slicknav_menu .slicknav_icon:before {
   background: transparent;
   width: 1.125em;
-  height: 0.875em;
   display: block;
   content: "";
-  position: absolute;
+  background-color: blue;
 }
 
 .slicknav_menu .slicknav_no-text {
@@ -603,14 +602,11 @@ table {
 }
 
 .slicknav_menu .slicknav_icon-bar {
-  display: block;
-  width: 1.125em;
-  height: 0.125em;
-  /* -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-            -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); */
-  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);  */
-  background-color: #202429;
-  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.5vw;
+  background-color: white;
   width: 5vw;
 }
 
@@ -627,7 +623,7 @@ table {
 
 .slicknav_menu * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .slicknav_menu .slicknav_menutxt {
@@ -637,25 +633,28 @@ table {
 }
 
 .slicknav_btn {
-  position: relative;
-  display: block;
-  vertical-align: middle;
-  float: left;
-  /* padding: 0.438em 0.625em 0.438em 0.625em; */
-  line-height: 1.125em;
-  cursor: pointer;
-  background-color: red;
   width: 10vw;
   height: 10vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  cursor: pointer;
   text-decoration: none;
-  background-color: transparent;
-  background-color: #1f2329;
-  background-color: #9cb9bc;
-  opacity: 1;
+  background-color: #212529;
 }
 
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 1.8vw;
+  height: 0.5vw;
+  background-color: white;
 }
 
 .slicknav_nav {
@@ -663,14 +662,12 @@ table {
   color: #fff;
   margin: 0;
   padding: 0;
-  font-size: 0.875em;
+  font-size: 2vw;
   list-style: none;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* padding-top: 12px; */
-  /* background-color: #9cb9bc; */
 }
 
 .slicknav_nav ul {
@@ -679,6 +676,7 @@ table {
   overflow: hidden;
   padding: 0;
   margin: 0 0 0 20px;
+  line-height: 100%;
 }
 
 .slicknav_nav li {
@@ -686,15 +684,16 @@ table {
 }
 
 .slicknav_nav a {
-  display: block;
-  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Special Elite', cursive;
-  font-size: .5em;
-  padding: 5px 15px;
-  /* margin: 5px 5px; */
+  font-size: 3vw;
+  line-height: 3vw;
+  height: 2.55vw;
+  padding: 0 4vw;
   text-decoration: none;
   color: #2b2a2a;
-  /* background-color: green; */
 }
 
 .slicknav_nav a:hover {

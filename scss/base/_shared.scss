@@ -22,7 +22,7 @@ display:block;
 
 .container
         {
-        padding: 2.3em 1em 2em 1em;
+        padding: 11.3vw 3vw 5.6vw 3vw;
         }
 
 
@@ -31,16 +31,18 @@ display:block;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 1.7rem ;
+        margin-bottom: 3.3vw;
         }
 
 
 h2.section-heading 
         {
-        font-size: 1em;
+        font-size: 4.59vw;
         margin-top: 0;
         text-transform: uppercase !important;
         color: $font_dark_grey;
+        color: blue;
+
         font-weight: 600;
         font-family: $about-secton-font;
         }
@@ -48,10 +50,13 @@ h2.section-heading
 
 h3.section-subheading 
         {
-        font-size: .5em;
+        font-size: 1.85vw;
         font-weight: 400;
+        margin-top: 1vw;
+        margin-bottom: 3.5vw;
         font-style: italic;
         color: $font_light_grey;
+        color: red;
         text-transform: none;
         font-family: $droid-font;
         }
