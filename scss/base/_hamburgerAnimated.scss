@@ -1,0 +1,161 @@
+
+$height_nav-bar: 18vw;
+
+$animation_duration: 200ms;
+
+$animation_delay: $animation_duration*.3;
+$hamburger_width_height: $height_nav-bar;
+$hamburger_bar_height: $hamburger_width_height/10;
+$hamburger_bar_radius: $hamburger_bar_height/1.5;
+$transform_origin: $hamburger_bar_radius/2;
+
+
+
+#nav-bar{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: $height_nav-bar;
+
+
+                    .slide-in
+                            {
+                            animation: slide-in 1.5s forwards;
+                            
+                            @keyframes slide-in 
+                                    {
+                                    from{left: -50%}
+                                    to{left: 0%}       
+                                    }   
+                            }
+                    
+                    .slide-out
+                            {
+                            animation: slide-out 1.5s forwards;
+                            
+                            @keyframes slide-out
+                                    {
+                                    from{left: 0%}
+                                    to{left:-50% }       
+                                    }   
+                            }
+
+                    #menu 
+                            {
+                            visibility: hidden;
+                            background: green;
+                            display: flex;
+                            // width: 50%;
+                            height: 100%;
+                            padding: 0;
+                            position: relative;
+                            // left: -50%;
+                            z-index: 2;
+     
+
+                            li
+                            {
+                            list-style-type: none;
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                            
+                                    a
+                                    {
+                                    text-decoration: none;
+                                    color: grey;
+                                    font-size: $height_nav-bar*.5;
+                                    // background-color: yellow;
+                               
+                                    padding: 0 2vw;
+                                            &:hover{color: red;}
+                                    }
+                            }
+                    }
+}
+
+#hamburger-animated{
+    width: $height_nav-bar;
+    height: $height_nav-bar;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    // margin: 5vw;
+
+    #container-lines{          
+            background-color: blue;
+            width: $height_nav-bar;
+            height: $height_nav-bar*.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            .bar
+                    {
+                    width: 100%;
+                    height: $hamburger_bar_height;
+                    background-color: green; 
+                    border-radius: $hamburger_bar_radius;
+                    display: relative;
+                    // opacity: .5;
+                    }
+
+                    @mixin animation_rotate($name, $start_angle, $end_angle, $transform_origin)
+                            {
+                                    animation: #{$name} $animation_duration ease-in forwards, length_animation $animation_duration $animation_delay ease-in forwards;
+                                    
+                                    @keyframes #{$name}
+                                    {
+                                            0%{
+                                                    transform-origin: $transform_origin;
+                                                    transform: rotate($start_angle);
+                                             }
+    
+                        
+                                            100%{
+                                                    transform-origin: $transform_origin;
+                                                    transform: rotate($end_angle);
+            
+                                            }    
+                                    } 
+
+                                    
+                                    @keyframes length_animation 
+                                    {
+                                            0%{
+                                                    width: 100%;
+                                            }
+
+                    
+                                            100%{
+                                                    width: 133.3%;  
+                                            }    
+                                    }
+
+                            }
+                    
+
+                            
+                    // #line1{@include animation_rotate(rotate1, 0deg, 45deg, $transform_origin);}
+     
+
+
+                    // #line3{@include animation_rotate(rotate2, 0deg, -45deg,.5vw);}
+
+
+            #line2{
+                    // animation: fade-out $animation_duration ease-in forwards;
+                    opacity: 1;
+                    @keyframes fade-out 
+                    {
+                            from{opacity: 1;}
+                            to{opacity: 0}        
+                    }
+            
+            }
+    }
+            
+}
