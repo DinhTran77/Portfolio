@@ -48,16 +48,24 @@
 	<!------------------ Home page -------------------->
 	<section id='homePage'>	
 			<!-- Nav Bar -->
+
+			<nav id='nav-bar'>
+				<div id='hamburger-animated'  onclick="toggleMenu()">
+					<div id='container-lines'>
+							<div id='line1' class='bar'></div>
+							<div id='line2' class='bar'></div>
+							<div id='line3' class='bar'></div>                                
+					</div>
+				</div>
 			
-			<nav id='nav-bar' onclick="toggleMenu()">
-				<div id='hamburger-icon'><i class="fas fa-bars"></i></div>
-		
+
 				<ul id='menu' class='menuClosed slide-in'>
 					<li><a href="#skillsPage">Skills</a></li>
 					<li><a href="#portfolioPage">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul> 
-			</nav>
+
+			</nav> <!-- end navbar -->
 
 					<a href="#home"><img id='logoImage' src="./images/logos/Logo_ribbon.svg" alt="Logo"></a>
 					
