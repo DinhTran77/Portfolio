@@ -22,7 +22,7 @@ display:block;
 
 .container
         {
-        padding: 11.3vw 3vw 5.6vw 3vw;
+        padding: 11.3vw 7vw 11.3vw 7vw;
         }
 
 
@@ -41,7 +41,6 @@ h2.section-heading
         margin-top: 0;
         text-transform: uppercase !important;
         color: $font_dark_grey;
-        color: blue;
 
         font-weight: 600;
         font-family: $about-secton-font;
@@ -56,7 +55,7 @@ h3.section-subheading
         margin-bottom: 3.5vw;
         font-style: italic;
         color: $font_light_grey;
-        color: red;
+        // color: red;
         text-transform: none;
         font-family: $droid-font;
         }

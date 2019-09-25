@@ -11,110 +11,100 @@ $logo-image-width: 80vw;
   {
       width: 100%;
       height: 100vw * 1.618;
+
       display: flex;
       flex-direction: column;
       // align-items: center;
-      // background-image: url('../../images/sketch-home.png');
+      // background-image: url('../../images/mobile_sketch_just_home.png');
       background-size: 100% auto; 
       
-      background-repeat: none;
+      background-repeat: no-repeat;
       background-color: $color_background_yellow;
-      // background-color: $nav-area-color;
-
 
       #nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: $height_nav-bar;
+        $nav-animation-duration: 500ms;
+        overflow: hidden;
 
-      }
-//       $height_nav-bar: 6vw;
-
-// #nav-bar{
-//         background: red;
-//         width: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         height: $height_nav-bar;
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-        
-//         #menu 
-//         {
-//         visibility: hidden;
-//         background: green;
-//         display: flex;
-//         width: 50%;
-//         height: 100%;
-//         padding: 0;
-//         position: relative;
-//         // left: -50%;
-//         z-index: 2;
+            #menu 
+            {
+            visibility: hidden;
+            
+            display: flex;
+            // justify-content: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            position: relative;
+            // left: -50%;
+            z-index: 2;
+            background-color: $nav-area-color;
+            background-color: $nav-area-color;
 
 
-//         li
-//         {
-//         list-style-type: none;
-//         display: flex;
-//         align-items: center;
-//         height: 100%;
-        
-//                 a
-//                 {
-//                 text-decoration: none;
-//                 color: grey;
-//                 font-size: $height_nav-bar*.5;
-//                 // background-color: yellow;
-           
-//                 padding: 0 2vw;
-//                         &:hover{color: red;}
-//                 }
-//         }
-// }//end #menu
-//                         #hamburger-icon
-//                         {
-//                                 width: $height_nav-bar;
-//                                 height: $height_nav-bar;
-//                                 background: blue;
-//                                 display: flex;
-//                                 justify-content: center;
-//                                 z-index: 3;
-//                                 align-items: center;
-//                                         i//hamburger icon from font-awesome
-//                                         { 
-//                                         font-size: $height_nav-bar*.7;    
-//                                         }  
-//                         }
+            li
+            {
+            list-style-type: none;
+            height: 100%;
+            display: flex;
+            align-items: center;
+          
+                    a
+                    {
+                    font-family: $monsterrat-font;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-size: $height_nav-bar*.30;
+                    // padding: 0 5vw;
 
-//                         .slide-in
-//                                 {
-//                                 animation: slide-in 1.5s forwards;
+                    
+                    &:hover{color: red;}
+                    }
+            }
+    }//end #menu
+                        .slide-in
+                                {
+                                animation: slide-in $nav-animation-duration forwards;
                                 
-//                                 @keyframes slide-in 
-//                                         {
-//                                         from{left: -50%}
-//                                         to{left: 0%}       
-//                                         }   
-//                                 }
+                                @keyframes slide-in 
+                                        {
+                                        from{left: -100%}
+                                        to{left: 0%}       
+                                        }   
+                                }
                         
-//                         .slide-out
-//                                 {
-//                                 animation: slide-out 1.5s forwards;
-                                
-//                                 @keyframes slide-out
-//                                         {
-//                                         from{left: 0%}
-//                                         to{left:-50% }       
-//                                         }   
-//                                 }
+                        .slide-out
+                                {
+                                animation: slide-out $nav-animation-duration forwards;
+                                @keyframes slide-out
+                                        {
+                                        from{left: 0%}
+                                        to{left:-100% }       
+                                        }   
+                                }
 
-
-// }
     
+}
+
+
+      #container_logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
       #logoImage
       {
       width: $logo-image-width;
-      margin-top:12vh;
+      margin-top:10vh;
       margin-bottom: 2vh;
+      justify-self: center;
+      align-self: center;
+      // margin-right: auto;
       }
             
 

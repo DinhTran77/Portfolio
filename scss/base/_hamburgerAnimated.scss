@@ -6,29 +6,36 @@ body, html{
         border: 0;
 }
 
+$hamburger_menu_width: $height_nav-bar*.322;
+$bar_line_thickness: $hamburger_menu_width/6.1319;
 
-$bar_line_thickness: $height_nav-bar/8;
-
-$animation_duration: 200ms;
+$animation_duration: 100ms;
 
 $animation_delay: $animation_duration*.3;
 
 
 #hamburger-animated{
-        width:$height_nav-bar;
-        height: $height_nav-bar;
-        background: red;
+        // width:$height_nav-bar;
+        // height: $height_nav-bar;
+
+        width:15.78vw;
+        height: 13.85vw;
+        // background: $nav-area-color;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
-        // margin: 14px;
         z-index: 100;
+        background-color: $nav-area-color;
+        // background-color: blue;
+        opacity: 1;
+
+
 
         #container-lines{          
-                background-color: blue;
-                width: 100%;
-                height: 100%;
+                // background-color: $nav-area-color;
+                width: $hamburger_menu_width;
+                height: $hamburger_menu_width;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -36,15 +43,15 @@ $animation_delay: $animation_duration*.3;
 
                 .bar
                         {
-                        width: 100%;
+                        // width: 100%;
                         height: $bar_line_thickness;
-                        background-color: green; 
+                        background-color: white; 
                         // border-radius: 2vw;
                         display: relative;
                         }
 
-                        @mixin animation_rotate_in($name,$direction)
-                                {
+                @mixin animation_rotate_in($name,$direction)
+                        {
                                         animation: #{$name} $animation_duration ease-in forwards, length_animation $animation_duration $animation_delay ease-in forwards;
                                         
                                         @keyframes #{$name}
@@ -56,31 +63,31 @@ $animation_delay: $animation_duration*.3;
                             
                                                 100%{
                                                         @if $direction==down{
-                                                                transform: translateY(($height_nav-bar/2)-($bar_line_thickness/2)) rotate(45deg);
+                                                                transform: translateY(($hamburger_menu_width/2)-($bar_line_thickness/2)) rotate(45deg);
                                                         }
                                                         @else 
                                                         {
-                                                                transform: translateY(-(($height_nav-bar/2)-($bar_line_thickness/2))) rotate(-45deg);
+                                                                transform: translateY(-(($hamburger_menu_width/2)-($bar_line_thickness/2))) rotate(-45deg);
    
                                                         }                
                                                 }    
                                         } 
-                                }//end animate_rotate_in
+                        }//end animate_rotate_in
 
 
-                        @mixin animation_rotate_out($name,$direction)
-                                {
+                @mixin animation_rotate_out($name,$direction)
+                        {
                                         animation: #{$name} $animation_duration ease-in forwards, length_animation $animation_duration $animation_delay ease-in forwards;
                                         
                                         @keyframes #{$name}
                                         {
                                                 0%{
                                                         @if $direction==down{
-                                                                transform: translateY(($height_nav-bar/2)-($bar_line_thickness/2)) rotate(45deg);
+                                                                transform: translateY(($hamburger_menu_width/2)-($bar_line_thickness/2)) rotate(45deg);
                                                         }
                                                         @else 
                                                         {
-                                                                transform: translateY(-(($height_nav-bar/2)-($bar_line_thickness/2))) rotate(-45deg);
+                                                                transform: translateY(-(($hamburger_menu_width/2)-($bar_line_thickness/2))) rotate(-45deg);
    
                                                         }   
                                                       
@@ -91,7 +98,7 @@ $animation_delay: $animation_duration*.3;
                                                         transform: translateY(0%);
                                                 }    
                                         } 
-                                }//end animate_rotate_out
+                        }//end animate_rotate_out
                 
         
                                 
@@ -129,97 +136,8 @@ $animation_delay: $animation_duration*.3;
                         }
                 }
 
-// #line3{@include animation_rotate(rotate2, up);} 
-                // #line2{
-                //         animation: fade-out $animation_duration ease-in forwards;
-                //         opacity: 1;
-                //         @keyframes fade-out 
-                //         {
-                //                 from{opacity: 1;}
-                //                 to{opacity: 0}        
-                //         }
-                
-                // }
         }
                 
 }
 
-#nav-bar{
-        // background: red;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: $height_nav-bar;
-
-
-                        #hamburger-icon
-                        {
-                                width: $height_nav-bar;
-                                height: $height_nav-bar;
-                                background: blue;
-                                display: flex;
-                                justify-content: center;
-                                z-index: 3;
-                                align-items: center;
-                                        i//hamburger icon from font-awesome
-                                        { 
-                                        font-size: $height_nav-bar*.7;    
-                                        }  
-                        }
-
-                        .slide-in
-                                {
-                                animation: slide-in 1.5s forwards;
-                                
-                                @keyframes slide-in 
-                                        {
-                                        from{left: -50%}
-                                        to{left: 0%}       
-                                        }   
-                                }
-                        
-                        .slide-out
-                                {
-                                animation: slide-out 1.5s forwards;
-                                
-                                @keyframes slide-out
-                                        {
-                                        from{left: 0%}
-                                        to{left:-50% }       
-                                        }   
-                                }
-
-                        #menu 
-                                {
-                                visibility: hidden;
-                                background: green;
-                                display: flex;
-                                // width: 50%;
-                                height: 100%;
-                                padding: 0;
-                                position: relative;
-                                // left: -50%;
-                                z-index: 2;
-         
-
-                                li
-                                {
-                                list-style-type: none;
-                                display: flex;
-                                align-items: center;
-                                height: 100%;
-                                
-                                        a
-                                        {
-                                        text-decoration: none;
-                                        color: grey;
-                                        font-size: $height_nav-bar*.5;
-                                        // background-color: yellow;
-                                   
-                                        padding: 0 2vw;
-                                                &:hover{color: red;}
-                                        }
-                                }
-                        }
-}
 
