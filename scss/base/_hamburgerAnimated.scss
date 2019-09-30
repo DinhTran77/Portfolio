@@ -7,7 +7,9 @@ body, html{
 }
 
 $hamburger_menu_width: $height_nav-bar*.322;
-$bar_line_thickness: $hamburger_menu_width/6.1319;
+// $bar_line_thickness: $hamburger_menu_width/6.1319;
+$bar_line_thickness: $hamburger_menu_width/7;
+
 
 $animation_duration: 100ms;
 

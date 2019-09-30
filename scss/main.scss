@@ -4,6 +4,7 @@
 @import './utilities/maxins';
 @import './utilities/variables';
 
+@import './base/hamburgerAnimated';
 // Styles used on all pages
 @import './base/shared';
 
@@ -24,5 +25,4 @@
 @import './layout/_container';
 @import './pages/skillsPage';
 @import './pages/portfolioPage';
-
-@import './base/hamburgerAnimated';
+@import './pages/contactPage';

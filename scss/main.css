@@ -69,6 +69,206 @@ table {
       border-spacing: 0;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#hamburger-animated {
+  width: 15.78vw;
+  height: 13.85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  z-index: 100;
+  background-color: #212529;
+  opacity: 1;
+}
+
+#hamburger-animated #container-lines {
+  width: 4.4597vw;
+  height: 4.4597vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+#hamburger-animated #container-lines .bar {
+  height: 0.6371vw;
+  background-color: white;
+  display: relative;
+}
+
+#hamburger-animated #container-lines .in_top_line {
+  -webkit-animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+          animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(1.9113vw) rotate(45deg);
+            transform: translateY(1.9113vw) rotate(45deg);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(1.9113vw) rotate(45deg);
+            transform: translateY(1.9113vw) rotate(45deg);
+  }
+}
+
+#hamburger-animated #container-lines .in_bottom_line {
+  -webkit-animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+          animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+}
+
+@-webkit-keyframes rotate2 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
+            transform: translateY(-1.9113vw) rotate(-45deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
+            transform: translateY(-1.9113vw) rotate(-45deg);
+  }
+}
+
+#hamburger-animated #container-lines .in_middle_line {
+  -webkit-animation: fade-out 100ms ease-in forwards;
+          animation: fade-out 100ms ease-in forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#hamburger-animated #container-lines .out_top_line {
+  -webkit-animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+          animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+}
+
+@-webkit-keyframes rotate3 {
+  0% {
+    -webkit-transform: translateY(1.9113vw) rotate(45deg);
+            transform: translateY(1.9113vw) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    -webkit-transform: translateY(1.9113vw) rotate(45deg);
+            transform: translateY(1.9113vw) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+#hamburger-animated #container-lines .out_bottom_line {
+  -webkit-animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+          animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+}
+
+@-webkit-keyframes rotate4 {
+  0% {
+    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
+            transform: translateY(-1.9113vw) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes rotate4 {
+  0% {
+    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
+            transform: translateY(-1.9113vw) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+#hamburger-animated #container-lines .out_middle_line {
+  -webkit-animation: fade-in 100ms ease-in forwards;
+          animation: fade-in 100ms ease-in forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #menu {
   display: none;
 }
@@ -83,16 +283,39 @@ html {
 }
 
 @media screen and (min-width:  600px) {
-  .slicknav_menu  {
+  .slicknav_menu {
     display: none;
   }
-  #menu  {
+  #menu {
     display: block;
   }
 }
 
 .container {
-  padding: 11.3vw 7vw 11.3vw 7vw;
+  padding: 13vw 7vw 13vw 7vw;
+}
+
+.container_content {
+  margin-top: 11vw;
+}
+
+.section-heading {
+  font-size: 5.59vw;
+  margin-top: 0;
+  text-transform: uppercase !important;
+  color: #212529;
+  font-weight: 600;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.section-subheading {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-top: 1vw;
+  font-style: italic;
+  color: #6c757d;
+  text-transform: none;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .section-title-area {
@@ -106,27 +329,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3.3vw;
 }
 
-h2.section-heading {
-  font-size: 4.59vw;
-  margin-top: 0;
-  text-transform: uppercase !important;
-  color: #212529;
-  font-weight: 600;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-h3.section-subheading {
-  font-size: 1.85vw;
-  font-weight: 400;
-  margin-top: 1vw;
-  margin-bottom: 3.5vw;
-  font-style: italic;
-  color: #6c757d;
-  text-transform: none;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.section-title-area .light {
+  color: white;
 }
 
 body {
@@ -270,7 +476,8 @@ table {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
   color: white;
-  font-size: 4.155vw;
+  font-size: 2.77vw;
+  text-transform: uppercase;
 }
 
 #homePage #nav-bar #menu li a:hover {
@@ -333,10 +540,10 @@ table {
           justify-content: center;
 }
 
-#homePage #logoImage {
-  width: 80vw;
-  margin-top: 10vh;
-  margin-bottom: 2vh;
+#homePage #container_logo #logoImage {
+  width: 65vw;
+  margin-top: 26.136vw;
+  margin-bottom: 1vh;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -352,7 +559,7 @@ table {
 #homePage #hero_text {
   color: #212529;
   font-family: 'Special Elite', cursive;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 #homePage #cursor {
@@ -416,7 +623,7 @@ table {
 #skillsPage {
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 #skillsPage #progress-bars-section {
@@ -436,9 +643,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2.73vw;
+  height: 3.5vw;
   width: 100%;
-  margin-bottom: 2.1vw;
+  margin-bottom: 3.4vw;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .skill-name {
@@ -454,7 +661,7 @@ table {
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
   width: 0;
-  font-size: 2.1vw;
+  font-size: 2.5vw;
   font-weight: 400;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: grey;
@@ -506,7 +713,7 @@ table {
   color: grey;
   padding-left: 1.5vw;
   font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.89vw;
+  font-size: 2.25vw;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
@@ -572,22 +779,118 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
-  background-color: #f5f5f5;
+  background-color: #214261;
+}
+
+#portfolioPage #projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolioPage #projects .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7vw;
   background-color: white;
-  background-size: 100vw auto;
 }
 
-#portfolioPage #projects a {
-  color: red;
+#portfolioPage #projects .project-container .myVideo {
+  width: 100%;
+  height: auto;
 }
 
-#portfolioPage #projects a:hover {
-  color: blue !important;
+#portfolioPage #projects .project-container .project-image {
+  width: 100%;
+  height: auto;
 }
 
-#portfolioPage #projects a:active {
-  color: orange;
+#portfolioPage #projects .project-container .project-text {
+  width: 100%;
+  height: 100%;
+  background-color: #fffdfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #214261;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#portfolioPage #projects .project-container .project-text .project-name {
+  margin-top: 8vw;
+  font-size: 3.7vw;
+  color: #214261;
+  text-align: center;
+}
+
+#portfolioPage #projects .project-container .project-text .project-description {
+  margin-top: 5vw;
+  text-align: center;
+  width: 100%;
+  color: #214261;
+  padding: 0 7vw;
+  font-size: 3.3vw;
+  line-height: 5.5vw;
+  font-weight: 400;
+}
+
+#portfolioPage #projects .project-container .project-text .preview_link {
+  width: 50%;
+  background-color: #dbbd7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 6vw;
+  margin: 7vw 0;
+}
+
+#portfolioPage #projects .project-container .project-text .preview_link a {
+  color: #214261;
+  font-size: 2.3vw;
+  color: inherit;
+  text-transform: uppercase;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  padding: 3vw 0;
 }
 
 #portfolioPage #projects .portfolio-site {
@@ -605,260 +908,73 @@ table {
   background-repeat: no-repeat;
 }
 
-#portfolioPage #projects .project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 87vw;
-  height: 87vw;
-  position: relative;
+#contactPage {
+  background-color: #ffd306;
 }
 
-#portfolioPage #projects .project-container:not(:last-child) {
-  margin-bottom: 3em;
-}
-
-#portfolioPage #projects .project-container .project-image {
-  width: 100%;
-}
-
-#portfolioPage #projects .project-container .project-text {
-  width: 100%;
-  height: 26%;
-  background-color: #f8f7f7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#portfolioPage #projects .project-container .project-text h4 {
-  color: red;
-  font-size: .65em;
-  text-align: center;
+#contactPage #contact-greeting {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #212529;
-}
-
-#portfolioPage #projects .project-container .project-text h5 {
+  margin-top: 4vw;
+  font-size: 3.5vw;
+  color: #6d6d6d;
   text-align: center;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-style: italic;
-  color: #6c757d;
-  padding-top: 5.5px;
-  font-size: .45em;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  border: 0;
+#contactPage form {
+  margin-top: 4vw;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: red;
 }
 
-#hamburger-animated {
-  width: 15.78vw;
-  height: 13.85vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  z-index: 100;
-  background-color: #212529;
-  opacity: 1;
+#contactPage form label {
+  display: inline-block;
+  margin-bottom: .8vw;
+  margin-top: 5vw;
+  font-size: 3.4vw;
+  color: #6d6d6d;
 }
 
-#hamburger-animated #container-lines {
-  width: 4.4597vw;
-  height: 4.4597vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
+#contactPage form input, #contactPage form textarea {
+  border-style: solid;
+  border-width: .5px;
+  border-color: #bdbbbb;
 }
 
-#hamburger-animated #container-lines .bar {
-  height: 0.72729vw;
-  background-color: white;
-  display: relative;
+#contactPage form input {
+  font-size: 3.4vw;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bdbbbb;
+  padding: 2vw;
+  color: grey;
 }
 
-#hamburger-animated #container-lines .in_top_line {
-  -webkit-animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
+#contactPage form textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 30vw;
+  padding: 2vw;
+  font-size: 3.4vw;
+  color: grey;
 }
 
-@-webkit-keyframes rotate1 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(1.8662vw) rotate(45deg);
-            transform: translateY(1.8662vw) rotate(45deg);
-  }
+#contactPage form input[type=submit] {
+  background-color: #214261;
+  color: white;
+  width: 33%;
+  margin-top: 4vw;
+  padding: 2.3vw 3.5vw;
+  border-radius: 6px;
+  font-size: 3.54vw;
+  cursor: pointer;
 }
 
-@keyframes rotate1 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(1.8662vw) rotate(45deg);
-            transform: translateY(1.8662vw) rotate(45deg);
-  }
-}
-
-#hamburger-animated #container-lines .in_bottom_line {
-  -webkit-animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate2 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(-1.8662vw) rotate(-45deg);
-            transform: translateY(-1.8662vw) rotate(-45deg);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(-1.8662vw) rotate(-45deg);
-            transform: translateY(-1.8662vw) rotate(-45deg);
-  }
-}
-
-#hamburger-animated #container-lines .in_middle_line {
-  -webkit-animation: fade-out 100ms ease-in forwards;
-          animation: fade-out 100ms ease-in forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#hamburger-animated #container-lines .out_top_line {
-  -webkit-animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate3 {
-  0% {
-    -webkit-transform: translateY(1.8662vw) rotate(45deg);
-            transform: translateY(1.8662vw) rotate(45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes rotate3 {
-  0% {
-    -webkit-transform: translateY(1.8662vw) rotate(45deg);
-            transform: translateY(1.8662vw) rotate(45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-#hamburger-animated #container-lines .out_bottom_line {
-  -webkit-animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate4 {
-  0% {
-    -webkit-transform: translateY(-1.8662vw) rotate(-45deg);
-            transform: translateY(-1.8662vw) rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes rotate4 {
-  0% {
-    -webkit-transform: translateY(-1.8662vw) rotate(-45deg);
-            transform: translateY(-1.8662vw) rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-#hamburger-animated #container-lines .out_middle_line {
-  -webkit-animation: fade-in 100ms ease-in forwards;
-          animation: fade-in 100ms ease-in forwards;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#contactPage #contact-messsage {
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */
