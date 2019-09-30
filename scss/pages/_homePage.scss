@@ -102,7 +102,7 @@
           #logoImage
           {
           width: $logo-image-width;
-          margin-top:  ($homepage_screen_height - $logo-image-width)*.27;
+          margin-top:  ($homepage_screen_height - $logo-image-width)*.25;
           margin-bottom: 1vh;
           justify-self: center;
           align-self: center;
@@ -116,15 +116,27 @@
       #hero_message{
         width: 100vw;
         text-align: center;
+
+        #hero_greeting
+          {
+          color: $nav-area-color;    
+          font-family: 'Special Elite', cursive;
+          font-size: 3.75vw;
+          font-weight: bold;
+          line-height: 6vw;
+          }
+
+        #hero_text
+          {
+          color: $nav-area-color;    
+          font-family: 'Special Elite', cursive;
+          font-size: 3.5vw;
+          color: rgb(46, 45, 45);
+          line-height: 5vw;
+          }
       }
 
-
-      #hero_text
-      {
-        color: $nav-area-color;    
-        font-family: 'Special Elite', cursive;
-        font-size: 3.5vw;
-      }
+       
 
       #cursor{
         display: inline-block;

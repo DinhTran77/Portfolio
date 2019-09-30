@@ -34,7 +34,9 @@
                                 align-items: center;
                                 // height: 100vh;
                                 // width: 90%;
-                                margin-bottom: 7vw;
+
+                                &:not(:last-child){margin-bottom: 7vw;}
+                                
                                 background-color: white;
                                 .myVideo
                                 {

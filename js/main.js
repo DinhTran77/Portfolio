@@ -18,28 +18,54 @@
 
 
 // Type writter animation
-var i = 0;
-var txt = 'Clean code, so help me God.'; /* The text */
-
+let i = 0;
+const txt1 = "Hi, I'm Dinh Tran!"
+const txt2= "I translate beautiful designs" ; 
+const txt3 = " into clean front-end code.";
 
  /* The speed/duration of the effect in milliseconds */
 let j = 0;
-var speed = 60;
+let k=0;
+let l=0;
+let m=0;
+const speed = 50;
 
+const heroText=document.getElementById("hero_text");
+const heroGreeting=document.getElementById('hero_greeting');
 function typeWriter() 
     {
 
-        if(j<txt.length)
+        if(j<txt1.length)
             {
-            document.getElementById("hero_text").innerHTML += txt.charAt(j);
+              heroGreeting.innerHTML += txt1.charAt(j);
+
             j++;
          
+             if(j===(txt1.length))
+                {
+                  heroGreeting.innerHTML += "<br/>";
+                }
+                setTimeout(typeWriter, speed);
+            }
+
+      
+        else if(k<txt2.length)
+            {
+            heroText.innerHTML += txt2.charAt(k);
+            k++;
+            if(k===(txt2.length))
+            {
+            heroText.innerHTML += "<br/>";
+            }
             setTimeout(typeWriter, speed);
             }
-            // if(txt.charAt(j)==='s')
-            // {
-            //   document.getElementById("hero_text").innerHTML += "<br/>";
-            // }
+        
+      else  if(l<txt3.length)
+          {
+          heroText.innerHTML += txt3.charAt(l);
+          l++;
+          setTimeout(typeWriter, speed);
+          }
     }
 
     setTimeout(function() {

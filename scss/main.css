@@ -542,7 +542,7 @@ table {
 
 #homePage #container_logo #logoImage {
   width: 65vw;
-  margin-top: 26.136vw;
+  margin-top: 24.2vw;
   margin-bottom: 1vh;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -556,10 +556,20 @@ table {
   text-align: center;
 }
 
-#homePage #hero_text {
+#homePage #hero_message #hero_greeting {
+  color: #212529;
+  font-family: 'Special Elite', cursive;
+  font-size: 3.75vw;
+  font-weight: bold;
+  line-height: 6vw;
+}
+
+#homePage #hero_message #hero_text {
   color: #212529;
   font-family: 'Special Elite', cursive;
   font-size: 3.5vw;
+  color: #2e2d2d;
+  line-height: 5vw;
 }
 
 #homePage #cursor {
@@ -813,8 +823,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 7vw;
   background-color: white;
+}
+
+#portfolioPage #projects .project-container:not(:last-child) {
+  margin-bottom: 7vw;
 }
 
 #portfolioPage #projects .project-container .myVideo {
@@ -915,13 +928,13 @@ table {
 #contactPage #contact-greeting {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 4vw;
-  font-size: 3.5vw;
+  font-size: 4vw;
   color: #6d6d6d;
   text-align: center;
 }
 
 #contactPage form {
-  margin-top: 4vw;
+  margin-top: 5vw;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: red;
 }
@@ -930,7 +943,7 @@ table {
   display: inline-block;
   margin-bottom: .8vw;
   margin-top: 5vw;
-  font-size: 3.4vw;
+  font-size: 3.2vw;
   color: #6d6d6d;
 }
 
