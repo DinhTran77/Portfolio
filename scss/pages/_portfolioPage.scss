@@ -4,7 +4,6 @@
 // $project_image_width: 75vw;
 // $project_image_padding: ($project_container_width - $project_image_width)/2;
 
-
 #portfolioPage
         {
                 display: flex;
@@ -25,7 +24,10 @@
                         justify-content: center;
                   
 
-                
+        
+                                // &:last-child{margin-bottom: 7vw;}
+
+                                
                         .project-container 
                         {
                                 display:flex;
@@ -34,9 +36,8 @@
                                 align-items: center;
                                 // height: 100vh;
                                 // width: 90%;
-
-                                &:not(:last-child){margin-bottom: 7vw;}
-                                
+                                margin-bottom: 4vh;
+                     
                                 background-color: white;
                                 .myVideo
                                 {
@@ -88,12 +89,9 @@
 
                                         .preview_link
                                                 {
-                                                width: 50%;
+
                                                 background-color:   #dbbd7f;
-                                                // padding: $project_image_padding;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
+                                                padding: 2vw 6vw;
                                                 text-align: center; 
                                                 border-radius: 6vw;       
                                    
@@ -102,12 +100,10 @@
                                                         {
                                                         color: $color_font_blue;
                                                         font-size: 2.3vw;
-                                                        // width: $project_image_width;
                                                         color: inherit;
                                                         text-transform: uppercase;
                                                         font-family: $monsterrat-font;
                                                         font-weight: 600;
-                                                        padding: 3vw 0;
                                                         }
                                 
                                                 }//end .preview_link

@@ -4,12 +4,11 @@
 @import './utilities/maxins';
 @import './utilities/variables';
 
+@import './pages/header';
+
 @import './base/hamburgerAnimated';
 // Styles used on all pages
 @import './base/shared';
-
-@import './layout/media-queries';
-@import './layout/grid';
 
 //import external css libraries
 @import './vendors/bootstrap';
@@ -26,3 +25,4 @@
 @import './pages/skillsPage';
 @import './pages/portfolioPage';
 @import './pages/contactPage';
+@import './pages/header';

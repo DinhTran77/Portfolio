@@ -6,8 +6,7 @@ body, html{
         border: 0;
 }
 
-$hamburger_menu_width: $height_nav-bar*.322;
-// $bar_line_thickness: $hamburger_menu_width/6.1319;
+$hamburger_menu_width: $height_nav-bar*.322; //this makes hamburger menu smaller than it's container
 $bar_line_thickness: $hamburger_menu_width/7;
 
 
@@ -17,20 +16,17 @@ $animation_delay: $animation_duration*.3;
 
 
 #hamburger-animated{
-        // width:$height_nav-bar;
-        // height: $height_nav-bar;
-
-        width:15.78vw;
-        height: 13.85vw;
-        // background: $nav-area-color;
+        width: $height_nav-bar;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
         z-index: 100;
         background-color: $nav-area-color;
-        // background-color: blue;
-        opacity: 1;
+        background-color: white;
+
+        opacity: .5;
 
 
 
@@ -45,10 +41,8 @@ $animation_delay: $animation_duration*.3;
 
                 .bar
                         {
-                        // width: 100%;
                         height: $bar_line_thickness;
                         background-color: white; 
-                        // border-radius: 2vw;
                         display: relative;
                         }
 

@@ -1,406 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Dinh Porfolio" />
+        <meta
+            name="keywords"
+            content="Dinh Porfolio Web-developer Front-end react"
+        />
+        <meta name="author" content="Dinh Tran" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dinh's Portfolio</title>
 
+        <!--Fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
+            rel="stylesheet"
+        />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name='description' content='Dinh Porfolio'>
-	<meta name='keywords' content='Dinh Porfolio Web-developer Front-end react'>
-	<meta name="author" content="Dinh Tran">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dinh's Portfolio</title>	
+        <!-- FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"> 
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Animate on scroll library -->
+        <link rel="stylesheet" href="./css/aos.css" />
+
+        <!-- Slick Nav -->
+        <!-- <link rel="stylesheet" href='./css/slicknav.css'> -->
+        <!-- <script src='./js/jquery.slicknav.min.js' type="text/javascript"></script> -->
+
+        <!-- Javascript -->
+        <script src="./js/main.js" type="text/javascript" defer></script>
+        <script
+            src="./js/hamburger_menu.js"
+            type="text/javascript"
+            defer
+        ></script>
+	<link rel="stylesheet" href="./font-awesome/css/all.min.css" />
 	
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-
-	<!-- Animate on scroll library -->
-	<link rel="stylesheet" href="./css/aos.css">
-
-	<!-- Slick Nav -->
-	 <!-- <link rel="stylesheet" href='./css/slicknav.css'> -->
-	 <!-- <script src='./js/jquery.slicknav.min.js' type="text/javascript"></script> -->
-
-	<!-- Javascript -->
-	<script src='./js/main.js' type="text/javascript" defer></script>
-	<script src='./js/hamburger_menu.js' type="text/javascript" defer></script>
-	<link rel="stylesheet" href='./font-awesome/css/all.min.css'>
-	<!-- Custom Styles -->
-	<link rel="stylesheet" href="./scss/main.css">
-	
-</head>
-
-
-
-
-<body id='container-page'>
-
-	
-	<!------------------ Home page -------------------->
-	<section id='homePage'>	
-			
-			<!-- Nav Bar -->
-			<nav id='nav-bar'>
-					<div id='hamburger-animated'  onclick="toggleMenu()">
-							<div id='container-lines'>
-									<div id='line1' class='bar'></div>
-									<div id='line2' class='bar'></div>
-									<div id='line3' class='bar'></div>                                
-							</div>
-					</div>
-				
-
-					<ul id='menu' class='menuClosed slide-in'>
-							<li><a href="#skillsPage">Skills</a></li>
-							<li><a href="#portfolioPage">Portfolio</a></li>
-							<li><a href="#contactPage">Contact</a></li>
-					</ul> 
-			</nav> <!-- end navbar -->
-
-			<a href="#home" id='container_logo'>
-					<img id='logoImage' src="./images/logos/Logo_ribbon.svg" alt="Logo">
-			</a>
-					
-			<div id='hero_message'>
-					<span id='hero_greeting'></span>
-					<span id='hero_text'><!-- This text is added in Javascript --></span>
-					<span id='cursor'></span>
-			</div>
-					
-			
-		
-	</section>
-
-
-
-	<!------------------ Skills Page-------------------->
-	<section id='skillsPage' class='container' >
-			
-
-			<div class='section-title-area'>
-				<h2 class="section-heading">Skills</h2>
-				<h3 class="section-subheading">Front-end skills</h3>  
-			</div>
-			
-			<section id='progress-bars-section' class='container_content'>
-				<section class='progress-bar-container'>	
-					<h4 class='skill-name'>HTML & CSS</h4>
-					<div class='progress-bar'>
-						<div class='container-progress-percentage'>
-							<div class='progressPercentage html' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">80%</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>SCSS</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage scss' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>JS/jQuery</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage javascript' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">60%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<!-- <section class='progress-bar-container'>	
-						<h4 class='skill-name'>jQuery</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage jQuery' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">65%</div>
-							</div>
-						</div>
-				</section> -->
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Bootstrap</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage bootstrap' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
-							</div>
-						</div>
-				</section>
-
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Responsive Design</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage responsive-design' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">65%</div>
-							</div>
-						</div>
-				</section>
-		
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>REACT</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage react' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
-							</div>
-						</div>
-				</section>
-
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Jest</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage jest ' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Typescript</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage typescript' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">50%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Node</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage node' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">75%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Express</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage express' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">20%</div>
-							</div>
-						</div>
-				</section>
-
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Agile</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage agile' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">90%</div>
-							</div>
-						</div>
-				</section>
-
-				<section class='progress-bar-container'>	
-						<h4 class='skill-name'>Git</h4>
-						<div class='progress-bar'>
-							<div class='container-progress-percentage'>
-								<div class='progressPercentage git' data-aos="slide-right" data-aos-duration="1100" data-aos-offset="30">55%</div>
-							</div>
-						</div> 
-				</section>
-			</section>
-
-
-		
-	</section>
-
-
-	
-	<!------------------ Portfolio Page-------------------->
-	
-	<section id='portfolioPage' class='container'>
-		
-		<div class='section-title-area'>
-			<h2 class="section-heading light">Portfolio</h2>
-			<h3 class="section-subheading light">Work I'm proud of</h3>  
-		</div>
-
-
-		<section id='projects' class='container_content'>	
-
-
-				<a href='https://drum-shed.herokuapp.com/products' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/ecommerce.PNG'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>React E-Commerce Site</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-				<a href='#' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/drum-machine.PNG'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>React Drum-Machine</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-				<a href='#' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/space-x.png'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>React Space-X API</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-				<a href='#' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/personal_sight.png'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>Portfolio Site</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-
-				<a href='#' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/waves.png'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>HTML & CSS Responsive Media</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-
-
-				<a href='#' target="_blank">
-						<div class='project-container e-commerce'>				
-							<img class='project-image' src='./images/portfolio/circle_animation.png'/>				
-							<div class='project-text'>
-									<h4 class='project-name'>Javascript Canvas Animation</h4>
-									<h5 class='project-description'>This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination</h5>
-									<div class='preview_link'><a>live preview</a></div>	
-							</div>	
-						</div>
-				</a>
-
-
-	
-<!-- 
-				<div class='project-container portfolio-site'>
-						<img class='project-image' src='./images/portfolio/personal_sight.png'/>
-						<div class='project-text'>
-								<h4>Personal Website</h4>
-								<h5>HTML/SCSS/JS</h5>
-
-						</div>
-				</div>
+        <!-- Custom Styles -->
+	<link rel="stylesheet" href="./scss/main.css" />
 	
 
-				<div class='project-container drum-machine'>
-						<img class='project-image' src='./images/portfolio/drum-machine.PNG'/>
-						<div class='project-text'>
-							<h4>Personal Website</h4>
-							<h5>HTML/SCSS</h5>
-						</div>
-				</div>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
 
+    <body id="container-page">
+        <main>
+            <!------------------ Header Section -------------------->
+            <header id="header-main">
+                <div class="my-container">
+                    <!-- Nav Bar -->
+                    <nav id="nav-bar">
+                        <ul id="menu" class="menuClosed slide-in">
+                            <li><a href="#skillsPage">Skills</a></li>
+                            <li><div class="diamond"></div></li>
+                            <li><a href="#portfolioPage">Portfolio</a></li>
+                            <li><div class="diamond"></div></li>
+                            <li><a href="#contactPage">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- end navbar -->
+                </div>
+            </header>
 
-				<div class='project-container'>
-						<div class='project-text'>
-							<h4>Personal Website</h4>
-							<h5>HTML/SCSS</h5>
-						</div>
-				</div>
+            <!------------------ Home page -------------------->
+            <article id="homePage">
+                <div id="homeContent">
+                    <a href="#home" id="container_logo">
+                        <img
+                            id="logoImage"
+                            src="./images/logos/Logo_ribbon.svg"
+                            alt="Logo"
+                        />
+                    </a>
 
+                    <section id="hero_message">
+                        <span id="hero_greeting"></span>
+                        <span id="hero_text"
+                            ><!-- This text is added in Javascript --></span
+                        >
+                        <span id="cursor"></span>
+                    </section>
+                </div>
+            </article>
 
-				<div class='project-container'>
-						<div class='project-text'>
-							<h4>Personal Website</h4>
-							<h5>HTML/SCSS</h5>
-						</div>
-				</div>
+            <!------------------ Skills Page-------------------->
+            <article id="skillsPage" class="my-container">
+                <header class="section-title-area">
+                    <h2 class="section-heading">Skills</h2>
+                    <h3 class="section-subheading">Front-end skills</h3>
+                </header>
 
+                <section id="progress-bars-section" class="container_content">
+                    <template id="template-skills">
+                        <div class="progress-bar-container">
+                            <h4 class="skill-name"></h4>
+                            <div class="progress-bar">
+                                <div class="container-progress-percentage">
+                                    <div
+                                        class="progressPercentage"
+                                        data-aos="slide-right"
+                                        data-aos-duration="1100"
+                                        data-aos-offset="30"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </section>
+            </article>
 
-				<div class='project-container'>
-						<div class='project-text'>
-							<h4>Personal Website</h4>
-							<h5>HTML/SCSS</h5>
-						</div>
-				</div> -->
+            <!------------------ Portfolio Page-------------------->
 
-		</section>
-	</section>
+            <article id="portfolioPage" class="my-container">
+                <header class="section-title-area">
+                    <h2 class="section-heading light">Portfolio</h2>
+                    <h3 class="section-subheading light">Work I'm proud of</h3>
+                </header>
 
+                <section id="projects" class="container_content">
+                    <template id="template_project">
+                        <a href="" class="project_link" target="_blank">
+                            <div class="project-container">
+                                <img class="project-image" />
+                                <article class="project-text">
+                                    <h4 class="project-name"></h4>
+                                    <h5 class="project-description"></h5>
+                                    <div class="preview_link">live preview</div>
+                                </article>
+                            </div>
+                        </a>
+                    </template>
+                </section>
+            </article>
 
+            <!------------------ Contact Page-------------------->
+            <article id="contactPage" class="my-container">
+                <header class="section-title-area">
+                    <h2 class="section-heading">Contact</h2>
+                </header>
 
+                <p id="contact-greeting" class="section-subheading">
+                    Say hi, and let's work together!
+                </p>
 
+                <form id="contact-form">
+                    <label for="name" class="form-label">Name:*</label>
+                    <input required type="text" id="name" name="firstName" />
 
-	<!------------------ Contact Page-------------------->
-	<section id='contactPage' class='container'>
-		
-			<div class='section-title-area'>
-				<h2 class="section-heading">Contact</h2>
-				
-			</div>
+                    <label for="name" class="form-label">Email:*</label>
+                    <input required type="text" id="name" name="firstName" />
 
-			<p id='contact-greeting' class='section-subheading'>Say hi, and let's work together!</p>  
-			
-			<form id='contact-form'>
-	
-				<label for='name' class='form-label'>Name:*</label>
-				<input required type='text' id='name' name='firstName'>	
-		
+                    <label for="name" class="form-label">Message:*</label>
+                    <textarea required name="comment"></textarea>
 
-				<label for='name' class='form-label'>Email:*</label>
-				<input required type='text' id='name' name='firstName'>	
+                    <input type="submit" value="Submit" />
+                </form>
+            </article>
 
-				
-				<label for='name' class='form-label'>Message:*</label>
-				<textarea required name="comment"></textarea>	
-
-				<input type="submit" value="Submit">
-			</form> 
-	</section>
-
-
-	<!------------------ Initialize animate on scroll library-------------------->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	
-
-
-
-</body>
-
-
+            <!------------------ Initialize animate on scroll library-------------------->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        </main>
+    </body>
 </html>

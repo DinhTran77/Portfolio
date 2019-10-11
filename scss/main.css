@@ -69,6 +69,189 @@ table {
       border-spacing: 0;
 }
 
+#header-main {
+  background-color: #ffd306;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header-main .my-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-main .my-container #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+#header-main .my-container #nav-bar #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+#header-main .my-container #nav-bar #menu li {
+  list-style-type: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-main .my-container #nav-bar #menu li .diamond {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #012040;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0 8vw;
+  visibility: hidden;
+}
+
+#header-main .my-container #nav-bar #menu li a {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: none;
+  color: #012040;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#header-main .my-container #nav-bar .slide-in {
+  -webkit-animation: slide-in 500ms forwards;
+          animation: slide-in 500ms forwards;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+#header-main .my-container #nav-bar .slide-out {
+  -webkit-animation: slide-out 500ms forwards;
+          animation: slide-out 500ms forwards;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #header-main .my-container #nav-bar #menu li .diamond {
+    width: 1vw;
+    height: 1vw;
+    margin: 10vw;
+    visibility: hidden;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #header-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header-main .my-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar #menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar #menu li .diamond {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 0.75vw;
+    margin-left: 5vw;
+  }
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -76,8 +259,8 @@ body, html {
 }
 
 #hamburger-animated {
-  width: 15.78vw;
-  height: 13.85vw;
+  width: 5vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +273,13 @@ body, html {
   padding: 0;
   z-index: 100;
   background-color: #212529;
-  opacity: 1;
+  background-color: white;
+  opacity: .5;
 }
 
 #hamburger-animated #container-lines {
-  width: 4.4597vw;
-  height: 4.4597vw;
+  width: 1.61vh;
+  height: 1.61vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +294,7 @@ body, html {
 }
 
 #hamburger-animated #container-lines .bar {
-  height: 0.6371vw;
+  height: 0.23vh;
   background-color: white;
   display: relative;
 }
@@ -126,8 +310,8 @@ body, html {
             transform: translateY(0%);
   }
   100% {
-    -webkit-transform: translateY(1.9113vw) rotate(45deg);
-            transform: translateY(1.9113vw) rotate(45deg);
+    -webkit-transform: translateY(0.69vh) rotate(45deg);
+            transform: translateY(0.69vh) rotate(45deg);
   }
 }
 
@@ -137,8 +321,8 @@ body, html {
             transform: translateY(0%);
   }
   100% {
-    -webkit-transform: translateY(1.9113vw) rotate(45deg);
-            transform: translateY(1.9113vw) rotate(45deg);
+    -webkit-transform: translateY(0.69vh) rotate(45deg);
+            transform: translateY(0.69vh) rotate(45deg);
   }
 }
 
@@ -153,8 +337,8 @@ body, html {
             transform: translateY(0%);
   }
   100% {
-    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
-            transform: translateY(-1.9113vw) rotate(-45deg);
+    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
+            transform: translateY(-0.69vh) rotate(-45deg);
   }
 }
 
@@ -164,8 +348,8 @@ body, html {
             transform: translateY(0%);
   }
   100% {
-    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
-            transform: translateY(-1.9113vw) rotate(-45deg);
+    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
+            transform: translateY(-0.69vh) rotate(-45deg);
   }
 }
 
@@ -199,8 +383,8 @@ body, html {
 
 @-webkit-keyframes rotate3 {
   0% {
-    -webkit-transform: translateY(1.9113vw) rotate(45deg);
-            transform: translateY(1.9113vw) rotate(45deg);
+    -webkit-transform: translateY(0.69vh) rotate(45deg);
+            transform: translateY(0.69vh) rotate(45deg);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -210,8 +394,8 @@ body, html {
 
 @keyframes rotate3 {
   0% {
-    -webkit-transform: translateY(1.9113vw) rotate(45deg);
-            transform: translateY(1.9113vw) rotate(45deg);
+    -webkit-transform: translateY(0.69vh) rotate(45deg);
+            transform: translateY(0.69vh) rotate(45deg);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -226,8 +410,8 @@ body, html {
 
 @-webkit-keyframes rotate4 {
   0% {
-    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
-            transform: translateY(-1.9113vw) rotate(-45deg);
+    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
+            transform: translateY(-0.69vh) rotate(-45deg);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -237,8 +421,8 @@ body, html {
 
 @keyframes rotate4 {
   0% {
-    -webkit-transform: translateY(-1.9113vw) rotate(-45deg);
-            transform: translateY(-1.9113vw) rotate(-45deg);
+    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
+            transform: translateY(-0.69vh) rotate(-45deg);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -282,7 +466,7 @@ html {
   font-size: 10px;
 }
 
-@media screen and (min-width:  600px) {
+@media screen and (min-width: 600px) {
   .slicknav_menu {
     display: none;
   }
@@ -291,12 +475,30 @@ html {
   }
 }
 
-.container {
+.my-container {
   padding: 13vw 7vw 13vw 7vw;
 }
 
 .container_content {
   margin-top: 11vw;
+}
+
+.section-title-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+}
+
+.section-title-area .light {
+  color: white;
 }
 
 .section-heading {
@@ -318,30 +520,102 @@ html {
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.section-title-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (min-width: 768px) and (min-width: 600px) {
+  .slicknav_menu {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
 }
 
-.section-title-area .light {
-  color: white;
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 13vw 7vw 13vw 7vw;
+  }
+  .container_content {
+    margin-top: 11vw;
+  }
+  .section-title-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: none;
+  }
+  .section-title-area .light {
+    color: white;
+  }
+  .section-heading {
+    font-size: 5.59vw;
+    margin-top: 0;
+    text-transform: uppercase !important;
+    color: #212529;
+    font-weight: 600;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .section-subheading {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 1vw;
+    font-style: italic;
+    color: #6c757d;
+    text-transform: none;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
 }
 
-body {
-  color: red;
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 992px) {
+  #menu {
+    display: none;
+  }
   body {
-    color: green;
+    font-size: 1.6rem;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (min-width: 600px) {
+  .slicknav_menu {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 6vw 7vw 13vw 7vw;
+  }
+  .container_content {
+    margin-top: 6vw;
+  }
+  .section-heading {
+    font-size: 2.2vw;
+    margin-top: 0;
+    text-transform: uppercase !important;
+    color: #212529;
+    font-weight: 600;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .section-subheading {
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-top: .7vw;
+    font-style: italic;
+    color: #6c757d;
+    text-transform: none;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
 
@@ -418,6 +692,7 @@ table {
 #homePage {
   width: 100%;
   height: 161.8vw;
+  height: 130vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,107 +705,7 @@ table {
   background-color: #ffd306;
 }
 
-#homePage #nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 13.85vw;
-  overflow: hidden;
-}
-
-#homePage #nav-bar #menu {
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  position: relative;
-  z-index: 2;
-  background-color: #212529;
-  background-color: #212529;
-}
-
-#homePage #nav-bar #menu li {
-  list-style-type: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#homePage #nav-bar #menu li a {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-decoration: none;
-  color: white;
-  font-size: 2.77vw;
-  text-transform: uppercase;
-}
-
-#homePage #nav-bar #menu li a:hover {
-  color: red;
-}
-
-#homePage #nav-bar .slide-in {
-  -webkit-animation: slide-in 500ms forwards;
-          animation: slide-in 500ms forwards;
-}
-
-@-webkit-keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-#homePage #nav-bar .slide-out {
-  -webkit-animation: slide-out 500ms forwards;
-          animation: slide-out 500ms forwards;
-}
-
-@-webkit-keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-#homePage #container_logo {
+#homePage #homeContent #container_logo {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,12 +713,12 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 8vh;
 }
 
-#homePage #container_logo #logoImage {
+#homePage #homeContent #container_logo #logoImage {
   width: 65vw;
-  margin-top: 24.2vw;
-  margin-bottom: 1vh;
+  margin-bottom: 6vh;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -551,40 +726,41 @@ table {
       align-self: center;
 }
 
-#homePage #hero_message {
+#homePage #homeContent #hero_message {
   width: 100vw;
   text-align: center;
 }
 
-#homePage #hero_message #hero_greeting {
-  color: #212529;
-  font-family: 'Special Elite', cursive;
-  font-size: 3.75vw;
-  font-weight: bold;
-  line-height: 6vw;
+#homePage #homeContent #hero_message #hero_greeting {
+  color: #012040;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 4vw;
+  font-weight: bolder;
+  line-height: 7vw;
 }
 
-#homePage #hero_message #hero_text {
-  color: #212529;
-  font-family: 'Special Elite', cursive;
-  font-size: 3.5vw;
-  color: #2e2d2d;
+#homePage #homeContent #hero_message #hero_text {
+  color: #012040;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 3vw;
+  color: #012040;
   line-height: 5vw;
 }
 
-#homePage #cursor {
+#homePage #homeContent #cursor {
   display: inline-block;
   vertical-align: middle;
-  width: .5vw;
-  height: 6vw;
+  width: 0.5vw;
+  height: 4vw;
   background-color: #212529;
-  -webkit-animation: blink .75s step-end infinite;
-          animation: blink .75s step-end infinite;
-  opacity: .6;
+  -webkit-animation: blink 0.75s step-end infinite;
+          animation: blink 0.75s step-end infinite;
+  opacity: 0.6;
 }
 
 @-webkit-keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
@@ -593,11 +769,46 @@ table {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #212529;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #homePage #homeContent #container_logo {
+    margin-top: 14vh;
+  }
+  #homePage #homeContent #container_logo #logoImage {
+    margin-bottom: 11vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #homePage {
+    height: 100vh;
+  }
+  #homePage #homeContent #container_logo {
+    margin-top: 11vh;
+  }
+  #homePage #homeContent #container_logo #logoImage {
+    width: 50vh;
+    margin-bottom: 8vh;
+  }
+  #homePage #homeContent #hero_message #hero_greeting {
+    font-size: 1.5vw;
+    line-height: 3vw;
+  }
+  #homePage #homeContent #hero_message #hero_text {
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
+  #homePage #homeContent #cursor {
+    width: 0.15vw;
+    height: 1.5vw;
   }
 }
 
@@ -778,6 +989,117 @@ table {
   width: 55%;
 }
 
+@media only screen and (min-width: 992px) {
+  #skillsPage #progress-bars-section .progress-bar-container {
+    height: 2.1vw;
+    width: 100%;
+    margin-bottom: 3.4vw;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .skill-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-flex: 3.5;
+        -ms-flex-positive: 3.5;
+            flex-grow: 3.5;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    width: 0;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: grey;
+    height: 100%;
+    line-height: 100%;
+    overflow: visible;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 7.7;
+        -ms-flex-positive: 7.7;
+            flex-grow: 7.7;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    width: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
+    width: 100%;
+    height: 100%;
+    background-color: #e2e2e2;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
+    height: 100%;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fdcb17;
+    color: #c59102;
+    padding-left: 1.5vw;
+    font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.35vw;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
+    width: 80%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .scss {
+    width: 75%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .javascript {
+    width: 60%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jQuery {
+    width: 65%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .bootstrap {
+    width: 55%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .responsive-design {
+    width: 65%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .react {
+    width: 75%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jest {
+    width: 55%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .typescript {
+    width: 50%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .node {
+    width: 75%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .express {
+    width: 20%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .agile {
+    width: 90%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .git {
+    width: 55%;
+  }
+}
+
 #portfolioPage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,11 +1145,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 4vh;
   background-color: white;
-}
-
-#portfolioPage #projects .project-container:not(:last-child) {
-  margin-bottom: 7vw;
 }
 
 #portfolioPage #projects .project-container .myVideo {
@@ -880,17 +1199,8 @@ table {
 }
 
 #portfolioPage #projects .project-container .project-text .preview_link {
-  width: 50%;
   background-color: #dbbd7f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2vw 6vw;
   text-align: center;
   border-radius: 6vw;
   margin: 7vw 0;
@@ -903,7 +1213,6 @@ table {
   text-transform: uppercase;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
-  padding: 3vw 0;
 }
 
 #portfolioPage #projects .portfolio-site {
@@ -989,5 +1298,170 @@ table {
 
 #contactPage #contact-messsage {
   color: blue;
+}
+
+#header-main {
+  background-color: #ffd306;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header-main .my-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-main .my-container #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+#header-main .my-container #nav-bar #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+#header-main .my-container #nav-bar #menu li {
+  list-style-type: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-main .my-container #nav-bar #menu li .diamond {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #012040;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0 8vw;
+  visibility: hidden;
+}
+
+#header-main .my-container #nav-bar #menu li a {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: none;
+  color: #012040;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#header-main .my-container #nav-bar .slide-in {
+  -webkit-animation: slide-in 500ms forwards;
+          animation: slide-in 500ms forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+#header-main .my-container #nav-bar .slide-out {
+  -webkit-animation: slide-out 500ms forwards;
+          animation: slide-out 500ms forwards;
+}
+
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #header-main .my-container #nav-bar #menu li .diamond {
+    width: 1vw;
+    height: 1vw;
+    margin: 10vw;
+    visibility: hidden;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #header-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header-main .my-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar #menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar #menu li .diamond {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 0.75vw;
+    margin-left: 5vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

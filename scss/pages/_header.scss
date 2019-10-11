@@ -1,0 +1,152 @@
+//***********************MOBILE************************************
+$height_nav-bar: 5vh;
+#header-main {
+    background-color: $color_background_yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .my-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: $height_nav-bar;
+            $nav-animation-duration: 500ms;
+            overflow: hidden;
+            // background-color: pink;
+            width: 100%;
+
+            #menu {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                height: 100%;
+                position: relative;
+                z-index: 2;
+                // background-color: blue;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style-type: none;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .diamond {
+                        width: 1.5vw;
+                        height: 1.5vw;
+                        background-color: $color_font_nav;
+                        transform: rotate(45deg);
+                        margin: 0 8vw;
+                        visibility: hidden;
+                    }
+
+                    a {
+                        font-family: $monsterrat-font;
+                        text-decoration: none;
+                        color: $color_font_nav;
+                        font-size: 3vw;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+            } //end #menu
+
+            .slide-in {
+                animation: slide-in $nav-animation-duration forwards;
+
+                @keyframes slide-in {
+                    from {
+                        left: -100%;
+                    }
+                    to {
+                        left: 0%;
+                    }
+                }
+            }
+
+            .slide-out {
+                animation: slide-out $nav-animation-duration forwards;
+                @keyframes slide-out {
+                    from {
+                        left: 0%;
+                    }
+                    to {
+                        left: -100%;
+                    }
+                }
+            }
+        } //end #nav-bar
+    } //end .container
+} //#header-main
+
+//***********************TABLET************************************
+
+@media only screen and (min-width: 768px) {
+    $height_nav-bar: 7vh;
+    #header-main {
+        .my-container {
+            #nav-bar {
+                #menu {
+                    // justify-content: flex-end;
+                    li {
+                        .diamond {
+                            width: 1vw;
+                            height: 1vw;
+                            margin: 10vw;
+                            visibility: hidden;
+                        }
+
+                        a {
+                            font-size: 2.5vw;
+                        }
+                    }
+                } //end #menu
+            } //end #nav-bar
+        }
+    } //#header-main
+}
+
+//***********************Desktop************************************
+
+@media only screen and (min-width: 992px) {
+    #header-main {
+        justify-content: center;
+
+        .my-container {
+            justify-content: flex-end;
+
+            #nav-bar {
+                justify-content: flex-end;
+
+                #menu {
+                    //      background-color: grey;
+                    justify-content: flex-end;
+                    li {
+                        .diamond {
+                            display: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        a {
+                            font-size: 0.75vw;
+                            margin-left: 5vw;
+                        }
+                    }
+                } //end #menu
+            } //end #nav-bar
+        }
+    } //#header-main
+}
