@@ -119,6 +119,7 @@
                 </div>
             </article>
 
+        
             <!------------------ Skills Page-------------------->
             <article id="skillsPage" class="my-container">
                 <header class="section-title-area">
@@ -126,23 +127,30 @@
                     <h3 class="section-subheading">Front-end skills</h3>
                 </header>
 
-                <section id="progress-bars-section" class="container_content">
-                    <template id="template-skills">
-                        <div class="progress-bar-container">
-                            <h4 class="skill-name"></h4>
-                            <div class="progress-bar">
-                                <div class="container-progress-percentage">
-                                    <div
-                                        class="progressPercentage"
-                                        data-aos="slide-right"
-                                        data-aos-duration="1100"
-                                        data-aos-offset="30"
-                                    ></div>
+                <div
+                    id="progress-bars-section"
+                    class="container container_content"
+                >
+                    <template id="template-row" class="row">
+                        <template id="template-col">
+                            <div class="col-sm-4 progress-bar-container">
+                                <h4 class="skill-name"></h4>
+                                <div class="progress-bar">
+                                    <div class="container-progress-percentage">
+                                        <div
+                                            class="progressPercentage"
+                                            data-aos="slide-right"
+                                            data-aos-duration="1100"
+                                            data-aos-offset="30"
+                                        ></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </template>
                     </template>
-                </section>
+                    <!--end row template -->
+                </div>
+                <!--end progress bars section  -->
             </article>
 
             <!------------------ Portfolio Page-------------------->

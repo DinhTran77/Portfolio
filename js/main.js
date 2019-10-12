@@ -2,7 +2,7 @@
 
 AOS.init();
 
-alert(screen.width);
+// alert(screen.width);
 
 //Fill Skills Template
 if (document.createElement("template").content) {
@@ -14,7 +14,7 @@ if (document.createElement("template").content) {
 		{
 			skill_title: "Responsive Design",
 			percent: "65%",
-			class: "responsive-design "
+			class: "responsive-design"
 		},
 		{ skill_title: "REACT", percent: "75%", class: "react" },
 		{ skill_title: "Jest", percent: "55%", class: "scss" },
@@ -25,19 +25,26 @@ if (document.createElement("template").content) {
 		{ skill_title: "Git", percent: "55%", class: "git" }
 	];
 
-	let template = document.getElementById("template-skills");
+	let template_row = document.getElementById("template-row");
+	let clone_row = template_row.content.cloneNode(true);
+	
+	template_row.parentNode.appendChild(clone_row);	
+	
+	let template_col = document.getElementById("template-col");
 
 	for (let i = 0; i < skillsArray.length; i++) {
 		let skill = skillsArray[i];
-		let clone = template.content.cloneNode(true);
+		let clone_col = template_col.content.cloneNode(true);
 
-		let skill_name = clone.querySelector(".skill-name");
+		let skill_name = clone_col.querySelector(".skill-name");
 		skill_name.innerHTML = skill.skill_title;
 
-		let percentage = clone.querySelector(".progressPercentage");
+		let percentage = clone_col.querySelector(".progressPercentage");
 		percentage.innerHTML += skill.percent;
 		percentage.className += " " + skill.class;
-		template.parentNode.appendChild(clone);
+		// template_col.parentNode.appendChild(clone_col);
+		document.getElementById('template-row').appendChild(clone_col);
+		// template_row.appendChild(clone_col);
 	}
 } else {
 	let skillsSection = document.getElementById("progress-bars-section");
