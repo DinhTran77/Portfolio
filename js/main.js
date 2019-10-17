@@ -140,7 +140,7 @@ if (document.createElement("template").content) {
 		let project_description = clone.querySelector(".project-description");
 		project_description.innerHTML += project.description;
 
-		template_col.parentNode.appendChild(clone);
+		template_col.parentNode.appendChild(clone_row);
 		document.getElementById('template_project_row').appendChild(clone);
 	}
 } else {
