@@ -81,7 +81,7 @@ html {
 		}
 	}
 
-	.container {
+	.my-container {
 		padding: 13vw 7vw 13vw 7vw;
 	}
 
@@ -137,17 +137,8 @@ html {
 		font-size: 10px;
 	}
 
-	@media screen and (min-width: 600px) {
-		.slicknav_menu {
-			display: none;
-		}
 
-		#menu {
-			display: block;
-		}
-	}
-
-	.container {
+	.my-container {
 		padding: 6vw 7vw 13vw 7vw;
 	}
 

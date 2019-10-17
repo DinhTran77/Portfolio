@@ -129,11 +129,11 @@
 
                 <div
                     id="progress-bars-section"
-                    class="container container_content"
+                    class="container w-screen container_content"
                 >
                     <template id="template-row" class="row">
                         <template id="template-col">
-                            <div class="col-sm-4 progress-bar-container">
+                            <div class="col-md-4 progress-bar-container">
                                 <h4 class="skill-name"></h4>
                                 <div class="progress-bar">
                                     <div class="container-progress-percentage">
@@ -162,17 +162,21 @@
                 </header>
 
                 <section id="projects" class="container_content">
-                    <template id="template_project">
-                        <a href="" class="project_link" target="_blank">
-                            <div class="project-container">
-                                <img class="project-image" />
-                                <article class="project-text">
-                                    <h4 class="project-name"></h4>
-                                    <h5 class="project-description"></h5>
-                                    <div class="preview_link">live preview</div>
-                                </article>
-                            </div>
-                        </a>
+                    <template id="template_project_row" class='row'>
+                            <template id="template-col-projects">
+                                    <div class="col-md-4">  
+                                        <a href="" class="project_link" target="_blank">
+                                            <div class="project-container">
+                                                <img class="project-image" />
+                                                <article class="project-text">
+                                                    <h4 class="project-name"></h4>
+                                                    <h5 class="project-description"></h5>
+                                                    <div class="preview_link">live preview</div>
+                                                </article>
+                                            </div>
+                                        </a>
+                                    </div>
+                            </template>
                     </template>
                 </section>
             </article>

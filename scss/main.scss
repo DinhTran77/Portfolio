@@ -10,8 +10,6 @@
 // Styles used on all pages
 @import './base/shared';
 
-//import external css libraries
-@import './vendors/bootstrap';
 
 
 //Components
@@ -21,7 +19,6 @@
 //SCSS for individual pages
 @import './pages/homePage';
 @import './pages/about-section';
-@import './layout/_container';
 @import './pages/skillsPage';
 @import './pages/portfolioPage';
 @import './pages/contactPage';

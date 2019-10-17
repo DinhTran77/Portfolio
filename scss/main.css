@@ -530,7 +530,7 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .my-container {
     padding: 13vw 7vw 13vw 7vw;
   }
   .container_content {
@@ -582,19 +582,7 @@ html {
     scroll-behavior: smooth;
     font-size: 10px;
   }
-}
-
-@media only screen and (min-width: 992px) and (min-width: 600px) {
-  .slicknav_menu {
-    display: none;
-  }
-  #menu {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
+  .my-container {
     padding: 6vw 7vw 13vw 7vw;
   }
   .container_content {
@@ -855,6 +843,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container {
@@ -889,6 +878,7 @@ table {
   height: 100%;
   line-height: 100%;
   overflow: visible;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
@@ -906,6 +896,7 @@ table {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100%;
+  background-color: transparent;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
@@ -927,14 +918,18 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 2vw;
   background-color: #fdcb17;
   color: grey;
   padding-left: 1.5vw;
-  font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.25vw;
+  font-size: 2vw;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
@@ -990,31 +985,41 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
+  #skillsPage .container {
+    max-width: 100%;
+  }
+  #skillsPage #progress-bars-section {
+    width: 100%;
+  }
   #skillsPage #progress-bars-section .progress-bar-container {
-    height: 2.1vw;
+    height: 1.8vw;
     width: 100%;
     margin-bottom: 3.4vw;
-  }
-  #skillsPage #progress-bars-section .progress-bar-container .skill-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-flex: 3.5;
-        -ms-flex-positive: 3.5;
-            flex-grow: 3.5;
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-    width: 0;
-    font-size: 1.5vw;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .skill-name {
+    font-size: 1.05vw;
     font-weight: 400;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: grey;
+    width: 90%;
     height: 100%;
     line-height: 100%;
     overflow: visible;
+    position: absolute;
+    z-index: 2;
+    padding-left: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
     display: -webkit-box;
@@ -1025,7 +1030,6 @@ table {
             flex-grow: 7.7;
     -ms-flex-preferred-size: 1;
         flex-basis: 1;
-    width: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1033,31 +1037,16 @@ table {
     height: 100%;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    background-color: #e2e2e2;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
-    height: 100%;
-    border-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #fdcb17;
-    color: #c59102;
-    padding-left: 1.5vw;
-    font: Roboto, "Helvetica/ Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.35vw;
+    padding-right: .6vw;
+    font-size: 0.945vw;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
     width: 80%;
@@ -1090,7 +1079,7 @@ table {
     width: 75%;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .express {
-    width: 20%;
+    width: 50%;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .agile {
     width: 90%;

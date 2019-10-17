@@ -20,29 +20,39 @@ if (document.createElement("template").content) {
 		{ skill_title: "Jest", percent: "55%", class: "scss" },
 		{ skill_title: "Typescript", percent: "50%", class: "typescript" },
 		{ skill_title: "Node", percent: "75%", class: "node" },
-		{ skill_title: "Express", percent: "20%", class: "express" },
+		{ skill_title: "Express", percent: "50%", class: "express" },
 		{ skill_title: "Agile", percent: "90%", class: "agile" },
 		{ skill_title: "Git", percent: "55%", class: "git" }
 	];
 
+	// Get template for row
 	let template_row = document.getElementById("template-row");
+	
+	// Creat copy of row template
 	let clone_row = template_row.content.cloneNode(true);
 	
+	//Append row clone to row template
 	template_row.parentNode.appendChild(clone_row);	
 	
+	//get copy of col template
 	let template_col = document.getElementById("template-col");
 
 	for (let i = 0; i < skillsArray.length; i++) {
 		let skill = skillsArray[i];
+
+		//for each skill make a clone of the template
 		let clone_col = template_col.content.cloneNode(true);
 
+		//get the tag insid the clone-col that is called .skill-name
 		let skill_name = clone_col.querySelector(".skill-name");
 		skill_name.innerHTML = skill.skill_title;
 
+		//get percentage tag
 		let percentage = clone_col.querySelector(".progressPercentage");
 		percentage.innerHTML += skill.percent;
 		percentage.className += " " + skill.class;
 		// template_col.parentNode.appendChild(clone_col);
+
 		document.getElementById('template-row').appendChild(clone_col);
 		// template_row.appendChild(clone_col);
 	}
@@ -52,25 +62,8 @@ if (document.createElement("template").content) {
 		"Sorry, your browser does not support <template> tag";
 }
 
-//Projects Template
 
-// function changeLink() {
-//   let link = document.getElementById("mylink");
-// // link.innerHTML='helo';
-//   // window.open(
-//   //   link.href,
-//   //   '_blank'
-//   // );
-
-//   link.innerHTML = "facebook";
-//   // link.setAttribute('href', "http://facebook.com");
-
-//   alert(link);
-//   return false;
-// }
-
-// changeLink();
-
+// Projects Section
 if (document.createElement("template").content) {
 	let projects = [
 		{
@@ -117,11 +110,22 @@ if (document.createElement("template").content) {
 		}
 	];
 
-	let template = document.getElementById("template_project");
+	// Get template for row
+	let template_row = document.getElementById("template_project_row");
+	
+	// Creat copy of row template
+	let clone_row = template_row.content.cloneNode(true);
+	
+	//Append row clone to row template
+	template_row.parentNode.appendChild(clone_row);	
+	
+	//get copy of col template
+	let template_col = document.getElementById("template-col-projects");
 
-	for (let i = 0; i < projects.length; i++) {
-		let project = projects[i];
-		let clone = template.content.cloneNode(true);
+
+	for (let j = 0; j < projects.length; j++) {
+		let project = projects[j];
+		let clone = template_col.content.cloneNode(true);
 
 		let link = clone.querySelector(".project_link");
 
@@ -136,7 +140,8 @@ if (document.createElement("template").content) {
 		let project_description = clone.querySelector(".project-description");
 		project_description.innerHTML += project.description;
 
-		template.parentNode.appendChild(clone);
+		template_col.parentNode.appendChild(clone);
+		document.getElementById('template_project_row').appendChild(clone);
 	}
 } else {
 }
