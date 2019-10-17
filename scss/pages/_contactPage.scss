@@ -1,92 +1,161 @@
+//**************************MOBILE***********************************************
 
-#contactPage
-{
-        // background-image: url('../../images/contact/contact-sketch.jpg');
-        // background-size: 100% auto;
-        // background-repeat: no-repeat;
-        background-color: $color_background_yellow;
+#contactPage {
+    background-color: $color_background_yellow;
 
+    #contact-greeting {
+        font-family: $monsterrat-font;
+        margin-top: 4vw;
+        font-size: 4vw;
+        color: rgb(109, 109, 109);
+        text-align: center;
+    }
 
-        #contact-greeting{
-            font-family: $monsterrat-font;
+    form {
+        margin-top: 5vw;
+        font-family: $monsterrat-font;
+        color: red;
+
+        label {
+            display: inline-block;
+            //  color: green;
+            margin-bottom: 0.8vw;
+            margin-top: 5vw;
+            font-size: 3.2vw;
+            color: rgb(109, 109, 109);
+        }
+        input,
+        textarea {
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: rgb(189, 187, 187);
+        }
+
+        input {
+            font-size: 3.4vw;
+            outline: none;
+            border: none;
+            display: block;
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(189, 187, 187);
+            padding: 2vw;
+            color: grey;
+        }
+
+        textarea {
+            outline: none;
+            display: block;
+            width: 100%;
+            height: 30vw;
+            padding: 2vw;
+            font-size: 3.4vw;
+            color: grey;
+        }
+
+        input[type="submit"] {
+            background-color: $color_font_blue;
+            color: white;
+            width: 33%;
             margin-top: 4vw;
-            font-size: 4vw;
+            padding: 2.3vw 3.5vw;
+            border-radius: 6px;
+            font-size: 3.54vw;
+            cursor: pointer;
+        }
+    }
+
+    #contact-messsage {
+        color: blue;
+    }
+} //end #contactPage
+
+//**************************DESkTOP***********************************************
+
+@media only screen and (min-width: 992px) {
+    #contactPage {
+        background-color: $color_background_yellow;
+        // background-image: url("../../images/contact/12844705411284373152forms_0000s_0002_Bitmap.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        .container {
+            // background: red;
+            max-width: 100%;
+            margin: 3vw;
+ 
+        }
+
+        #profile-pic{
+            width: 100%;
+        }
+        #contact-greeting {
+            font-family: $monsterrat-font;
+            margin-top: 1.5vw;
+            font-size: 1.7vw;
             color: rgb(109, 109, 109);
             text-align: center;
-            }
+            margin-bottom: 4vw;
+        }
 
-        form{
-            margin-top: 5vw;
+        form {
+            margin-top: 0;
             font-family: $monsterrat-font;
-            color: red; 
-  
-            
-            label{
-                display:inline-block;
-                //  color: green;
-                  margin-bottom:.8vw;
-                  margin-top: 5vw;
-                  font-size: 3.2vw;
-                  color: rgb(109, 109, 109);
-                }
-            input, textarea{
-                border-style: solid;
-                border-width: .5px;
-                border-color: rgb(189, 187, 187); 
+
+            // background: blue;
+            width: 100%;
+            label {
+                display: inline-block;
+                margin-bottom: 0.1vw;
+                margin-top: 1.6vw;
+                font-size: 1.1vw;
+                color: rgb(109, 109, 109);
+                width: 100%;
             }
-        
-                input{
-                    // border: 0;
-                    // outline: 0;
-                    // background: transparent;
-                    // border: none;
-                    font-size: 3.4vw;
-                    outline: none;
-                    border: none;
-                    display: block;
-                    // border-radius: .5vw;
-                    width: 100%;
-                    border-style: solid;
-                    border-width: 1px;
-                    border-color: rgb(189, 187, 187); 
-                    padding:  2vw;
-                    color: grey;
-                    }
-                
-                    textarea{
-                        outline: none;
-                        // border: none;
-                        display: block;
-                        width: 100%;
-                        height: 30vw;
-                        padding:  2vw;
-                        font-size: 3.4vw;
-                        color: grey;
-                    }
-                    
-                input[type=submit] 
-                        {
-                        background-color: $color_font_blue;
+            input,
+            textarea {
+                border-style: solid;
+                border-width: 0.5px;
+                border-color: rgb(216, 214, 214);
+                font-size: 1vw;
+                padding: 0.4vw;
+                border-style: solid;
+                border-width: 2.8px;
+                border-color: rgb(189, 187, 187);
+                color: grey;
+                width: 100%;
+                margin-bottom: 1vw;
+                // background: red;
+            }
 
-                        color: white;
-                        width: 33%;
-                        margin-top: 4vw;
-                        padding: 2.3vw 3.5vw;
-                        // border: none;
-                        border-radius: 6px;
-                        font-size: 3.54vw;
-                        cursor: pointer;
-            
-                        }
-        }
- 
-    #contact-messsage
-        {
-        color: blue;
+            // input {
+            //     display: block;
+            //     width: 100%;
+            // }
+
+            textarea {
+                outline: none;
+                display: block;
+                width: 100%;
+                height: 17vw;
+                color: grey;
+            }
+
+            input[type="submit"] {
+                background-color: $color_font_blue;
+                color: white;
+                width: 28%;
+                margin-top: 2vw;
+                padding: .3vw .3vw;
+                border-radius: 6px;
+                font-size: 1.54vw;
+                cursor: pointer;
+            }
         }
 
-  
- 
-
-
-}//end #contactPage
+        // #contact-messsage {
+        //     color: blue;
+        // }
+    } //end #contactPage
+}

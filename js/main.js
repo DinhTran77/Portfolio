@@ -148,9 +148,12 @@ if (document.createElement("template").content) {
 
 // Type writter animation
 let i = 0;
-const txt1 = "Hi, I'm Dinh Tran!";
-const txt2 = "I convert beautiful & complex designs";
-const txt3 = "into clean & maintainable front-end code.";
+// const txt1 = "Hi, I'm Dinh Tran!";
+// const txt2 = "I convert beautiful & complex designs";
+// const txt3 = "into clean & maintainable front-end code.";
+
+const txt3 = "Clean & maintainable front-end code.";
+
 
 /* The speed/duration of the effect in milliseconds */
 let j = 0;
@@ -162,23 +165,31 @@ const speed = 30;
 const heroText = document.getElementById("hero_text");
 const heroGreeting = document.getElementById("hero_greeting");
 function typeWriter() {
-	if (j < txt1.length) {
-		heroGreeting.innerHTML += txt1.charAt(j);
+	// if (j < txt1.length) {
+	// 	heroGreeting.innerHTML += txt1.charAt(j);
 
-		j++;
+	// 	j++;
 
-		if (j === txt1.length) {
-			heroGreeting.innerHTML += "<br/>";
-		}
-		setTimeout(typeWriter, speed);
-	} else if (k < txt2.length) {
-		heroText.innerHTML += txt2.charAt(k);
-		k++;
-		if (k === txt2.length) {
-			heroText.innerHTML += "<br/>";
-		}
-		setTimeout(typeWriter, speed);
-	} else if (l < txt3.length) {
+	// 	if (j === txt1.length) {
+	// 		heroGreeting.innerHTML += "<br/>";
+	// 	}
+	// 	setTimeout(typeWriter, speed);
+	// } else if (k < txt2.length) {
+	// 	heroText.innerHTML += txt2.charAt(k);
+	// 	k++;
+	// 	if (k === txt2.length) {
+	// 		heroText.innerHTML += "<br/>";
+	// 	}
+	// 	setTimeout(typeWriter, speed);
+	// } else if (l < txt3.length) {
+	// 	heroText.innerHTML += txt3.charAt(l);
+	// 	l++;
+	// 	setTimeout(typeWriter, speed);
+	// }
+
+
+
+ if (l < txt3.length) {
 		heroText.innerHTML += txt3.charAt(l);
 		l++;
 		setTimeout(typeWriter, speed);

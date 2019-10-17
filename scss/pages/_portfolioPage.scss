@@ -4,132 +4,231 @@
 // $project_image_width: 75vw;
 // $project_image_padding: ($project_container_width - $project_image_width)/2;
 
-#portfolioPage
-        {
+//**************************MOBILE***********************************************
+
+#portfolioPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $color_font_blue;
+    // position:relative;
+    // background-size: 100vw auto;
+    // background-image: url('../../images/portfolio/project-area-sketch.png');
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // &:last-child{margin-bottom: 7vw;}
+
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // height: 100vh;
+            // width: 90%;
+            margin-bottom: 4vh;
+
+            background-color: white;
+            .myVideo {
+                width: 100%;
+                height: auto;
+            }
+            .project-image {
+                width: 100%;
+                height: auto;
+                // width: 75%;
+                // opacity: .6;
+            }
+
+            .project-text {
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 253, 253);
+
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                overflow: hidden;
-                background-color: $color_font_blue;
-                // position:relative;
-                // background-size: 100vw auto;
-                // background-image: url('../../images/portfolio/project-area-sketch.png');
-        
-                
-                #projects
-                {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                  
+                color: $color_font_blue;
+                font-family: $monsterrat-font;
 
-        
-                                // &:last-child{margin-bottom: 7vw;}
+                .project-name {
+                    margin-top: 8vw;
+                    font-size: 3.7vw;
+                    color: $color_font_blue;
+                    text-align: center;
+                }
 
-                                
-                        .project-container 
-                        {
-                                display:flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                // height: 100vh;
-                                // width: 90%;
-                                margin-bottom: 4vh;
-                     
-                                background-color: white;
-                                .myVideo
-                                {
-                                    width:100%;
-                                    height: auto;
-                        
-                                }
-                                .project-image
-                                        {
-                                        width: 100%;
-                                        height: auto;
-                                        // width: 75%;
-                                        // opacity: .6;
-                                        }    
+                .project-description {
+                    margin-top: 5vw;
+                    text-align: center;
+                    width: 100%;
+                    color: $color_font_blue;
+                    padding: 0 7vw;
+                    font-size: 3.3vw;
+                    line-height: 5.5vw;
+                    font-weight: 400;
+                    // background-color: blue;
+                }
 
-                                .project-text
-                                {
-                                        width:100%;
-                                        height: 100%;
-                                        background-color: rgb(255, 253, 253);
+                .preview_link {
+                    background-color: #dbbd7f;
+                    padding: 2vw 6vw;
+                    text-align: center;
+                    border-radius: 6vw;
 
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: center;
-                                        color: $color_font_blue;
-                                        font-family: $monsterrat-font;
+                    margin: 7vw 0;
+                    a {
+                        color: $color_font_blue;
+                        font-size: 2.3vw;
+                        color: inherit;
+                        text-transform: uppercase;
+                        font-family: $monsterrat-font;
+                        font-weight: 600;
+                    }
+                } //end .preview_link
+            } //end .project-text
+        } //end .project-container
 
-                                        .project-name
-                                                {
-                                                margin-top: 8vw;
-                                                font-size: 3.7vw;
-                                                color: $color_font_blue;
-                                                text-align: center;
-                                                }
+        .portfolio-site {
+            // background-image: url('../../images/portfolio/personal_sight.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
 
-                                        .project-description
-                                                {
-                                                margin-top: 5vw;
-                                                text-align: center;  
-                                                width: 100%;            
-                                                color: $color_font_blue;
-                                                padding: 0 7vw;
-                                                font-size: 3.3vw;
-                                                line-height: 5.5vw;
-                                                font-weight: 400;       
-                                                // background-color: blue;              
-                                                }
+        .e-commerce {
+            // background-image: url('../../images/portfolio/ecommerce.PNG');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
 
-                                        .preview_link
-                                                {
+        .drum-machine {
+            // background-image: url('../../images/portfolio/drum-machine.PNG');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+    } //end projects
+} //end #portfolioPage
 
-                                                background-color:   #dbbd7f;
-                                                padding: 2vw 6vw;
-                                                text-align: center; 
-                                                border-radius: 6vw;       
-                                   
-                                                margin: 7vw 0;
-                                                        a
-                                                        {
-                                                        color: $color_font_blue;
-                                                        font-size: 2.3vw;
-                                                        color: inherit;
-                                                        text-transform: uppercase;
-                                                        font-family: $monsterrat-font;
-                                                        font-weight: 600;
-                                                        }
-                                
-                                                }//end .preview_link
-                                }//end .project-text
-                        }//end .project-container
 
-            
-                
-                        .portfolio-site{
-                                // background-image: url('../../images/portfolio/personal_sight.png');
-                                background-size: 100% auto;
-                                background-repeat: no-repeat;
-                        }
+//**************************DESkTOP***********************************************
 
-                        .e-commerce{
-                                // background-image: url('../../images/portfolio/ecommerce.PNG');
-                                background-size: 100% auto;
-                                background-repeat: no-repeat;
-                        }
+@media only screen and (min-width: 992px) {
+    #portfolioPage {
+        .container {
+            // background: red;
+            max-width: 100%;
+        }
 
-                        .drum-machine{
-                                // background-image: url('../../images/portfolio/drum-machine.PNG');
-                                background-size: 100% auto;
-                                background-repeat: no-repeat;
-                        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background-color: $color_font_blue;
+        // position:relative;
+        // background-size: 100vw auto;
+        // background-image: url('../../images/portfolio/project-area-sketch.png');
 
-        
-                }//end projects            
-        }//end #portfolioPage
+        #projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            // &:last-child{margin-bottom: 7vw;}
+
+            .project-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // height: 100vh;
+                // width: 90%;
+                margin-bottom: 5vh;
+
+                background-color: white;
+                .myVideo {
+                    width: 100%;
+                    height: auto;
+                }
+                .project-image {
+                    width: 100%;
+                    height: auto;
+                    // width: 75%;
+                    // opacity: .6;
+                }
+
+                .project-text {
+                    width: 90%;
+                    height: 100%;
+                    background-color: rgb(255, 253, 253);
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color_font_blue;
+                    font-family: $monsterrat-font;
+
+                    .project-name {
+                        margin-top: 4vw;
+                        font-size: 2vw;
+                        color: $color_font_blue;
+                        text-align: left;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                    }
+
+                    .project-description {
+                        margin-top: 1.2vw;
+                        text-align: justify;
+                        width: 100%;
+                        color: $color_font_blue;
+                        padding: 0 2vw;
+                        font-size: 1.4vw;
+                        line-height: 2vw;
+                        font-weight: 400;
+                        // background-color: blue;
+                    }
+
+                    .preview_link {
+                        background-color: #dbbd7f;
+                        padding: .8vw 4vw;
+                        text-align: center;
+                        border-radius: 6vw;
+                        margin: 3vw 0;
+                        color: $color_font_blue;
+                        font-size: 1vw;
+                        color: inherit;
+                        text-transform: uppercase;
+                        font-family: $monsterrat-font;
+                        font-weight: 600;
+                    } //end .preview_link
+                } //end .project-text
+            } //end .project-container
+
+            .portfolio-site {
+                // background-image: url('../../images/portfolio/personal_sight.png');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+
+            .e-commerce {
+                // background-image: url('../../images/portfolio/ecommerce.PNG');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+
+            .drum-machine {
+                // background-image: url('../../images/portfolio/drum-machine.PNG');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+        } //end projects
+    } //end #portfolioPage
+}

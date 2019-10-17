@@ -21,15 +21,21 @@
 	background-color: $color_background_yellow;
 
 	#homeContent {
+		
 		#container_logo {
 			width: 100%;
+			height: 100vh;
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
-			margin-top: 8vh;
-
+			position: absolute;
+			top: 0;
+			left: 0;
+			// background-color: green;
+			margin: 0;
 			#logoImage {
 				width: $logo-image-width;
-				margin-bottom: 6vh;
+				// margin-bottom: 6vh;
 				justify-self: center;
 				align-self: center;
 			}
@@ -38,13 +44,19 @@
 		#hero_message {
 			width: 100vw;
 			text-align: center;
-
+			// position: absolute;
+			// bottom: 14vh;
+			// height: 3vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
 			#hero_greeting {
 				color: $color_font_nav;
 				font-family: $monsterrat-font;
 				font-size: 4vw;
 				font-weight: bolder;
-				line-height: 7vw;
+				// line-height: 7vw;
 			}
 
 			#hero_text {
@@ -53,17 +65,18 @@
 				font-size: 3vw;
 				color: $color_font_nav;
 				line-height: 5vw;
+				// background: blue;
 			}
 		}
 
 		#cursor {
 			display: inline-block;
-			vertical-align: middle;
 			width: 0.5vw;
-			height: 4vw;
+			height: .5vw;
 			background-color: $nav-area-color;
 			animation: blink 0.75s step-end infinite;
 			opacity: 0.6;
+
 		}
 
 		@keyframes blink {
@@ -111,29 +124,34 @@
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
 	#homePage {
-		$logo-image-width: 50vh;
+		$logo-image-width: 55vh;
 		height: 100vh;
-
+		
 		#homeContent {
+
 			#container_logo {
 
-				margin-top: 11vh;
-
+				// margin-top: 11vh;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 0;
 				#logoImage {
 					width: $logo-image-width;
-					margin-bottom: 8vh;
+					margin-bottom: 0vh;
 				}
 			} //end #container_logo
 
 			#hero_message {
 
 				#hero_greeting {
-					font-size: 1.5vw;
+					font-size: 1.3vw;
 					line-height: 3vw;
 				}
 
 				#hero_text {
-					font-size: 1vw;
+					font-size: 1.1vw;
 					line-height: 1.5vw;
 				}
 			}

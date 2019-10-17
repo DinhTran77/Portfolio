@@ -5,6 +5,8 @@ $height_nav-bar: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    // position: absolute;
+    // right: 3vw;
 
     .my-container {
         width: 100%;
@@ -25,6 +27,7 @@ $height_nav-bar: 5vh;
             overflow: hidden;
             // background-color: pink;
             width: 100%;
+            margin: 2vw;
 
             #menu {
                 display: flex;
@@ -123,12 +126,13 @@ $height_nav-bar: 5vh;
 @media only screen and (min-width: 992px) {
     #header-main {
         justify-content: center;
-
+        // position: absolute;
         .my-container {
             justify-content: flex-end;
 
             #nav-bar {
                 justify-content: flex-end;
+                margin: 1vw;
 
                 #menu {
                     //      background-color: grey;
@@ -141,7 +145,7 @@ $height_nav-bar: 5vh;
                         }
 
                         a {
-                            font-size: 0.75vw;
+                            font-size: .9vw;
                             margin-left: 5vw;
                         }
                     }

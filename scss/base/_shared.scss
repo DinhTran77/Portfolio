@@ -1,169 +1,162 @@
 //***********************Mobile************************************
 
 #menu {
-	display: none;
+    display: none;
 }
 
 body {
-	font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 html {
-	scroll-behavior: smooth;
-	font-size: 10px;
+    scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 @media screen and (min-width: 600px) {
-	.slicknav_menu {
-		display: none;
-	}
+    .slicknav_menu {
+        display: none;
+    }
 
-	#menu {
-		display: block;
-	}
+    #menu {
+        display: block;
+    }
 }
 
 .my-container {
-	padding: 13vw 7vw 13vw 7vw;
+    padding: 13vw 7vw 13vw 7vw;
 }
 
 .container_content {
-	margin-top: 11vw;
+    margin-top: 11vw;
 }
 
 .section-title-area {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
 
-	.light {
-		color: rgb(255, 255, 255);
-	}
+    .light {
+        color: rgb(255, 255, 255);
+    }
 }
 .section-heading {
-	font-size: 5.59vw;
-	margin-top: 0;
-	text-transform: uppercase !important;
-	color: $font_dark_grey;
+    font-size: 5.59vw;
+    margin-top: 0;
+    text-transform: uppercase !important;
+    color: $font_dark_grey;
 
-	font-weight: 600;
-	font-family: $about-secton-font;
+    font-weight: 600;
+    font-family: $about-secton-font;
 }
 
 .section-subheading {
-	font-size: 3vw;
-	font-weight: 400;
-	margin-top: 1vw;
-	// margin-bottom: 7vw;
-	font-style: italic;
-	color: $font_light_grey;
-	// color: red;
-	text-transform: none;
-	font-family: $droid-font;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 1vw;
+    // margin-bottom: 7vw;
+    font-style: italic;
+    color: $font_light_grey;
+    // color: red;
+    text-transform: none;
+    font-family: $droid-font;
 }
-
-
 
 //***********************Tablet************************************
 
 @media only screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
+        .slicknav_menu {
+            display: none;
+        }
 
+        #menu {
+            display: block;
+        }
+    }
 
+    .my-container {
+        padding: 13vw 7vw 13vw 7vw;
+    }
 
-	@media screen and (min-width: 600px) {
-		.slicknav_menu {
-			display: none;
-		}
+    .container_content {
+        margin-top: 11vw;
+    }
 
-		#menu {
-			display: block;
-		}
-	}
+    .section-title-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: none;
 
-	.my-container {
-		padding: 13vw 7vw 13vw 7vw;
-	}
+        .light {
+            color: rgb(255, 255, 255);
+        }
+    }
+    .section-heading {
+        font-size: 5.59vw;
+        margin-top: 0;
+        text-transform: uppercase !important;
+        color: $font_dark_grey;
 
-	.container_content {
-		margin-top: 11vw;
-	}
+        font-weight: 600;
+        font-family: $about-secton-font;
+    }
 
-	.section-title-area {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: none;
-
-		.light {
-			color: rgb(255, 255, 255);
-		}
-	}
-	.section-heading {
-		font-size: 5.59vw;
-		margin-top: 0;
-		text-transform: uppercase !important;
-		color: $font_dark_grey;
-
-		font-weight: 600;
-		font-family: $about-secton-font;
-	}
-
-	.section-subheading {
-		font-size: 3vw;
-		font-weight: 400;
-		margin-top: 1vw;
-		// margin-bottom: 7vw;
-		font-style: italic;
-		color: $font_light_grey;
-		// color: red;
-		text-transform: none;
-		font-family: $droid-font;
-	}
+    .section-subheading {
+        font-size: 3vw;
+        font-weight: 400;
+        margin-top: 1vw;
+        // margin-bottom: 7vw;
+        font-style: italic;
+        color: $font_light_grey;
+        // color: red;
+        text-transform: none;
+        font-family: $droid-font;
+    }
 }
 
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-	#menu {
-		display: none;
-	}
+    #menu {
+        display: none;
+    }
 
-	body {
-		font-size: 1.6rem;
-	}
+    body {
+        font-size: 1.6rem;
+    }
 
-	html {
-		scroll-behavior: smooth;
-		font-size: 10px;
-	}
+    html {
+        scroll-behavior: smooth;
+        font-size: 10px;
+    }
 
+    .my-container {
+        padding: 6vw 7vw 6vw 7vw;
+    }
 
-	.my-container {
-		padding: 6vw 7vw 13vw 7vw;
-	}
+    .container_content {
+        margin-top: 6vw;
+    }
 
-	.container_content {
-		margin-top: 6vw;
-	}
+    .section-heading {
+        font-size: 2.2vw;
+        margin-top: 0;
+        text-transform: uppercase !important;
+        color: $font_dark_grey;
+        font-weight: 600;
+        font-family: $about-secton-font;
+    }
 
-	
-	.section-heading {
-		font-size: 2.2vw;
-		margin-top: 0;
-		text-transform: uppercase !important;
-		color: $font_dark_grey;
-		font-weight: 600;
-		font-family: $about-secton-font;
-	}
+    .section-subheading {
+        font-size: 1.2vw;
+        font-weight: 400;
+        margin-top: 0.7vw;
+        font-style: italic;
+        color: $font_light_grey;
 
-	.section-subheading {
-		font-size: 1.2vw;
-		font-weight: 400;
-		margin-top: .7vw;
-		font-style: italic;
-		color: $font_light_grey;
-
-		text-transform: none;
-		font-family: $droid-font;
-	}
+        text-transform: none;
+        font-family: $droid-font;
+    }
 }
