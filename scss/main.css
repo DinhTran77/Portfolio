@@ -685,7 +685,6 @@ table {
 #homePage {
   width: 100%;
   height: 161.8vw;
-  height: 130vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,16 +695,31 @@ table {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #ffd306;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 #homePage #container_logo {
   width: 100%;
   height: 100vh;
-  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #homePage #container_logo #logoImage {
-  width: 65vw;
+  width: 60vw;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -786,7 +800,7 @@ table {
   #homePage {
     height: 100vh;
   }
-  #homePage #homeContent #container_logo {
+  #homePage #container_logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -795,19 +809,19 @@ table {
     left: 0;
     margin: 0;
   }
-  #homePage #homeContent #container_logo #logoImage {
+  #homePage #container_logo #logoImage {
     width: 55vh;
     margin-bottom: 0vh;
   }
-  #homePage #homeContent #hero_message #hero_greeting {
+  #homePage #hero_message #hero_greeting {
     font-size: 1.3vw;
     line-height: 3vw;
   }
-  #homePage #homeContent #hero_message #hero_text {
+  #homePage #hero_message #hero_text {
     font-size: 1.1vw;
     line-height: 1.5vw;
   }
-  #homePage #homeContent #cursor {
+  #homePage #cursor {
     width: 0.15vw;
     height: 1.5vw;
   }
@@ -1187,10 +1201,12 @@ table {
   font-size: 3.7vw;
   color: #214261;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #portfolioPage #projects .project-container .project-text .project-description {
-  margin-top: 5vw;
+  margin-top: 3vw;
   text-align: center;
   width: 100%;
   color: #214261;
@@ -1205,6 +1221,7 @@ table {
   padding: 2vw 6vw;
   text-align: center;
   border-radius: 6vw;
+  font-size: 3vw;
   margin: 7vw 0;
 }
 
@@ -1313,10 +1330,6 @@ table {
   #portfolioPage #projects .project-container .project-text .project-name {
     margin-top: 4vw;
     font-size: 2vw;
-    color: #214261;
-    text-align: left;
-    font-weight: bold;
-    text-transform: capitalize;
   }
   #portfolioPage #projects .project-container .project-text .project-description {
     margin-top: 1.2vw;
@@ -1368,7 +1381,6 @@ table {
 }
 
 #contactPage form {
-  margin-top: 5vw;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: red;
 }
@@ -1376,7 +1388,6 @@ table {
 #contactPage form label {
   display: inline-block;
   margin-bottom: 0.8vw;
-  margin-top: 5vw;
   font-size: 3.2vw;
   color: #6d6d6d;
 }
@@ -1386,6 +1397,7 @@ table {
   border-style: solid;
   border-width: 0.5px;
   border-color: #bdbbbb;
+  margin-bottom: 3vw;
 }
 
 #contactPage form input {
@@ -1415,7 +1427,7 @@ table {
   background-color: #214261;
   color: white;
   width: 33%;
-  margin-top: 4vw;
+  margin-top: 6vw;
   padding: 2.3vw 3.5vw;
   border-radius: 6px;
   font-size: 3.54vw;
@@ -1486,7 +1498,7 @@ table {
     color: white;
     width: 28%;
     margin-top: 2vw;
-    padding: .3vw .3vw;
+    padding: 0.3vw 0.3vw;
     border-radius: 6px;
     font-size: 1.54vw;
     cursor: pointer;

@@ -62,10 +62,12 @@
                     font-size: 3.7vw;
                     color: $color_font_blue;
                     text-align: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
                 }
 
                 .project-description {
-                    margin-top: 5vw;
+                    margin-top: 3vw;
                     text-align: center;
                     width: 100%;
                     color: $color_font_blue;
@@ -81,6 +83,7 @@
                     padding: 2vw 6vw;
                     text-align: center;
                     border-radius: 6vw;
+                    font-size: 3vw;
 
                     margin: 7vw 0;
                     a {
@@ -178,10 +181,9 @@
                     .project-name {
                         margin-top: 4vw;
                         font-size: 2vw;
-                        color: $color_font_blue;
-                        text-align: left;
-                        font-weight: bold;
-                        text-transform: capitalize;
+    
+      
+               
                     }
 
                     .project-description {
