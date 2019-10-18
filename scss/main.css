@@ -71,6 +71,8 @@ table {
 
 #header-main {
   background-color: #ffd306;
+  background-color: red;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +82,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
 }
 
 #header-main .my-container {
@@ -695,26 +698,13 @@ table {
   background-color: #ffd306;
 }
 
-#homePage #homeContent #container_logo {
+#homePage #container_logo {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
+  background-color: green;
 }
 
-#homePage #homeContent #container_logo #logoImage {
+#homePage #container_logo #logoImage {
   width: 65vw;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -723,7 +713,7 @@ table {
       align-self: center;
 }
 
-#homePage #homeContent #hero_message {
+#homePage #hero_message {
   width: 100vw;
   text-align: center;
   display: -webkit-box;
@@ -735,16 +725,17 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
 }
 
-#homePage #homeContent #hero_message #hero_greeting {
+#homePage #hero_message #hero_greeting {
   color: #012040;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 4vw;
   font-weight: bolder;
 }
 
-#homePage #homeContent #hero_message #hero_text {
+#homePage #hero_message #hero_text {
   color: #012040;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3vw;
@@ -752,7 +743,7 @@ table {
   line-height: 5vw;
 }
 
-#homePage #homeContent #cursor {
+#homePage #cursor {
   display: inline-block;
   width: 0.5vw;
   height: .5vw;
@@ -1016,7 +1007,7 @@ table {
   #skillsPage #progress-bars-section .progress-bar-container {
     height: 1.8vw;
     width: 100%;
-    margin-bottom: 3.4vw;
+    margin-bottom: 2.7vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1033,7 +1024,7 @@ table {
     overflow: visible;
     position: absolute;
     z-index: 2;
-    padding-left: 2vw;
+    padding-left: 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1504,6 +1495,8 @@ table {
 
 #header-main {
   background-color: #ffd306;
+  background-color: red;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1513,6 +1506,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
 }
 
 #header-main .my-container {
