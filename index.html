@@ -167,12 +167,14 @@
                     <h3 class="section-subheading light">Work I'm proud of</h3>
                 </header>
 
-                <div id="projects" class="container_content container w-screen">
+                <div id="projects" class="container_content container">
                     <template id="template_project_row" class="row">
                         <template id="template-col-projects">
                             <div class="col-lg-6">
+                                
                                 <a href="" class="project_link" target="_blank">
                                     <div class="project-container">
+                                        <div class='project_overlay'></div>
                                         <img class="project-image" />
                                         <article class="project-text">
                                             <h4 class="project-name"></h4>
@@ -208,7 +210,7 @@
                             <img id='profile-pic' src="./images/team/1.jpg" alt="">
                         </div> -->
                         <div class="col-lg-5">
-                            <form id="contact-form">
+                            <form id="contact-form" method="POST" action="contactForm.php">
                                 <label for="name" class="form-label "
                                     >Name:*</label
                                 >
@@ -224,7 +226,7 @@
                                 >
                                 <input
                                     required
-                                    type="text"
+                                    type="email"
                                     id="name"
                                     name="email"
                                 />

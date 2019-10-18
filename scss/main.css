@@ -166,6 +166,10 @@ table {
   font-weight: bold;
 }
 
+#header-main .my-container #nav-bar #menu li a:hover {
+  color: #6b6a6a;
+}
+
 #header-main .my-container #nav-bar .slide-in {
   -webkit-animation: slide-in 500ms forwards;
           animation: slide-in 500ms forwards;
@@ -253,7 +257,7 @@ table {
   }
   #header-main .my-container #nav-bar #menu li a {
     font-size: .9vw;
-    margin-left: 5vw;
+    margin-left: 3.5vw;
   }
 }
 
@@ -1021,7 +1025,7 @@ table {
   #skillsPage #progress-bars-section .progress-bar-container {
     height: 1.8vw;
     width: 100%;
-    margin-bottom: 2.7vw;
+    margin-bottom: 2vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1162,7 +1166,8 @@ table {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 4vh;
-  background-color: white;
+  height: 96.5%;
+  background-color: red;
 }
 
 #portfolioPage #projects .project-container .myVideo {
@@ -1281,6 +1286,10 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    overflow: hidden;
+  }
+  #portfolioPage #projects a {
+    text-decoration: none;
   }
   #portfolioPage #projects .project-container {
     display: -webkit-box;
@@ -1297,7 +1306,19 @@ table {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 5vh;
+    overflow: hidden;
+    position: relative;
     background-color: white;
+  }
+  #portfolioPage #projects .project-container .project_overlay {
+    background: #070707;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  #portfolioPage #projects .project-container .project_overlay:hover {
+    opacity: .2;
   }
   #portfolioPage #projects .project-container .myVideo {
     width: 100%;
@@ -1321,9 +1342,9 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     color: #214261;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -1338,12 +1359,12 @@ table {
     color: #214261;
     padding: 0 2vw;
     font-size: 1.4vw;
-    line-height: 2vw;
+    line-height: 2.5vw;
     font-weight: 400;
   }
   #portfolioPage #projects .project-container .project-text .preview_link {
     background-color: #dbbd7f;
-    padding: .8vw 4vw;
+    padding: 0.8vw 4vw;
     text-align: center;
     border-radius: 6vw;
     margin: 3vw 0;
@@ -1427,11 +1448,16 @@ table {
   background-color: #214261;
   color: white;
   width: 33%;
-  margin-top: 6vw;
+  margin-top: 0vw;
   padding: 2.3vw 3.5vw;
   border-radius: 6px;
   font-size: 3.54vw;
   cursor: pointer;
+}
+
+#contactPage form input[type="submit"]:hover {
+  color: #dfdfdf;
+  background: #0158bb;
 }
 
 #contactPage #contact-messsage {
@@ -1602,6 +1628,10 @@ table {
   font-weight: bold;
 }
 
+#header-main .my-container #nav-bar #menu li a:hover {
+  color: #6b6a6a;
+}
+
 #header-main .my-container #nav-bar .slide-in {
   -webkit-animation: slide-in 500ms forwards;
           animation: slide-in 500ms forwards;
@@ -1671,7 +1701,7 @@ table {
   }
   #header-main .my-container #nav-bar #menu li a {
     font-size: .9vw;
-    margin-left: 5vw;
+    margin-left: 3.5vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

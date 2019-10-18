@@ -71,42 +71,42 @@ if (document.createElement("template").content) {
 			image_source: "./images/portfolio/ecommerce.PNG",
 			name: "React E-Commerce Site",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"This is an e-commerce website built with React. It has all the standard e-commerce site features including a shopping cart, pagination and search bar."
 		},
 		{
 			link: "https://drum-shed.herokuapp.com/products",
 			image_source: "./images/portfolio/drum-machine.PNG",
 			name: "React Drum-Machine",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"A React drum machine. It is very similar in concept to a calculate built in React, except there are sound files associated with each button component"
 		},
 		{
 			link: "https://drum-shed.herokuapp.com/products",
 			image_source: "./images/portfolio/space-x.png",
 			name: "React Space-X API",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"This React application uses Axios to retrieve and display data from the Space-X api."
 		},
 		{
 			link: "https://drum-shed.herokuapp.com/products",
 			image_source: "./images/portfolio/personal_sight.png",
 			name: "Portfolio Site",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"I am particularly proud of this personal porfolio website, because I designed it from scratch including the graphic design, HTML, SCSS, animations and Javascript." 
 		},
 		{
 			link: "https://drum-shed.herokuapp.com/products",
 			image_source: "./images/portfolio/waves.png",
-			name: "Portfolio Site",
+			name: "ResponsiveWebsite",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"An HTML and CSS project for a course related to responsive web programming. It includes reponsive images, videos and iFrames."
 		},
 		{
 			link: "https://drum-shed.herokuapp.com/products",
 			image_source: "./images/portfolio/circle_animation.png",
 			name: "Javascript Canvas Animation",
 			description:
-				"This is an e-commerce website built with React. It has all the standard e-commerce site features, includes a shopping cart, pagination"
+				"A canvas animation that I completed on my own time to sharpen my Javascript skills."
 		}
 	];
 

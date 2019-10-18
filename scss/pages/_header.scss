@@ -64,6 +64,10 @@ $height_nav-bar: 5vh;
                         font-size: 3vw;
                         text-transform: uppercase;
                         font-weight: bold;
+
+                        &:hover{
+                            color: rgb(107, 106, 106);
+                        }
                     }
                 }
             } //end #menu
@@ -148,7 +152,7 @@ $height_nav-bar: 5vh;
 
                         a {
                             font-size: .9vw;
-                            margin-left: 5vw;
+                            margin-left: 3.5vw;
                         }
                     }
                 } //end #menu
