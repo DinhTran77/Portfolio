@@ -1,19 +1,23 @@
+//**************************MOBILE***********************************************
 #footerPage {
     background-color: $color_blue_background;
     display: flex;
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 19vh;
+    height: 10vh;
+    // padding: 0;
+    // margin: 0;
     #logoImage_footer {
-        width: 19%;
+        width: 20vw;
+        display: none;
     }
 
-    .col{
+    .col {
         //     background: pink;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
     .container {
         // background: red;
@@ -31,12 +35,145 @@
         // text-transform: uppercase;
         font-size: 1.5vw;
         margin-left: 1.5vw;
+        display: none;
     }
 
     .copyRight {
-        font-size: .95vw;
+        font-size: 2vw;
         width: 100%;
-        text-align: right;
         text-transform: uppercase;
+        text-align: center;
+        // background: pink;
+        p {
+            display: inline;
+            margin: 2vw;
+        }
+    }
+}
+
+//**************************Tablet***********************************************
+
+@media only screen and (min-width: 768px) {
+    #footerPage {
+        background-color: $color_blue_background;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        height: 13vh;
+ 
+        #logoImage_footer {
+            width: 25%;
+            display: inline-block;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%;
+        }
+        .col-md-6 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .slogan,
+        .copyRight {
+            color: white;
+            font-family: $droid-font;
+            font-weight: bold;
+        }
+        .slogan {
+            font-size: 2vw;
+            display: inline-block;
+            margin-left: 2vw;
+            padding: 0;
+        }
+
+        .copyRight {
+            font-size: 1.2vw;
+            width: 100%;
+            text-align: right;
+
+            text-transform: uppercase;
+            display: inline-block;
+            p {
+                margin: 0;
+                margin-left: 2vw;
+                display: block;
+            }
+        }
+    }
+}
+
+//**************************DESKTOP***********************************************
+
+@media only screen and (min-width: 992px) {
+    #footerPage {
+        background-color: $color_blue_background;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        height: 29vh;
+        #logoImage_footer {
+            width: 10vw;
+            display: inline-block;
+           margin:0;
+           padding: 0;
+        }
+        .row {
+            // background: green;
+            display: flex;
+            align-items: center;
+        }
+        .col-lg-6 {
+            // background: pink;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .container {
+            // background: red;
+            max-width: 100%;
+        }
+
+        .slogan,
+        .copyRight {
+            color: white;
+            font-family: $droid-font;
+            font-weight: bold;
+            // background: green;display: block;
+        }
+        .slogan {
+            // text-transform: uppercase;
+            font-size: 1.4vw;
+            // margin-left: 1.5vw;
+            display: inline-block;
+            // background: grey;
+
+            margin-left: 2vw;
+            padding: 0;
+        }
+
+        .copyRight {
+            font-size: 1vw;
+            width: 100%;
+            text-align: right;
+
+            text-transform: uppercase;
+            display: inline-block;
+
+            p {
+                // background: green;
+                margin: 0;
+                // margin-left: 2vw;
+                display: block;
+            }
+        }
     }
 }
