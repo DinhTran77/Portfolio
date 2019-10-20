@@ -734,6 +734,7 @@ table {
 #homePage #hero_message {
   width: 100vw;
   text-align: center;
+  height: 3vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,7 +744,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
 }
 
 #homePage #hero_message #hero_greeting {
@@ -751,6 +751,7 @@ table {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 4vw;
   font-weight: bolder;
+  line-height: 7vw;
 }
 
 #homePage #hero_message #hero_text {
@@ -764,7 +765,7 @@ table {
 #homePage #cursor {
   display: inline-block;
   width: 0.5vw;
-  height: .5vw;
+  height: 4vw;
   background-color: #212529;
   -webkit-animation: blink 0.75s step-end infinite;
           animation: blink 0.75s step-end infinite;
@@ -896,9 +897,9 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-flex: 3.5;
-      -ms-flex-positive: 3.5;
-          flex-grow: 3.5;
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
   width: 0;
@@ -1076,7 +1077,7 @@ table {
         -ms-flex-align: center;
             align-items: center;
     background-color: #fdcb17;
-    padding-right: .6vw;
+    padding-right: 0.6vw;
     font-size: 0.945vw;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
@@ -1117,6 +1118,9 @@ table {
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .git {
     width: 55%;
+  }
+  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .photoshop {
+    width: 85%;
   }
 }
 
@@ -1703,5 +1707,57 @@ table {
     font-size: .9vw;
     margin-left: 3.5vw;
   }
+}
+
+#footerPage {
+  background-color: #214261;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 19vh;
+}
+
+#footerPage #logoImage_footer {
+  width: 19%;
+}
+
+#footerPage .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#footerPage .container {
+  max-width: 100%;
+}
+
+#footerPage .slogan,
+#footerPage .copyRight {
+  color: white;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+}
+
+#footerPage .slogan {
+  font-size: 1.5vw;
+  margin-left: 1.5vw;
+}
+
+#footerPage .copyRight {
+  font-size: .95vw;
+  width: 100%;
+  text-align: right;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

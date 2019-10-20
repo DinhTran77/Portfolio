@@ -55,6 +55,9 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- Waypoints Library -->
+        <script src="./js/jquery.waypoints.min.js"></script>
+
         <!-- Animate on scroll library -->
         <link rel="stylesheet" href="./css/aos.css" />
 
@@ -108,11 +111,11 @@
                         src="./images/logos/Logo_ribbon.svg"
                         alt="Logo"
                     />
-                    <!-- <section id="hero_message"> -->
-                    <!-- <span id="hero_greeting"></span> -->
-                    <!-- <span id="hero_text"></span>
-                                <span id="cursor"></span>
-                            </section> -->
+                    <section id="hero_message">
+                        <span id="hero_greeting"></span>
+                        <span id="hero_text"></span>
+                        <span id="cursor"></span>
+                    </section>
                 </div>
             </article>
 
@@ -133,21 +136,23 @@
                                 <h4
                                     class="skill-name"
                                     data-aos="fade-in"
-                                    data-aos-duration="1700"
+                                    data-aos-duration="1100"
+                                    data-aos-offset="-20"
                                 ></h4>
                                 <div class="progress-bar">
                                     <div
                                         class="container-progress-percentage"
                                         class="skill-name"
                                         data-aos="fade-in"
-                                        data-aos-duration="1700"
+                                        data-aos-duration="1100"
+                                        data-aos-offset="-20"
                                     >
                                         <div
                                             class="progressPercentage"
                                             data-aos="slide-right"
                                             data-aos="fade-in"
                                             data-aos-duration="1100"
-                                            data-aos-offset="30"
+                                            data-aos-offset="-20"
                                         ></div>
                                     </div>
                                 </div>
@@ -171,10 +176,9 @@
                     <template id="template_project_row" class="row">
                         <template id="template-col-projects">
                             <div class="col-lg-6">
-                                
                                 <a href="" class="project_link" target="_blank">
                                     <div class="project-container">
-                                        <div class='project_overlay'></div>
+                                        <div class="project_overlay"></div>
                                         <img class="project-image" />
                                         <article class="project-text">
                                             <h4 class="project-name"></h4>
@@ -210,7 +214,11 @@
                             <img id='profile-pic' src="./images/team/1.jpg" alt="">
                         </div> -->
                         <div class="col-lg-5">
-                            <form id="contact-form" method="POST" action="contactForm.php">
+                            <form
+                                id="contact-form"
+                                method="POST"
+                                action="contactForm.php"
+                            >
                                 <label for="name" class="form-label "
                                     >Name:*</label
                                 >
@@ -243,7 +251,27 @@
                 </div>
             </article>
 
-            <footer></footer>
+            <footer id="footerPage" class="my-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col slogan">
+                            <img
+                                id="logoImage_footer"
+                                src="./images/logos/Logo_ribbon.svg"
+                                alt="Logo"
+                            />
+                            <span class="slogan">Clean Front-end Code</span>
+                        </div>
+                        <div class="col">
+                            <section class="copyRight">
+                                <span>&copy;Copyright 2019</span>
+                                <p>&nbsp; Dinh Tran</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
             <!------------------ Initialize animate on scroll library-------------------->
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         </main>

@@ -1,0 +1,42 @@
+#footerPage {
+    background-color: $color_blue_background;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 19vh;
+    #logoImage_footer {
+        width: 19%;
+    }
+
+    .col{
+        //     background: pink;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+    }
+    .container {
+        // background: red;
+        max-width: 100%;
+    }
+
+    .slogan,
+    .copyRight {
+        color: white;
+        font-family: $droid-font;
+        font-weight: bold;
+        // background: green;
+    }
+    .slogan {
+        // text-transform: uppercase;
+        font-size: 1.5vw;
+        margin-left: 1.5vw;
+    }
+
+    .copyRight {
+        font-size: .95vw;
+        width: 100%;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}

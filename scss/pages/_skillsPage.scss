@@ -22,7 +22,7 @@
             .skill-name {
                 display: flex;
                 align-items: flex-end;
-                flex-grow: 3.5;
+                flex-grow: 6;
                 flex-basis: 1;
                 width: 0;
                 font-size: $font-size-skill-title;
@@ -139,7 +139,7 @@
                 align-items: flex-start;
 
                 .skill-name {
-                    font-size: $font-size-skill-title * 0.7;              
+                    font-size: $font-size-skill-title * 0.7;
                     font-weight: 400;
                     width: 90%;
                     height: 100%;
@@ -151,7 +151,7 @@
                     display: flex;
                     align-items: center;
                     // background-color: green;
-                    font-family: $monsterrat-font;                
+                    font-family: $monsterrat-font;
                 }
 
                 .progress-bar {
@@ -165,16 +165,13 @@
                     .container-progress-percentage {
                         width: 90%;
                         height: 100%;
-           
 
                         .progressPercentage {
-   
                             align-items: center;
                             background-color: $linkColor;
-                            padding-right: .6vw;
+                            padding-right: 0.6vw;
                             // font-family: $percentage-font;
                             font-size: $progress-percentage-font-size * 0.7;
-             
                         }
 
                         .html {
@@ -217,6 +214,10 @@
                         }
                         .git {
                             width: 55%;
+                        }
+
+                        .photoshop {
+                            width: 85%;
                         }
                     } //end  .contanier-progress-percentage
                 }
