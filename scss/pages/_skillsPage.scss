@@ -100,13 +100,17 @@
                         width: 75%;
                     }
                     .express {
-                        width: 20%;
+                        width: 30%;
                     }
                     .agile {
                         width: 90%;
                     }
                     .git {
                         width: 55%;
+                    }
+
+                    .photoshop{
+                        width: 85%;
                     }
                 } //end  .contanier-progress-percentage
             }
@@ -174,51 +178,7 @@
                             font-size: $progress-percentage-font-size * 0.7;
                         }
 
-                        .html {
-                            width: 80%;
-                        }
-                        .scss {
-                            width: 75%;
-                        }
-                        .javascript {
-                            width: 60%;
-                        }
-                        .jQuery {
-                            width: 65%;
-                        }
-                        .bootstrap {
-                            width: 55%;
-                        }
-                        .responsive-design {
-                            width: 65%;
-                        }
-
-                        .react {
-                            width: 75%;
-                        }
-                        .jest {
-                            width: 55%;
-                        }
-                        .typescript {
-                            width: 50%;
-                        }
-
-                        .node {
-                            width: 75%;
-                        }
-                        .express {
-                            width: 50%;
-                        }
-                        .agile {
-                            width: 90%;
-                        }
-                        .git {
-                            width: 55%;
-                        }
-
-                        .photoshop {
-                            width: 85%;
-                        }
+        
                     } //end  .contanier-progress-percentage
                 }
             } //end .progress-bar-container

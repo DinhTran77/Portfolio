@@ -1,8 +1,43 @@
-// initialize AOS (Automate on Scroll Plugin
+// initialize AOS (Automate on Scroll) Plugin
 
 AOS.init();
 
-// Change URL on Scroll
+//*************************Type writter animation***********************
+let i = 0;
+// const txt1 = "Hi, I'm Dinh Tran!";
+// const txt2 = "I convert beautiful & complex designs";
+// const txt3 = "into clean & maintainable front-end code.";
+
+const txt3 = "Clean front-end code";
+
+/* The speed/duration of the effect in milliseconds */
+let j = 0;
+let k = 0;
+let l = 0;
+let m = 0;
+const speed = 60;
+
+const heroText = document.getElementById("hero_text");
+const heroGreeting = document.getElementById("hero_greeting");
+function typeWriter() {
+    if (l < txt3.length) {
+        heroText.innerHTML += txt3.charAt(l);
+        l++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+setTimeout(function() {
+    typeWriter();
+}, 800);
+
+$(".menu-opener").click(function() {
+    $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+});
+
+
+//*************************Change URL on Scroll***********************
+
 // let skillsPage = $("#skillsPage");
 // skillsPage.waypoint(function() {
 //     window.history.pushState("object or string", "Title", "/skills");
@@ -42,7 +77,11 @@ if (document.createElement("template").content) {
         { skill_title: "Express", percent: "50%", class: "express" },
         { skill_title: "Agile", percent: "90%", class: "agile" },
         { skill_title: "Git", percent: "55%", class: "git" },
-        { skill_title: "Photoshop/Illustrator", percent: "85%", class: "photoshop" }
+        {
+            skill_title: "Photoshop/Illustrator",
+            percent: "85%",
+            class: "photoshop"
+        }
     ];
 
     // Get template for row
@@ -164,43 +203,10 @@ if (document.createElement("template").content) {
 } else {
 }
 
-// Type writter animation
-let i = 0;
-// const txt1 = "Hi, I'm Dinh Tran!";
-// const txt2 = "I convert beautiful & complex designs";
-// const txt3 = "into clean & maintainable front-end code.";
+// //Handle submit button
 
-const txt3 = "Clean front-end code";
-
-/* The speed/duration of the effect in milliseconds */
-let j = 0;
-let k = 0;
-let l = 0;
-let m = 0;
-const speed = 60;
-
-const heroText = document.getElementById("hero_text");
-const heroGreeting = document.getElementById("hero_greeting");
-function typeWriter() {
-    if (l < txt3.length) {
-        heroText.innerHTML += txt3.charAt(l);
-        l++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
-setTimeout(function() {
-    typeWriter();
-}, 800);
-
-$(".menu-opener").click(function() {
-    $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-});
-
-//Handle submit button
-
-const myForm = document.getElementById("contact-form");
-myForm.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Button pressed");
-});
+// const myForm = document.getElementById("contact-form");
+// myForm.addEventListener("submit", e => {
+//     e.preventDefault();
+//     alert("Button pressed");
+// });
