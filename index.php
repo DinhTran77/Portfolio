@@ -66,7 +66,7 @@
         <!-- <script src='./js/jquery.slicknav.min.js' type="text/javascript"></script> -->
 
         <!-- Javascript -->
-        <script src="./js/main.js" type="text/javascript" defer></script>
+        <script src="./main.js" type="text/javascript" defer></script>
         <script
             src="./js/hamburger_menu.js"
             type="text/javascript"
@@ -84,15 +84,10 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
         />
-
-
-       
     </head>
 
     <body id="container-page">
         <main>
-    
-    
             <!------------------ Header Section -------------------->
             <header id="header-main">
                 <div class="my-container">
@@ -170,7 +165,6 @@
             </article>
 
             <!------------------ Portfolio Page-------------------->
-
             <article id="portfolioPage" class="my-container">
                 <header class="section-title-area">
                     <h2 class="section-heading light">Portfolio</h2>
@@ -209,22 +203,12 @@
                     <h3 class="section-subheading">Let's get in touch!</h3>
                 </header>
 
-                <!-- <p id="contact-greeting" class="section-subheading">
-                    Say hi, and let's work together!
-                </p> -->
-
                 <div class="container container_content">
                     <div class="row justify-content-center">
-                        <!-- <div class="col-lg-7">
-                            <img id='profile-pic' src="./images/team/1.jpg" alt="">
-                        </div> -->
                         <div class="col-lg-5">
-                            <form
-                                id="contact-form"
-                                method="POST"
-                                action="contactForm.php"
-                            >
-                                <label for="name" class="form-label "
+                            <p id="sucess_message">Before sent</p>
+                            <form action="contact.php" method="post" class='ajax'>
+                                <label for="name" class="form-label"
                                     >Name:*</label
                                 >
                                 <input
@@ -232,6 +216,7 @@
                                     type="text"
                                     id="name"
                                     name="name"
+                                    value="Dinh Tran"
                                 />
 
                                 <label for="name" class="form-label"
@@ -242,13 +227,22 @@
                                     type="email"
                                     id="email"
                                     name="email"
+                                    value="dinhtran77@hotmail.com"
                                 />
 
-                                <label for="name" class="form-label"
+                                <label for="comment" class="form-label"
                                     >Message:*</label
                                 >
                                 <!-- <textarea  name="comment"></textarea> -->
-                                <textarea required rows="3" cols="22" name="comment"></textarea>
+                                <textarea
+                                    required
+                                    rows="3"
+                                    cols="22"
+                                    name="comment"
+                                    id="comment"
+                                >
+                                This is a message from Dinh
+                                </textarea>
                                 <input type="submit" value="Submit" />
                             </form>
                         </div>

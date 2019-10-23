@@ -2,6 +2,62 @@
 
 AOS.init();
 
+$("form.ajax").on("submit", function() {
+    let url = $(this).attr("action");
+    let type = $(this).attr("method");
+
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let message = $("#comment").val();
+    let data = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    console.log("url: " + url + "method: " + type);
+    console.log(data);
+
+    $.ajax({
+        url: url,
+        type: type,
+        data: data,
+        success: function(response) {
+            $("#sucess_message").html(response);
+        }
+    });
+    return false;
+});
+
+// $("form.ajax").on("submit", function() {
+//     alert("hello");
+//     let url = $(this).attr("action");
+//     let type = $(this).attr("method");
+//     let name = $("#name").val();
+//     let email = $("#email").val();
+//     let comment = $("#comment").val();
+
+//     data = {
+//         name: name,
+//         email: email,
+//         comment: comment
+//     };
+//     console.log("url: " + url);
+//     console.log("type: " + type);
+//     console.log("data: " + JSON.stringify(data));
+
+//     $.ajax({
+//         url: url,
+//         type: type,
+//         data: data,
+//         success: function(response) {
+//             console.log(response);
+//         }
+//     });
+
+//     return false;
+// });
+
 //*************************Type writter animation***********************
 let i = 0;
 // const txt1 = "Hi, I'm Dinh Tran!";
@@ -34,7 +90,6 @@ setTimeout(function() {
 $(".menu-opener").click(function() {
     $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });
-
 
 //*************************Change URL on Scroll***********************
 
