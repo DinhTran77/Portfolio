@@ -1,5 +1,19 @@
 <?php
-require "./PHPMailer/PHPMailerAutoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+/* Exception class. */
+require './PHPMailer/src/Exception.php';
+
+/* The main PHPMailer class. */
+require '.\PHPMailer\src\PHPMailer.php';
+
+/* SMTP class, needed if you want to use SMTP. */
+require '.\PHPMailer\src\SMTP.php';
+
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
 if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 
     $from_name = $_POST['name'];
