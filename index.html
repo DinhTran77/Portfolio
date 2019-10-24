@@ -130,13 +130,35 @@
                     <h3 class="section-subheading">Front-end skills</h3>
                 </header>
 
-                <div id="progress-bars-section" class="container">
+                <div id="progress-bars-section" class="row container">
                     <div id="skill" class="row"></div>
 
                     <script id="skills_template" type="text/template">
                         {{#skills}}
-                            <div class="col-lg-4">
-                                <h3>{{skill_title}}</h3>
+                            <div class="col-lg-4 progress-bar-container">
+                                    <h4
+                                    class="bootstrap"
+                                    data-aos="fade-in"
+                                    data-aos-duration="1100"
+                                    data-aos-offset="-20"
+                                >{{skill_title}}</h4>
+
+                                <div class="progress-bar">
+                                        <div
+                                            class="container-progress-percentage bootstrap"
+                                            data-aos="fade-in"
+                                            data-aos-duration="1100"
+                                            data-aos-offset="-20"
+                                        >
+                                            <div
+                                                class="progressPercentage"
+                                                data-aos="slide-right"
+                                                data-aos="fade-in"
+                                                data-aos-duration="1100"
+                                                data-aos-offset="-20"
+                                            ></div>
+                                        </div>
+                                    </div>
                             </div>
                         {{/skills}}
                     </script>

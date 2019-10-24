@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        #skills_template {
+        }
         .progress-bar-container {
             display: flex;
             align-items: center;
@@ -109,7 +112,7 @@
                         width: 55%;
                     }
 
-                    .photoshop{
+                    .photoshop {
                         width: 85%;
                     }
                 } //end  .contanier-progress-percentage
@@ -177,8 +180,6 @@
                             // font-family: $percentage-font;
                             font-size: $progress-percentage-font-size * 0.7;
                         }
-
-        
                     } //end  .contanier-progress-percentage
                 }
             } //end .progress-bar-container
