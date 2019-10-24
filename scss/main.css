@@ -529,7 +529,7 @@ html {
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media only screen and (min-width: 768px) and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .slicknav_menu {
     display: none;
   }
@@ -538,46 +538,49 @@ html {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .my-container {
-    padding: 13vw 7vw 13vw 7vw;
-  }
-  .container_content {
-    margin-top: 11vw;
-  }
-  .section-title-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: none;
-  }
-  .section-title-area .light {
-    color: white;
-  }
-  .section-heading {
-    font-size: 5.59vw;
-    margin-top: 0;
-    text-transform: uppercase !important;
-    color: #212529;
-    font-weight: 600;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  .section-subheading {
-    font-size: 3vw;
-    font-weight: 400;
-    margin-top: 1vw;
-    font-style: italic;
-    color: #6c757d;
-    text-transform: none;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
+.my-container {
+  padding: 13vw 7vw 13vw 7vw;
+}
+
+.container_content {
+  margin-top: 11vw;
+}
+
+.section-title-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+}
+
+.section-title-area .light {
+  color: white;
+}
+
+.section-heading {
+  font-size: 5.59vw;
+  margin-top: 0;
+  text-transform: uppercase !important;
+  color: #212529;
+  font-weight: 600;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.section-subheading {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-top: 1vw;
+  font-style: italic;
+  color: #6c757d;
+  text-transform: none;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media only screen and (min-width: 992px) {
@@ -1350,6 +1353,17 @@ table {
   background-color: #ffd306;
 }
 
+#contactPage #sucess_message {
+  font-size: 3.2vw;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  color: red;
+  margin-bottom: 7vw;
+  height: 1vw;
+}
+
 #contactPage #contact-greeting {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 4vw;
@@ -1360,14 +1374,6 @@ table {
 
 #contactPage form {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: red;
-}
-
-#contactPage form label {
-  display: inline-block;
-  margin-bottom: 0.8vw;
-  font-size: 3.2vw;
-  color: #6d6d6d;
 }
 
 #contactPage form input,
@@ -1375,11 +1381,11 @@ table {
   border-style: solid;
   border-width: 0.5px;
   border-color: #bdbbbb;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
+  font-size: 3vw;
 }
 
 #contactPage form input {
-  font-size: 3.4vw;
   outline: none;
   border: none;
   display: block;
@@ -1395,20 +1401,20 @@ table {
   outline: none;
   display: block;
   width: 100%;
-  height: 30vw;
-  padding: 2vw;
-  font-size: 3.4vw;
+  height: 20vw;
+  padding: 1.5vw;
   color: grey;
+  text-align: left;
 }
 
 #contactPage form input[type="submit"] {
   background-color: #214261;
   color: white;
   width: 33%;
-  margin-top: 0vw;
+  margin-top: 2vw;
   padding: 2.3vw 3.5vw;
   border-radius: 6px;
-  font-size: 3.54vw;
+  font-size: 3vw;
   cursor: pointer;
 }
 
@@ -1426,6 +1432,9 @@ table {
     background-color: #ffd306;
     background-size: 100% auto;
     background-repeat: no-repeat;
+  }
+  #contactPage #sucess_message {
+    font-size: 2.2vw;
   }
   #contactPage .container {
     max-width: 100%;
@@ -1447,14 +1456,6 @@ table {
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     width: 100%;
   }
-  #contactPage form label {
-    display: inline-block;
-    margin-bottom: 0.1vw;
-    margin-top: 1.6vw;
-    font-size: 1.1vw;
-    color: #6d6d6d;
-    width: 100%;
-  }
   #contactPage form input,
   #contactPage form textarea {
     border-style: solid;
@@ -1467,13 +1468,13 @@ table {
     border-color: #bdbbbb;
     color: grey;
     width: 100%;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
   }
   #contactPage form textarea {
     outline: none;
     display: block;
     width: 100%;
-    height: 17vw;
+    height: 14vw;
     color: grey;
   }
   #contactPage form input[type="submit"] {
@@ -1672,7 +1673,7 @@ table {
           align-items: center;
   overflow: hidden;
   position: relative;
-  height: 10vh;
+  height: 7vh;
 }
 
 #footerPage #logoImage_footer {

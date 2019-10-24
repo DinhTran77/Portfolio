@@ -206,33 +206,27 @@
                 <div class="container container_content">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
-                            <p id="sucess_message">Before sent</p>
+                            <p id="sucess_message"></p>
                             <form action="contact.php" method="post" class='ajax'>
-                                <label for="name" class="form-label"
-                                    >Name:*</label
-                                >
+
                                 <input
                                     required
                                     type="text"
                                     id="name"
                                     name="name"
-                                    value="Dinh Tran"
+                                    placeholder="Name:*"
+                                    value='Dinh'
                                 />
 
-                                <label for="name" class="form-label"
-                                    >Email:*</label
-                                >
+
                                 <input
                                     required
                                     type="email"
                                     id="email"
                                     name="email"
+                                    placeholder="email"
                                     value="dinhtran77@hotmail.com"
                                 />
-
-                                <label for="comment" class="form-label"
-                                    >Message:*</label
-                                >
                                 <!-- <textarea  name="comment"></textarea> -->
                                 <textarea
                                     required
@@ -240,8 +234,8 @@
                                     cols="22"
                                     name="comment"
                                     id="comment"
-                                >
-                                This is a message from Dinh
+                                    placeholder='message:*'
+                                >This is a message from Dinh
                                 </textarea>
                                 <input type="submit" value="Submit" />
                             </form>

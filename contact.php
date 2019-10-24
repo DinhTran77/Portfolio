@@ -46,7 +46,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
         print_r("Email failed");
 
     } else {
-        print_r('email sent');
+        print_r('Email sent successfully!');
     }
 
 }
