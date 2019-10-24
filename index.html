@@ -84,6 +84,10 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
         />
+
+        <!-- Mustache and Cycle2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.autoheight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
     </head>
 
     <body id="container-page">
@@ -126,10 +130,27 @@
                     <h3 class="section-subheading">Front-end skills</h3>
                 </header>
 
-                <div
-                    id="progress-bars-section"
-                    class="container w-screen container_content"
-                >
+                <div id="progress-bars-section" class="container">
+                    <div id="skill" class="row"></div>
+
+                    <script id="skills_template" type="text/template">
+                        {{#skills}}
+                            <div class="col-lg-4">
+                                <h3>{{skill_title}}</h3>
+                            </div>
+                        {{/skills}}
+                    </script>
+
+                    <script type="text/javascript">
+                        $(function() {
+                            $.getJSON("skills.json", function(data) {
+                                var template = $("#skills_template").html();
+                                var html = Mustache.to_html(template, data);
+                                $("#skill").html(html);
+                            });
+                        });
+                    </script>
+
                     <template id="template-row" class="row">
                         <template id="template-col">
                             <div class="col-lg-6 progress-bar-container">
@@ -207,17 +228,19 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <p id="sucess_message"></p>
-                            <form action="contact.php" method="post" class='ajax'>
-
+                            <form
+                                action="contact.php"
+                                method="post"
+                                class="ajax"
+                            >
                                 <input
                                     required
                                     type="text"
                                     id="name"
                                     name="name"
                                     placeholder="Name:*"
-                                    value='Dinh'
+                                    value="Dinh"
                                 />
-
 
                                 <input
                                     required
@@ -234,8 +257,9 @@
                                     cols="22"
                                     name="comment"
                                     id="comment"
-                                    placeholder='message:*'
-                                >This is a message from Dinh
+                                    placeholder="message:*"
+                                >
+This is a message from Dinh
                                 </textarea>
                                 <input type="submit" value="Submit" />
                             </form>

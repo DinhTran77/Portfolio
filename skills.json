@@ -1,0 +1,29 @@
+{
+    "skills": [
+        { "skill_title": "HTML & CSS", "percent": "80%", "class": "html" },
+        { "skill_title": "SCSS", "percent": "75%", "class": "scss" },
+        { "skill_title": "JS/jQuery", "percent": "60%", "class": "javascript" },
+        { "skill_title": "Bootstrap", "percent": "55%", "class": "bootstrap" },
+        {
+            "skill_title": "Responsive Design",
+            "percent": "65%",
+            "class": "responsive-design"
+        },
+        { "skill_title": "REACT", "percent": "75%", "class": "react" },
+        { "skill_title": "Jest", "percent": "55%", "class": "scss" },
+        {
+            "skill_title": "Typescript",
+            "percent": "50%",
+            "class": "typescript"
+        },
+        { "skill_title": "Node", "percent": "75%", "class": "node" },
+        { "skill_title": "Express", "percent": "50%", "class": "express" },
+        { "skill_title": "Agile", "percent": "90%", "class": "agile" },
+        { "skill_title": "Git", "percent": "55%", "class": "git" },
+        {
+            "skill_title": "Photoshop/Illustrator",
+            "percent": "85%",
+            "class": "photoshop"
+        }
+    ]
+}
