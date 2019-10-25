@@ -861,6 +861,10 @@ table {
   background-color: white;
 }
 
+#skillsPage .container {
+  max-width: 100%;
+}
+
 #skillsPage #progress-bars-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,7 +1003,7 @@ table {
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .express {
-  width: 30%;
+  width: 50%;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .agile {

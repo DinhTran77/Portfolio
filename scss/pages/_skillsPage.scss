@@ -7,14 +7,15 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: white;
-
+    .container {
+        // background: red;
+        max-width: 100%;
+    }
     #progress-bars-section {
         display: flex;
         flex-direction: column;
         width: 100%;
 
-        #skills_template {
-        }
         .progress-bar-container {
             display: flex;
             align-items: center;
@@ -103,7 +104,7 @@
                         width: 75%;
                     }
                     .express {
-                        width: 30%;
+                        width: 50%;
                     }
                     .agile {
                         width: 90%;

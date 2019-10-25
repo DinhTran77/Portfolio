@@ -130,50 +130,52 @@
                     <h3 class="section-subheading">Front-end skills</h3>
                 </header>
 
-                <div id="progress-bars-section" class="row container">
-                    <div id="skill" class="row"></div>
+                <div id="progress-bars-section" class="container">
+                    <div id="skill" class="row">
+                        <!-- Template for skills section -->
+                        <script id="skills_template" type="text/template">
+                            {{#skills}}
+                                <div class="col-lg-6 progress-bar-container">
+                                        <h4
+                                        class="skill-name"
+                                        data-aos="fade-in"
+                                        data-aos-duration="1100"
+                                        data-aos-offset="-20"
+                                    >{{skill_title}}</h4>
 
-                    <script id="skills_template" type="text/template">
-                        {{#skills}}
-                            <div class="col-lg-4 progress-bar-container">
-                                    <h4
-                                    class="bootstrap"
-                                    data-aos="fade-in"
-                                    data-aos-duration="1100"
-                                    data-aos-offset="-20"
-                                >{{skill_title}}</h4>
-
-                                <div class="progress-bar">
-                                        <div
-                                            class="container-progress-percentage bootstrap"
-                                            data-aos="fade-in"
-                                            data-aos-duration="1100"
-                                            data-aos-offset="-20"
-                                        >
+                                    <div class="progress-bar">
                                             <div
-                                                class="progressPercentage"
-                                                data-aos="slide-right"
+                                                class="container-progress-percentage"
                                                 data-aos="fade-in"
                                                 data-aos-duration="1100"
                                                 data-aos-offset="-20"
-                                            ></div>
+                                            >
+                                                <div
+                                                    class="progressPercentage {{class}}"
+                                                    data-aos="slide-right"
+                                                    data-aos="fade-in"
+                                                    data-aos-duration="1100"
+                                                    data-aos-offset="-20"
+                                                >
+                                                {{percent}}
+                                            </div>
+                                            </div>
                                         </div>
-                                    </div>
-                            </div>
-                        {{/skills}}
-                    </script>
+                                </div>
+                            {{/skills}}
+                        </script>
 
-                    <script type="text/javascript">
-                        $(function() {
-                            $.getJSON("skills.json", function(data) {
-                                var template = $("#skills_template").html();
-                                var html = Mustache.to_html(template, data);
-                                $("#skill").html(html);
+                        <script type="text/javascript">
+                            $(function() {
+                                $.getJSON("skills.json", function(data) {
+                                    var template = $("#skills_template").html();
+                                    var html = Mustache.to_html(template, data);
+                                    $("#skill").html(html);
+                                });
                             });
-                        });
-                    </script>
-
-                    <template id="template-row" class="row">
+                        </script>
+                    </div>
+                    <!-- <template id="template-row" class="row">
                         <template id="template-col">
                             <div class="col-lg-6 progress-bar-container">
                                 <h4
@@ -201,7 +203,7 @@
                                 </div>
                             </div>
                         </template>
-                    </template>
+                    </template> -->
                     <!--end row template -->
                 </div>
                 <!--end progress bars section  -->
