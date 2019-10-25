@@ -2,13 +2,10 @@
 #skillsPage {
     $font-size-skill-title: 2.5vw;
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
-
-    // background-image: url('../../images/sketch_skills.PNG');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: white;
     .container {
-        // background: red;
         max-width: 100%;
     }
     #progress-bars-section {
@@ -19,10 +16,14 @@
         .progress-bar-container {
             display: flex;
             align-items: center;
-            height: $font-size-skill-title * 1.4;
+            height: $font-size-skill-title * 1.6;
             width: 100%;
             margin-bottom: 3.4vw;
 
+            .skill-name,
+            .progressPercentage {
+                color: rgb(148, 147, 147);
+            }
             .skill-name {
                 display: flex;
                 align-items: flex-end;
@@ -32,7 +33,7 @@
                 font-size: $font-size-skill-title;
                 font-weight: 400;
                 font-family: $droid-font;
-                color: grey;
+                // color: rgb(148, 147, 147);
                 height: 100%;
                 line-height: 100%;
                 overflow: visible;
@@ -64,9 +65,9 @@
                         align-items: center;
                         padding-right: 2vw;
                         background-color: $linkColor;
-                        color: grey;
+
                         padding-left: 1.5vw;
-                        // font: $percentage-font;
+
                         font-size: 2vw;
                         font-family: $monsterrat-font;
                     }
@@ -131,16 +132,14 @@
         $progress-percentage-font-size: $font-size-skill-title * 0.9;
 
         .container {
-            // background: red;
             max-width: 100%;
         }
 
         #progress-bars-section {
-            // background-color: green;
             width: 100%;
 
             .progress-bar-container {
-                height: $font-size-skill-title * 1.2;
+                height: $font-size-skill-title * 1.6;
                 width: 100%;
                 margin-bottom: 2vw;
                 display: flex;
@@ -177,9 +176,9 @@
                         .progressPercentage {
                             align-items: center;
                             background-color: $linkColor;
-                            padding-right: 0.6vw;
+                            padding-right: 0.9vw;
                             // font-family: $percentage-font;
-                            font-size: $progress-percentage-font-size * 0.7;
+                            font-size: $font-size-skill-title * 0.7;
                         }
                     } //end  .contanier-progress-percentage
                 }

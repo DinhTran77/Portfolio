@@ -17,9 +17,6 @@ $("form.ajax").on("submit", function() {
         message: message
     };
 
-    console.log("url: " + url + "method: " + type);
-    console.log(data);
-
     $.ajax({
         url: url,
         type: type,
@@ -33,7 +30,7 @@ $("form.ajax").on("submit", function() {
 
 //*************************Type writter animation***********************
 
-const text = "Clean front-end code";
+const text = "Clean & maintainable front-end code";
 const speed = 60;
 const heroText = document.getElementById("hero_text");
 const heroGreeting = document.getElementById("hero_greeting");
@@ -50,37 +47,3 @@ function typeWriter() {
 setTimeout(function() {
     typeWriter();
 }, 800);
-
-// $(".menu-opener").click(function() {
-//     $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-// });
-
-//*************************Change URL on Scroll***********************
-
-// let skillsPage = $("#skillsPage");
-// skillsPage.waypoint(function() {
-//     window.history.pushState("object or string", "Title", "/skills");
-// });
-
-// let homePage = $("#nav-bar");
-// homePage.waypoint(function() {
-//     window.history.pushState("object or string", "Title", "/home");
-// });
-
-// let portfolioPage = $("#portfolioPage");
-// portfolioPage.waypoint(function() {
-//     window.history.pushState("object or string", "Title", "/portfolio");
-// });
-
-// let contactPage = $("#contactPage");
-// contactPage.waypoint(function() {
-//     window.history.pushState("object or string", "Title", "/contact");
-// });
-
-// //Handle submit button
-
-// const myForm = document.getElementById("contact-form");
-// myForm.addEventListener("submit", e => {
-//     e.preventDefault();
-//     alert("Button pressed");
-// });

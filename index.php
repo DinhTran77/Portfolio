@@ -123,6 +123,8 @@
                 </div>
             </article>
 
+
+
             <!------------------ Skills Page-------------------->
             <article id="skillsPage" class="my-container">
                 <header class="section-title-area">
@@ -206,7 +208,17 @@
                                                 <h4 class="project-name">{{name}}</h4>
                                                 <h5
                                                     class="project-description"
-                                                >{{description}}</h5>
+                                                >{{description}}
+                                                <!-- {{#items}}
+                                                    <ul >
+                                                        {{#name}}
+                                                        <li >{{.}}</li>
+                                                        {{/name}}
+                                                    </ul>
+                                                    {{/items}}
+ -->
+
+                                                </h5>
                                                 <div class="preview_link">
                                                     live preview
                                                 </div>
@@ -242,7 +254,7 @@
                 <div class="container container_content">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
-                            <p id="sucess_message">Email sent!</p>
+                            <p id="sucess_message"></p>
                             <form
                                 action="contact.php"
                                 method="post"
