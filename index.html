@@ -130,7 +130,10 @@
                     <h3 class="section-subheading">Front-end skills</h3>
                 </header>
 
-                <div id="progress-bars-section" class="container">
+                <div
+                    id="progress-bars-section"
+                    class="container_content container"
+                >
                     <div id="skill" class="row">
                         <!-- Template for skills section -->
                         <script id="skills_template" type="text/template">
@@ -215,29 +218,73 @@
                     <h2 class="section-heading light">Portfolio</h2>
                     <h3 class="section-subheading light">Work I'm proud of</h3>
                 </header>
-
                 <div id="projects" class="container_content container">
-                    <template id="template_project_row" class="row">
-                        <template id="template-col-projects">
-                            <div class="col-lg-6">
-                                <a href="" class="project_link" target="_blank">
-                                    <div class="project-container">
-                                        <div class="project_overlay"></div>
-                                        <img class="project-image" />
-                                        <article class="project-text">
-                                            <h4 class="project-name"></h4>
-                                            <h5
-                                                class="project-description"
-                                            ></h5>
-                                            <div class="preview_link">
-                                                live preview
-                                            </div>
-                                        </article>
-                                    </div>
-                                </a>
-                            </div>
+                    <div id="project" class="row">
+                        <script id="portfolio_template" type="text/template">
+                            {{#projects}}
+                                <div class="col-lg-6 progress-bar-container">
+
+                                        <a
+                                        href="{{link}}"
+                                        class="project_link"
+                                        target="_blank"
+                                    >
+                                        <div class="project-container">
+                                            <div class="project_overlay"></div>
+                                            <img src='{{image_source}}' class="project-image" />
+                                            <article class="project-text">
+                                                <h4 class="project-name">{{name}}</h4>
+                                                <h5
+                                                    class="project-description"
+                                                >{{description}}</h5>
+                                                <div class="preview_link">
+                                                    live preview
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </a>
+                                </div>
+                            {{/projects}}
+                        </script>
+
+                        <script type="text/javascript">
+                            $(function() {
+                                $.getJSON("projects.json", function(data) {
+                                    var template = $(
+                                        "#portfolio_template"
+                                    ).html();
+                                    var html = Mustache.to_html(template, data);
+                                    $("#project").html(html);
+                                });
+                            });
+                        </script>
+
+                        <template id="template_project_row" class="row">
+                            <template id="template-col-projects">
+                                <div class="col-lg-6">
+                                    <a
+                                        href=""
+                                        class="project_link"
+                                        target="_blank"
+                                    >
+                                        <div class="project-container">
+                                            <div class="project_overlay"></div>
+                                            <img class="project-image" />
+                                            <article class="project-text">
+                                                <h4 class="project-name"></h4>
+                                                <h5
+                                                    class="project-description"
+                                                ></h5>
+                                                <div class="preview_link">
+                                                    live preview
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </a>
+                                </div>
+                            </template>
                         </template>
-                    </template>
+                    </div>
                 </div>
             </article>
 
