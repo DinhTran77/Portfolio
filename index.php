@@ -86,7 +86,7 @@
         />
 
         <!-- Mustache and Cycle2 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.autoheight.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.autoheight.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
     </head>
 
@@ -178,36 +178,6 @@
                             });
                         </script>
                     </div>
-                    <!-- <template id="template-row" class="row">
-                        <template id="template-col">
-                            <div class="col-lg-6 progress-bar-container">
-                                <h4
-                                    class="skill-name"
-                                    data-aos="fade-in"
-                                    data-aos-duration="1100"
-                                    data-aos-offset="-20"
-                                ></h4>
-                                <div class="progress-bar">
-                                    <div
-                                        class="container-progress-percentage"
-                                        class="skill-name"
-                                        data-aos="fade-in"
-                                        data-aos-duration="1100"
-                                        data-aos-offset="-20"
-                                    >
-                                        <div
-                                            class="progressPercentage"
-                                            data-aos="slide-right"
-                                            data-aos="fade-in"
-                                            data-aos-duration="1100"
-                                            data-aos-offset="-20"
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </template>
-                    </template> -->
-                    <!--end row template -->
                 </div>
                 <!--end progress bars section  -->
             </article>
@@ -258,32 +228,6 @@
                                 });
                             });
                         </script>
-
-                        <template id="template_project_row" class="row">
-                            <template id="template-col-projects">
-                                <div class="col-lg-6">
-                                    <a
-                                        href=""
-                                        class="project_link"
-                                        target="_blank"
-                                    >
-                                        <div class="project-container">
-                                            <div class="project_overlay"></div>
-                                            <img class="project-image" />
-                                            <article class="project-text">
-                                                <h4 class="project-name"></h4>
-                                                <h5
-                                                    class="project-description"
-                                                ></h5>
-                                                <div class="preview_link">
-                                                    live preview
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </a>
-                                </div>
-                            </template>
-                        </template>
                     </div>
                 </div>
             </article>
@@ -298,7 +242,7 @@
                 <div class="container container_content">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
-                            <p id="sucess_message"></p>
+                            <p id="sucess_message">Email sent!</p>
                             <form
                                 action="contact.php"
                                 method="post"

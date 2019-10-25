@@ -9,14 +9,15 @@
         display: block;
         width: 100%;
         color: red;
-        margin-bottom: 7vw;
-        height: 1vw;
+        // margin-bottom: 7vw;
+        // height: 1vw;
+        line-height: 3.2vw;
     }
     #contact-greeting {
         font-family: $monsterrat-font;
         margin-top: 4vw;
         font-size: 4vw;
-        color: rgb(109, 109, 109);
+        color: rgb(255, 255, 255);
         text-align: center;
     }
 
@@ -26,7 +27,7 @@
         input,
         textarea {
             border-style: solid;
-            border-width: 0.5px;
+            border-width: 0.3px;
             border-color: rgb(189, 187, 187);
             margin-bottom: 5vw;
             font-size: 3vw;
@@ -76,34 +77,24 @@
     }
 } //end #contactPage
 
-//**************************DESkTOP***********************************************
+//**************************DESKTOP***********************************************
 
 @media only screen and (min-width: 992px) {
     #contactPage {
         background-color: $color_background_yellow;
-        // background-image: url("../../images/contact/12844705411284373152forms_0000s_0002_Bitmap.jpg");
         background-size: 100% auto;
         background-repeat: no-repeat;
 
         #sucess_message {
-            font-size: 2.2vw;
+            font-size: 1.3vw;
         }
         .container {
-            // background: red;
             max-width: 100%;
             margin: 3vw;
         }
 
-        #profile-pic {
-            width: 100%;
-        }
-        #contact-greeting {
-            font-family: $monsterrat-font;
-            margin-top: 1.5vw;
-            font-size: 1.7vw;
-            color: rgb(109, 109, 109);
-            text-align: center;
-            margin-bottom: 4vw;
+        .section-subheading {
+            color: #212529;
         }
 
         form {
@@ -115,15 +106,9 @@
 
             input,
             textarea {
-                border-style: solid;
-                border-width: 0.5px;
-                border-color: rgb(216, 214, 214);
                 font-size: 1vw;
                 padding: 0.4vw;
-                border-style: solid;
-                border-width: 2.8px;
-                border-color: rgb(189, 187, 187);
-                color: grey;
+                border-width: 1.8px;
                 width: 100%;
                 margin-bottom: 2vw;
                 // background: red;

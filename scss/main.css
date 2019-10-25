@@ -1364,15 +1364,14 @@ table {
   display: block;
   width: 100%;
   color: red;
-  margin-bottom: 7vw;
-  height: 1vw;
+  line-height: 3.2vw;
 }
 
 #contactPage #contact-greeting {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 4vw;
   font-size: 4vw;
-  color: #6d6d6d;
+  color: white;
   text-align: center;
 }
 
@@ -1383,7 +1382,7 @@ table {
 #contactPage form input,
 #contactPage form textarea {
   border-style: solid;
-  border-width: 0.5px;
+  border-width: 0.3px;
   border-color: #bdbbbb;
   margin-bottom: 5vw;
   font-size: 3vw;
@@ -1438,22 +1437,14 @@ table {
     background-repeat: no-repeat;
   }
   #contactPage #sucess_message {
-    font-size: 2.2vw;
+    font-size: 1.3vw;
   }
   #contactPage .container {
     max-width: 100%;
     margin: 3vw;
   }
-  #contactPage #profile-pic {
-    width: 100%;
-  }
-  #contactPage #contact-greeting {
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    margin-top: 1.5vw;
-    font-size: 1.7vw;
-    color: #6d6d6d;
-    text-align: center;
-    margin-bottom: 4vw;
+  #contactPage .section-subheading {
+    color: #212529;
   }
   #contactPage form {
     margin-top: 0;
@@ -1462,15 +1453,9 @@ table {
   }
   #contactPage form input,
   #contactPage form textarea {
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #d8d6d6;
     font-size: 1vw;
     padding: 0.4vw;
-    border-style: solid;
-    border-width: 2.8px;
-    border-color: #bdbbbb;
-    color: grey;
+    border-width: 1.8px;
     width: 100%;
     margin-bottom: 2vw;
   }
