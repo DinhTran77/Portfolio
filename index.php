@@ -120,6 +120,7 @@
                         <span id="hero_text"></span>
                         <span id="cursor"></span>
                     </section>
+
                 </div>
             </article>
 
@@ -194,7 +195,7 @@
                     <div id="project" class="row">
                         <script id="portfolio_template" type="text/template">
                             {{#projects}}
-                                <div class="col-lg-4 progress-bar-container">
+                                <div class="col-lg-4 col-md-6  progress-bar-container">
 
                                         <a
                                         href="{{link}}"
@@ -253,7 +254,7 @@
 
                 <div class="container container_content">
                     <div class="row justify-content-center">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-8">
                             <p id="sucess_message">sss</p>
                             <form
                                 action="contact.php"

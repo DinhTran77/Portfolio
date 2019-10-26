@@ -144,403 +144,6 @@ table {
       border-spacing: 0;
 }
 
-#header-main {
-  background-color: #ffd306;
-  background-color: red;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-}
-
-#header-main .my-container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header-main .my-container #nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 5vh;
-  overflow: hidden;
-  width: 100%;
-  margin: 2vw;
-}
-
-#header-main .my-container #nav-bar #menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 90%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-}
-
-#header-main .my-container #nav-bar #menu li {
-  list-style-type: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header-main .my-container #nav-bar #menu li .diamond {
-  width: 1.5vw;
-  height: 1.5vw;
-  background-color: #012040;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin: 0 8vw;
-  visibility: hidden;
-}
-
-#header-main .my-container #nav-bar #menu li a {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-decoration: none;
-  color: #012040;
-  font-size: 3vw;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#header-main .my-container #nav-bar #menu li a:hover {
-  color: #6b6a6a;
-}
-
-#header-main .my-container #nav-bar .slide-in {
-  -webkit-animation: slide-in 500ms forwards;
-          animation: slide-in 500ms forwards;
-}
-
-@-webkit-keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-#header-main .my-container #nav-bar .slide-out {
-  -webkit-animation: slide-out 500ms forwards;
-          animation: slide-out 500ms forwards;
-}
-
-@-webkit-keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #header-main .my-container #nav-bar #menu li .diamond {
-    width: 1vw;
-    height: 1vw;
-    margin: 10vw;
-    visibility: hidden;
-  }
-  #header-main .my-container #nav-bar #menu li a {
-    font-size: 2.5vw;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #header-main {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #header-main .my-container {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #header-main .my-container #nav-bar {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin: 1vw;
-  }
-  #header-main .my-container #nav-bar #menu {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #header-main .my-container #nav-bar #menu li .diamond {
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
-  #header-main .my-container #nav-bar #menu li a {
-    font-size: .9vw;
-    margin-left: 3.5vw;
-  }
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-#hamburger-animated {
-  width: 5vh;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  z-index: 100;
-  background-color: #212529;
-  background-color: white;
-  opacity: .5;
-}
-
-#hamburger-animated #container-lines {
-  width: 1.61vh;
-  height: 1.61vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-#hamburger-animated #container-lines .bar {
-  height: 0.23vh;
-  background-color: white;
-  display: relative;
-}
-
-#hamburger-animated #container-lines .in_top_line {
-  -webkit-animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate1 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate1 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(0.69vh) rotate(45deg);
-            transform: translateY(0.69vh) rotate(45deg);
-  }
-}
-
-@keyframes rotate1 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(0.69vh) rotate(45deg);
-            transform: translateY(0.69vh) rotate(45deg);
-  }
-}
-
-#hamburger-animated #container-lines .in_bottom_line {
-  -webkit-animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate2 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate2 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
-            transform: translateY(-0.69vh) rotate(-45deg);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
-            transform: translateY(-0.69vh) rotate(-45deg);
-  }
-}
-
-#hamburger-animated #container-lines .in_middle_line {
-  -webkit-animation: fade-out 100ms ease-in forwards;
-          animation: fade-out 100ms ease-in forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#hamburger-animated #container-lines .out_top_line {
-  -webkit-animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate3 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate3 {
-  0% {
-    -webkit-transform: translateY(0.69vh) rotate(45deg);
-            transform: translateY(0.69vh) rotate(45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes rotate3 {
-  0% {
-    -webkit-transform: translateY(0.69vh) rotate(45deg);
-            transform: translateY(0.69vh) rotate(45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-#hamburger-animated #container-lines .out_bottom_line {
-  -webkit-animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-          animation: rotate4 100ms ease-in forwards, length_animation 100ms 30ms ease-in forwards;
-}
-
-@-webkit-keyframes rotate4 {
-  0% {
-    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
-            transform: translateY(-0.69vh) rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes rotate4 {
-  0% {
-    -webkit-transform: translateY(-0.69vh) rotate(-45deg);
-            transform: translateY(-0.69vh) rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-#hamburger-animated #container-lines .out_middle_line {
-  -webkit-animation: fade-in 100ms ease-in forwards;
-          animation: fade-in 100ms ease-in forwards;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#menu {
-  display: none;
-}
-
 body {
   font-size: 1.6rem;
 }
@@ -550,15 +153,6 @@ html {
   font-size: 10px;
 }
 
-@media screen and (min-width: 600px) {
-  .slicknav_menu {
-    display: none;
-  }
-  #menu {
-    display: block;
-  }
-}
-
 .my-container {
   padding: 13vw 7vw 13vw 7vw;
 }
@@ -605,92 +199,42 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-  .slicknav_menu {
-    display: none;
+  .my-container {
+    padding: 13vw 7vw 13vw 7vw;
   }
-  #menu {
-    display: block;
+  .container_content {
+    margin-top: 11vw;
   }
-}
-
-.my-container {
-  padding: 13vw 7vw 13vw 7vw;
-}
-
-.container_content {
-  margin-top: 11vw;
-}
-
-.section-title-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: none;
-}
-
-.section-title-area .light {
-  color: white;
-}
-
-.section-heading {
-  font-size: 5.59vw;
-  margin-top: 0;
-  text-transform: uppercase !important;
-  color: #212529;
-  font-weight: 600;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.section-subheading {
-  font-size: 3vw;
-  font-weight: 400;
-  margin-top: 1vw;
-  font-style: italic;
-  color: #6c757d;
-  text-transform: none;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .section-heading {
+    font-size: 5.59vw;
+    margin-top: 0;
+  }
+  .section-subheading {
+    font-size: 3vw;
+    margin-top: 1vw;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  #menu {
-    display: none;
-  }
   body {
     font-size: 1.6rem;
   }
   html {
-    scroll-behavior: smooth;
     font-size: 10px;
   }
   .my-container {
     padding: 6vw 7vw;
   }
   .container_content {
-    margin-top: 5vw;
+    margin-top: 4vw;
   }
   .section-heading {
     font-size: 2.2vw;
     margin-top: 0;
-    text-transform: uppercase !important;
-    color: #212529;
-    font-weight: 600;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   .section-subheading {
     font-size: 1.2vw;
-    font-weight: 400;
     margin-top: 0.7vw;
-    font-style: italic;
-    color: #6c757d;
-    text-transform: none;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
 
@@ -857,6 +401,19 @@ table {
   left: 0;
 }
 
+#homePage #getInTouchButton {
+  border-radius: 4vw;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #214261;
+  color: white;
+  font-size: 1vw;
+  padding: 0.7vw 1.5vw;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 2vw;
+}
+
 #homePage #container_logo {
   width: 100%;
   height: 100vh;
@@ -945,6 +502,25 @@ table {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #homePage {
+    height: 100vh;
+  }
+  #homePage #container_logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  #homePage #container_logo #logoImage {
+    width: 50vh;
+    margin-bottom: 0vh;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   #homePage {
     height: 100vh;
@@ -974,35 +550,6 @@ table {
     width: 0.15vw;
     height: 1.5vw;
   }
-}
-
-#about-section {
-  z-index: 16000;
-  height: 50vh;
-  background-color: pink;
-  height: 150px;
-  position: relative;
-}
-
-#about-section #about-text {
-  font-size: .5em;
-  color: #3d3c3c;
-  background-image: url("../../images/about/profile-pic-small.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-#about-section .overlay-blue {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  z-index: 100;
-  opacity: .3;
 }
 
 #skillsPage {
@@ -1063,6 +610,7 @@ table {
   line-height: 100%;
   overflow: visible;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  z-index: 2;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
@@ -1081,6 +629,7 @@ table {
           flex-direction: row;
   height: 100%;
   background-color: transparent;
+  overflow: hidden;
 }
 
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
@@ -1135,6 +684,10 @@ table {
   width: 55%;
 }
 
+#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .ajax {
+  width: 50%;
+}
+
 #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .responsive-design {
   width: 65%;
 }
@@ -1172,63 +725,39 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #skillsPage .container {
-    max-width: 100%;
-  }
-  #skillsPage #progress-bars-section {
-    width: 100%;
-  }
   #skillsPage #progress-bars-section .progress-bar-container {
-    height: 2.1vw;
-    width: 100%;
-    margin-bottom: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 1.8vw;
+    width: 95%;
+    margin-bottom: 1.9vw;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
   #skillsPage #progress-bars-section .progress-bar-container .skill-name {
     font-size: 0.9vw;
-    font-weight: 400;
     width: 100%;
-    height: 100%;
-    line-height: 100%;
-    overflow: visible;
     position: absolute;
-    z-index: 2;
-    padding-left: 1vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding-left: 0.75vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 100%;
     height: 100%;
-    overflow: hidden;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
   #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fdcb17;
-    padding-right: 0.8vw;
+    padding-right: 0.7vw;
     font-size: 0.9vw;
   }
 }
@@ -1251,6 +780,10 @@ table {
   background-color: #214261;
 }
 
+#portfolioPage .container {
+  max-width: 100%;
+}
+
 #portfolioPage #projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1262,6 +795,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 #portfolioPage #projects .project-container {
@@ -1280,6 +814,7 @@ table {
           align-items: center;
   margin-bottom: 4vh;
   height: 96.5%;
+  overflow: hidden;
 }
 
 #portfolioPage #projects .project-container .myVideo {
@@ -1329,12 +864,12 @@ table {
   color: #214261;
   padding: 0 7vw;
   font-size: 3.3vw;
-  line-height: 5.5vw;
+  line-height: 7vw;
   font-weight: 400;
 }
 
 #portfolioPage #projects .project-container .project-text .project-description ul {
-  margin-top: 1vw;
+  margin-top: 2vw;
   padding-left: 4.5vw;
 }
 
@@ -1375,59 +910,12 @@ table {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 992px) {
-  #portfolioPage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden;
-    background-color: #214261;
-  }
-  #portfolioPage .container {
-    max-width: 100%;
-  }
-  #portfolioPage #projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden;
-  }
+@media only screen and (min-width: 768px) {
   #portfolioPage #projects a {
     text-decoration: none;
   }
   #portfolioPage #projects .project-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 5vh;
-    overflow: hidden;
     position: relative;
     background-color: white;
   }
@@ -1442,33 +930,73 @@ table {
   #portfolioPage #projects .project-container .project_overlay:hover {
     opacity: 0.2;
   }
-  #portfolioPage #projects .project-container .myVideo {
-    width: 100%;
-    height: auto;
-  }
-  #portfolioPage #projects .project-container .project-image {
-    width: 100%;
-    height: auto;
-  }
   #portfolioPage #projects .project-container .project-text {
-    width: 90%;
+    width: 95%;
     height: 100%;
-    background-color: #fffdfd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    color: #214261;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: relative;
+  }
+  #portfolioPage #projects .project-container .project-text .project-name {
+    margin-top: 6vw;
+    font-size: 2vw;
+  }
+  #portfolioPage #projects .project-container .project-text .project-description {
+    margin-top: 1.2vw;
+    text-align: justify;
+    width: 100%;
+    padding: 0 2vw;
+    padding-bottom: 6vw;
+    font-size: 1.6vw;
+    line-height: 3.3vw;
+    font-weight: 400;
+  }
+  #portfolioPage #projects .project-container .project-text .project-description ul {
+    margin-top: 1.5vw;
+    padding-left: 1.5vw;
+  }
+  #portfolioPage #projects .project-container .project-text .project-description ul li {
+    padding-left: 0.3vw;
+  }
+  #portfolioPage #projects .project-container .project-text .preview_link {
+    padding: 0.8vw 2.5vw;
+    border-radius: 6vw;
+    margin: 3vw 0;
+    font-size: 1.3vw;
+    color: inherit;
+    font-weight: 600;
+    position: absolute;
+    bottom: -0.5vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #portfolioPage #projects a {
+    text-decoration: none;
+  }
+  #portfolioPage #projects .project-container {
+    margin-bottom: 5vh;
+    position: relative;
+    background-color: white;
+  }
+  #portfolioPage #projects .project-container .project_overlay {
+    background: #070707;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+  }
+  #portfolioPage #projects .project-container .project_overlay:hover {
+    opacity: 0.2;
+  }
+  #portfolioPage #projects .project-container .project-text {
+    width: 95%;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: relative;
   }
   #portfolioPage #projects .project-container .project-text .project-name {
@@ -1479,7 +1007,6 @@ table {
     margin-top: 1.2vw;
     text-align: justify;
     width: 100%;
-    color: #214261;
     padding: 0 2vw;
     padding-bottom: 8vw;
     font-size: 1vw;
@@ -1494,31 +1021,14 @@ table {
     padding-left: 0.3vw;
   }
   #portfolioPage #projects .project-container .project-text .preview_link {
-    background-color: #dbbd7f;
     padding: 0.8vw 2.5vw;
-    text-align: center;
     border-radius: 6vw;
     margin: 3vw 0;
-    color: #214261;
     font-size: 0.8vw;
     color: inherit;
-    text-transform: uppercase;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 600;
     position: absolute;
     bottom: -0.5vw;
-  }
-  #portfolioPage #projects .portfolio-site {
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-  #portfolioPage #projects .e-commerce {
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-  #portfolioPage #projects .drum-machine {
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
 }
 
@@ -1526,12 +1036,15 @@ table {
   background-color: #ffd306;
 }
 
+#contactPage .container {
+  max-width: 100%;
+}
+
 #contactPage #sucess_message {
   font-size: 3.2vw;
   display: block;
   width: 100%;
   margin-bottom: 3vw;
-  color: #cf0e0e;
   display: none;
 }
 
@@ -1593,31 +1106,47 @@ table {
   cursor: pointer;
 }
 
-#contactPage form input[type="submit"]:hover {
-  color: #dfdfdf;
-  background: #0158bb;
-}
-
-#contactPage #contact-messsage {
-  color: blue;
+@media only screen and (min-width: 768px) {
+  .container_content {
+    margin-top: 8vw;
+  }
+  #contactPage #sucess_message {
+    font-size: 3.2vw;
+    margin-bottom: 3vw;
+    display: none;
+  }
+  #contactPage form input,
+  #contactPage form textarea {
+    border-width: 0.2px;
+    margin-bottom: 2.5vw;
+    font-size: 2vw;
+  }
+  #contactPage form input {
+    padding: 0.5vw;
+  }
+  #contactPage form textarea {
+    height: 20vw;
+    padding: 0.5vw;
+  }
+  #contactPage form input[type="submit"] {
+    width: 25%;
+    margin-top: 2vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  #contactPage {
-    background-color: #ffd306;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  .container_content {
+    margin-top: 5vw;
   }
   #contactPage #sucess_message {
     font-size: 1.1vw;
     margin-bottom: 1.5vw;
   }
-  #contactPage .container {
-    max-width: 100%;
-  }
   #contactPage form {
     margin-top: 0;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     width: 100%;
   }
   #contactPage form input,
@@ -1636,19 +1165,15 @@ table {
     color: grey;
   }
   #contactPage form input[type="submit"] {
-    background-color: #214261;
-    color: white;
     width: 8vw;
     padding: 0.2vw 0.2vw;
     border-radius: 6px;
     font-size: 1.2vw;
-    cursor: pointer;
   }
 }
 
 #header-main {
   background-color: #ffd306;
-  background-color: red;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1664,7 +1189,7 @@ table {
 
 #header-main .my-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -1713,6 +1238,10 @@ table {
   padding: 0;
 }
 
+#header-main .my-container #nav-bar #menu li:not(:first-child) a {
+  margin-left: 16vw;
+}
+
 #header-main .my-container #nav-bar #menu li {
   list-style-type: none;
   height: 100%;
@@ -1724,14 +1253,253 @@ table {
           align-items: center;
 }
 
-#header-main .my-container #nav-bar #menu li .diamond {
-  width: 1.5vw;
-  height: 1.5vw;
-  background-color: #012040;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin: 0 8vw;
-  visibility: hidden;
+#header-main .my-container #nav-bar #menu li a {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: none;
+  color: #012040;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#header-main .my-container #nav-bar #menu li a:hover {
+  color: #6b6a6a;
+}
+
+#header-main .my-container #nav-bar .slide-in {
+  -webkit-animation: slide-in 500ms forwards;
+          animation: slide-in 500ms forwards;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+#header-main .my-container #nav-bar .slide-out {
+  -webkit-animation: slide-out 500ms forwards;
+          animation: slide-out 500ms forwards;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
+    margin-left: 19vw;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #header-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header-main .my-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 1vw;
+  }
+  #header-main .my-container #nav-bar #menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header-main .my-container #nav-bar #menu li a {
+    font-size: 0.9vw;
+  }
+  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
+    margin-left: 4vw;
+  }
+}
+
+#footerPage {
+  background-color: #214261;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 9vh;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footerPage #logoImage_footer {
+  width: 20vw;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footerPage .container {
+  max-width: 100%;
+}
+
+#footerPage .copyRight {
+  color: white;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  font-size: 2vw;
+  margin-left: 2vw;
+  width: auto;
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  #footerPage {
+    height: 13vh;
+  }
+  #footerPage #logoImage_footer {
+    width: 10vw;
+    display: inline-block;
+  }
+  #footerPage .copyRight {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #footerPage {
+    height: 24vh;
+  }
+  #footerPage #logoImage_footer {
+    width: 6vw;
+    display: inline-block;
+  }
+  #footerPage .copyRight {
+    font-size: 1vw;
+    display: block;
+    width: auto;
+    margin-left: 1vw;
+  }
+}
+
+#header-main {
+  background-color: #ffd306;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+#header-main .my-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-main .my-container #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 2vw;
+}
+
+#header-main .my-container #nav-bar #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+#header-main .my-container #nav-bar #menu li:not(:first-child) a {
+  margin-left: 16vw;
+}
+
+#header-main .my-container #nav-bar #menu li {
+  list-style-type: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header-main .my-container #nav-bar #menu li a {
@@ -1776,11 +1544,8 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-  #header-main .my-container #nav-bar #menu li .diamond {
-    width: 1vw;
-    height: 1vw;
-    margin: 10vw;
-    visibility: hidden;
+  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
+    margin-left: 19vw;
   }
   #header-main .my-container #nav-bar #menu li a {
     font-size: 2.5vw;
@@ -1809,114 +1574,11 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  #header-main .my-container #nav-bar #menu li .diamond {
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: .9vw;
-    margin-left: 3.5vw;
+    font-size: 0.9vw;
   }
-}
-
-#footerPage {
-  background-color: #214261;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  position: relative;
-  height: 9vh;
-  margin: 0;
-  padding: 0;
-}
-
-#footerPage #logoImage_footer {
-  width: 20vw;
-  display: none;
-}
-
-#footerPage .container {
-  max-width: 100%;
-}
-
-#footerPage .copyRight {
-  color: white;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: bold;
-  font-size: 2vw;
-  margin-left: 2vw;
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  #footerPage {
-    background-color: #214261;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden;
-    height: 16vh;
-    margin: 0;
-    padding: 0;
-  }
-  #footerPage #logoImage_footer {
-    width: 10vw;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-  #footerPage .copyRight {
-    color: white;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: bold;
-    font-size: 1.5vw;
-    display: block;
-    width: auto;
-    margin-left: 1vw;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #footerPage {
-    background-color: #214261;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden;
-    height: 29vh;
-  }
-  #footerPage #logoImage_footer {
-    width: 6vw;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-  #footerPage .copyRight {
-    color: white;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: bold;
-    font-size: 1vw;
-    display: block;
-    width: auto;
-    margin-left: 1vw;
+  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
+    margin-left: 4vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

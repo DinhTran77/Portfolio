@@ -8,9 +8,13 @@
     height: 9vh;
     margin: 0;
     padding: 0;
+    justify-content: center;
+
     #logoImage_footer {
         width: 20vw;
         display: none;
+        margin: 0;
+        padding: 0;
     }
 
     .container {
@@ -23,8 +27,9 @@
         font-weight: bold;
         font-size: 2vw;
         margin-left: 2vw;
-        width: 100%;
+        width: auto;
         text-align: center;
+        display: block;
     }
 }
 
@@ -32,29 +37,14 @@
 
 @media only screen and (min-width: 768px) {
     #footerPage {
-        background-color: $color_blue_background;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        height: 16vh;
-        margin: 0;
-        padding: 0;
+        height: 13vh;
         #logoImage_footer {
             width: 10vw;
             display: inline-block;
-            margin: 0;
-            padding: 0;
-            // background: green;
         }
 
         .copyRight {
-            color: white;
-            font-family: $droid-font;
-            font-weight: bold;
             font-size: 1.5vw;
-            display: block;
-            width: auto;
             margin-left: 1vw;
         }
     }
@@ -64,25 +54,14 @@
 
 @media only screen and (min-width: 992px) {
     #footerPage {
-        background-color: $color_blue_background;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        height: 29vh;
+        height: 24vh;
 
         #logoImage_footer {
             width: 6vw;
             display: inline-block;
-            margin: 0;
-            padding: 0;
-            // background: green;
         }
 
         .copyRight {
-            color: white;
-            font-family: $droid-font;
-            font-weight: bold;
             font-size: 1vw;
             display: block;
             width: auto;

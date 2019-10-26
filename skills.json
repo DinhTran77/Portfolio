@@ -1,9 +1,9 @@
 {
     "skills": [
-        { "skill_title": "HTML & CSS", "percent": "80%", "class": "html" },
-        { "skill_title": "SCSS", "percent": "75%", "class": "scss" },
+        { "skill_title": "HTML & SCSS", "percent": "80%", "class": "html" },
         { "skill_title": "JS/jQuery", "percent": "60%", "class": "javascript" },
         { "skill_title": "Bootstrap", "percent": "55%", "class": "bootstrap" },
+        { "skill_title": "Ajax", "percent": "50%", "class": "ajax" },
         {
             "skill_title": "Responsive Design",
             "percent": "65%",

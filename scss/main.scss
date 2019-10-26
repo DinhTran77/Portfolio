@@ -1,26 +1,16 @@
-@import './base/normalize';
-@import './base/typography';
-@import './utilities/functions';
-@import './utilities/maxins';
-@import './utilities/variables';
+@import "./base/normalize";
+@import "./base/typography";
+@import "./utilities/maxins";
+@import "./utilities/variables";
 
-@import './pages/header';
-
-@import './base/hamburgerAnimated';
 // Styles used on all pages
-@import './base/shared';
+@import "./base/shared";
 
-
-
-//Components
-
-
-
-//SCSS for individual pages
-@import './pages/homePage';
-@import './pages/about-section';
-@import './pages/skillsPage';
-@import './pages/portfolioPage';
-@import './pages/contactPage';
-@import './pages/header';
-@import './pages/footerPage'
+//SCSS for page sections
+@import "./pages/homePage";
+@import "./pages/skillsPage";
+@import "./pages/portfolioPage";
+@import "./pages/contactPage";
+@import "./pages/header";
+@import "./pages/footerPage";
+@import "./pages/header";

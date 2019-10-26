@@ -7,11 +7,14 @@
     justify-content: center;
     overflow: hidden;
     background-color: $color_blue_background;
-
+    .container {
+        max-width: 100%;
+    }
     #projects {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
 
         .project-container {
             display: flex;
@@ -20,6 +23,7 @@
             align-items: center;
             margin-bottom: 4vh;
             height: 96.5%;
+            overflow: hidden;
 
             .myVideo {
                 width: 100%;
@@ -34,7 +38,6 @@
                 width: 100%;
                 height: 100%;
                 background-color: rgb(255, 253, 253);
-
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -58,11 +61,11 @@
                     color: $color_font_blue;
                     padding: 0 7vw;
                     font-size: 3.3vw;
-                    line-height: 5.5vw;
+                    line-height: 7vw;
                     font-weight: 400;
 
                     ul {
-                        margin-top: 1vw;
+                        margin-top: 2vw;
                         padding-left: 4.5vw;
                         li {
                             padding-left: 0.5vw;
@@ -87,62 +90,38 @@
                         font-family: $monsterrat-font;
                         font-weight: 600;
                     }
-                } //end .preview_link
-            } //end .project-text
-        } //end .project-container
+                }
+            }
+        }
 
         .portfolio-site {
-            // background-image: url('../../images/portfolio/personal_sight.png');
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
 
         .e-commerce {
-            // background-image: url('../../images/portfolio/ecommerce.PNG');
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
 
         .drum-machine {
-            // background-image: url('../../images/portfolio/drum-machine.PNG');
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
     } //end projects
 } //end #portfolioPage
 
-//**************************DESkTOP***********************************************
+//**************************Tablet***********************************************
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     #portfolioPage {
-        .container {
-            max-width: 100%;
-        }
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        background-color: $color_blue_background;
-
         #projects {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
-
             a {
                 text-decoration: none;
             }
 
             .project-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 margin-bottom: 5vh;
-                overflow: hidden;
                 position: relative;
                 background-color: white;
 
@@ -158,28 +137,83 @@
                     }
                 }
 
-                .myVideo {
-                    width: 100%;
-                    height: auto;
+                .project-text {
+                    width: 95%;
+                    height: 100%;
+                    justify-content: flex-start;
+                    position: relative;
+
+                    .project-name {
+                        margin-top: 6vw;
+                        font-size: 2vw;
+                    }
+
+                    .project-description {
+                        margin-top: 1.2vw;
+                        text-align: justify;
+                        width: 100%;
+                        padding: 0 2vw;
+                        padding-bottom: 6vw;
+                        font-size: 1.6vw;
+                        line-height: 3.3vw;
+                        font-weight: 400;
+
+                        ul {
+                            margin-top: 1.5vw;
+                            padding-left: 1.5vw;
+                            li {
+                                padding-left: 0.3vw;
+                            }
+                        }
+                    }
+
+                    .preview_link {
+                        padding: 0.8vw 2.5vw;
+                        border-radius: 6vw;
+                        margin: 3vw 0;
+                        font-size: 1.3vw;
+                        color: inherit;
+                        font-weight: 600;
+                        position: absolute;
+                        bottom: -0.5vw;
+                    }
                 }
-                .project-image {
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #portfolioPage {
+        #projects {
+            a {
+                text-decoration: none;
+            }
+
+            .project-container {
+                margin-bottom: 5vh;
+
+                position: relative;
+                background-color: white;
+
+                .project_overlay {
+                    background: rgb(7, 7, 7);
+                    position: absolute;
                     width: 100%;
-                    height: auto;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: 10;
+                    &:hover {
+                        opacity: 0.2;
+                    }
                 }
 
                 .project-text {
-                    width: 90%;
+                    width: 95%;
                     height: 100%;
-                    background-color: rgb(255, 253, 253);
-
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
                     justify-content: flex-start;
-                    color: $color_font_blue;
-                    font-family: $monsterrat-font;
                     position: relative;
-                    // background: green;
+
                     .project-name {
                         margin-top: 4vw;
                         font-size: 1.3vw;
@@ -189,7 +223,6 @@
                         margin-top: 1.2vw;
                         text-align: justify;
                         width: 100%;
-                        color: $color_font_blue;
                         padding: 0 2vw;
                         padding-bottom: 8vw;
                         font-size: 1vw;
@@ -206,37 +239,17 @@
                     }
 
                     .preview_link {
-                        background-color: #dbbd7f;
                         padding: 0.8vw 2.5vw;
-                        text-align: center;
                         border-radius: 6vw;
                         margin: 3vw 0;
-                        color: $color_font_blue;
                         font-size: 0.8vw;
                         color: inherit;
-                        text-transform: uppercase;
-                        font-family: $monsterrat-font;
                         font-weight: 600;
                         position: absolute;
                         bottom: -0.5vw;
-                    } //end .preview_link
-                } //end .project-text
-            } //end .project-container
-
-            .portfolio-site {
-                background-size: 100% auto;
-                background-repeat: no-repeat;
+                    }
+                }
             }
-
-            .e-commerce {
-                background-size: 100% auto;
-                background-repeat: no-repeat;
-            }
-
-            .drum-machine {
-                background-size: 100% auto;
-                background-repeat: no-repeat;
-            }
-        } //end projects
-    } //end #portfolioPage
+        }
+    }
 }

@@ -2,9 +2,24 @@
     "projects": [
         {
             "link": "https://drum-shed.herokuapp.com/products",
+            "image_source": "./images/portfolio/personal_sight.png",
+            "name": "Portfolio Site",
+            "description": "My pride and joy. I developed this website from scratch, including the design, logo, graphics, animations & Javascript.",
+            "items": {
+                "name": [
+                    "SCSS",
+                    "PHP contact form",
+                    "Ajax",
+                    "Mustache templating"
+                ]
+            }
+        },
+
+        {
+            "link": "https://drum-shed.herokuapp.com/products",
             "image_source": "./images/portfolio/ecommerce.PNG",
             "name": "React E-Commerce Site",
-            "description": "E-commerce website with common features including:",
+            "description": "E-commerce website with the following features:",
             "items": {
                 "name": [
                     "Shopping cart",
@@ -15,37 +30,23 @@
             }
         },
         {
-            "link": "https://drum-shed.herokuapp.com/products",
+            "link": "https://drum-machine-dinh.herokuapp.com/",
             "image_source": "./images/portfolio/drum-machine.PNG",
             "name": "React Drum-Machine",
-            "description": "Very similar in concept to a standard React-style calculator, except with a fun musical twist."
+            "description": "As a hobbiest drummer, I wanted to create a React-style calculator, except with a fun musical twist."
         },
         {
             "link": "https://drum-shed.herokuapp.com/products",
             "image_source": "./images/portfolio/space-x.png",
             "name": "React Space-X API",
-            "description": "React application that retrieves and displays data, images & links from the Space-X api.",
+            "description": "React application that retrieves & displays data, images & links from the Space-X api.",
             "items": {
                 "name": [
                     "Axios",
                     "React Hooks",
-                    "Typescript",
+                    "TypeScript",
                     "React Router",
-                    "Basic render tests in Jest"
-                ]
-            }
-        },
-        {
-            "link": "https://drum-shed.herokuapp.com/products",
-            "image_source": "./images/portfolio/personal_sight.png",
-            "name": "Portfolio Site",
-            "description": "I am particularly proud of this website, because I designed everything from scratch including the graphic design, animations & Javascript.",
-            "items": {
-                "name": [
-                    "SCSS",
-                    "PHP contact form",
-                    "Ajax",
-                    "Mustache templating"
+                    "Render tests in Jest"
                 ]
             }
         },
@@ -53,10 +54,10 @@
             "link": "https://drum-shed.herokuapp.com/products",
             "image_source": "./images/portfolio/waves.png",
             "name": "Responsive Webpage",
-            "description": "An HTML & CSS project for a responsive web programming course.",
+
             "items": {
                 "name": [
-                    "Responsive images, videos and Google Map",
+                    "Responsive images, videos & Google Map",
                     "Sticky navigation bar",
                     "Custom grid system",
                     "Carousal jQuery plugin",
@@ -68,7 +69,7 @@
             "link": "https://drum-shed.herokuapp.com/products",
             "image_source": "./images/portfolio/circle_animation.png",
             "name": "Javascript Animation",
-            "description": "A canvas animation that I completed on my own time to sharpen my Javascript skills."
+            "description": "Canvas animation to sharpen my Javascript skills."
         }
     ]
 }
