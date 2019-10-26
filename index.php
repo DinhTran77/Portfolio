@@ -140,7 +140,7 @@
                         <!-- Template for skills section -->
                         <script id="skills_template" type="text/template">
                             {{#skills}}
-                                <div class="col-lg-6 progress-bar-container">
+                                <div class="col-lg-4 progress-bar-container">
                                         <h4
                                         class="skill-name"
                                         data-aos="fade-in"
@@ -194,7 +194,7 @@
                     <div id="project" class="row">
                         <script id="portfolio_template" type="text/template">
                             {{#projects}}
-                                <div class="col-lg-6 progress-bar-container">
+                                <div class="col-lg-4 progress-bar-container">
 
                                         <a
                                         href="{{link}}"
@@ -209,14 +209,14 @@
                                                 <h5
                                                     class="project-description"
                                                 >{{description}}
-                                                <!-- {{#items}}
+                                                {{#items}}
                                                     <ul >
                                                         {{#name}}
                                                         <li >{{.}}</li>
                                                         {{/name}}
                                                     </ul>
                                                     {{/items}}
- -->
+
 
                                                 </h5>
                                                 <div class="preview_link">
@@ -254,7 +254,7 @@
                 <div class="container container_content">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
-                            <p id="sucess_message"></p>
+                            <p id="sucess_message">sss</p>
                             <form
                                 action="contact.php"
                                 method="post"
@@ -285,8 +285,7 @@
                                     name="comment"
                                     id="comment"
                                     placeholder="message:*"
-                                >
-This is a message from Dinh
+                                >This is a message from Dinh
                                 </textarea>
                                 <input type="submit" value="Submit" />
                             </form>
@@ -296,24 +295,14 @@ This is a message from Dinh
             </article>
 
             <footer id="footerPage" class="my-container">
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-lg-6 col-md-6">
+
                             <img
                                 id="logoImage_footer"
                                 src="./images/logos/Logo_ribbon.svg"
                                 alt="Logo"
                             />
-                            <span class="slogan">Clean Front-end Code</span>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <section class="copyRight">
-                                <span>&copy;Copyright 2019</span>
-                                <p>Dinh Tran</p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
+                                <span class='copyRight'>&copy;Copyright 2019. &nbsp;DINH TRAN</span>
+                            <!-- <span class="slogan">Clean Front-end Code</span> -->
             </footer>
 
             <!------------------ Initialize animate on scroll library-------------------->

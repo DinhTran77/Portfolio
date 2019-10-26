@@ -23,6 +23,7 @@ $("form.ajax").on("submit", function() {
         data: data,
         success: function(response) {
             $("#sucess_message").html(response);
+            $("#sucess_message").css("display", "inline-block");
         }
     });
     return false;

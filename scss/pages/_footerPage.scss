@@ -5,49 +5,26 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 7vh;
-    // padding: 0;
-    // margin: 0;
+    height: 9vh;
+    margin: 0;
+    padding: 0;
     #logoImage_footer {
         width: 20vw;
         display: none;
     }
 
-    .col {
-        //     background: pink;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
     .container {
-        // background: red;
         max-width: 100%;
     }
 
-    .slogan,
     .copyRight {
         color: white;
         font-family: $droid-font;
         font-weight: bold;
-        // background: green;
-    }
-    .slogan {
-        // text-transform: uppercase;
-        font-size: 1.5vw;
-        margin-left: 1.5vw;
-        display: none;
-    }
-
-    .copyRight {
         font-size: 2vw;
+        margin-left: 2vw;
         width: 100%;
-        text-transform: uppercase;
         text-align: center;
-        // background: pink;
-        p {
-            display: inline;
-            margin: 2vw;
-        }
     }
 }
 
@@ -58,54 +35,27 @@
         background-color: $color_blue_background;
         display: flex;
         align-items: center;
+        justify-content: center;
         overflow: hidden;
-        position: relative;
-        height: 13vh;
-
+        height: 16vh;
+        margin: 0;
+        padding: 0;
         #logoImage_footer {
-            width: 25%;
+            width: 10vw;
             display: inline-block;
-        }
-        .row {
-            display: flex;
-            align-items: center;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            max-width: 100%;
-        }
-        .col-md-6 {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            // background: green;
         }
 
-        .slogan,
         .copyRight {
             color: white;
             font-family: $droid-font;
             font-weight: bold;
-        }
-        .slogan {
-            font-size: 2vw;
-            display: inline-block;
-            margin-left: 2vw;
-            padding: 0;
-        }
-
-        .copyRight {
-            font-size: 1.2vw;
-            width: 100%;
-            text-align: right;
-
-            text-transform: uppercase;
-            display: inline-block;
-            p {
-                margin: 0;
-                margin-left: 2vw;
-                display: block;
-            }
+            font-size: 1.5vw;
+            display: block;
+            width: auto;
+            margin-left: 1vw;
         }
     }
 }
@@ -117,63 +67,26 @@
         background-color: $color_blue_background;
         display: flex;
         align-items: center;
+        justify-content: center;
         overflow: hidden;
-        position: relative;
         height: 29vh;
+
         #logoImage_footer {
-            width: 10vw;
+            width: 6vw;
             display: inline-block;
             margin: 0;
             padding: 0;
-        }
-        .row {
             // background: green;
-            display: flex;
-            align-items: center;
-        }
-        .col-lg-6 {
-            // background: pink;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .container {
-            // background: red;
-            max-width: 100%;
         }
 
-        .slogan,
         .copyRight {
             color: white;
             font-family: $droid-font;
             font-weight: bold;
-            // background: green;display: block;
-        }
-        .slogan {
-            // text-transform: uppercase;
-            font-size: 1.4vw;
-            // margin-left: 1.5vw;
-            display: inline-block;
-            // background: grey;
-
-            margin-left: 2vw;
-            padding: 0;
-        }
-
-        .copyRight {
             font-size: 1vw;
-            width: 100%;
-            text-align: right;
-
-            text-transform: uppercase;
-            display: inline-block;
-
-            p {
-                // background: green;
-                margin: 0;
-                // margin-left: 2vw;
-                display: block;
-            }
+            display: block;
+            width: auto;
+            margin-left: 1vw;
         }
     }
 }
