@@ -1,0 +1,111 @@
+#david {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        z-index: 100;
+        justify-self: flex-start;
+        animation: david-in 2s forwards;
+        animation-delay: 2s;
+
+        left: -100vw;
+}
+#above-logo {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        z-index: 99;
+        animation: background-fade-in 2s forwards;
+        animation-delay: 2.5s;
+        opacity: 0;
+}
+@keyframes david-in {
+        from {
+                left: -100vw;
+        }
+        to {
+                left: 0vw;
+        }
+}
+
+#david-background {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        z-index: 1;
+        animation: background-fade-in 2s forwards;
+        opacity: 0;
+}
+@keyframes background-fade-in {
+        from {
+                opacity: 0;
+        }
+        to {
+                opacity: 1;
+        }
+}
+
+#homePage {
+        $logo-image-width: 50vh;
+        height: 100vh;
+
+        #container_logo {
+                align-items: center;
+                position: absolute;
+                // top: 0;
+                // left: 0;
+                // margin: 0;
+                #logoImage,
+                #t,
+                #dots,
+                #ribbon {
+                        position: absolute;
+                        width: 50vh;
+                        // top: 3vh;
+                        top: 3vh;
+                        // left: 38vw;
+                        width: 50vh;
+                }
+
+                #logoImage {
+                        z-index: 96;
+                        animation: shrink forwards 1s;
+                        animation-delay: 2s;
+                }
+
+                #ribbon {
+                        z-index: 98;
+                        animation: fade-out forwards 1s;
+                        animation-delay: 1s;
+                }
+
+                #dots {
+                        z-index: 97;
+                        animation: fade-out forwards 0.5s;
+                        animation-delay: 1.5s;
+                }
+
+                #t {
+                        z-index: 97;
+                        animation: fade-out forwards 0.5s;
+                        animation-delay: 1.5s;
+                }
+
+                @keyframes fade-out {
+                        from {
+                                opacity: 1;
+                        }
+                        to {
+                                opacity: 0;
+                        }
+                }
+
+                @keyframes shrink {
+                        from {
+                                width: 50vh;
+                        }
+                        to {
+                                width: 38vh;
+                        }
+                }
+        }
+}

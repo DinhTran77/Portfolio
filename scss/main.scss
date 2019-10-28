@@ -3,9 +3,6 @@
 @import "./utilities/maxins";
 @import "./utilities/variables";
 
-// Styles used on all pages
-@import "./base/shared";
-
 //SCSS for page sections
 @import "./pages/homePage";
 @import "./pages/skillsPage";
@@ -14,3 +11,6 @@
 @import "./pages/header";
 @import "./pages/footerPage";
 @import "./pages/header";
+@import "./pages/_david";
+// Styles used on all pages
+@import "./base/shared";

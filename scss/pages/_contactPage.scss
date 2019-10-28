@@ -2,7 +2,9 @@
 
 #contactPage {
     background-color: $color_background_yellow;
-
+    .container_content {
+        margin-top: 8vw;
+    }
     .container {
         max-width: 100%;
     }
@@ -62,7 +64,6 @@
             background-color: $color_font_blue;
             color: white;
             width: 33%;
-            margin-top: 2vw;
             padding: 2.3vw 3.5vw;
             border-radius: 6px;
             font-size: 3vw;
@@ -101,9 +102,8 @@
             }
 
             input[type="submit"] {
-                width: 25%;
-                margin-top: 2vw;
-                padding: 1vw;
+                width: 23%;
+                padding: 0.6vw;
                 border-radius: 2vw;
                 font-size: 2vw;
             }
@@ -112,13 +112,14 @@
 }
 //**************************DESKTOP***********************************************
 @media only screen and (min-width: 992px) {
-    .container_content {
-        margin-top: 5vw;
-    }
     #contactPage {
         #sucess_message {
             font-size: 1.1vw;
             margin-bottom: 1.5vw;
+        }
+
+        .container_content {
+            margin-top: 4vw;
         }
 
         form {
@@ -147,6 +148,7 @@
                 padding: 0.2vw 0.2vw;
                 border-radius: 6px;
                 font-size: 1.2vw;
+                margin-top: 0vw;
             }
         }
     } //end #contactPage

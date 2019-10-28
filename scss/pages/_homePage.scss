@@ -4,142 +4,144 @@
 
 //**************************MOBILE***********************************************
 #homePage {
-    $logo-image-width: 60vw;
-    $homepage_screen_height: 100vw * 1.618;
-    width: 100%;
-    height: $homepage_screen_height;
-    display: flex;
-    flex-direction: column;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: $color_background_yellow;
-    position: relative;
-    top: 0;
-    left: 0;
-
-    #getInTouchButton {
-        border-radius: 4vw;
-        border: none;
-        box-shadow: none;
-        background-color: $color_font_blue;
-        color: white;
-        font-size: 1vw;
-        padding: 0.7vw 1.5vw;
-        font-family: $monsterrat-font;
-        margin-top: 2vw;
-    }
-    #container_logo {
+        $logo-image-width: 60vw;
+        $homepage_screen_height: 100vw * 1.618;
         width: 100%;
-        height: 100vh;
+        height: $homepage_screen_height;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // background-size: 100% auto;
+        // background-repeat: no-repeat;
+        // background-color: $color_background_yellow;
+        position: relative;
+        top: 0;
+        left: 0;
 
-        #logoImage {
-            width: $logo-image-width;
-            justify-self: center;
-            align-self: center;
+        // background-image: url(../../images/background-tile3.jpg);
+
+        #getInTouchButton {
+                border-radius: 4vw;
+                border: none;
+                box-shadow: none;
+                background-color: $color_font_blue;
+                color: white;
+                font-size: 1vw;
+                padding: 0.7vw 1.5vw;
+                font-family: $monsterrat-font;
+                margin-top: 2vw;
         }
-    } //end #container_logo
+        #container_logo {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-    #hero_message {
-        width: 100vw;
-        text-align: center;
-        height: 3vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+                #logoImage {
+                        width: $logo-image-width;
+                        justify-self: center;
+                        align-self: center;
+                }
+        } //end #container_logo
 
-        #hero_greeting {
-            color: $color_font_nav;
-            font-family: $monsterrat-font;
-            font-size: 4vw;
-            font-weight: bolder;
-            line-height: 7vw;
+        #hero_message {
+                width: 100vw;
+                text-align: center;
+                height: 3vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #hero_greeting {
+                        color: $color_font_nav;
+                        font-family: $monsterrat-font;
+                        font-size: 4vw;
+                        font-weight: bolder;
+                        line-height: 7vw;
+                }
+
+                #hero_text {
+                        color: $color_font_nav;
+                        font-family: $monsterrat-font;
+                        font-size: 3vw;
+                        color: $color_font_nav;
+                        line-height: 5vw;
+                }
         }
 
-        #hero_text {
-            color: $color_font_nav;
-            font-family: $monsterrat-font;
-            font-size: 3vw;
-            color: $color_font_nav;
-            line-height: 5vw;
+        #cursor {
+                display: inline-block;
+                width: 0.5vw;
+                height: 4vw;
+                background-color: $nav-area-color;
+                animation: blink 0.75s step-end infinite;
+                opacity: 0.6;
         }
-    }
 
-    #cursor {
-        display: inline-block;
-        width: 0.5vw;
-        height: 4vw;
-        background-color: $nav-area-color;
-        animation: blink 0.75s step-end infinite;
-        opacity: 0.6;
-    }
-
-    @keyframes blink {
-        from,
-        to {
-            background-color: transparent;
+        @keyframes blink {
+                from,
+                to {
+                        background-color: transparent;
+                }
+                50% {
+                        background-color: $nav-area-color;
+                }
         }
-        50% {
-            background-color: $nav-area-color;
-        }
-    }
 } //end home page
 
 //***********************TABLET************************************
 @media only screen and (min-width: 768px) {
-    #homePage {
-        $logo-image-width: 50vh;
-        height: 100vh;
+        #homePage {
+                $logo-image-width: 50vh;
+                height: 100vh;
 
-        #container_logo {
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 0;
-            #logoImage {
-                width: $logo-image-width;
-                margin-bottom: 0vh;
-            }
+                #container_logo {
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: 0;
+                        // #logoImage {
+                        //         width: $logo-image-width;
+                        //         margin-bottom: 0vh;
+                        // }
+                }
         }
-    }
 }
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-    #homePage {
-        $logo-image-width: 55vh;
-        height: 100vh;
+        #homePage {
+                $logo-image-width: 55vh;
+                height: 100vh;
 
-        #container_logo {
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 0;
-            #logoImage {
-                width: $logo-image-width;
-                margin-bottom: 0vh;
-            }
+                #container_logo {
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: 0;
+                        // #logoImage {
+                        //         width: $logo-image-width;
+                        //         margin-bottom: 0vh;
+                        // }
+                }
+
+                #hero_message {
+                        #hero_greeting {
+                                font-size: 1.3vw;
+                                line-height: 3vw;
+                        }
+
+                        #hero_text {
+                                font-size: 1.1vw;
+                                line-height: 1.5vw;
+                        }
+                }
+
+                #cursor {
+                        width: 0.15vw;
+                        height: 1.5vw;
+                }
         }
-
-        #hero_message {
-            #hero_greeting {
-                font-size: 1.3vw;
-                line-height: 3vw;
-            }
-
-            #hero_text {
-                font-size: 1.1vw;
-                line-height: 1.5vw;
-            }
-        }
-
-        #cursor {
-            width: 0.15vw;
-            height: 1.5vw;
-        }
-    }
 }

@@ -144,100 +144,6 @@ table {
       border-spacing: 0;
 }
 
-body {
-  font-size: 1.6rem;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 10px;
-}
-
-.my-container {
-  padding: 13vw 7vw 13vw 7vw;
-}
-
-.container_content {
-  margin-top: 11vw;
-}
-
-.section-title-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: none;
-}
-
-.section-title-area .light {
-  color: white;
-}
-
-.section-heading {
-  font-size: 5.59vw;
-  margin-top: 0;
-  text-transform: uppercase !important;
-  color: #212529;
-  font-weight: 600;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.section-subheading {
-  font-size: 3vw;
-  font-weight: 400;
-  margin-top: 1vw;
-  font-style: italic;
-  color: #6c757d;
-  text-transform: none;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media only screen and (min-width: 768px) {
-  .my-container {
-    padding: 13vw 7vw 13vw 7vw;
-  }
-  .container_content {
-    margin-top: 11vw;
-  }
-  .section-heading {
-    font-size: 5.59vw;
-    margin-top: 0;
-  }
-  .section-subheading {
-    font-size: 3vw;
-    margin-top: 1vw;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 1.6rem;
-  }
-  html {
-    font-size: 10px;
-  }
-  .my-container {
-    padding: 6vw 7vw;
-  }
-  .container_content {
-    margin-top: 4vw;
-  }
-  .section-heading {
-    font-size: 2.2vw;
-    margin-top: 0;
-  }
-  .section-subheading {
-    font-size: 1.2vw;
-    margin-top: 0.7vw;
-  }
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -393,9 +299,6 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #ffd306;
   position: relative;
   top: 0;
   left: 0;
@@ -515,10 +418,6 @@ table {
     left: 0;
     margin: 0;
   }
-  #homePage #container_logo #logoImage {
-    width: 50vh;
-    margin-bottom: 0vh;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -533,10 +432,6 @@ table {
     top: 0;
     left: 0;
     margin: 0;
-  }
-  #homePage #container_logo #logoImage {
-    width: 55vh;
-    margin-bottom: 0vh;
   }
   #homePage #hero_message #hero_greeting {
     font-size: 1.3vw;
@@ -1036,6 +931,10 @@ table {
   background-color: #ffd306;
 }
 
+#contactPage .container_content {
+  margin-top: 8vw;
+}
+
 #contactPage .container {
   max-width: 100%;
 }
@@ -1099,7 +998,6 @@ table {
   background-color: #214261;
   color: white;
   width: 33%;
-  margin-top: 2vw;
   padding: 2.3vw 3.5vw;
   border-radius: 6px;
   font-size: 3vw;
@@ -1129,21 +1027,20 @@ table {
     padding: 0.5vw;
   }
   #contactPage form input[type="submit"] {
-    width: 25%;
-    margin-top: 2vw;
-    padding: 1vw;
+    width: 23%;
+    padding: 0.6vw;
     border-radius: 2vw;
     font-size: 2vw;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .container_content {
-    margin-top: 5vw;
-  }
   #contactPage #sucess_message {
     font-size: 1.1vw;
     margin-bottom: 1.5vw;
+  }
+  #contactPage .container_content {
+    margin-top: 4vw;
   }
   #contactPage form {
     margin-top: 0;
@@ -1169,6 +1066,7 @@ table {
     padding: 0.2vw 0.2vw;
     border-radius: 6px;
     font-size: 1.2vw;
+    margin-top: 0vw;
   }
 }
 
@@ -1579,6 +1477,260 @@ table {
   }
   #header-main .my-container #nav-bar #menu li:not(:first-child) a {
     margin-left: 4vw;
+  }
+}
+
+#david {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  z-index: 100;
+  justify-self: flex-start;
+  -webkit-animation: david-in 2s forwards;
+          animation: david-in 2s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: -100vw;
+}
+
+#above-logo {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  z-index: 99;
+  -webkit-animation: background-fade-in 2s forwards;
+          animation: background-fade-in 2s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes david-in {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+
+@keyframes david-in {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+
+#david-background {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  -webkit-animation: background-fade-in 2s forwards;
+          animation: background-fade-in 2s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes background-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes background-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#homePage {
+  height: 100vh;
+}
+
+#homePage #container_logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+#homePage #container_logo #logoImage,
+#homePage #container_logo #t,
+#homePage #container_logo #dots,
+#homePage #container_logo #ribbon {
+  position: absolute;
+  width: 50vh;
+  top: 3vh;
+  width: 50vh;
+}
+
+#homePage #container_logo #logoImage {
+  z-index: 96;
+  -webkit-animation: shrink forwards 1s;
+          animation: shrink forwards 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#homePage #container_logo #ribbon {
+  z-index: 98;
+  -webkit-animation: fade-out forwards 1s;
+          animation: fade-out forwards 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#homePage #container_logo #dots {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#homePage #container_logo #t {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shrink {
+  from {
+    width: 50vh;
+  }
+  to {
+    width: 38vh;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 50vh;
+  }
+  to {
+    width: 38vh;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.my-container {
+  padding: 13vw 7vw 13vw 7vw;
+}
+
+.container_content {
+  margin-top: 11vw;
+}
+
+.section-title-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+}
+
+.section-title-area .light {
+  color: white;
+}
+
+.section-heading {
+  font-size: 5.59vw;
+  margin-top: 0;
+  text-transform: uppercase !important;
+  color: #212529;
+  font-weight: 600;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.section-subheading {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-top: 1vw;
+  font-style: italic;
+  color: #6c757d;
+  text-transform: none;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media only screen and (min-width: 768px) {
+  .my-container {
+    padding: 13vw 7vw 13vw 7vw;
+  }
+  .container_content {
+    margin-top: 11vw;
+  }
+  .section-heading {
+    font-size: 5.59vw;
+    margin-top: 0;
+  }
+  .section-subheading {
+    font-size: 3vw;
+    margin-top: 1vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.6rem;
+  }
+  html {
+    font-size: 10px;
+  }
+  .my-container {
+    padding: 6vw 7vw;
+  }
+  .container_content {
+    margin-top: 5vw;
+  }
+  .section-heading {
+    font-size: 2.2vw;
+    margin-top: 0;
+  }
+  .section-subheading {
+    font-size: 1.2vw;
+    margin-top: 0.7vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
