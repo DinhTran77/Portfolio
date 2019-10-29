@@ -144,279 +144,6 @@ table {
       border-spacing: 0;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-  text-decoration: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-      display: block;
-}
-
-  h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-blockquote,
-q {
-      quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-      content: "";
-      content: none;
-}
-
-table {
-      border-collapse: collapse;
-      border-spacing: 0;
-}
-
-#homePage {
-  width: 100%;
-  height: 161.8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #ffd306;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#homePage #button {
-  z-index: 200;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-#homePage #container_logo {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#homePage #container_logo #logoImage {
-  width: 60vw;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#homePage #hero_message {
-  width: 100vw;
-  text-align: center;
-  height: 3vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#homePage #hero_message #hero_greeting {
-  color: #012040;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 4vw;
-  font-weight: bolder;
-  line-height: 7vw;
-}
-
-#homePage #hero_message #hero_text {
-  color: #012040;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 3vw;
-  color: #012040;
-  line-height: 5vw;
-}
-
-#homePage #cursor {
-  display: inline-block;
-  width: 0.5vw;
-  height: 4vw;
-  background-color: #212529;
-  -webkit-animation: blink 0.75s step-end infinite;
-          animation: blink 0.75s step-end infinite;
-  opacity: 0.6;
-}
-
-@-webkit-keyframes blink {
-  from,
-  to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: #212529;
-  }
-}
-
-@keyframes blink {
-  from,
-  to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: #212529;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #homePage {
-    height: 100vh;
-  }
-  #homePage #container_logo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-  }
-}
-
 #skillsPage {
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1409,7 +1136,7 @@ table {
   color: white;
 }
 
-#homePage {
+#homePage-david {
   width: 100%;
   height: 100vh;
   background: #1b1b1b;
@@ -1419,15 +1146,20 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#homePage .container_logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: pink;
+}
+
+#homePage-david .container_logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: green;
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -1436,6 +1168,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   margin: 0;
@@ -1445,14 +1178,6 @@ table {
           animation: move-up 1s forwards;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
-}
-
-#homePage .container_logo .logoImage,
-#homePage .container_logo .t,
-#homePage .container_logo .dots,
-#homePage .container_logo .ribbon {
-  width: 25vw;
-  position: absolute;
 }
 
 @-webkit-keyframes move-up {
@@ -1471,15 +1196,39 @@ table {
   }
 }
 
-#homePage .container_logo .logoImage {
+#homePage-david .container_logo .logo {
+  background: red;
+  width: 25vw;
+  height: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage-david .container_logo .logo .logoImage,
+#homePage-david .container_logo .logo .t,
+#homePage-david .container_logo .logo .dots,
+#homePage-david .container_logo .logo .ribbon {
+  width: 25vw;
+  position: absolute;
+}
+
+#homePage-david .container_logo .logo .logoImage {
   z-index: 96;
   -webkit-animation: shrink forwards 1s;
           animation: shrink forwards 1s;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
+  width: 25vw;
 }
 
-#homePage .container_logo .ribbon {
+#homePage-david .container_logo .logo .ribbon {
   z-index: 98;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1487,7 +1236,7 @@ table {
           animation-delay: 0.5s;
 }
 
-#homePage .container_logo .dots {
+#homePage-david .container_logo .logo .dots {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1495,7 +1244,7 @@ table {
           animation-delay: 0.5s;
 }
 
-#homePage .container_logo .t {
+#homePage-david .container_logo .logo .t {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1543,11 +1292,11 @@ table {
   }
 }
 
-#homePage .container_logo .hero_message {
+#homePage-david .container_logo .hero_message {
   display: none;
 }
 
-#homePage .container-david .david {
+#homePage-david .container-david .david {
   position: absolute;
   height: 100vh;
   z-index: 100;
@@ -1560,7 +1309,7 @@ table {
           animation-delay: 1.3s;
 }
 
-#homePage .container-david .above-logo {
+#homePage-david .container-david .above-logo {
   position: absolute;
   height: 100%;
   bottom: 0;
@@ -1590,7 +1339,7 @@ table {
   }
 }
 
-#homePage .container-david .david-background {
+#homePage-david .container-david .david-background {
   position: absolute;
   height: 100%;
   bottom: 0;
@@ -1617,6 +1366,247 @@ table {
   }
   to {
     opacity: 1;
+  }
+}
+
+.nav_link {
+  color: #012040;
+}
+
+#homePage-normal {
+  width: 100%;
+  height: 161.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffd306;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage-normal .container_logo {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#homePage-normal .container_logo .logo {
+  width: 60vw;
+  height: 60vw;
+  display: relative;
+}
+
+#homePage-normal .container_logo .logo .ribbon,
+#homePage-normal .container_logo .logo .t,
+#homePage-normal .container_logo .logo .dots,
+#homePage-normal .container_logo .logo .logoImage {
+  width: 60vw;
+  margin-bottom: 0vh;
+  display: inline-block;
+  position: absolute;
+}
+
+#homePage-normal .container_logo .logo .logoImage {
+  z-index: 96;
+}
+
+#homePage-normal .container_logo .logo .ribbon {
+  z-index: 98;
+}
+
+#homePage-normal .container_logo .logo .dots {
+  z-index: 97;
+}
+
+#homePage-normal .container_logo .logo .t {
+  z-index: 97;
+}
+
+#homePage-normal .container_logo .logo .logoImage {
+  width: 60vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#homePage-normal .container_logo .hero_message {
+  width: 100vw;
+  text-align: center;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage-normal .container_logo .hero_message .hero_greeting {
+  color: #012040;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 4vw;
+  font-weight: bolder;
+  line-height: 7vw;
+}
+
+#homePage-normal .container_logo .hero_message .hero_text {
+  color: #012040;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 3vw;
+  color: #012040;
+  line-height: 5vw;
+}
+
+#homePage-normal .container-david .david,
+#homePage-normal .container-david .above-logo,
+#homePage-normal .container-david .david-background {
+  display: none;
+}
+
+#homePage-normal .cursor {
+  display: inline-block;
+  width: 0.5vw;
+  height: 4vw;
+  background-color: #212529;
+  -webkit-animation: blink 0.75s step-end infinite;
+          animation: blink 0.75s step-end infinite;
+  opacity: 0.6;
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #homePage {
+    height: 100vh;
+  }
+  #homePage #container_logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #homePage-normal {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #homePage-normal .container_logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+  }
+  #homePage-normal .container_logo .logo {
+    width: 25vw;
+    height: 25vw;
+  }
+  #homePage-normal .container_logo .logo .ribbon,
+  #homePage-normal .container_logo .logo .t,
+  #homePage-normal .container_logo .logo .dots,
+  #homePage-normal .container_logo .logo .logoImage {
+    width: 25vw;
+    margin-bottom: 0vh;
+    display: inline-block;
+    position: absolute;
+  }
+  #homePage-normal .container_logo .logo .logoImage {
+    z-index: 96;
+  }
+  #homePage-normal .container_logo .logo .ribbon {
+    z-index: 98;
+  }
+  #homePage-normal .container_logo .logo .dots {
+    z-index: 97;
+  }
+  #homePage-normal .container_logo .logo .t {
+    z-index: 97;
+  }
+  #homePage-normal .container_logo .hero_message {
+    position: absolute;
+    bottom: 9vw;
+  }
+  #homePage-normal .container_logo .hero_message .hero_greeting {
+    font-size: 1.3vw;
+    line-height: 3vw;
+  }
+  #homePage-normal .container_logo .hero_message .hero_text {
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+  }
+  #homePage-normal .container_logo .cursor {
+    width: 0.15vw;
+    height: 1.5vw;
+  }
+  #homePage-normal .container-david .david,
+  #homePage-normal .container-david .above-logo,
+  #homePage-normal .container-david .david-background {
+    display: none;
   }
 }
 

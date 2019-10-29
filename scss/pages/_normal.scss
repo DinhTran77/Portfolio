@@ -1,136 +1,199 @@
-// // #nav_link {
-// //         color: $color_font_nav;
-// // }
+.nav_link {
+        color: $color_font_nav;
+}
+#homePage-normal {
+        $logo-image-width: 60vw;
+        $homepage_screen_height: 100vw * 1.618;
+        width: 100%;
+        height: $homepage_screen_height;
+        display: flex;
+        flex-direction: column;
+        background-color: $color_background_yellow;
+        position: relative;
+        top: 0;
+        left: 0;
+        @include flex-center;
 
-// // #homePage {
-// //         height: 100vh;
-// //         $logo-image-width: 25vw;
+        .container_logo {
+                width: 100%;
+                height: 100vh;
+                @include flex-center;
+                flex-direction: column;
 
-// //         .container_logo {
-// //                 align-items: center;
-// //                 position: relative;
-// //                 top: 0;
-// //                 left: 0;
-// //                 margin: 0;
+                // background: green;
+                .logo {
+                        // background: red;
+                        width: $logo-image-width;
+                        height: $logo-image-width;
+                        display: relative;
+                        .ribbon,
+                        .t,
+                        .dots,
+                        .logoImage {
+                                width: $logo-image-width;
+                                margin-bottom: 0vh;
+                                display: inline-block;
+                                position: absolute;
+                        }
 
-// //                 .ribbon,
-// //                 .t,
-// //                 .dots,
-// //                 .logoImage {
-// //                         width: $logo-image-width;
-// //                         margin-bottom: 0vh;
-// //                         display: inline-block;
-// //                         position: absolute;
-// //                 }
+                        .logoImage {
+                                z-index: 96;
+                        }
 
-// //                 .logoImage {
-// //                         z-index: 96;
-// //                 }
+                        .ribbon {
+                                z-index: 98;
+                        }
 
-// //                 .ribbon {
-// //                         z-index: 98;
-// //                 }
+                        .dots {
+                                z-index: 97;
+                        }
 
-// //                 .dots {
-// //                         z-index: 97;
-// //                 }
+                        .t {
+                                z-index: 97;
+                        }
+                        .logoImage {
+                                width: $logo-image-width;
+                                justify-self: center;
+                                align-self: center;
+                        }
+                }
 
-// //                 .t {
-// //                         z-index: 97;
-// //                 }
+                .hero_message {
+                        width: 100vw;
+                        text-align: center;
+                        height: 3vh;
+                        @include flex-center;
+                        .hero_greeting {
+                                color: $color_font_nav;
+                                font-family: $monsterrat-font;
+                                font-size: 4vw;
+                                font-weight: bolder;
+                                line-height: 7vw;
+                        }
 
-// //                 .hero_message {
-// //                         position: absolute;
-// //                         bottom: 9vw;
-// //                         .hero_greeting {
-// //                                 font-size: 1.3vw;
-// //                                 line-height: 3vw;
-// //                         }
+                        .hero_text {
+                                color: $color_font_nav;
+                                font-family: $monsterrat-font;
+                                font-size: 3vw;
+                                color: $color_font_nav;
+                                line-height: 5vw;
+                        }
+                }
+        } //end #container_logo
 
-// //                         .hero_text {
-// //                                 font-size: 1.1vw;
-// //                                 line-height: 1.5vw;
-// //                         }
-// //                 }
+        .container-david {
+                .david,
+                .above-logo,
+                .david-background {
+                        display: none;
+                }
+        }
 
-// //                 .cursor {
-// //                         width: 0.15vw;
-// //                         height: 1.5vw;
-// //                 }
-// //         }
+        .cursor {
+                display: inline-block;
+                width: 0.5vw;
+                height: 4vw;
+                background-color: $nav-area-color;
+                animation: blink 0.75s step-end infinite;
+                opacity: 0.6;
+        }
 
-// //         .container-david {
-// //                 .david,
-// //                 .above-logo,
-// //                 .david-background {
-// //                         display: none;
-// //                 }
-// //         }
-// // }
+        @keyframes blink {
+                from,
+                to {
+                        background-color: transparent;
+                }
+                50% {
+                        background-color: $nav-area-color;
+                }
+        }
+} //end home page
 
-// #nav_link {
-//         color: $color_font_nav;
-// }
+//***********************TABLET************************************
+@media only screen and (min-width: 768px) {
+        #homePage {
+                $logo-image-width: 50vh;
+                height: 100vh;
 
-// #homePage {
-//         height: 100vh;
-//         $logo-image-width: 25vw;
-//         @include flex-center;
-//         .container_logo {
-//                 align-items: center;
-//                 @include flex-center;
+                #container_logo {
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: 0;
+                        // #logoImage {
+                        //         width: $logo-image-width;
+                        //         margin-bottom: 0vh;
+                        // }
+                }
+        }
+}
+//***********************Desktop************************************
+@media only screen and (min-width: 992px) {
+        #homePage-normal {
+                height: 100vh;
+                $logo-image-width: 25vw;
+                @include flex-center;
+                .container_logo {
+                        align-items: center;
 
-//                 .ribbon,
-//                 .t,
-//                 .dots,
-//                 .logoImage {
-//                         width: $logo-image-width;
-//                         margin-bottom: 0vh;
-//                         display: inline-block;
-//                         position: absolute;
-//                 }
+                        @include flex-center;
+                        .logo {
+                                // background: red;
+                                width: $logo-image-width;
+                                height: $logo-image-width;
+                                .ribbon,
+                                .t,
+                                .dots,
+                                .logoImage {
+                                        width: $logo-image-width;
+                                        margin-bottom: 0vh;
+                                        display: inline-block;
+                                        position: absolute;
+                                }
 
-//                 .logoImage {
-//                         z-index: 96;
-//                 }
+                                .logoImage {
+                                        z-index: 96;
+                                }
 
-//                 .ribbon {
-//                         z-index: 98;
-//                 }
+                                .ribbon {
+                                        z-index: 98;
+                                }
 
-//                 .dots {
-//                         z-index: 97;
-//                 }
+                                .dots {
+                                        z-index: 97;
+                                }
 
-//                 .t {
-//                         z-index: 97;
-//                 }
+                                .t {
+                                        z-index: 97;
+                                }
+                        }
+                        .hero_message {
+                                position: absolute;
+                                bottom: 9vw;
+                                .hero_greeting {
+                                        font-size: 1.3vw;
+                                        line-height: 3vw;
+                                }
 
-//                 .hero_message {
-//                         position: absolute;
-//                         bottom: 9vw;
-//                         .hero_greeting {
-//                                 font-size: 1.3vw;
-//                                 line-height: 3vw;
-//                         }
+                                .hero_text {
+                                        font-size: 1.1vw;
+                                        line-height: 1.5vw;
+                                }
+                        }
 
-//                         .hero_text {
-//                                 font-size: 1.1vw;
-//                                 line-height: 1.5vw;
-//                         }
-//                 }
+                        .cursor {
+                                width: 0.15vw;
+                                height: 1.5vw;
+                        }
+                }
 
-//                 .cursor {
-//                         width: 0.15vw;
-//                         height: 1.5vw;
-//                 }
-//         }
-
-//         .container-david {
-//                 .david,
-//                 .above-logo,
-//                 .david-background {
-//                         display: none;
-//                 }
-//         }
-// }
+                .container-david {
+                        .david,
+                        .above-logo,
+                        .david-background {
+                                display: none;
+                        }
+                }
+        }
+}
