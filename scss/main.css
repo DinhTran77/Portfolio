@@ -1405,220 +1405,86 @@ table {
   }
 }
 
-.nav_link {
-  color: white;
+#nav_link {
+  color: #012040;
 }
 
 #homePage {
-  width: 100%;
   height: 100vh;
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  background: pink;
-}
-
-#homePage #container_logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 50%;
+}
+
+#homePage .container_logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 0;
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  -webkit-animation: move-up 1.5s forwards;
-          animation: move-up 1.5s forwards;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  align-items: center;
 }
 
-#homePage #container_logo .logoImage,
-#homePage #container_logo .t,
-#homePage #container_logo .dots,
-#homePage #container_logo .ribbon {
+#homePage .container_logo .ribbon,
+#homePage .container_logo .t,
+#homePage .container_logo .dots,
+#homePage .container_logo .logoImage {
   width: 25vw;
+  margin-bottom: 0vh;
+  display: inline-block;
   position: absolute;
 }
 
-@-webkit-keyframes move-up {
-  from {
-  }
-  to {
-    top: -13.3vw;
-  }
-}
-
-@keyframes move-up {
-  from {
-  }
-  to {
-    top: -13.3vw;
-  }
-}
-
-#homePage #container_logo .logoImage {
+#homePage .container_logo .logoImage {
   z-index: 96;
-  -webkit-animation: shrink forwards 1s;
-          animation: shrink forwards 1s;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
 }
 
-#homePage #container_logo .ribbon {
+#homePage .container_logo .ribbon {
   z-index: 98;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
-#homePage #container_logo .dots {
+#homePage .container_logo .dots {
   z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
-#homePage #container_logo .t {
+#homePage .container_logo .t {
   z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
-@-webkit-keyframes shrink {
-  from {
-    width: 25vw;
-    opacity: 1;
-  }
-  to {
-    width: 17vw;
-    opacity: 0.8;
-  }
-}
-
-@keyframes shrink {
-  from {
-    width: 25vw;
-    opacity: 1;
-  }
-  to {
-    width: 17vw;
-    opacity: 0.8;
-  }
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#homePage #container_logo .hero_message {
-  display: none;
-}
-
-#homePage .container-david .david {
+#homePage .container_logo .hero_message {
   position: absolute;
-  height: 100vh;
-  z-index: 100;
-  justify-self: flex-start;
-  left: -100vw;
-  bottom: 0;
-  -webkit-animation: david-in 1.75s forwards ease-in;
-          animation: david-in 1.75s forwards ease-in;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  bottom: 9vw;
 }
 
-#homePage .container-david .above-logo {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 99;
-  -webkit-animation: background-fade-in 1s forwards ease-in;
-          animation: background-fade-in 1s forwards ease-in;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  opacity: 0;
+#homePage .container_logo .hero_message .hero_greeting {
+  font-size: 1.3vw;
+  line-height: 3vw;
 }
 
-@-webkit-keyframes david-in {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0vw;
-  }
+#homePage .container_logo .hero_message .hero_text {
+  font-size: 1.1vw;
+  line-height: 1.5vw;
 }
 
-@keyframes david-in {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0vw;
-  }
+#homePage .container_logo .cursor {
+  width: 0.15vw;
+  height: 1.5vw;
 }
 
+#homePage .container-david .david,
+#homePage .container-david .above-logo,
 #homePage .container-david .david-background {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 1;
-  -webkit-animation: background-fade-in 2s forwards ease-in;
-          animation: background-fade-in 2s forwards ease-in;
-  opacity: 0;
-  left: 0;
-  top: 0;
-}
-
-@-webkit-keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  display: none;
 }
 
 body {
