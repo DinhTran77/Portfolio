@@ -307,17 +307,11 @@ table {
   left: 0;
 }
 
-#homePage #getInTouchButton {
-  border-radius: 4vw;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: #214261;
-  color: white;
-  font-size: 1vw;
-  padding: 0.7vw 1.5vw;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-top: 2vw;
+#homePage #button {
+  z-index: 200;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #homePage #container_logo {
@@ -420,186 +414,6 @@ table {
     top: 0;
     left: 0;
     margin: 0;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #nav_link {
-    color: white;
-  }
-  #homePage {
-    height: 100vh;
-    background: #1b1b1b;
-  }
-  #homePage #container_logo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0;
-    -webkit-animation: move-up 1.5s forwards;
-            animation: move-up 1.5s forwards;
-    -webkit-animation-delay: 1.75s;
-            animation-delay: 1.75s;
-  }
-  #homePage #container_logo #logoImage,
-  #homePage #container_logo #t,
-  #homePage #container_logo #dots,
-  #homePage #container_logo #ribbon {
-    width: 25vw;
-    margin-bottom: 0vh;
-    display: inline-block;
-    position: absolute;
-  }
-  @-webkit-keyframes move-up {
-    from {
-    }
-    to {
-      top: -13vw;
-    }
-  }
-  @keyframes move-up {
-    from {
-    }
-    to {
-      top: -13vw;
-    }
-  }
-  #homePage #container_logo #logoImage {
-    z-index: 96;
-    -webkit-animation: shrink forwards 1s;
-            animation: shrink forwards 1s;
-    -webkit-animation-delay: 1.75s;
-            animation-delay: 1.75s;
-    width: 25vw;
-    margin-bottom: 0vh;
-    display: inline-block;
-  }
-  #homePage #container_logo #ribbon {
-    z-index: 98;
-    -webkit-animation: fade-out forwards 0.5s;
-            animation: fade-out forwards 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  #homePage #container_logo #dots {
-    z-index: 97;
-    -webkit-animation: fade-out forwards 0.5s;
-            animation: fade-out forwards 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  #homePage #container_logo #t {
-    z-index: 97;
-    -webkit-animation: fade-out forwards 0.5s;
-            animation: fade-out forwards 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  @-webkit-keyframes shrink {
-    from {
-      width: 50vh;
-      opacity: 1;
-    }
-    to {
-      width: 38vh;
-      opacity: 0.8;
-    }
-  }
-  @keyframes shrink {
-    from {
-      width: 50vh;
-      opacity: 1;
-    }
-    to {
-      width: 38vh;
-      opacity: 0.8;
-    }
-  }
-  @-webkit-keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  #homePage #container_logo #hero_message {
-    display: none;
-  }
-  #homePage #container-david #david {
-    position: absolute;
-    height: 100%;
-    z-index: 100;
-    justify-self: flex-start;
-    left: -100vw;
-    bottom: 0;
-    -webkit-animation: david-in 1.75s forwards ease-in;
-            animation: david-in 1.75s forwards ease-in;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  #homePage #container-david #above-logo {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    z-index: 99;
-    -webkit-animation: background-fade-in 1s forwards ease-in;
-            animation: background-fade-in 1s forwards ease-in;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-    opacity: 0;
-  }
-  @-webkit-keyframes david-in {
-    from {
-      left: -100vw;
-    }
-    to {
-      left: 0vw;
-    }
-  }
-  @keyframes david-in {
-    from {
-      left: -100vw;
-    }
-    to {
-      left: 0vw;
-    }
-  }
-  #homePage #container-david #david-background {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    z-index: 1;
-    -webkit-animation: background-fade-in 2s forwards ease-in;
-            animation: background-fade-in 2s forwards ease-in;
-    opacity: 0;
-  }
-  @-webkit-keyframes background-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes background-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
 }
 
@@ -1588,6 +1402,205 @@ table {
   }
   #header-main .my-container #nav-bar #menu li:not(:first-child) a {
     margin-left: 4vw;
+  }
+}
+
+#nav_link {
+  color: white;
+}
+
+#homePage {
+  height: 100vh;
+  background: white;
+}
+
+#homePage #container_logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  -webkit-animation: move-up 1.5s forwards;
+          animation: move-up 1.5s forwards;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+#homePage #container_logo #logoImage,
+#homePage #container_logo #t,
+#homePage #container_logo #dots,
+#homePage #container_logo #ribbon {
+  width: 25vw;
+  margin-bottom: 0vh;
+  display: inline-block;
+  position: absolute;
+}
+
+@-webkit-keyframes move-up {
+  from {
+  }
+  to {
+    top: -13vw;
+  }
+}
+
+@keyframes move-up {
+  from {
+  }
+  to {
+    top: -13vw;
+  }
+}
+
+#homePage #container_logo #logoImage {
+  z-index: 96;
+  -webkit-animation: shrink forwards 1s;
+          animation: shrink forwards 1s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  width: 25vw;
+  margin-bottom: 0vh;
+  display: inline-block;
+}
+
+#homePage #container_logo #ribbon {
+  z-index: 98;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#homePage #container_logo #dots {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#homePage #container_logo #t {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes shrink {
+  from {
+    width: 50vh;
+    opacity: 1;
+  }
+  to {
+    width: 38vh;
+    opacity: 0.8;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 50vh;
+    opacity: 1;
+  }
+  to {
+    width: 38vh;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#homePage #container_logo #hero_message {
+  display: none;
+}
+
+#homePage #container-david #david {
+  position: absolute;
+  height: 100%;
+  z-index: 100;
+  justify-self: flex-start;
+  left: -100vw;
+  bottom: 0;
+  -webkit-animation: david-in 1.75s forwards ease-in;
+          animation: david-in 1.75s forwards ease-in;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#homePage #container-david #above-logo {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  z-index: 99;
+  -webkit-animation: background-fade-in 1s forwards ease-in;
+          animation: background-fade-in 1s forwards ease-in;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes david-in {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+
+@keyframes david-in {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+
+#homePage #container-david #david-background {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  -webkit-animation: background-fade-in 2s forwards ease-in;
+          animation: background-fade-in 2s forwards ease-in;
+  opacity: 0;
+}
+
+@-webkit-keyframes background-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes background-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
