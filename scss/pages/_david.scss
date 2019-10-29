@@ -13,11 +13,12 @@
         top: 0;
         left: 0;
         background: pink;
+        overflow: hidden;
         .container_logo {
                 align-items: center;
                 background: green;
-                width: 100%;
-                height: 50%;
+                // width: 100%;
+                // height: 50%;
                 @include flex-center;
                 top: 0;
                 left: 0;
@@ -39,6 +40,7 @@
                         width: $logo-image-width;
                         height: $logo-image-width;
                         @include flex-center;
+                        overflow: hidden;
                         .logoImage,
                         .t,
                         .dots,
@@ -56,6 +58,7 @@
                                 // background: green;
                                 // margin-bottom: 0vh;
                                 // display: inline-block;
+                                overflow: hidden;
                         }
 
                         .ribbon {
@@ -102,43 +105,56 @@
         }
 
         .container-david {
+                $david-width: 59vw;
+                background: red;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                @include flex-center;
                 .david {
                         position: absolute;
-                        height: 100vh;
-                        z-index: 100;
-                        justify-self: flex-start;
-                        left: -100vw;
+                        width: $david-width;
+                        z-index: 102;
                         bottom: 0;
-                        animation: david-in 1s forwards ease-in;
+
+                        transform: translateX(-77vw);
+
+                        animation: david-in 2s forwards ease-in;
                         animation-delay: 1.3s;
                 }
                 .above-logo {
                         position: absolute;
-                        height: 100%;
-                        bottom: 0;
-                        z-index: 99;
+                        width: 100%;
+                        // bottom: 0;
+                        z-index: 101;
                         animation: background-fade-in 1s forwards ease-in;
                         animation-delay: 1.5s;
                         opacity: 0;
+                        left: 0;
+                        top: 0;
+                        // background: green;
                 }
                 @keyframes david-in {
                         from {
-                                left: -100vw;
+                                transform: translateX(-77vw);
                         }
                         to {
-                                left: 0vw;
+                                transform: translateX(0);
                         }
                 }
 
                 .david-background {
                         position: absolute;
-                        height: 100%;
+                        width: 100%;
+
                         bottom: 0;
                         z-index: 1;
                         animation: background-fade-in 1s forwards ease-in;
-                        opacity: 0;
+                        opacity: 1;
                         left: 0;
                         top: 0;
+                        // background: red;
                 }
 
                 @keyframes background-fade-in {

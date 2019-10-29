@@ -1153,6 +1153,7 @@ table {
   top: 0;
   left: 0;
   background: pink;
+  overflow: hidden;
 }
 
 #homePage-david .container_logo {
@@ -1160,8 +1161,6 @@ table {
       -ms-flex-align: center;
           align-items: center;
   background: green;
-  width: 100%;
-  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,6 +1208,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 #homePage-david .container_logo .logo .logoImage,
@@ -1226,6 +1226,7 @@ table {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
   width: 25vw;
+  overflow: hidden;
 }
 
 #homePage-david .container_logo .logo .ribbon {
@@ -1296,57 +1297,79 @@ table {
   display: none;
 }
 
+#homePage-david .container-david {
+  background: red;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #homePage-david .container-david .david {
   position: absolute;
-  height: 100vh;
-  z-index: 100;
-  justify-self: flex-start;
-  left: -100vw;
+  width: 59vw;
+  z-index: 102;
   bottom: 0;
-  -webkit-animation: david-in 1s forwards ease-in;
-          animation: david-in 1s forwards ease-in;
+  -webkit-transform: translateX(-77vw);
+          transform: translateX(-77vw);
+  -webkit-animation: david-in 2s forwards ease-in;
+          animation: david-in 2s forwards ease-in;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
 
 #homePage-david .container-david .above-logo {
   position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 99;
+  width: 100%;
+  z-index: 101;
   -webkit-animation: background-fade-in 1s forwards ease-in;
           animation: background-fade-in 1s forwards ease-in;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
   opacity: 0;
+  left: 0;
+  top: 0;
 }
 
 @-webkit-keyframes david-in {
   from {
-    left: -100vw;
+    -webkit-transform: translateX(-77vw);
+            transform: translateX(-77vw);
   }
   to {
-    left: 0vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes david-in {
   from {
-    left: -100vw;
+    -webkit-transform: translateX(-77vw);
+            transform: translateX(-77vw);
   }
   to {
-    left: 0vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 #homePage-david .container-david .david-background {
   position: absolute;
-  height: 100%;
+  width: 100%;
   bottom: 0;
   z-index: 1;
   -webkit-animation: background-fade-in 1s forwards ease-in;
           animation: background-fade-in 1s forwards ease-in;
-  opacity: 0;
+  opacity: 1;
   left: 0;
   top: 0;
 }
@@ -1374,6 +1397,7 @@ table {
 }
 
 #homePage-normal {
+  overflow: hidden;
   width: 100%;
   height: 161.8vw;
   display: -webkit-box;

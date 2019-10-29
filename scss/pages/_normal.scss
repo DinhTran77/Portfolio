@@ -2,6 +2,7 @@
         color: $color_font_nav;
 }
 #homePage-normal {
+        overflow: hidden;
         $logo-image-width: 60vw;
         $homepage_screen_height: 100vw * 1.618;
         width: 100%;
