@@ -1132,7 +1132,7 @@ table {
   }
 }
 
-.nav_link {
+.menu-david a {
   color: white;
 }
 
@@ -1152,7 +1152,6 @@ table {
   position: relative;
   top: 0;
   left: 0;
-  background: pink;
   overflow: hidden;
 }
 
@@ -1160,7 +1159,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1183,7 +1181,7 @@ table {
   from {
   }
   to {
-    top: -13.3vw;
+    top: -15vw;
   }
 }
 
@@ -1191,12 +1189,11 @@ table {
   from {
   }
   to {
-    top: -13.3vw;
+    top: -15vw;
   }
 }
 
 #homePage-david .container_logo .logo {
-  background: red;
   width: 25vw;
   height: 25vw;
   display: -webkit-box;
@@ -1298,7 +1295,6 @@ table {
 }
 
 #homePage-david .container-david {
-  background: red;
   width: 100%;
   position: absolute;
   top: 0;
@@ -1321,8 +1317,8 @@ table {
   bottom: 0;
   -webkit-transform: translateX(-77vw);
           transform: translateX(-77vw);
-  -webkit-animation: david-in 2s forwards ease-in;
-          animation: david-in 2s forwards ease-in;
+  -webkit-animation: david-in 1s forwards ease-in;
+          animation: david-in 1s forwards ease-in;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
@@ -1392,7 +1388,7 @@ table {
   }
 }
 
-.nav_link {
+.menu-david-normal a {
   color: #012040;
 }
 

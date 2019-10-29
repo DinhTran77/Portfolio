@@ -1,6 +1,11 @@
-.nav_link {
-        color: white;
+.menu-david {
+        a {
+                color: white;
+        }
 }
+// #nav_link {
+//         color: white;
+// }
 #homePage-david {
         width: 100%;
         height: 100vh;
@@ -12,11 +17,10 @@
         position: relative;
         top: 0;
         left: 0;
-        background: pink;
         overflow: hidden;
         .container_logo {
                 align-items: center;
-                background: green;
+
                 // width: 100%;
                 // height: 50%;
                 @include flex-center;
@@ -32,11 +36,10 @@
                                 // top: -10vw;
                         }
                         to {
-                                top: -13.3vw;
+                                top: -15vw;
                         }
                 }
                 .logo {
-                        background: red;
                         width: $logo-image-width;
                         height: $logo-image-width;
                         @include flex-center;
@@ -106,7 +109,6 @@
 
         .container-david {
                 $david-width: 59vw;
-                background: red;
                 width: 100%;
                 position: absolute;
                 top: 0;
@@ -120,7 +122,7 @@
 
                         transform: translateX(-77vw);
 
-                        animation: david-in 2s forwards ease-in;
+                        animation: david-in 1s forwards ease-in;
                         animation-delay: 1.3s;
                 }
                 .above-logo {
@@ -133,7 +135,6 @@
                         opacity: 0;
                         left: 0;
                         top: 0;
-                        // background: green;
                 }
                 @keyframes david-in {
                         from {
