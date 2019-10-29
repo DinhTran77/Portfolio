@@ -299,6 +299,9 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #ffd306;
   position: relative;
   top: 0;
   left: 0;
@@ -421,29 +424,182 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
+  #nav_link {
+    color: white;
+  }
   #homePage {
     height: 100vh;
+    background: #1b1b1b;
   }
   #homePage #container_logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     margin: 0;
+    -webkit-animation: move-up 1.5s forwards;
+            animation: move-up 1.5s forwards;
+    -webkit-animation-delay: 1.75s;
+            animation-delay: 1.75s;
   }
-  #homePage #hero_message #hero_greeting {
-    font-size: 1.3vw;
-    line-height: 3vw;
+  #homePage #container_logo #logoImage,
+  #homePage #container_logo #t,
+  #homePage #container_logo #dots,
+  #homePage #container_logo #ribbon {
+    width: 25vw;
+    margin-bottom: 0vh;
+    display: inline-block;
+    position: absolute;
   }
-  #homePage #hero_message #hero_text {
-    font-size: 1.1vw;
-    line-height: 1.5vw;
+  @-webkit-keyframes move-up {
+    from {
+    }
+    to {
+      top: -13vw;
+    }
   }
-  #homePage #cursor {
-    width: 0.15vw;
-    height: 1.5vw;
+  @keyframes move-up {
+    from {
+    }
+    to {
+      top: -13vw;
+    }
+  }
+  #homePage #container_logo #logoImage {
+    z-index: 96;
+    -webkit-animation: shrink forwards 1s;
+            animation: shrink forwards 1s;
+    -webkit-animation-delay: 1.75s;
+            animation-delay: 1.75s;
+    width: 25vw;
+    margin-bottom: 0vh;
+    display: inline-block;
+  }
+  #homePage #container_logo #ribbon {
+    z-index: 98;
+    -webkit-animation: fade-out forwards 0.5s;
+            animation: fade-out forwards 0.5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  #homePage #container_logo #dots {
+    z-index: 97;
+    -webkit-animation: fade-out forwards 0.5s;
+            animation: fade-out forwards 0.5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  #homePage #container_logo #t {
+    z-index: 97;
+    -webkit-animation: fade-out forwards 0.5s;
+            animation: fade-out forwards 0.5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  @-webkit-keyframes shrink {
+    from {
+      width: 50vh;
+      opacity: 1;
+    }
+    to {
+      width: 38vh;
+      opacity: 0.8;
+    }
+  }
+  @keyframes shrink {
+    from {
+      width: 50vh;
+      opacity: 1;
+    }
+    to {
+      width: 38vh;
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  #homePage #container_logo #hero_message {
+    display: none;
+  }
+  #homePage #container-david #david {
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+    justify-self: flex-start;
+    left: -100vw;
+    bottom: 0;
+    -webkit-animation: david-in 1.75s forwards ease-in;
+            animation: david-in 1.75s forwards ease-in;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  #homePage #container-david #above-logo {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 99;
+    -webkit-animation: background-fade-in 1s forwards ease-in;
+            animation: background-fade-in 1s forwards ease-in;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    opacity: 0;
+  }
+  @-webkit-keyframes david-in {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0vw;
+    }
+  }
+  @keyframes david-in {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0vw;
+    }
+  }
+  #homePage #container-david #david-background {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    -webkit-animation: background-fade-in 2s forwards ease-in;
+            animation: background-fade-in 2s forwards ease-in;
+    opacity: 0;
+  }
+  @-webkit-keyframes background-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes background-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -1119,6 +1275,27 @@ table {
   overflow: hidden;
   width: 100%;
   margin: 2vw;
+  opacity: 1;
+  -webkit-animation: nav-fade-in 2s;
+          animation: nav-fade-in 2s;
+}
+
+@-webkit-keyframes nav-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nav-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #header-main .my-container #nav-bar #menu {
@@ -1131,7 +1308,7 @@ table {
   width: 90%;
   height: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 200;
   margin: 0;
   padding: 0;
 }
@@ -1154,60 +1331,12 @@ table {
 #header-main .my-container #nav-bar #menu li a {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
-  color: #012040;
   font-size: 3vw;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
   color: #6b6a6a;
-}
-
-#header-main .my-container #nav-bar .slide-in {
-  -webkit-animation: slide-in 500ms forwards;
-          animation: slide-in 500ms forwards;
-}
-
-@-webkit-keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-#header-main .my-container #nav-bar .slide-out {
-  -webkit-animation: slide-out 500ms forwards;
-          animation: slide-out 500ms forwards;
-}
-
-@-webkit-keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1368,6 +1497,18 @@ table {
   overflow: hidden;
   width: 100%;
   margin: 2vw;
+  opacity: 1;
+  -webkit-animation: nav-fade-in 2s;
+          animation: nav-fade-in 2s;
+}
+
+@keyframes nav-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #header-main .my-container #nav-bar #menu {
@@ -1380,7 +1521,7 @@ table {
   width: 90%;
   height: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 200;
   margin: 0;
   padding: 0;
 }
@@ -1403,42 +1544,12 @@ table {
 #header-main .my-container #nav-bar #menu li a {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
-  color: #012040;
   font-size: 3vw;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
   color: #6b6a6a;
-}
-
-#header-main .my-container #nav-bar .slide-in {
-  -webkit-animation: slide-in 500ms forwards;
-          animation: slide-in 500ms forwards;
-}
-
-@keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-#header-main .my-container #nav-bar .slide-out {
-  -webkit-animation: slide-out 500ms forwards;
-          animation: slide-out 500ms forwards;
-}
-
-@keyframes slide-out {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1477,166 +1588,6 @@ table {
   }
   #header-main .my-container #nav-bar #menu li:not(:first-child) a {
     margin-left: 4vw;
-  }
-}
-
-#david {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 100;
-  justify-self: flex-start;
-  -webkit-animation: david-in 2s forwards;
-          animation: david-in 2s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  left: -100vw;
-}
-
-#above-logo {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 99;
-  -webkit-animation: background-fade-in 2s forwards;
-          animation: background-fade-in 2s forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-  opacity: 0;
-}
-
-@-webkit-keyframes david-in {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0vw;
-  }
-}
-
-@keyframes david-in {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0vw;
-  }
-}
-
-#david-background {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  z-index: 1;
-  -webkit-animation: background-fade-in 2s forwards;
-          animation: background-fade-in 2s forwards;
-  opacity: 0;
-}
-
-@-webkit-keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#homePage {
-  height: 100vh;
-}
-
-#homePage #container_logo {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-}
-
-#homePage #container_logo #logoImage,
-#homePage #container_logo #t,
-#homePage #container_logo #dots,
-#homePage #container_logo #ribbon {
-  position: absolute;
-  width: 50vh;
-  top: 3vh;
-  width: 50vh;
-}
-
-#homePage #container_logo #logoImage {
-  z-index: 96;
-  -webkit-animation: shrink forwards 1s;
-          animation: shrink forwards 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-#homePage #container_logo #ribbon {
-  z-index: 98;
-  -webkit-animation: fade-out forwards 1s;
-          animation: fade-out forwards 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-#homePage #container_logo #dots {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-#homePage #container_logo #t {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes shrink {
-  from {
-    width: 50vh;
-  }
-  to {
-    width: 38vh;
-  }
-}
-
-@keyframes shrink {
-  from {
-    width: 50vh;
-  }
-  to {
-    width: 38vh;
   }
 }
 

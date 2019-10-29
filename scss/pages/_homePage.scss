@@ -10,9 +10,9 @@
         height: $homepage_screen_height;
         display: flex;
         flex-direction: column;
-        // background-size: 100% auto;
-        // background-repeat: no-repeat;
-        // background-color: $color_background_yellow;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-color: $color_background_yellow;
         position: relative;
         top: 0;
         left: 0;
@@ -111,37 +111,6 @@
 }
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-        #homePage {
-                $logo-image-width: 55vh;
-                height: 100vh;
-
-                #container_logo {
-                        align-items: center;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        margin: 0;
-                        // #logoImage {
-                        //         width: $logo-image-width;
-                        //         margin-bottom: 0vh;
-                        // }
-                }
-
-                #hero_message {
-                        #hero_greeting {
-                                font-size: 1.3vw;
-                                line-height: 3vw;
-                        }
-
-                        #hero_text {
-                                font-size: 1.1vw;
-                                line-height: 1.5vw;
-                        }
-                }
-
-                #cursor {
-                        width: 0.15vw;
-                        height: 1.5vw;
-                }
-        }
+        // @include home-page-normal();
+        @include home-page-david();
 }

@@ -1,146 +1,146 @@
 //***********************MOBILE************************************
 $height_nav-bar: 5vh;
 #header-main {
-    background-color: $color_background_yellow;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-
-    .my-container {
+        background-color: $color_background_yellow;
         width: 100%;
-        max-width: 1400px;
-        padding: 0;
-        margin: 0;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        position: absolute;
 
-        #nav-bar {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            height: $height_nav-bar;
-            $nav-animation-duration: 500ms;
-            overflow: hidden;
-            width: 100%;
-            margin: 2vw;
-
-            #menu {
+        .my-container {
+                width: 100%;
+                max-width: 1400px;
+                padding: 0;
+                margin: 0;
                 display: flex;
                 justify-content: center;
-                width: 90%;
-                height: 100%;
-                position: relative;
-                z-index: 2;
-                margin: 0;
-                padding: 0;
+                align-items: center;
 
-                li:not(:first-child) {
-                    a {
-                        margin-left: 16vw;
-                    }
-                }
-                li {
-                    list-style-type: none;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    a {
-                        font-family: $monsterrat-font;
-                        text-decoration: none;
-                        color: $color_font_nav;
-                        font-size: 3vw;
-                        text-transform: uppercase;
-                        font-weight: bold;
+                #nav-bar {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        height: $height_nav-bar;
+                        overflow: hidden;
+                        width: 100%;
+                        margin: 2vw;
+                        opacity: 1;
+                        animation: nav-fade-in 2s;
 
-                        &:hover {
-                            color: rgb(107, 106, 106);
+                        @keyframes nav-fade-in {
+                                from {
+                                        opacity: 0;
+                                }
+                                to {
+                                        opacity: 1;
+                                }
                         }
-                    }
-                }
-            }
 
-            .slide-in {
-                animation: slide-in $nav-animation-duration forwards;
+                        #menu {
+                                display: flex;
+                                justify-content: center;
+                                width: 90%;
+                                height: 100%;
+                                position: relative;
+                                z-index: 200;
+                                margin: 0;
+                                padding: 0;
 
-                @keyframes slide-in {
-                    from {
-                        left: -100%;
-                    }
-                    to {
-                        left: 0%;
-                    }
-                }
-            }
+                                li:not(:first-child) {
+                                        a {
+                                                margin-left: 16vw;
+                                        }
+                                }
+                                li {
+                                        list-style-type: none;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        a {
+                                                font-family: $monsterrat-font;
+                                                text-decoration: none;
+                                                // color: $color_font_nav;
+                                                font-size: 3vw;
+                                                text-transform: uppercase;
+                                                // font-weight: bold;
 
-            .slide-out {
-                animation: slide-out $nav-animation-duration forwards;
-                @keyframes slide-out {
-                    from {
-                        left: 0%;
-                    }
-                    to {
-                        left: -100%;
-                    }
+                                                &:hover {
+                                                        color: rgb(
+                                                                107,
+                                                                106,
+                                                                106
+                                                        );
+                                                }
+                                        }
+                                }
+                        }
+
+                        // .slide-out {
+                        //         @keyframes slide-out {
+                        //                 from {
+                        //                         left: 0%;
+                        //                 }
+                        //                 to {
+                        //                         left: -100%;
+                        //                 }
+                        //         }
+                        // }
                 }
-            }
         }
-    }
 }
 
 //***********************TABLET************************************
 
 @media only screen and (min-width: 768px) {
-    $height_nav-bar: 7vh;
-    #header-main {
-        .my-container {
-            #nav-bar {
-                #menu {
-                    li:not(:first-child) {
-                        a {
-                            margin-left: 19vw;
+        $height_nav-bar: 7vh;
+        #header-main {
+                .my-container {
+                        #nav-bar {
+                                #menu {
+                                        li:not(:first-child) {
+                                                a {
+                                                        margin-left: 19vw;
+                                                }
+                                        }
+                                        li {
+                                                a {
+                                                        font-size: 2.5vw;
+                                                }
+                                        }
+                                }
                         }
-                    }
-                    li {
-                        a {
-                            font-size: 2.5vw;
-                        }
-                    }
                 }
-            }
         }
-    }
 }
 
 //***********************Desktop************************************
 
 @media only screen and (min-width: 992px) {
-    #header-main {
-        justify-content: center;
-        .my-container {
-            justify-content: flex-end;
+        #header-main {
+                justify-content: center;
+                .my-container {
+                        justify-content: flex-end;
 
-            #nav-bar {
-                justify-content: flex-end;
-                margin: 1vw;
+                        #nav-bar {
+                                justify-content: flex-end;
+                                margin: 1vw;
 
-                #menu {
-                    justify-content: flex-end;
-                    li {
-                        a {
-                            font-size: 0.9vw;
+                                #menu {
+                                        justify-content: flex-end;
+                                        li {
+                                                a {
+                                                        font-size: 0.9vw;
+                                                }
+                                        }
+                                        li:not(:first-child) {
+                                                a {
+                                                        margin-left: 4vw;
+                                                }
+                                        }
+                                }
                         }
-                    }
-                    li:not(:first-child) {
-                        a {
-                            margin-left: 4vw;
-                        }
-                    }
                 }
-            }
         }
-    }
 }
