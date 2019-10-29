@@ -2,6 +2,24 @@
 
 AOS.init();
 
+let isNormalPage = true;
+
+function changeTheme() {
+        if (isNormalPage) {
+                $("#menu").removeClass("menu-normal");
+                $("#menu").addClass("menu-david");
+
+                $("#homePage-normal").attr("id", "homePage-david");
+                isNormalPage = false;
+        } else {
+                $("#menu").removeClass("menu-david");
+                $("#menu").addClass("menu-normal");
+
+                $("#homePage-david").attr("id", "homePage-normal");
+                isNormalPage = true;
+        }
+}
+
 //Form submission
 
 $("form.ajax").on("submit", function() {

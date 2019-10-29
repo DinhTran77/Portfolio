@@ -1136,10 +1136,17 @@ table {
   color: white;
 }
 
+#button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
 #homePage-david {
   width: 100%;
   height: 100vh;
-  background: #1b1b1b;
+  background: #ffd306;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,8 +1180,8 @@ table {
   position: relative;
   -webkit-animation: move-up 1s forwards;
           animation: move-up 1s forwards;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes move-up {
@@ -1220,34 +1227,10 @@ table {
   z-index: 96;
   -webkit-animation: shrink forwards 1s;
           animation: shrink forwards 1s;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   width: 25vw;
   overflow: hidden;
-}
-
-#homePage-david .container_logo .logo .ribbon {
-  z-index: 98;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-#homePage-david .container_logo .logo .dots {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-#homePage-david .container_logo .logo .t {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 
 @-webkit-keyframes shrink {
@@ -1270,6 +1253,30 @@ table {
     width: 17vw;
     opacity: 0.8;
   }
+}
+
+#homePage-david .container_logo .logo .ribbon {
+  z-index: 98;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#homePage-david .container_logo .logo .dots {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#homePage-david .container_logo .logo .t {
+  z-index: 97;
+  -webkit-animation: fade-out forwards 0.5s;
+          animation: fade-out forwards 0.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 @-webkit-keyframes fade-out {
@@ -1319,18 +1326,17 @@ table {
           transform: translateX(-77vw);
   -webkit-animation: david-in 1s forwards ease-in;
           animation: david-in 1s forwards ease-in;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 #homePage-david .container-david .above-logo {
-  position: absolute;
-  width: 100%;
+  height: 100%;
   z-index: 101;
   -webkit-animation: background-fade-in 1s forwards ease-in;
           animation: background-fade-in 1s forwards ease-in;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   opacity: 0;
   left: 0;
   top: 0;
@@ -1388,7 +1394,7 @@ table {
   }
 }
 
-.menu-david-normal a {
+.menu-normal a {
   color: #012040;
 }
 
