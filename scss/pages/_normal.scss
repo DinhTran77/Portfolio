@@ -1,65 +1,65 @@
 // #nav_link {
 //         color: $color_font_nav;
 // }
-// #david,
-// #above-logo,
-// #david-background {
+// .david,
+// .above-logo,
+// .david-background {
 //         display: none;
 // }
-// #homePage {
+// #homePage-normal {
 //         $logo-image-width: 55vh;
 //         height: 100vh;
 //         $logo-image-width: 25vw;
-//         #container_logo {
+//         .container_logo {
 //                 align-items: center;
 //                 position: relative;
 //                 top: 0;
 //                 left: 0;
 //                 margin: 0;
 
-//                 #ribbon,
-//                 #t,
-//                 #dots,
-//                 #logoImage {
+//                 .ribbon,
+//                 .t,
+//                 .dots,
+//                 .logoImage {
 //                         width: $logo-image-width;
 //                         margin-bottom: 0vh;
 //                         display: inline-block;
 //                         position: absolute;
 //                 }
 
-//                 #logoImage {
+//                 .logoImage {
 //                         z-index: 96;
 //                 }
 
-//                 #ribbon {
+//                 .ribbon {
 //                         z-index: 98;
 //                 }
 
-//                 #dots {
+//                 .dots {
 //                         z-index: 97;
 //                 }
 
-//                 #t {
+//                 .t {
 //                         z-index: 97;
 //                 }
 
-//                 #hero_message {
+//                 .hero_message {
 //                         position: absolute;
 //                         bottom: 9vw;
-//                         #hero_greeting {
+//                         .hero_greeting {
 //                                 font-size: 1.3vw;
 //                                 line-height: 3vw;
 //                         }
 
-//                         #hero_text {
+//                         .hero_text {
 //                                 font-size: 1.1vw;
 //                                 line-height: 1.5vw;
 //                         }
 //                 }
 
-//                 #container-david {
+//                 .container-david {
 //                 }
-//                 #cursor {
+//                 .cursor {
 //                         width: 0.15vw;
 //                         height: 1.5vw;
 //                 }

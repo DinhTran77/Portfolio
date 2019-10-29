@@ -1405,36 +1405,54 @@ table {
   }
 }
 
-#nav_link {
+.nav_link {
   color: white;
 }
 
 #homePage {
+  width: 100%;
   height: 100vh;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: pink;
 }
 
 #homePage #container_logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0;
   left: 0;
   margin: 0;
+  overflow: hidden;
+  position: relative;
   -webkit-animation: move-up 1.5s forwards;
           animation: move-up 1.5s forwards;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
 }
 
-#homePage #container_logo #logoImage,
-#homePage #container_logo #t,
-#homePage #container_logo #dots,
-#homePage #container_logo #ribbon {
+#homePage #container_logo .logoImage,
+#homePage #container_logo .t,
+#homePage #container_logo .dots,
+#homePage #container_logo .ribbon {
   width: 25vw;
-  margin-bottom: 0vh;
-  display: inline-block;
   position: absolute;
 }
 
@@ -1442,7 +1460,7 @@ table {
   from {
   }
   to {
-    top: -13vw;
+    top: -13.3vw;
   }
 }
 
@@ -1450,22 +1468,19 @@ table {
   from {
   }
   to {
-    top: -13vw;
+    top: -13.3vw;
   }
 }
 
-#homePage #container_logo #logoImage {
+#homePage #container_logo .logoImage {
   z-index: 96;
   -webkit-animation: shrink forwards 1s;
           animation: shrink forwards 1s;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
-  width: 25vw;
-  margin-bottom: 0vh;
-  display: inline-block;
 }
 
-#homePage #container_logo #ribbon {
+#homePage #container_logo .ribbon {
   z-index: 98;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1473,7 +1488,7 @@ table {
           animation-delay: 1s;
 }
 
-#homePage #container_logo #dots {
+#homePage #container_logo .dots {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1481,7 +1496,7 @@ table {
           animation-delay: 1s;
 }
 
-#homePage #container_logo #t {
+#homePage #container_logo .t {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1491,22 +1506,22 @@ table {
 
 @-webkit-keyframes shrink {
   from {
-    width: 50vh;
+    width: 25vw;
     opacity: 1;
   }
   to {
-    width: 38vh;
+    width: 17vw;
     opacity: 0.8;
   }
 }
 
 @keyframes shrink {
   from {
-    width: 50vh;
+    width: 25vw;
     opacity: 1;
   }
   to {
-    width: 38vh;
+    width: 17vw;
     opacity: 0.8;
   }
 }
@@ -1529,13 +1544,13 @@ table {
   }
 }
 
-#homePage #container_logo #hero_message {
+#homePage #container_logo .hero_message {
   display: none;
 }
 
-#homePage #container-david #david {
+#homePage .container-david .david {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   z-index: 100;
   justify-self: flex-start;
   left: -100vw;
@@ -1546,7 +1561,7 @@ table {
           animation-delay: 1s;
 }
 
-#homePage #container-david #above-logo {
+#homePage .container-david .above-logo {
   position: absolute;
   height: 100%;
   bottom: 0;
@@ -1576,7 +1591,7 @@ table {
   }
 }
 
-#homePage #container-david #david-background {
+#homePage .container-david .david-background {
   position: absolute;
   height: 100%;
   bottom: 0;
@@ -1584,6 +1599,8 @@ table {
   -webkit-animation: background-fade-in 2s forwards ease-in;
           animation: background-fade-in 2s forwards ease-in;
   opacity: 0;
+  left: 0;
+  top: 0;
 }
 
 @-webkit-keyframes background-fade-in {
