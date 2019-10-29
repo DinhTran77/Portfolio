@@ -1,3 +1,73 @@
+// // #nav_link {
+// //         color: $color_font_nav;
+// // }
+
+// // #homePage {
+// //         height: 100vh;
+// //         $logo-image-width: 25vw;
+
+// //         .container_logo {
+// //                 align-items: center;
+// //                 position: relative;
+// //                 top: 0;
+// //                 left: 0;
+// //                 margin: 0;
+
+// //                 .ribbon,
+// //                 .t,
+// //                 .dots,
+// //                 .logoImage {
+// //                         width: $logo-image-width;
+// //                         margin-bottom: 0vh;
+// //                         display: inline-block;
+// //                         position: absolute;
+// //                 }
+
+// //                 .logoImage {
+// //                         z-index: 96;
+// //                 }
+
+// //                 .ribbon {
+// //                         z-index: 98;
+// //                 }
+
+// //                 .dots {
+// //                         z-index: 97;
+// //                 }
+
+// //                 .t {
+// //                         z-index: 97;
+// //                 }
+
+// //                 .hero_message {
+// //                         position: absolute;
+// //                         bottom: 9vw;
+// //                         .hero_greeting {
+// //                                 font-size: 1.3vw;
+// //                                 line-height: 3vw;
+// //                         }
+
+// //                         .hero_text {
+// //                                 font-size: 1.1vw;
+// //                                 line-height: 1.5vw;
+// //                         }
+// //                 }
+
+// //                 .cursor {
+// //                         width: 0.15vw;
+// //                         height: 1.5vw;
+// //                 }
+// //         }
+
+// //         .container-david {
+// //                 .david,
+// //                 .above-logo,
+// //                 .david-background {
+// //                         display: none;
+// //                 }
+// //         }
+// // }
+
 // #nav_link {
 //         color: $color_font_nav;
 // }
@@ -5,13 +75,10 @@
 // #homePage {
 //         height: 100vh;
 //         $logo-image-width: 25vw;
-
+//         @include flex-center;
 //         .container_logo {
 //                 align-items: center;
-//                 position: relative;
-//                 top: 0;
-//                 left: 0;
-//                 margin: 0;
+//                 @include flex-center;
 
 //                 .ribbon,
 //                 .t,
@@ -67,70 +134,3 @@
 //                 }
 //         }
 // }
-
-#nav_link {
-        color: $color_font_nav;
-}
-
-#homePage {
-        height: 100vh;
-        $logo-image-width: 25vw;
-        @include flex-center;
-        .container_logo {
-                align-items: center;
-                @include flex-center;
-
-                .ribbon,
-                .t,
-                .dots,
-                .logoImage {
-                        width: $logo-image-width;
-                        margin-bottom: 0vh;
-                        display: inline-block;
-                        position: absolute;
-                }
-
-                .logoImage {
-                        z-index: 96;
-                }
-
-                .ribbon {
-                        z-index: 98;
-                }
-
-                .dots {
-                        z-index: 97;
-                }
-
-                .t {
-                        z-index: 97;
-                }
-
-                .hero_message {
-                        position: absolute;
-                        bottom: 9vw;
-                        .hero_greeting {
-                                font-size: 1.3vw;
-                                line-height: 3vw;
-                        }
-
-                        .hero_text {
-                                font-size: 1.1vw;
-                                line-height: 1.5vw;
-                        }
-                }
-
-                .cursor {
-                        width: 0.15vw;
-                        height: 1.5vw;
-                }
-        }
-
-        .container-david {
-                .david,
-                .above-logo,
-                .david-background {
-                        display: none;
-                }
-        }
-}
