@@ -1,5 +1,6 @@
 //***********************MOBILE************************************
 $height_nav-bar: 5vh;
+
 #header-main {
         background-color: $color_background_yellow;
         background-color: transparent;
@@ -63,7 +64,7 @@ $height_nav-bar: 5vh;
                                         a {
                                                 font-family: $monsterrat-font;
                                                 text-decoration: none;
-                                                // color: $color_font_nav;
+                                                color: $color_font_nav;
                                                 font-size: 3vw;
                                                 text-transform: uppercase;
                                                 // font-weight: bold;

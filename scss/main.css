@@ -144,6 +144,285 @@ table {
       border-spacing: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+      display: block;
+}
+
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote,
+q {
+      quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+      content: "";
+      content: none;
+}
+
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+#homePage {
+  width: 100%;
+  height: 161.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffd306;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#homePage .container_logo {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage .container_logo .logo {
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+}
+
+#homePage .container_logo .logo .logoImage,
+#homePage .container_logo .logo .ribbon,
+#homePage .container_logo .logo .t,
+#homePage .container_logo .logo .dots {
+  width: 25vw;
+  position: absolute;
+}
+
+#homePage .container_logo .logo .logoImage {
+  z-index: -4;
+}
+
+#homePage .container_logo .logo .t {
+  z-index: -3;
+}
+
+#homePage .container_logo .logo .dots {
+  z-index: -3;
+}
+
+#homePage .container_logo .logo .ribbon {
+  z-index: -1;
+}
+
+#homePage .container_logo .hero_message {
+  text-align: center;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homePage .container_logo .hero_message .hero_text {
+  color: #012040;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5vw;
+  color: #012040;
+  line-height: 5vw;
+}
+
+#homePage .container_logo .cursor {
+  display: inline-block;
+  width: 0.2vw;
+  height: 2vw;
+  background-color: #212529;
+  -webkit-animation: blink 0.75s step-end infinite;
+          animation: blink 0.75s step-end infinite;
+  opacity: 0.6;
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #212529;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #homePage {
+    height: 100vh;
+  }
+  #homePage #container_logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
 #skillsPage {
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -873,6 +1152,7 @@ table {
 #header-main .my-container #nav-bar #menu li a {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
+  color: #012040;
   font-size: 3vw;
   text-transform: uppercase;
 }
@@ -1087,6 +1367,7 @@ table {
 #header-main .my-container #nav-bar #menu li a {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
+  color: #012040;
   font-size: 3vw;
   text-transform: uppercase;
 }
@@ -1306,10 +1587,8 @@ table {
   width: 100%;
   position: absolute;
   width: 100%;
-  height: 100vh;
   left: 0;
   top: 0;
-  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1523,10 +1802,8 @@ table {
   z-index: -1;
   position: absolute;
   width: 100%;
-  height: 100vh;
   left: 0;
   top: 0;
-  z-index: -1;
 }
 
 #homePage-normal .background-fade-in {
@@ -1587,16 +1864,6 @@ table {
   -webkit-animation: blink 0.75s step-end infinite;
           animation: blink 0.75s step-end infinite;
   opacity: 0.6;
-}
-
-@-webkit-keyframes blink {
-  from,
-  to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: #212529;
-  }
 }
 
 @keyframes blink {
