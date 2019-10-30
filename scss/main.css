@@ -1339,8 +1339,6 @@ table {
   z-index: 101;
   -webkit-animation: background-fade-in 1s forwards ease-in;
           animation: background-fade-in 1s forwards ease-in;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   opacity: 0;
   left: 0;
   top: 0;
@@ -1373,28 +1371,26 @@ table {
   width: 100%;
   bottom: 0;
   z-index: 1;
-  -webkit-animation: background-fade-in 1s forwards ease-in;
-          animation: background-fade-in 1s forwards ease-in;
   opacity: 1;
   left: 0;
   top: 0;
 }
 
-@-webkit-keyframes background-fade-in {
+@-webkit-keyframes background-out-in {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
-@keyframes background-fade-in {
+@keyframes background-out-in {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -1538,12 +1534,48 @@ table {
           animation: background-fade-in 2s;
 }
 
+@-webkit-keyframes background-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes background-fade-in {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+#homePage-normal .opacity_one {
+  opacity: 1;
+}
+
+#homePage-normal .background-fade-out {
+  -webkit-animation: background-fade-out 1s;
+          animation: background-fade-out 1s;
+}
+
+@-webkit-keyframes background-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes background-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 

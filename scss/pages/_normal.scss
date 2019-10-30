@@ -116,6 +116,22 @@
                 }
         }
 
+        .opacity_one {
+                opacity: 1;
+        }
+
+        .background-fade-out {
+                animation: background-fade-out 1s;
+        }
+        @keyframes background-fade-out {
+                from {
+                        opacity: 1;
+                }
+                to {
+                        opacity: 0;
+                }
+        }
+
         .cursor {
                 display: inline-block;
                 width: 0.5vw;
