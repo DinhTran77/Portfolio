@@ -11,7 +11,7 @@
         height: $homepage_screen_height;
         display: flex;
         flex-direction: column;
-        background-color: $color_background_yellow;
+        // background-color: $color_background_yellow;
         position: relative;
         top: 0;
         left: 0;
@@ -32,14 +32,11 @@
                         .ribbon,
                         .t,
                         .dots,
-                        .logoImage {
+                        .logoImage-grow {
                                 width: $logo-image-width;
                                 margin-bottom: 0vh;
                                 display: inline-block;
                                 position: absolute;
-                        }
-
-                        .logoImage {
                                 z-index: 96;
                         }
 
@@ -54,7 +51,7 @@
                         .t {
                                 z-index: 97;
                         }
-                        .logoImage {
+                        .logoImage-grow {
                                 width: $logo-image-width;
                                 justify-self: center;
                                 align-self: center;
@@ -83,12 +80,39 @@
                         }
                 }
         } //end #container_logo
+        #background-david {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                z-index: -21;
+                // animation: background-fade-in 3s forwards ease-in;
+                opacity: 1;
+                left: 0;
+                top: 0;
+                // background: red;
+        }
 
-        .container-david {
-                .david,
-                .above-logo,
-                .david-background {
-                        display: none;
+        #background-normal {
+                // width: 100%;
+                // height: 100vh;
+                background: $color_background_yellow;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                z-index: -1;
+
+                @include position-absolute-fillpage;
+        }
+        .background-fade-in {
+                animation: background-fade-in 2s;
+        }
+
+        @keyframes background-fade-in {
+                from {
+                        opacity: 0;
+                }
+                to {
+                        opacity: 1;
                 }
         }
 
@@ -139,12 +163,27 @@
                 @include flex-center;
                 .container_logo {
                         align-items: center;
-
                         @include flex-center;
+                        position: relative;
+                        top: -15vw;
+
+                        animation: move-down 1s forwards;
+                        // animation-delay: 2s;
+
+                        @keyframes move-down {
+                                from {
+                                        top: -15vw;
+                                }
+                                to {
+                                        top: 0vw;
+                                }
+                        }
                         .logo {
                                 // background: red;
                                 width: $logo-image-width;
                                 height: $logo-image-width;
+                                @include flex-center;
+                                overflow: hidden;
                                 .ribbon,
                                 .t,
                                 .dots,
@@ -153,22 +192,48 @@
                                         margin-bottom: 0vh;
                                         display: inline-block;
                                         position: absolute;
-                                }
-
-                                .logoImage {
                                         z-index: 96;
+                                        animation: grow forwards 1s;
+                                }
+                                @keyframes grow {
+                                        from {
+                                                width: 17vw;
+                                                opacity: 0.8;
+                                        }
+                                        to {
+                                                width: 25vw;
+                                                opacity: 1;
+                                        }
                                 }
 
                                 .ribbon {
+                                        opacity: 0;
                                         z-index: 98;
+                                        animation: fade-in forwards 0.5s;
+                                        animation-delay: 2s;
                                 }
 
                                 .dots {
+                                        opacity: 0;
                                         z-index: 97;
+                                        animation: fade-in forwards 0.5s;
+                                        animation-delay: 1s;
                                 }
 
                                 .t {
+                                        opacity: 0;
                                         z-index: 97;
+                                        animation: fade-in forwards 0.5s;
+                                        animation-delay: 1.5s;
+                                }
+
+                                @keyframes fade-in {
+                                        from {
+                                                opacity: 0;
+                                        }
+                                        to {
+                                                opacity: 1;
+                                        }
                                 }
                         }
                         .hero_message {

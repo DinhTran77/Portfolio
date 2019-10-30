@@ -22,10 +22,6 @@
         left: 0;
         overflow: hidden;
         .container_logo {
-                align-items: center;
-
-                // width: 100%;
-                // height: 50%;
                 @include flex-center;
                 top: 0;
                 left: 0;
@@ -106,9 +102,7 @@
         .container-david {
                 $david-width: 59vw;
                 width: 100%;
-                position: absolute;
-                top: 0;
-                bottom: 0;
+                @include position-absolute-fillpage;
                 @include flex-center;
                 .david {
                         position: absolute;
@@ -122,9 +116,7 @@
                         animation-delay: 2s;
                 }
                 .above-logo {
-                        // position: absolute;
                         height: 100%;
-                        // bottom: 0;
                         z-index: 101;
                         animation: background-fade-in 1s forwards ease-in;
                         animation-delay: 2s;
@@ -140,27 +132,25 @@
                                 transform: translateX(0);
                         }
                 }
+        }
 
-                .david-background {
-                        position: absolute;
-                        width: 100%;
+        #background-david {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                z-index: 1;
+                animation: background-fade-in 1s forwards ease-in;
+                opacity: 1;
+                left: 0;
+                top: 0;
+        }
 
-                        bottom: 0;
-                        z-index: 1;
-                        animation: background-fade-in 1s forwards ease-in;
-                        opacity: 1;
-                        left: 0;
-                        top: 0;
-                        // background: red;
+        @keyframes background-fade-in {
+                from {
+                        opacity: 0;
                 }
-
-                @keyframes background-fade-in {
-                        from {
-                                opacity: 0;
-                        }
-                        to {
-                                opacity: 1;
-                        }
+                to {
+                        opacity: 1;
                 }
         }
 }
