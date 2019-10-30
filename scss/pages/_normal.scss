@@ -161,14 +161,14 @@
                 height: 100vh;
                 $logo-image-width: 25vw;
                 @include flex-center;
+                .container-logo-animation {
+                        animation: move-down 1s forwards;
+                }
                 .container_logo {
                         align-items: center;
                         @include flex-center;
                         position: relative;
-                        top: -15vw;
-
-                        animation: move-down 1s forwards;
-                        // animation-delay: 2s;
+                        top: 0vw;
 
                         @keyframes move-down {
                                 from {
@@ -178,8 +178,11 @@
                                         top: 0vw;
                                 }
                         }
+
+                        .logo-position {
+                                top: -15vw;
+                        }
                         .logo {
-                                // background: red;
                                 width: $logo-image-width;
                                 height: $logo-image-width;
                                 @include flex-center;
@@ -193,7 +196,14 @@
                                         display: inline-block;
                                         position: absolute;
                                         z-index: 96;
+                                        // animation: grow forwards 1s;
+                                }
+
+                                .logo-animation {
                                         animation: grow forwards 1s;
+                                }
+                                .opacity_zero {
+                                        opacity: 0;
                                 }
                                 @keyframes grow {
                                         from {
@@ -207,22 +217,27 @@
                                 }
 
                                 .ribbon {
-                                        opacity: 0;
                                         z-index: 98;
+                                }
+
+                                .ribbon-animation {
                                         animation: fade-in forwards 0.5s;
                                         animation-delay: 2s;
                                 }
 
                                 .dots {
-                                        opacity: 0;
                                         z-index: 97;
+                                }
+
+                                .dots-animation {
                                         animation: fade-in forwards 0.5s;
                                         animation-delay: 1s;
                                 }
-
                                 .t {
-                                        opacity: 0;
                                         z-index: 97;
+                                }
+
+                                .t-animation {
                                         animation: fade-in forwards 0.5s;
                                         animation-delay: 1.5s;
                                 }

@@ -1605,6 +1605,10 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
+  #homePage-normal .container-logo-animation {
+    -webkit-animation: move-down 1s forwards;
+            animation: move-down 1s forwards;
+  }
   #homePage-normal .container_logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1617,9 +1621,7 @@ table {
             justify-content: center;
     align-items: center;
     position: relative;
-    top: -15vw;
-    -webkit-animation: move-down 1s forwards;
-            animation: move-down 1s forwards;
+    top: 0vw;
   }
   @-webkit-keyframes move-down {
     from {
@@ -1636,6 +1638,9 @@ table {
     to {
       top: 0vw;
     }
+  }
+  #homePage-normal .container_logo .logo-position {
+    top: -15vw;
   }
   #homePage-normal .container_logo .logo {
     width: 25vw;
@@ -1660,8 +1665,13 @@ table {
     display: inline-block;
     position: absolute;
     z-index: 96;
+  }
+  #homePage-normal .container_logo .logo .logo-animation {
     -webkit-animation: grow forwards 1s;
             animation: grow forwards 1s;
+  }
+  #homePage-normal .container_logo .logo .opacity_zero {
+    opacity: 0;
   }
   @-webkit-keyframes grow {
     from {
@@ -1684,24 +1694,27 @@ table {
     }
   }
   #homePage-normal .container_logo .logo .ribbon {
-    opacity: 0;
     z-index: 98;
+  }
+  #homePage-normal .container_logo .logo .ribbon-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
   #homePage-normal .container_logo .logo .dots {
-    opacity: 0;
     z-index: 97;
+  }
+  #homePage-normal .container_logo .logo .dots-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   #homePage-normal .container_logo .logo .t {
-    opacity: 0;
     z-index: 97;
+  }
+  #homePage-normal .container_logo .logo .t-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 1.5s;
