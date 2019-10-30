@@ -2,6 +2,7 @@
 
 AOS.init();
 
+let i = 0;
 let isNormalPage = true;
 
 function changeTheme() {
@@ -13,8 +14,21 @@ function changeTheme() {
         } else {
                 $("#menu").removeClass("menu-david");
                 $("#menu").addClass("menu-normal");
-                $("#background-normal").addClass("background-fade-in");
                 $("#homePage-david").attr("id", "homePage-normal");
+                i++;
+                if (i !== 0) {
+                        $("#background-normal").addClass("background-fade-in");
+                        $(".container_logo").addClass(
+                                "container-logo-animation"
+                        );
+
+                        $(".logoImage").addClass("logo-animation");
+
+                        $(".ribbon").addClass("ribbon-animation opacity_zero");
+                        $(".t").addClass("t-animation opacity_zero");
+                        $(".dots").addClass("dots-animation opacity_zero");
+                }
+
                 isNormalPage = true;
         }
 }

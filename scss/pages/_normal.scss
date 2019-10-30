@@ -164,20 +164,20 @@
                 .container-logo-animation {
                         animation: move-down 1s forwards;
                 }
+                @keyframes move-down {
+                        from {
+                                top: -15vw;
+                        }
+                        to {
+                                top: 0vw;
+                        }
+                }
+
                 .container_logo {
                         align-items: center;
                         @include flex-center;
                         position: relative;
                         top: 0vw;
-
-                        @keyframes move-down {
-                                from {
-                                        top: -15vw;
-                                }
-                                to {
-                                        top: 0vw;
-                                }
-                        }
 
                         .logo-position {
                                 top: -15vw;

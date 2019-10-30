@@ -1609,20 +1609,6 @@ table {
     -webkit-animation: move-down 1s forwards;
             animation: move-down 1s forwards;
   }
-  #homePage-normal .container_logo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0vw;
-  }
   @-webkit-keyframes move-down {
     from {
       top: -15vw;
@@ -1638,6 +1624,20 @@ table {
     to {
       top: 0vw;
     }
+  }
+  #homePage-normal .container_logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0vw;
   }
   #homePage-normal .container_logo .logo-position {
     top: -15vw;
