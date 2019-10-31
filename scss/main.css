@@ -1218,8 +1218,6 @@ table {
   width: 100%;
   margin: 2vw;
   opacity: 1;
-  -webkit-animation: nav-fade-in 2s;
-          animation: nav-fade-in 2s;
 }
 
 @-webkit-keyframes nav-fade-in {
@@ -1256,7 +1254,7 @@ table {
 }
 
 #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-  margin-left: 11vw;
+  margin-left: 9vw;
 }
 
 #header-main .my-container #nav-bar #menu li {
@@ -1302,11 +1300,63 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  #header-main .my-container .nav-fade-in-desktop {
+    -webkit-animation: nav-fade-in-desktop 0.7s forwards;
+            animation: nav-fade-in-desktop 0.7s forwards;
+    background: transparent;
+  }
+  @-webkit-keyframes nav-fade-in-desktop {
+    from {
+      background: transparent;
+      color: #012040;
+    }
+    to {
+      background: #04003a;
+      color: white;
+    }
+  }
+  @keyframes nav-fade-in-desktop {
+    from {
+      background: transparent;
+      color: #012040;
+    }
+    to {
+      background: #04003a;
+      color: white;
+    }
+  }
+  #header-main .my-container .nav-fade-out-desktop {
+    -webkit-animation: nav-fade-out-desktop 0.7s forwards;
+            animation: nav-fade-out-desktop 0.7s forwards;
+    background: black;
+  }
+  @-webkit-keyframes nav-fade-out-desktop {
+    from {
+      background: black;
+    }
+    to {
+      background: transparent;
+    }
+  }
+  @keyframes nav-fade-out-desktop {
+    from {
+      background: black;
+    }
+    to {
+      background: transparent;
+    }
+  }
   #header-main .my-container #nav-bar {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 1vw;
+    margin: 0;
+    padding: 2vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 100;
   }
   #header-main .my-container #nav-bar #menu {
     -webkit-box-pack: end;
@@ -1315,6 +1365,7 @@ table {
   }
   #header-main .my-container #nav-bar #menu li a {
     font-size: 0.9vw;
+    color: inherit;
   }
   #header-main .my-container #nav-bar #menu li:not(:first-child) a {
     margin-left: 4vw;
@@ -1442,8 +1493,6 @@ table {
   width: 100%;
   margin: 2vw;
   opacity: 1;
-  -webkit-animation: nav-fade-in 2s;
-          animation: nav-fade-in 2s;
 }
 
 @keyframes nav-fade-in {
@@ -1471,7 +1520,7 @@ table {
 }
 
 #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-  margin-left: 11vw;
+  margin-left: 9vw;
 }
 
 #header-main .my-container #nav-bar #menu li {
@@ -1517,11 +1566,63 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  #header-main .my-container .nav-fade-in-desktop {
+    -webkit-animation: nav-fade-in-desktop 0.7s forwards;
+            animation: nav-fade-in-desktop 0.7s forwards;
+    background: transparent;
+  }
+  @-webkit-keyframes nav-fade-in-desktop {
+    from {
+      background: transparent;
+      color: #012040;
+    }
+    to {
+      background: #04003a;
+      color: white;
+    }
+  }
+  @keyframes nav-fade-in-desktop {
+    from {
+      background: transparent;
+      color: #012040;
+    }
+    to {
+      background: #04003a;
+      color: white;
+    }
+  }
+  #header-main .my-container .nav-fade-out-desktop {
+    -webkit-animation: nav-fade-out-desktop 0.7s forwards;
+            animation: nav-fade-out-desktop 0.7s forwards;
+    background: black;
+  }
+  @-webkit-keyframes nav-fade-out-desktop {
+    from {
+      background: black;
+    }
+    to {
+      background: transparent;
+    }
+  }
+  @keyframes nav-fade-out-desktop {
+    from {
+      background: black;
+    }
+    to {
+      background: transparent;
+    }
+  }
   #header-main .my-container #nav-bar {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 1vw;
+    margin: 0;
+    padding: 2vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 100;
   }
   #header-main .my-container #nav-bar #menu {
     -webkit-box-pack: end;
@@ -1530,6 +1631,7 @@ table {
   }
   #header-main .my-container #nav-bar #menu li a {
     font-size: 0.9vw;
+    color: inherit;
   }
   #header-main .my-container #nav-bar #menu li:not(:first-child) a {
     margin-left: 4vw;

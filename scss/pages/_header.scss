@@ -30,7 +30,7 @@ $height_nav-bar: 5vh;
                         width: 100%;
                         margin: 2vw;
                         opacity: 1;
-                        animation: nav-fade-in 2s;
+                        // animation: nav-fade-in 2s;
 
                         @keyframes nav-fade-in {
                                 from {
@@ -53,7 +53,7 @@ $height_nav-bar: 5vh;
 
                                 li:not(:first-child) {
                                         a {
-                                                margin-left: 11vw;
+                                                margin-left: 9vw;
                                         }
                                 }
                                 li {
@@ -126,15 +126,51 @@ $height_nav-bar: 5vh;
                 .my-container {
                         justify-content: flex-end;
 
+                        .nav-fade-in-desktop {
+                                animation: nav-fade-in-desktop 0.7s forwards;
+                                background: transparent;
+                                @keyframes nav-fade-in-desktop {
+                                        from {
+                                                background: transparent;
+                                                color: $color_font_nav;
+                                        }
+                                        to {
+                                                background: rgb(4, 0, 58);
+                                                color: white;
+                                        }
+                                }
+                        }
+
+                        .nav-fade-out-desktop {
+                                animation: nav-fade-out-desktop 0.7s forwards;
+                                background: black;
+                                @keyframes nav-fade-out-desktop {
+                                        from {
+                                                background: black;
+                                        }
+                                        to {
+                                                background: transparent;
+                                        }
+                                }
+                        }
+
                         #nav-bar {
                                 justify-content: flex-end;
-                                margin: 1vw;
+                                margin: 0;
+                                padding: 2vw;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                background: transparent;
+                                // background: black;
+                                z-index: 100;
 
                                 #menu {
                                         justify-content: flex-end;
                                         li {
                                                 a {
                                                         font-size: 0.9vw;
+                                                        color: inherit;
                                                 }
                                         }
                                         li:not(:first-child) {

@@ -1,40 +1,22 @@
-// initialize AOS (Automate on Scroll) Plugin
-
+//************initialize AOS (Automate on Scroll) Plugin
 AOS.init();
 
-let i = 0;
-let isNormalPage = true;
-
-function changeTheme() {
-        if (isNormalPage) {
-                $("#menu").removeClass("menu-normal");
-                $("#menu").addClass("menu-david");
-                $("#homePage-normal").attr("id", "homePage-david");
-                isNormalPage = false;
-        } else {
-                $("#menu").removeClass("menu-david");
-                $("#menu").addClass("menu-normal");
-                $("#homePage-david").attr("id", "homePage-normal");
-                i++;
-                if (i !== 0) {
-                        $("#background-normal").addClass("background-fade-in");
-                        $(".container_logo").addClass(
-                                "container-logo-animation"
-                        );
-
-                        $(".logoImage").addClass("logo-animation");
-
-                        $(".ribbon").addClass("ribbon-animation opacity_zero");
-                        $(".t").addClass("t-animation opacity_zero");
-                        $(".dots").addClass("dots-animation opacity_zero");
+// Fade-in Nav bar on scroll
+$(document).ready(function() {
+        $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                        // $("#nav-bar").css("background-color", "black");
+                        $("#nav-bar").removeClass("nav-fade-out-desktop");
+                        $("#nav-bar").addClass("nav-fade-in-desktop");
+                } else {
+                        $("#nav-bar").removeClass("nav-fade-in-desktop");
+                        $("#nav-bar").addClass("nav-fade-out-desktop");
+                        // $("#nav-bar").css("background-color", "transparent");
                 }
+        });
+});
 
-                isNormalPage = true;
-        }
-}
-
-//Form submission
-
+//Contact Form submission
 $("form.ajax").on("submit", function() {
         let url = $(this).attr("action");
         let type = $(this).attr("method");
