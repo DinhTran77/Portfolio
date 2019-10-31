@@ -1352,7 +1352,6 @@ table {
             justify-content: flex-end;
     margin: 0;
     padding: 2vw;
-    position: fixed;
     top: 0;
     left: 0;
     background: transparent;
@@ -1618,7 +1617,6 @@ table {
             justify-content: flex-end;
     margin: 0;
     padding: 2vw;
-    position: fixed;
     top: 0;
     left: 0;
     background: transparent;
@@ -2283,8 +2281,7 @@ table {
 
 #aboutPage {
   width: 100%;
-  height: 100vh;
-  background-image: url(../../images/David-background.jpg);
+  background: #214261;
   background-size: cover;
   position: relative;
 }
@@ -2292,7 +2289,6 @@ table {
 #aboutPage .container {
   width: 100%;
   max-width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -2310,69 +2306,29 @@ table {
           align-items: flex-end;
 }
 
-#aboutPage .container .row .ladyAndLogoContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
 #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-  height: 41vw;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 4;
-}
-
-#aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
-  width: 18.5vw;
-  position: absolute;
-  top: 0.8vw;
-  left: 23.1vw;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 2;
-  opacity: 0.8;
+  display: none;
 }
 
 #aboutPage .container .row .text-column {
   width: 100%;
-  height: 41vw;
   margin: 0;
-  padding: 4vw 9vw 4vw 0vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #879c91;
-  display: flex;
-  align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #cecece;
 }
 
 #aboutPage .container .row .text-column .about-text-container {
   text-align: justify;
-  background: rgba(5, 5, 5, 0.4);
-  padding: 3vw;
   margin: 0;
+  padding: 18vw 7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2380,9 +2336,9 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2390,8 +2346,8 @@ table {
 }
 
 #aboutPage .container .row .text-column .about-text-container h1 {
-  font-size: 1.8vw;
-  margin-bottom: 0.7vw;
+  font-size: 7.8vw;
+  margin-bottom: 8vw;
   text-align: left;
   line-height: 2.6vw;
   width: 93%;
@@ -2399,23 +2355,154 @@ table {
 
 #aboutPage .container .row .text-column .about-text-container .about-text {
   width: 90%;
-  font-size: 1.2vw;
-  line-height: 2.4vw;
-  line-height: 2.3vw;
+  font-size: 4.6vw;
+  line-height: normal;
 }
 
 #aboutPage .container .row .text-column .about-text-container .about-text a {
   background: #879c91;
   display: inline-block;
-  padding: 0.2vw 1.3vw;
-  margin-top: 2vw;
+  padding: 1vw 4.3vw;
+  margin-top: 8vw;
   border-radius: 3vw;
   color: #012040;
+  font-size: 4vw;
 }
 
 #aboutPage .container .row .text-column .about-text-container .about-text a:hover {
   background: #596860;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #aboutPage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/David-background.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  #aboutPage .container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #aboutPage .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #aboutPage .container .row .ladyAndLogoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
+    height: 41vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 4;
+  }
+  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
+    width: 18.5vw;
+    position: absolute;
+    top: 0.8vw;
+    left: 23.1vw;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0.8;
+  }
+  #aboutPage .container .row .text-column {
+    width: 100%;
+    height: 41vw;
+    margin: 0;
+    padding: 4vw 9vw 4vw 0vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #879c91;
+    display: flex;
+    align-items: center;
+  }
+  #aboutPage .container .row .text-column .about-text-container {
+    text-align: justify;
+    background: rgba(5, 5, 5, 0.4);
+    padding: 3vw;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+  }
+  #aboutPage .container .row .text-column .about-text-container h1 {
+    font-size: 1.8vw;
+    margin-bottom: 0.7vw;
+    text-align: left;
+    line-height: 2.6vw;
+    width: 93%;
+  }
+  #aboutPage .container .row .text-column .about-text-container .about-text {
+    width: 90%;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    line-height: 2.3vw;
+  }
+  #aboutPage .container .row .text-column .about-text-container .about-text a {
+    background: #879c91;
+    display: inline-block;
+    padding: 0.1vw 1.1vw;
+    margin-top: 2vw;
+    border-radius: 3vw;
+    color: #012040;
+    font-size: 1.3vw;
+  }
+  #aboutPage .container .row .text-column .about-text-container .about-text a:hover {
+    background: #596860;
+    text-decoration: none;
+  }
 }
 
 body {
