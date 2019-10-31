@@ -2,19 +2,19 @@
 AOS.init();
 
 // Fade-in Nav bar on scroll
-$(document).ready(function() {
-        $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                        // $("#nav-bar").css("background-color", "black");
-                        $("#nav-bar").removeClass("nav-fade-out-desktop");
-                        $("#nav-bar").addClass("nav-fade-in-desktop");
-                } else {
-                        $("#nav-bar").removeClass("nav-fade-in-desktop");
-                        $("#nav-bar").addClass("nav-fade-out-desktop");
-                        // $("#nav-bar").css("background-color", "transparent");
-                }
-        });
-});
+// $(document).ready(function() {
+//         $(window).scroll(function() {
+//                 if ($(this).scrollTop() > 100) {
+//                         // $("#nav-bar").css("background-color", "black");
+//                         $("#nav-bar").removeClass("nav-fade-out-desktop");
+//                         $("#nav-bar").addClass("nav-fade-in-desktop");
+//                 } else {
+//                         $("#nav-bar").removeClass("nav-fade-in-desktop");
+//                         $("#nav-bar").addClass("nav-fade-out-desktop");
+//                         // $("#nav-bar").css("background-color", "transparent");
+//                 }
+//         });
+// });
 
 //Contact Form submission
 $("form.ajax").on("submit", function() {
@@ -44,7 +44,7 @@ $("form.ajax").on("submit", function() {
 
 //*************************Type writter animation***********************
 
-const text = "Web Developer";
+const text = "Clean & maintable front-end code";
 const speed = 60;
 const heroText = document.getElementsByClassName("hero_text");
 const heroGreeting = document.getElementsByClassName("hero_greeting");
