@@ -4,7 +4,7 @@
 
 //**************************MOBILE***********************************************
 #homePage {
-        $logo-image-width: 25vw;
+        $logo-image-width: 70vw;
         $homepage_screen_height: 100vw * 1.618;
         width: 100%;
         height: $homepage_screen_height;
@@ -66,7 +66,7 @@
                         .hero_text {
                                 color: $color_font_nav;
                                 font-family: $monsterrat-font;
-                                font-size: 1.5vw;
+                                font-size: 3vw;
                                 color: $color_font_nav;
                                 line-height: 5vw;
                         }
@@ -75,7 +75,7 @@
                 .cursor {
                         display: inline-block;
                         width: 0.2vw;
-                        height: 2vw;
+                        height: 4vw;
                         background-color: $nav-area-color;
                         animation: blink 0.75s step-end infinite;
                         opacity: 0.6;
@@ -114,6 +114,99 @@
 }
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-        // @include home-page-normal();
-        // @include home-page-david();
+        #homePage {
+                $logo-image-width: 25vw;
+                $homepage_screen_height: 100vw * 1.618;
+                width: 100%;
+                height: $homepage_screen_height;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // flex-direction: column;
+                // background-size: 100% auto;
+                // background-repeat: no-repeat;
+                background-color: $color_background_yellow;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: -10;
+
+                .container_logo {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .logo {
+                                width: $logo-image-width;
+                                height: $logo-image-width;
+                                position: relative;
+                                .logoImage,
+                                .ribbon,
+                                .t,
+                                .dots {
+                                        width: $logo-image-width;
+                                        position: absolute;
+                                        // left: 0;
+                                        // top: 0;
+                                }
+
+                                .logoImage {
+                                        z-index: -4;
+                                }
+                                .t {
+                                        z-index: -3;
+                                }
+                                .dots {
+                                        z-index: -3;
+                                }
+                                .ribbon {
+                                        z-index: -1;
+                                }
+                        }
+
+                        .hero_message {
+                                text-align: center;
+                                height: 3vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                // background: green;
+                                height: auto;
+                                .hero_text {
+                                        display: flex;
+                                        justify-content: center;
+                                        color: $color_font_nav;
+                                        font-family: $monsterrat-font;
+                                        font-family: "Special Elite", cursive;
+                                        line-height: 0.5vw;
+                                        height: 0vw;
+                                        font-size: 1.5vw;
+                                        color: $color_font_nav;
+                                        // line-height: 5vw;
+                                }
+
+                                .cursor {
+                                        display: inline-block;
+                                        width: 0.2vw;
+                                        height: 2vw;
+                                        background-color: $nav-area-color;
+                                        animation: blink 0.75s step-end infinite;
+                                        opacity: 0.6;
+                                }
+                        }
+                } //end #container_logo
+
+                @keyframes blink {
+                        from,
+                        to {
+                                background-color: transparent;
+                        }
+                        50% {
+                                background-color: $nav-area-color;
+                        }
+                }
+        }
 }
