@@ -2267,6 +2267,9 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #aboutPage .container .row {
@@ -2295,12 +2298,11 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #cecece;
-  background: red;
-  text-align: justify;
+  text-align: center;
   padding: 18vw;
   font-size: 4.6vw;
   line-height: normal;
@@ -2313,9 +2315,11 @@ table {
   text-align: left;
   line-height: 2.6vw;
   width: 93%;
+  text-align: center;
 }
 
 #aboutPage .container .row .text-column a {
+  text-align: center;
   background: #879c91;
   display: inline-block;
   padding: 1vw 4.3vw;
@@ -2526,11 +2530,14 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: center;
+        align-self: center;
     text-align: justify;
     margin: 0;
     color: #879c91;
-    -ms-flex-item-align: center;
-        align-self: center;
     position: static;
     z-index: 1;
     background: rgba(5, 5, 5, 0.4);
