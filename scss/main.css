@@ -2445,14 +2445,16 @@ table {
     position: absolute;
     top: 0;
     z-index: 12;
+    background: pink;
     overflow: hidden;
   }
   #aboutPage .container .row .text-column .about-text-container {
     text-align: justify;
     background: rgba(0, 0, 0, 0.4);
+    background: red;
     margin: 0;
-    width: 100%;
-    padding: 4vw 5vw;
+    width: auto;
+    padding: 18vw 7vw;
     z-index: 1;
   }
   #aboutPage .container .row .text-column .about-text-container h1 {
@@ -2491,18 +2493,26 @@ table {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #aboutPage .container .row {
+    overflow: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  #aboutPage .container .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 41vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 5vw;
   }
   #aboutPage .container .row .ladyAndLogoContainer {
     display: -webkit-box;
@@ -2511,9 +2521,9 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
     position: relative;
@@ -2535,8 +2545,8 @@ table {
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
     width: 18.5vw;
     position: absolute;
-    top: 0.8vw;
-    left: 23.1vw;
+    top: -4vw;
+    left: 22.6vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 2;
@@ -2544,27 +2554,6 @@ table {
   }
   #aboutPage .container .row .text-column {
     width: 100%;
-    height: 41vw;
-    margin: 0;
-    padding: 4vw 9vw 4vw 0vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #879c91;
-    display: flex;
-    align-items: center;
-  }
-  #aboutPage .container .row .text-column .about-text-container {
-    text-align: justify;
-    background: rgba(5, 5, 5, 0.4);
-    padding: 3vw;
-    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2575,37 +2564,39 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: justify;
+    margin: 0;
+    color: #879c91;
+    -ms-flex-item-align: center;
+        align-self: center;
     z-index: 1;
+    background: rgba(5, 5, 5, 0.4);
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    padding: 4vw 5vw;
   }
-  #aboutPage .container .row .text-column .about-text-container h1 {
+  #aboutPage .container .row .text-column h1 {
     font-size: 1.8vw;
     margin-bottom: 0.7vw;
     text-align: left;
     line-height: 2.6vw;
     width: 93%;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text {
-    width: 90%;
-    font-size: 1.2vw;
-    line-height: 2.4vw;
-    line-height: 2.3vw;
-  }
-  #aboutPage .container .row .text-column .about-text-container .about-text p {
+  #aboutPage .container .row .text-column p {
     display: inline-block;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text a {
+  #aboutPage .container .row .text-column a {
     background: #879c91;
     display: inline-block;
-    padding: 0.1vw 1.1vw;
+    padding: 0.1vw 1.1vw;
     margin-top: 2vw;
     border-radius: 3vw;
     color: #012040;
     font-size: 1.2vw;
+    width: 30%;
+    text-align: center;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text a:hover {
+  #aboutPage .container .row .text-column a:hover {
     background: #596860;
     text-decoration: none;
   }
