@@ -2251,81 +2251,86 @@ table {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  #aboutPage {
-    width: 100%;
-    background: #214261;
-    background-size: cover;
-    position: relative;
-  }
-  #aboutPage .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #aboutPage .container .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
-    display: none;
-  }
-  #aboutPage .container .row .text-column {
-    width: 100%;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    color: #cecece;
-    background: red;
-    text-align: justify;
-    padding: 18vw;
-    font-size: 4.6vw;
-    line-height: normal;
-    z-index: 1;
-  }
-  #aboutPage .container .row .text-column h1 {
-    font-size: 7.8vw;
-    margin-bottom: 8vw;
-    text-align: left;
-    line-height: 2.6vw;
-    width: 93%;
-  }
-  #aboutPage .container .row .text-column a {
-    background: #879c91;
-    display: inline-block;
-    padding: 1vw 4.3vw;
-    margin-top: 8vw;
-    border-radius: 3vw;
-    color: #012040;
-    font-size: 4vw;
-  }
-  #aboutPage .container .row .text-column a:hover {
-    background: #596860;
-    text-decoration: none;
-  }
+#aboutPage {
+  width: 100%;
+  background: #214261;
+  background-size: cover;
+  position: relative;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+#aboutPage .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#aboutPage .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+  display: none;
+}
+
+#aboutPage .container .row .text-column {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #cecece;
+  background: red;
+  text-align: justify;
+  padding: 18vw;
+  font-size: 4.6vw;
+  line-height: normal;
+  z-index: 1;
+}
+
+#aboutPage .container .row .text-column h1 {
+  font-size: 7.8vw;
+  margin-bottom: 8vw;
+  text-align: left;
+  line-height: 2.6vw;
+  width: 93%;
+}
+
+#aboutPage .container .row .text-column a {
+  background: #879c91;
+  display: inline-block;
+  padding: 1vw 4.3vw;
+  margin-top: 8vw;
+  border-radius: 3vw;
+  color: #012040;
+  font-size: 4vw;
+}
+
+#aboutPage .container .row .text-column a:hover {
+  background: #596860;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
   #aboutPage {
     width: 100%;
     height: 100vh;
@@ -2364,6 +2369,7 @@ table {
     width: 100%;
     position: absolute;
     overflow: hidden;
+    bottom: 0;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
     width: 100%;
@@ -2392,6 +2398,8 @@ table {
     opacity: 0.8;
   }
   #aboutPage .container .row .text-column {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2412,6 +2420,8 @@ table {
     height: 40%;
     padding: 6vw;
     overflow: hidden;
+    position: relative;
+    top: 0;
   }
   #aboutPage .container .row .text-column h1 {
     font-size: 3.8vw;
@@ -2448,6 +2458,10 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -2456,13 +2470,10 @@ table {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 41vw;
+    height: 93vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     padding-right: 5vw;
   }
   #aboutPage .container .row .ladyAndLogoContainer {
@@ -2475,31 +2486,31 @@ table {
     height: 100%;
     width: 100%;
     overflow: visible;
+    position: relative;
+    margin: 0;
+    padding: 0;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
-    position: relative;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: static;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 41vw;
+    height: 93vh;
     position: absolute;
     bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 4;
+    padding: 0;
+    margin: 0;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
-    width: 18.5vw;
+    width: 18vw;
     position: absolute;
-    top: -4vw;
-    left: 21.7vw;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    top: -9vh;
+    left: 13.5vw;
     z-index: 2;
     opacity: 0.8;
   }
@@ -2520,11 +2531,14 @@ table {
     color: #879c91;
     -ms-flex-item-align: center;
         align-self: center;
+    position: static;
     z-index: 1;
     background: rgba(5, 5, 5, 0.4);
     font-size: 1.2vw;
     line-height: 2.4vw;
     padding: 4vw 5vw;
+    position: static;
+    height: auto;
   }
   #aboutPage .container .row .text-column h1 {
     font-size: 1.8vw;

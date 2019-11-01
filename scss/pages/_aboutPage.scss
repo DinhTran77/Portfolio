@@ -1,72 +1,70 @@
 //**************************MOBILE***********************************************
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    #aboutPage {
+#aboutPage {
+    width: 100%;
+    // height: 100vh;
+    // background-image: url(../../images/David-background.jpg);
+    background: $color_blue_background;
+    background-size: cover;
+    position: relative;
+    $lady-height: 41vw;
+    .container {
         width: 100%;
-        // height: 100vh;
-        // background-image: url(../../images/David-background.jpg);
-        background: $color_blue_background;
-        background-size: cover;
-        position: relative;
-        $lady-height: 41vw;
-        .container {
-            width: 100%;
-            max-width: 100%;
-            // height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+        max-width: 100%;
+        // height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+
+        .row {
+            // background: pink;
             display: flex;
+            align-items: flex-end;
+            .ladyAndLogoContainer {
+                .ladyANDlogo {
+                    display: none;
+                    #lady {
+                    }
 
-            .row {
-                // background: pink;
-                display: flex;
-                align-items: flex-end;
-                .ladyAndLogoContainer {
-                    .ladyANDlogo {
-                        display: none;
-                        #lady {
-                        }
-
-                        #logoImage {
-                        }
+                    #logoImage {
                     }
                 }
-                .text-column {
-                    width: 100%;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                    color: #cecece;
-                    background: red;
+            }
+            .text-column {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: #cecece;
+                background: red;
 
-                    text-align: justify;
+                text-align: justify;
 
-                    padding: 18vw;
-                    font-size: 4.6vw;
-                    line-height: normal;
-                    z-index: 1;
-                    h1 {
-                        font-size: 7.8vw;
-                        margin-bottom: 8vw;
-                        text-align: left;
-                        line-height: 2.6vw;
-                        width: 93%;
-                    }
-                    a {
-                        background: #879c91;
-                        display: inline-block;
-                        padding: 1vw 4.3vw;
-                        margin-top: 8vw;
-                        border-radius: 3vw;
-                        color: $color_font_nav;
-                        font-size: 4vw;
+                padding: 18vw;
+                font-size: 4.6vw;
+                line-height: normal;
+                z-index: 1;
+                h1 {
+                    font-size: 7.8vw;
+                    margin-bottom: 8vw;
+                    text-align: left;
+                    line-height: 2.6vw;
+                    width: 93%;
+                }
+                a {
+                    background: #879c91;
+                    display: inline-block;
+                    padding: 1vw 4.3vw;
+                    margin-top: 8vw;
+                    border-radius: 3vw;
+                    color: $color_font_nav;
+                    font-size: 4vw;
 
-                        &:hover {
-                            background: #596860;
-                            text-decoration: none;
-                        }
+                    &:hover {
+                        background: #596860;
+                        text-decoration: none;
                     }
                 }
             }
@@ -75,7 +73,7 @@
 }
 
 //**************************TABLET***********************************************
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
     #aboutPage {
         width: 100%;
         height: 100vh;
@@ -95,6 +93,7 @@
             .row {
                 display: flex;
                 justify-content: center;
+
                 margin: 0;
                 // background: pink;
                 width: 100%;
@@ -107,6 +106,7 @@
                     width: 100%;
                     position: absolute;
                     overflow: hidden;
+                    bottom: 0;
 
                     .ladyANDlogo {
                         width: 100%;
@@ -135,6 +135,7 @@
                     }
                 }
                 .text-column {
+                    align-self: flex-start;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -154,6 +155,8 @@
                     height: 40%;
                     padding: 6vw;
                     overflow: hidden;
+                    position: relative;
+                    top: 0;
                     h1 {
                         font-size: 3.8vw;
                         margin-bottom: 1.7vw;
@@ -175,6 +178,7 @@
         }
     }
 }
+
 //**************************DESKTOP***********************************************
 @media only screen and (min-width: 992px) {
     #aboutPage {
@@ -183,7 +187,8 @@
         background-image: url(../../images/David-background.jpg);
         background-size: cover;
         position: relative;
-        $lady-height: 41vw;
+        $lady-height: 93vh;
+
         .container {
             width: 100%;
             max-width: 100%;
@@ -192,6 +197,7 @@
             padding: 0;
             overflow: visible;
             display: flex;
+            flex-direction: row;
             align-items: flex-end;
             .row {
                 width: 100%;
@@ -199,39 +205,43 @@
                 padding: 0;
                 height: $lady-height;
                 display: flex;
-                align-items: flex-start;
+                // background: green;
                 padding-right: 5vw;
-                // background: red;
                 .ladyAndLogoContainer {
-                    // background: green;
                     display: flex;
                     justify-content: center;
-                    // position: relative;
                     height: 100%;
                     width: 100%;
-
+                    // background: purple;
                     overflow: visible;
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
                     .ladyANDlogo {
-                        position: relative;
+                        // position: relative;
                         width: 100%;
                         height: 100%;
-                        display: flex;
+                        position: static;
+                        // background: pink;
                         #lady {
                             height: $lady-height;
                             position: absolute;
+
                             bottom: 0;
                             left: 50%;
                             transform: translateX(-50%);
                             z-index: 4;
                             // background: green;
+                            padding: 0;
+                            margin: 0;
                         }
 
                         #logoImage {
-                            width: 18.5vw;
+                            width: 18vw;
                             position: absolute;
-                            top: -4vw;
-                            left: 21.7vw;
-                            transform: translateX(-50%);
+                            top: -9vh;
+                            left: 13.5vw;
+                            // transform: translateX(-50%);
                             z-index: 2;
                             opacity: 0.8;
                         }
@@ -240,7 +250,6 @@
 
                 .text-column {
                     width: 100%;
-
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -248,14 +257,16 @@
                     margin: 0;
                     color: #879c91;
                     align-self: center;
-
+                    position: static;
                     z-index: 1;
                     background: rgba(5, 5, 5, 0.4);
+                    // background: red;
                     //     background: pink;
                     font-size: 1.2vw;
                     line-height: 2.4vw;
                     padding: 4vw 5vw;
-
+                    position: static;
+                    height: auto;
                     h1 {
                         font-size: 1.8vw;
                         margin-bottom: 0.7vw;
