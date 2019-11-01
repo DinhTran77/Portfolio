@@ -324,36 +324,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#homePage .container_logo .logo {
-  width: 70vw;
-  height: 70vw;
   position: relative;
 }
 
-#homePage .container_logo .logo .logoImage,
-#homePage .container_logo .logo .ribbon,
-#homePage .container_logo .logo .t,
-#homePage .container_logo .logo .dots {
+#homePage .container_logo .logoImage {
   width: 70vw;
-  position: absolute;
-}
-
-#homePage .container_logo .logo .logoImage {
-  z-index: -4;
-}
-
-#homePage .container_logo .logo .t {
-  z-index: -3;
-}
-
-#homePage .container_logo .logo .dots {
-  z-index: -3;
-}
-
-#homePage .container_logo .logo .ribbon {
-  z-index: -1;
 }
 
 #homePage .container_logo .hero_message {
@@ -373,7 +348,7 @@ table {
 #homePage .container_logo .hero_message .hero_text {
   color: #012040;
   font-family: "Special Elite", cursive;
-  font-size: 3vw;
+  font-size: 4vw;
   color: #012040;
   line-height: 5vw;
 }
@@ -408,11 +383,11 @@ table {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   #homePage {
     height: 100vh;
   }
-  #homePage #container_logo {
+  #homePage .container_logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -420,11 +395,39 @@ table {
     top: 0;
     left: 0;
     margin: 0;
-    background: red;
   }
-  #homePage #container_logo #logoImage {
-    width: 30vh;
+  #homePage .container_logo .logoImage {
+    width: 40vh;
     margin-bottom: 0vh;
+  }
+  #homePage .container_logo .hero_message {
+    text-align: center;
+    height: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #homePage .container_logo .hero_message .hero_text {
+    color: #012040;
+    font-family: "Special Elite", cursive;
+    font-size: 3vw;
+    color: #012040;
+    line-height: 5vw;
+  }
+  #homePage .container_logo .cursor {
+    display: inline-block;
+    width: 0.2vw;
+    height: 4vw;
+    background-color: #212529;
+    -webkit-animation: blink 0.75s step-end infinite;
+            animation: blink 0.75s step-end infinite;
+    opacity: 0.6;
   }
 }
 
@@ -448,8 +451,6 @@ table {
     z-index: -10;
   }
   #homePage .container_logo {
-    width: 100%;
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -463,30 +464,10 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #homePage .container_logo .logo {
-    width: 25vw;
-    height: 25vw;
     position: relative;
   }
-  #homePage .container_logo .logo .logoImage,
-  #homePage .container_logo .logo .ribbon,
-  #homePage .container_logo .logo .t,
-  #homePage .container_logo .logo .dots {
+  #homePage .container_logo .logoImage {
     width: 25vw;
-    position: absolute;
-  }
-  #homePage .container_logo .logo .logoImage {
-    z-index: -4;
-  }
-  #homePage .container_logo .logo .t {
-    z-index: -3;
-  }
-  #homePage .container_logo .logo .dots {
-    z-index: -3;
-  }
-  #homePage .container_logo .logo .ribbon {
-    z-index: -1;
   }
   #homePage .container_logo .hero_message {
     text-align: center;
@@ -1220,6 +1201,7 @@ table {
   overflow: hidden;
   width: 100%;
   margin: 2vw;
+  margin-top: 3vw;
   opacity: 1;
 }
 
@@ -1256,10 +1238,6 @@ table {
   padding: 0;
 }
 
-#header-main .my-container #nav-bar #menu li:not(:first-child) a {
-  margin-left: 9vw;
-}
-
 #header-main .my-container #nav-bar #menu li {
   list-style-type: none;
   height: 100%;
@@ -1276,6 +1254,7 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 3vw;
+  padding: 7vw;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
@@ -1283,9 +1262,6 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-    margin-left: 15vw;
-  }
   #header-main .my-container #nav-bar #menu li a {
     font-size: 2.5vw;
   }
@@ -1353,6 +1329,7 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 0;
+    margin-top: 1vw;
     padding: 2vw;
     top: 0;
     left: 0;
@@ -1367,9 +1344,8 @@ table {
   #header-main .my-container #nav-bar #menu li a {
     font-size: 0.9vw;
     color: inherit;
-  }
-  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-    margin-left: 4vw;
+    padding: 1.6vw;
+    margin: 0;
   }
 }
 
@@ -1493,6 +1469,7 @@ table {
   overflow: hidden;
   width: 100%;
   margin: 2vw;
+  margin-top: 3vw;
   opacity: 1;
 }
 
@@ -1520,10 +1497,6 @@ table {
   padding: 0;
 }
 
-#header-main .my-container #nav-bar #menu li:not(:first-child) a {
-  margin-left: 9vw;
-}
-
 #header-main .my-container #nav-bar #menu li {
   list-style-type: none;
   height: 100%;
@@ -1540,6 +1513,7 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 3vw;
+  padding: 7vw;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
@@ -1547,9 +1521,6 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-    margin-left: 15vw;
-  }
   #header-main .my-container #nav-bar #menu li a {
     font-size: 2.5vw;
   }
@@ -1617,6 +1588,7 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 0;
+    margin-top: 1vw;
     padding: 2vw;
     top: 0;
     left: 0;
@@ -1631,9 +1603,8 @@ table {
   #header-main .my-container #nav-bar #menu li a {
     font-size: 0.9vw;
     color: inherit;
-  }
-  #header-main .my-container #nav-bar #menu li:not(:first-child) a {
-    margin-left: 4vw;
+    padding: 1.6vw;
+    margin: 0;
   }
 }
 
@@ -2277,6 +2248,80 @@ table {
   #homePage-normal .container-david .above-logo,
   #homePage-normal .container-david .david-background {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #aboutPage {
+    width: 100%;
+    background: #214261;
+    background-size: cover;
+    position: relative;
+  }
+  #aboutPage .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #aboutPage .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+    display: none;
+  }
+  #aboutPage .container .row .text-column {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    color: #cecece;
+    background: red;
+    text-align: justify;
+    padding: 18vw;
+    font-size: 4.6vw;
+    line-height: normal;
+    z-index: 1;
+  }
+  #aboutPage .container .row .text-column h1 {
+    font-size: 7.8vw;
+    margin-bottom: 8vw;
+    text-align: left;
+    line-height: 2.6vw;
+    width: 93%;
+  }
+  #aboutPage .container .row .text-column a {
+    background: #879c91;
+    display: inline-block;
+    padding: 1vw 4.3vw;
+    margin-top: 8vw;
+    border-radius: 3vw;
+    color: #012040;
+    font-size: 4vw;
+  }
+  #aboutPage .container .row .text-column a:hover {
+    background: #596860;
+    text-decoration: none;
   }
 }
 

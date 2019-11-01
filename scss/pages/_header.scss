@@ -1,182 +1,184 @@
 //***********************MOBILE************************************
+
 $height_nav-bar: 5vh;
 
 #header-main {
-        background-color: $color_background_yellow;
-        background-color: transparent;
+    background-color: $color_background_yellow;
+    background-color: transparent;
 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    .my-container {
         width: 100%;
+        max-width: 1400px;
+        padding: 0;
+        margin: 0;
         display: flex;
-        align-items: center;
         justify-content: center;
-        position: absolute;
+        align-items: center;
 
-        .my-container {
-                width: 100%;
-                max-width: 1400px;
-                padding: 0;
-                margin: 0;
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: $height_nav-bar;
+            overflow: hidden;
+            width: 100%;
+            margin: 2vw;
+            margin-top: 3vw;
+            opacity: 1;
+            // animation: nav-fade-in 2s;
+
+            @keyframes nav-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            #menu {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                width: 90%;
+                height: 100%;
+                position: relative;
+                z-index: 200;
+                margin: 0;
+                padding: 0;
 
-                #nav-bar {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        height: $height_nav-bar;
-                        overflow: hidden;
-                        width: 100%;
-                        margin: 2vw;
-                        opacity: 1;
-                        // animation: nav-fade-in 2s;
-
-                        @keyframes nav-fade-in {
-                                from {
-                                        opacity: 0;
-                                }
-                                to {
-                                        opacity: 1;
-                                }
-                        }
-
-                        #menu {
-                                display: flex;
-                                justify-content: center;
-                                width: 90%;
-                                height: 100%;
-                                position: relative;
-                                z-index: 200;
-                                margin: 0;
-                                padding: 0;
-
-                                li:not(:first-child) {
-                                        a {
-                                                margin-left: 9vw;
-                                        }
-                                }
-                                li {
-                                        list-style-type: none;
-                                        height: 100%;
-                                        display: flex;
-                                        align-items: center;
-                                        a {
-                                                font-family: $monsterrat-font;
-                                                text-decoration: none;
-                                                color: $color_font_nav;
-                                                font-size: 3vw;
-
-                                                &:hover {
-                                                        color: rgb(
-                                                                107,
-                                                                106,
-                                                                106
-                                                        );
-                                                }
-                                        }
-                                }
-                        }
-
-                        // .slide-out {
-                        //         @keyframes slide-out {
-                        //                 from {
-                        //                         left: 0%;
-                        //                 }
-                        //                 to {
-                        //                         left: -100%;
-                        //                 }
-                        //         }
-                        // }
+                li:not(:first-child) {
+                    a {
+                        // margin-left: 11vw;
+                    }
                 }
+                li {
+                    list-style-type: none;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    a {
+                        font-family: $monsterrat-font;
+                        text-decoration: none;
+                        color: $color_font_nav;
+                        font-size: 3vw;
+                        padding: 7vw;
+
+                        &:hover {
+                            color: rgb(107, 106, 106);
+                        }
+                    }
+                }
+            }
+
+            // .slide-out {
+            //         @keyframes slide-out {
+            //                 from {
+            //                         left: 0%;
+            //                 }
+            //                 to {
+            //                         left: -100%;
+            //                 }
+            //         }
+            // }
         }
+    }
 }
 
 //***********************TABLET************************************
 
 @media only screen and (min-width: 768px) {
-        $height_nav-bar: 7vh;
-        #header-main {
-                .my-container {
-                        #nav-bar {
-                                #menu {
-                                        li:not(:first-child) {
-                                                a {
-                                                        margin-left: 15vw;
-                                                }
-                                        }
-                                        li {
-                                                a {
-                                                        font-size: 2.5vw;
-                                                }
-                                        }
-                                }
+    $height_nav-bar: 7vh;
+    #header-main {
+        .my-container {
+            #nav-bar {
+                #menu {
+                    li:not(:first-child) {
+                        a {
+                            //     margin-left: 15vw;
                         }
+                    }
+                    li {
+                        a {
+                            font-size: 2.5vw;
+                        }
+                    }
                 }
+            }
         }
+    }
 }
 
 //***********************Desktop************************************
 
 @media only screen and (min-width: 992px) {
-        #header-main {
-                justify-content: center;
-                .my-container {
-                        justify-content: flex-end;
+    #header-main {
+        justify-content: center;
+        .my-container {
+            justify-content: flex-end;
 
-                        .nav-fade-in-desktop {
-                                animation: nav-fade-in-desktop 0.7s forwards;
-                                background: transparent;
-                                @keyframes nav-fade-in-desktop {
-                                        from {
-                                                background: transparent;
-                                                color: $color_font_nav;
-                                        }
-                                        to {
-                                                background: rgb(4, 0, 58);
-                                                color: white;
-                                        }
-                                }
-                        }
-
-                        .nav-fade-out-desktop {
-                                animation: nav-fade-out-desktop 0.7s forwards;
-                                background: black;
-                                @keyframes nav-fade-out-desktop {
-                                        from {
-                                                background: black;
-                                        }
-                                        to {
-                                                background: transparent;
-                                        }
-                                }
-                        }
-
-                        #nav-bar {
-                                justify-content: flex-end;
-                                margin: 0;
-                                padding: 2vw;
-                                top: 0;
-                                left: 0;
-                                background: transparent;
-                                // background: black;
-                                z-index: 100;
-
-                                #menu {
-                                        justify-content: flex-end;
-                                        li {
-                                                a {
-                                                        font-size: 0.9vw;
-                                                        color: inherit;
-                                                }
-                                        }
-                                        li:not(:first-child) {
-                                                a {
-                                                        margin-left: 4vw;
-                                                }
-                                        }
-                                }
-                        }
+            .nav-fade-in-desktop {
+                animation: nav-fade-in-desktop 0.7s forwards;
+                background: transparent;
+                @keyframes nav-fade-in-desktop {
+                    from {
+                        background: transparent;
+                        color: $color_font_nav;
+                    }
+                    to {
+                        background: rgb(4, 0, 58);
+                        color: white;
+                    }
                 }
+            }
+
+            .nav-fade-out-desktop {
+                animation: nav-fade-out-desktop 0.7s forwards;
+                background: black;
+                @keyframes nav-fade-out-desktop {
+                    from {
+                        background: black;
+                    }
+                    to {
+                        background: transparent;
+                    }
+                }
+            }
+
+            #nav-bar {
+                justify-content: flex-end;
+                margin: 0;
+                margin-top: 1vw;
+                padding: 2vw;
+                top: 0;
+                left: 0;
+                background: transparent;
+                // background: black;
+                z-index: 100;
+
+                #menu {
+                    justify-content: flex-end;
+                    li {
+                        a {
+                            font-size: 0.9vw;
+                            color: inherit;
+                            padding: 1.6vw;
+                            margin: 0;
+                        }
+                    }
+                    li:not(:first-child) {
+                        a {
+                            //     margin-left: 4vw;
+                        }
+                    }
+                }
+            }
         }
+    }
 }

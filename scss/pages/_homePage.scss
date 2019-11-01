@@ -3,6 +3,7 @@
 @import "../../scss/utilities/variables";
 
 //**************************MOBILE***********************************************
+
 #homePage {
     $logo-image-width: 70vw;
     $homepage_screen_height: 100vw * 1.618;
@@ -27,33 +28,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .logo {
+        position: relative;
+        .logoImage {
             width: $logo-image-width;
-            height: $logo-image-width;
-            position: relative;
-            .logoImage,
-            .ribbon,
-            .t,
-            .dots {
-                width: $logo-image-width;
-                position: absolute;
-                // left: 0;
-                // top: 0;
-            }
-
-            .logoImage {
-                z-index: -4;
-            }
-            .t {
-                z-index: -3;
-            }
-            .dots {
-                z-index: -3;
-            }
-            .ribbon {
-                z-index: -1;
-            }
+            //     position: absolute;
         }
 
         .hero_message {
@@ -66,7 +44,7 @@
             .hero_text {
                 color: $color_font_nav;
                 font-family: "Special Elite", cursive;
-                font-size: 3vw;
+                font-size: 4vw;
                 color: $color_font_nav;
                 line-height: 5vw;
             }
@@ -94,21 +72,47 @@
 } //end home page
 
 //***********************TABLET************************************
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     #homePage {
-        $logo-image-width: 30vh;
+        $logo-image-width: 40vh;
         height: 100vh;
 
-        #container_logo {
+        .container_logo {
             align-items: center;
             position: absolute;
+
             top: 0;
             left: 0;
             margin: 0;
-            background: red;
-            #logoImage {
+
+            .logoImage {
                 width: $logo-image-width;
                 margin-bottom: 0vh;
+            }
+
+            .hero_message {
+                text-align: center;
+                height: 3vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .hero_text {
+                    color: $color_font_nav;
+                    font-family: "Special Elite", cursive;
+                    font-size: 3vw;
+                    color: $color_font_nav;
+                    line-height: 5vw;
+                }
+            }
+
+            .cursor {
+                display: inline-block;
+                width: 0.2vw;
+                height: 4vw;
+                background-color: $nav-area-color;
+                animation: blink 0.75s step-end infinite;
+                opacity: 0.6;
             }
         }
     }
@@ -133,41 +137,15 @@
         z-index: -10;
 
         .container_logo {
-            width: 100%;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
 
-            .logo {
+            .logoImage {
                 width: $logo-image-width;
-                height: $logo-image-width;
-                position: relative;
-                .logoImage,
-                .ribbon,
-                .t,
-                .dots {
-                    width: $logo-image-width;
-                    position: absolute;
-                    // left: 0;
-                    // top: 0;
-                }
-
-                .logoImage {
-                    z-index: -4;
-                }
-                .t {
-                    z-index: -3;
-                }
-                .dots {
-                    z-index: -3;
-                }
-                .ribbon {
-                    z-index: -1;
-                }
             }
-
             .hero_message {
                 text-align: center;
                 height: 3vh;
