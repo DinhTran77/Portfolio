@@ -420,6 +420,11 @@ table {
     top: 0;
     left: 0;
     margin: 0;
+    background: red;
+  }
+  #homePage #container_logo #logoImage {
+    width: 30vh;
+    margin-bottom: 0vh;
   }
 }
 
@@ -2275,81 +2280,7 @@ table {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  #aboutPage {
-    width: 100%;
-    background: #214261;
-    background-size: cover;
-    position: relative;
-  }
-  #aboutPage .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #aboutPage .container .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
-    display: none;
-  }
-  #aboutPage .container .row .text-column {
-    width: 100%;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    color: #cecece;
-    background: red;
-    text-align: justify;
-    padding: 18vw;
-    font-size: 4.6vw;
-    line-height: normal;
-    z-index: 1;
-  }
-  #aboutPage .container .row .text-column h1 {
-    font-size: 7.8vw;
-    margin-bottom: 8vw;
-    text-align: left;
-    line-height: 2.6vw;
-    width: 93%;
-  }
-  #aboutPage .container .row .text-column a {
-    background: #879c91;
-    display: inline-block;
-    padding: 1vw 4.3vw;
-    margin-top: 8vw;
-    border-radius: 3vw;
-    color: #012040;
-    font-size: 4vw;
-  }
-  #aboutPage .container .row .text-column a:hover {
-    background: #596860;
-    text-decoration: none;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   #aboutPage {
     width: 100%;
     height: 100vh;
@@ -2376,8 +2307,9 @@ table {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    padding: 0;
     width: 100%;
+    position: relative;
+    padding: 6vw;
   }
   #aboutPage .container .row .ladyAndLogoContainer {
     display: -webkit-box;
@@ -2399,7 +2331,7 @@ table {
             justify-content: center;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 50%;
+    height: 55%;
     position: absolute;
     bottom: 0;
     left: 45%;
@@ -2408,42 +2340,35 @@ table {
     z-index: 4;
   }
   #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
-    width: 25vh;
+    width: 24vh;
     position: absolute;
-    top: 43.5vh;
+    top: 39.75vh;
     z-index: 2;
     opacity: 0.8;
   }
   #aboutPage .container .row .text-column {
-    width: 90%;
-    margin: 0;
-    margin-top: 5vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     color: #879c91;
-    position: absolute;
-    top: 0;
     z-index: 12;
-    background: pink;
-    overflow: hidden;
-  }
-  #aboutPage .container .row .text-column .about-text-container {
     text-align: justify;
     background: rgba(0, 0, 0, 0.4);
-    background: red;
-    margin: 0;
-    width: auto;
-    padding: 18vw 7vw;
     z-index: 1;
+    font-size: 2.2vw;
+    line-height: 5.3vw;
+    height: 40%;
+    padding: 6vw;
+    overflow: hidden;
   }
-  #aboutPage .container .row .text-column .about-text-container h1 {
+  #aboutPage .container .row .text-column h1 {
     font-size: 3.8vw;
     margin-bottom: 1.7vw;
     text-align: left;
@@ -2451,16 +2376,11 @@ table {
     width: 93%;
     text-align: center;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text {
-    width: 100%;
-    font-size: 2.2vw;
-    line-height: 5.3vw;
-  }
-  #aboutPage .container .row .text-column .about-text-container .about-text a {
+  #aboutPage .container .row .text-column a {
     color: red;
     display: none;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text p {
+  #aboutPage .container .row .text-column p {
     display: inline-block;
   }
 }
@@ -2532,7 +2452,7 @@ table {
     width: 18.5vw;
     position: absolute;
     top: -4vw;
-    left: 22.6vw;
+    left: 21.7vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 2;
