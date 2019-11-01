@@ -2309,6 +2309,10 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2316,39 +2320,21 @@ table {
         -ms-flex-align: start;
             align-items: flex-start;
     color: #cecece;
-  }
-  #aboutPage .container .row .text-column .about-text-container {
+    background: red;
     text-align: justify;
-    margin: 0;
-    padding: 18vw 7vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 18vw;
+    font-size: 4.6vw;
+    line-height: normal;
     z-index: 1;
   }
-  #aboutPage .container .row .text-column .about-text-container h1 {
+  #aboutPage .container .row .text-column h1 {
     font-size: 7.8vw;
     margin-bottom: 8vw;
     text-align: left;
     line-height: 2.6vw;
     width: 93%;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text {
-    width: 90%;
-    font-size: 4.6vw;
-    line-height: normal;
-  }
-  #aboutPage .container .row .text-column .about-text-container .about-text a {
+  #aboutPage .container .row .text-column a {
     background: #879c91;
     display: inline-block;
     padding: 1vw 4.3vw;
@@ -2357,7 +2343,7 @@ table {
     color: #012040;
     font-size: 4vw;
   }
-  #aboutPage .container .row .text-column .about-text-container .about-text a:hover {
+  #aboutPage .container .row .text-column a:hover {
     background: #596860;
     text-decoration: none;
   }
