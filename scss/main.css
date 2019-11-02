@@ -527,7 +527,7 @@ table {
 
 #skills-page {
   background: url(../../images/background-skills-page.png);
-  background-image: url(../../images/egg_shell.png);
+  background-image: url(../../images/background-skills-egg_shell.png);
   background-size: 150px;
   background-color: white;
 }
@@ -617,6 +617,9 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e3e3;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {

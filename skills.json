@@ -1,25 +1,26 @@
 {
     "skills": [
-        { "skill-title": "HTML & SCSS", "percent": "80%", "class": "html" },
-        { "skill-title": "JS/jQuery", "percent": "60%", "class": "javascript" },
-        { "skill-title": "Bootstrap", "percent": "55%", "class": "bootstrap" },
-        { "skill-title": "Ajax", "percent": "50%", "class": "ajax" },
+        { "skill-title": "HTML & SCSS", "percent": "80", "class": "html" },
+        { "skill-title": "JS/jQuery", "percent": "60", "class": "javascript" },
+        { "skill-title": "REACT", "percent": "75", "class": "react" },
+        { "skill-title": "Bootstrap", "percent": "55", "class": "bootstrap" },
+        { "skill-title": "Ajax", "percent": "50", "class": "ajax" },
         {
             "skill-title": "Responsive Design",
-            "percent": "65%",
+            "percent": "65",
             "class": "responsive-design"
         },
-        { "skill-title": "REACT", "percent": "75%", "class": "react" },
-        { "skill-title": "Jest", "percent": "55%", "class": "scss" },
+
+        { "skill-title": "Jest", "percent": "55", "class": "scss" },
         {
             "skill-title": "Typescript",
-            "percent": "50%",
+            "percent": "50",
             "class": "typescript"
         },
-        { "skill-title": "Node", "percent": "75%", "class": "node" },
-        { "skill-title": "Express", "percent": "50%", "class": "express" },
-        { "skill-title": "Agile", "percent": "90%", "class": "agile" },
-        { "skill-title": "Git", "percent": "55%", "class": "git" },
+        { "skill-title": "Node", "percent": "75", "class": "node" },
+        { "skill-title": "Express", "percent": "50", "class": "express" },
+        { "skill-title": "Agile", "percent": "90", "class": "agile" },
+        { "skill-title": "Git", "percent": "55", "class": "git" },
         {
             "skill-title": "Photoshop/Illustrator",
             "percent": "85%",

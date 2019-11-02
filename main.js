@@ -7,6 +7,20 @@ $(function() {
         var template = $("#skills-template").html();
         var html = Mustache.to_html(template, data);
         $("#skill").html(html);
+        let p = JSON.stringify(data);
+
+        // alert(data.skills.length);
+        // alert(data.skills[4].class);
+
+        for (let i = 0; i < data.skills.length; i++) {
+            alert(data.skills[i].class);
+        }
+    });
+});
+
+$.getJSON("skills.json", function(json) {
+    $.each(json.results, function(i, tweet) {
+        alert("hello");
     });
 });
 
