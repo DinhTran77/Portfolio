@@ -24,10 +24,8 @@
             .text-column {
                 width: 100%;
                 margin: 0;
-                display: flex;
+                @include flex-center;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 color: #cecece;
                 text-align: center;
                 padding: 18vw;
@@ -37,7 +35,6 @@
                 h1 {
                     font-size: 5.8vw;
                     margin-bottom: 8vw;
-                    text-align: left;
                     line-height: 2.6vw;
                     width: 93%;
                     text-align: center;

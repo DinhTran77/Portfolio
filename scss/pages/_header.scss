@@ -15,8 +15,7 @@ $height_nav-bar: 5vh;
     .my-container {
         width: 100%;
         max-width: 1400px;
-        padding: 0;
-        margin: 0;
+        @include padding-margin-zero;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -2291,16 +2291,16 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #cecece;
   text-align: center;
   padding: 18vw;
@@ -2312,7 +2312,6 @@ table {
 #about-page .container .row .text-column h1 {
   font-size: 5.8vw;
   margin-bottom: 8vw;
-  text-align: left;
   line-height: 2.6vw;
   width: 93%;
   text-align: center;

@@ -93,10 +93,7 @@
             .hero-message {
                 text-align: center;
                 height: 3vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
+                @include flex-center;
                 .hero-text {
                     color: $color_font_nav;
                     font-family: "Special Elite", cursive;
@@ -149,10 +146,7 @@
             .hero-message {
                 text-align: center;
                 height: 3vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // background: green;
+                @include flex-center;
                 height: auto;
                 .hero-text {
                     display: flex;
