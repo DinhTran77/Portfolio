@@ -27,7 +27,6 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
 		crossorigin="anonymous"></script>
 
-
 	<!-- Animate on scroll library -->
 	<link rel="stylesheet" href="./css/aos.css" />
 
@@ -43,9 +42,11 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
 	<!-- Mustache and Cycle2 -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.autoheight.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
 </head>
+
+
+
 
 <body id="container-page">
 	<main>
@@ -73,14 +74,6 @@
 					<span class="cursor"></span>
 				</section>
 			</div>
-
-			<!-- <div class="container-david">
-				<img class='david' src="/images/David-David-test.png" alt="">
-				<img class='above-logo' src="/images/Above-logo-test.png" alt="">
-			</div>
-			<div id='background-normal' alt=""></div>
-			<img id='background-david' src="/images/David-background_low.jpg" alt=""> -->
-
 		</article>
 
 
@@ -96,7 +89,6 @@
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12 text-column">
-
 						<h1>Coding as an Art Form</h1>
 						<p>
 							Good code is an art form in itself and I love the creativity involved in translating
@@ -105,14 +97,14 @@
 							legible, elegant and maintainable.
 							<span>As such, I enjoy working in cohesive teams that prioritize
 								long-term maintainability over up-front speed.</span>
-
 						</p>
-
 						<a href='#contactPage' id='get-in-touch'>Lets work together!</a>
 					</div>
 				</div>
 			</div>
 		</article>
+
+
 
 		<!------------------ Skills Page-------------------->
 		<article id="skillsPage" class="my-container">
@@ -123,6 +115,7 @@
 
 			<div id="progress-bars-section" class="container_content container">
 				<div id="skill" class="row">
+
 					<!-- Template for skills section -->
 					<script id="skills_template" type="text/template">
                             {{#skills}}
@@ -131,8 +124,9 @@
                                         class="skill-name"
                                         data-aos="fade-in"
                                         data-aos-duration="1100"
-                                        data-aos-offset="-20"
-                                    >{{skill_title}}</h4>
+																				data-aos-offset="-20">
+																						{{skill_title}}
+																				</h4>
 
                                     <div class="progress-bar">
                                             <div
@@ -155,8 +149,6 @@
                                 </div>
                             {{/skills}}
                         </script>
-
-
 				</div>
 			</div>
 		</article>
