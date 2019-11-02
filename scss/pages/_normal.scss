@@ -3,12 +3,12 @@
                 color: $color_font_nav;
         }
 }
-#homePage-normal {
+#home-page-normal {
         overflow: hidden;
         $logo-image-width: 60vw;
-        $homepage_screen_height: 100vw * 1.618;
+        $home-page_screen_height: 100vw * 1.618;
         width: 100%;
-        height: $homepage_screen_height;
+        height: $home-page_screen_height;
         display: flex;
         flex-direction: column;
         // background-color: $color_background_yellow;
@@ -17,7 +17,7 @@
         left: 0;
         @include flex-center;
 
-        .container_logo {
+        .container-logo {
                 width: 100%;
                 height: 100vh;
                 @include flex-center;
@@ -58,7 +58,7 @@
                         }
                 }
 
-                .hero_message {
+                .hero-message {
                         width: 100vw;
                         text-align: center;
                         height: 3vh;
@@ -71,7 +71,7 @@
                                 line-height: 7vw;
                         }
 
-                        .hero_text {
+                        .hero-text {
                                 color: $color_font_nav;
                                 font-family: $monsterrat-font;
                                 font-size: 3vw;
@@ -79,7 +79,7 @@
                                 line-height: 5vw;
                         }
                 }
-        } //end #container_logo
+        } //end #container-logo
         #background-david {
                 position: absolute;
                 width: 100%;
@@ -154,11 +154,11 @@
 
 //***********************TABLET************************************
 @media only screen and (min-width: 768px) {
-        #homePage {
+        #home-page {
                 $logo-image-width: 50vh;
                 height: 100vh;
 
-                #container_logo {
+                #container-logo {
                         align-items: center;
                         position: absolute;
                         top: 0;
@@ -173,7 +173,7 @@
 }
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-        #homePage-normal {
+        #home-page-normal {
                 height: 100vh;
                 $logo-image-width: 25vw;
                 @include flex-center;
@@ -189,7 +189,7 @@
                         }
                 }
 
-                .container_logo {
+                .container-logo {
                         align-items: center;
                         @include flex-center;
                         position: relative;
@@ -267,7 +267,7 @@
                                         }
                                 }
                         }
-                        .hero_message {
+                        .hero-message {
                                 position: absolute;
                                 bottom: 9vw;
                                 .hero_greeting {
@@ -275,7 +275,7 @@
                                         line-height: 3vw;
                                 }
 
-                                .hero_text {
+                                .hero-text {
                                         font-size: 1.1vw;
                                         line-height: 1.5vw;
                                 }

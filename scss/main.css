@@ -289,7 +289,7 @@ table {
       border-spacing: 0;
 }
 
-#homePage {
+#home-page {
   width: 100%;
   height: 161.8vw;
   display: -webkit-box;
@@ -308,7 +308,7 @@ table {
   z-index: -10;
 }
 
-#homePage .container_logo {
+#home-page .container-logo {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -327,11 +327,11 @@ table {
   position: relative;
 }
 
-#homePage .container_logo .logoImage {
+#home-page .container-logo .logoImage {
   width: 70vw;
 }
 
-#homePage .container_logo .hero_message {
+#home-page .container-logo .hero-message {
   text-align: center;
   height: 3vh;
   display: -webkit-box;
@@ -345,7 +345,7 @@ table {
           align-items: center;
 }
 
-#homePage .container_logo .hero_message .hero_text {
+#home-page .container-logo .hero-message .hero-text {
   color: #012040;
   font-family: "Special Elite", cursive;
   font-size: 4vw;
@@ -353,7 +353,7 @@ table {
   line-height: 5vw;
 }
 
-#homePage .container_logo .cursor {
+#home-page .container-logo .cursor {
   display: inline-block;
   width: 0.2vw;
   height: 4vw;
@@ -384,10 +384,10 @@ table {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #homePage {
+  #home-page {
     height: 100vh;
   }
-  #homePage .container_logo {
+  #home-page .container-logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -396,11 +396,11 @@ table {
     left: 0;
     margin: 0;
   }
-  #homePage .container_logo .logoImage {
+  #home-page .container-logo .logoImage {
     width: 40vh;
     margin-bottom: 0vh;
   }
-  #homePage .container_logo .hero_message {
+  #home-page .container-logo .hero-message {
     text-align: center;
     height: 3vh;
     display: -webkit-box;
@@ -413,14 +413,14 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
-  #homePage .container_logo .hero_message .hero_text {
+  #home-page .container-logo .hero-message .hero-text {
     color: #012040;
     font-family: "Special Elite", cursive;
     font-size: 3vw;
     color: #012040;
     line-height: 5vw;
   }
-  #homePage .container_logo .cursor {
+  #home-page .container-logo .cursor {
     display: inline-block;
     width: 0.2vw;
     height: 4vw;
@@ -432,7 +432,7 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #homePage {
+  #home-page {
     width: 100%;
     height: 161.8vw;
     display: -webkit-box;
@@ -450,7 +450,7 @@ table {
     left: 0;
     z-index: -10;
   }
-  #homePage .container_logo {
+  #home-page .container-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -466,10 +466,10 @@ table {
             align-items: center;
     position: relative;
   }
-  #homePage .container_logo .logoImage {
+  #home-page .container-logo .logoImage {
     width: 25vw;
   }
-  #homePage .container_logo .hero_message {
+  #home-page .container-logo .hero-message {
     text-align: center;
     height: 3vh;
     display: -webkit-box;
@@ -483,7 +483,7 @@ table {
             align-items: center;
     height: auto;
   }
-  #homePage .container_logo .hero_message .hero_text {
+  #home-page .container-logo .hero-message .hero-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -496,7 +496,7 @@ table {
     font-size: 1.5vw;
     color: #012040;
   }
-  #homePage .container_logo .hero_message .cursor {
+  #home-page .container-logo .hero-message .cursor {
     display: inline-block;
     width: 0.2vw;
     height: 2vw;
@@ -1619,7 +1619,7 @@ table {
   z-index: 200;
 }
 
-#homePage-david {
+#home-page-david {
   width: 100%;
   height: 100vh;
   background: #ffd306;
@@ -1638,7 +1638,7 @@ table {
   overflow: hidden;
 }
 
-#homePage-david .container_logo {
+#home-page-david .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1675,7 +1675,7 @@ table {
   }
 }
 
-#homePage-david .container_logo .logo {
+#home-page-david .container-logo .logo {
   width: 25vw;
   height: 25vw;
   display: -webkit-box;
@@ -1690,15 +1690,15 @@ table {
   overflow: hidden;
 }
 
-#homePage-david .container_logo .logo .logoImage,
-#homePage-david .container_logo .logo .t,
-#homePage-david .container_logo .logo .dots,
-#homePage-david .container_logo .logo .ribbon {
+#home-page-david .container-logo .logo .logoImage,
+#home-page-david .container-logo .logo .t,
+#home-page-david .container-logo .logo .dots,
+#home-page-david .container-logo .logo .ribbon {
   width: 25vw;
   position: absolute;
 }
 
-#homePage-david .container_logo .logo .logoImage {
+#home-page-david .container-logo .logo .logoImage {
   z-index: 96;
   -webkit-animation: shrink forwards 1s;
           animation: shrink forwards 1s;
@@ -1730,7 +1730,7 @@ table {
   }
 }
 
-#homePage-david .container_logo .logo .ribbon {
+#home-page-david .container-logo .logo .ribbon {
   z-index: 98;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1738,7 +1738,7 @@ table {
           animation-delay: 2s;
 }
 
-#homePage-david .container_logo .logo .dots {
+#home-page-david .container-logo .logo .dots {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1746,7 +1746,7 @@ table {
           animation-delay: 1s;
 }
 
-#homePage-david .container_logo .logo .t {
+#home-page-david .container-logo .logo .t {
   z-index: 97;
   -webkit-animation: fade-out forwards 0.5s;
           animation: fade-out forwards 0.5s;
@@ -1772,11 +1772,11 @@ table {
   }
 }
 
-#homePage-david .container_logo .hero_message {
+#home-page-david .container-logo .hero-message {
   display: none;
 }
 
-#homePage-david .container-david {
+#home-page-david .container-david {
   width: 100%;
   position: absolute;
   width: 100%;
@@ -1793,7 +1793,7 @@ table {
           align-items: center;
 }
 
-#homePage-david .container-david .david {
+#home-page-david .container-david .david {
   position: absolute;
   width: 59vw;
   z-index: 102;
@@ -1806,7 +1806,7 @@ table {
           animation-delay: 2s;
 }
 
-#homePage-david .container-david .above-logo {
+#home-page-david .container-david .above-logo {
   height: 100%;
   z-index: 101;
   -webkit-animation: background-fade-in 1s forwards ease-in;
@@ -1838,7 +1838,7 @@ table {
   }
 }
 
-#homePage-david #background-david {
+#home-page-david #background-david {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -1870,7 +1870,7 @@ table {
   color: #012040;
 }
 
-#homePage-normal {
+#home-page-normal {
   overflow: hidden;
   width: 100%;
   height: 161.8vw;
@@ -1893,7 +1893,7 @@ table {
           align-items: center;
 }
 
-#homePage-normal .container_logo {
+#home-page-normal .container-logo {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -1911,16 +1911,16 @@ table {
           flex-direction: column;
 }
 
-#homePage-normal .container_logo .logo {
+#home-page-normal .container-logo .logo {
   width: 60vw;
   height: 60vw;
   display: relative;
 }
 
-#homePage-normal .container_logo .logo .ribbon,
-#homePage-normal .container_logo .logo .t,
-#homePage-normal .container_logo .logo .dots,
-#homePage-normal .container_logo .logo .logoImage-grow {
+#home-page-normal .container-logo .logo .ribbon,
+#home-page-normal .container-logo .logo .t,
+#home-page-normal .container-logo .logo .dots,
+#home-page-normal .container-logo .logo .logoImage-grow {
   width: 60vw;
   margin-bottom: 0vh;
   display: inline-block;
@@ -1928,19 +1928,19 @@ table {
   z-index: 96;
 }
 
-#homePage-normal .container_logo .logo .ribbon {
+#home-page-normal .container-logo .logo .ribbon {
   z-index: 98;
 }
 
-#homePage-normal .container_logo .logo .dots {
+#home-page-normal .container-logo .logo .dots {
   z-index: 97;
 }
 
-#homePage-normal .container_logo .logo .t {
+#home-page-normal .container-logo .logo .t {
   z-index: 97;
 }
 
-#homePage-normal .container_logo .logo .logoImage-grow {
+#home-page-normal .container-logo .logo .logoImage-grow {
   width: 60vw;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1949,7 +1949,7 @@ table {
       align-self: center;
 }
 
-#homePage-normal .container_logo .hero_message {
+#home-page-normal .container-logo .hero-message {
   width: 100vw;
   text-align: center;
   height: 3vh;
@@ -1964,7 +1964,7 @@ table {
           align-items: center;
 }
 
-#homePage-normal .container_logo .hero_message .hero_greeting {
+#home-page-normal .container-logo .hero-message .hero_greeting {
   color: #012040;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 4vw;
@@ -1972,7 +1972,7 @@ table {
   line-height: 7vw;
 }
 
-#homePage-normal .container_logo .hero_message .hero_text {
+#home-page-normal .container-logo .hero-message .hero-text {
   color: #012040;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3vw;
@@ -1980,7 +1980,7 @@ table {
   line-height: 5vw;
 }
 
-#homePage-normal #background-david {
+#home-page-normal #background-david {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -1990,7 +1990,7 @@ table {
   top: 0;
 }
 
-#homePage-normal #background-normal {
+#home-page-normal #background-normal {
   background: #ffd306;
   z-index: -1;
   position: absolute;
@@ -1999,7 +1999,7 @@ table {
   top: 0;
 }
 
-#homePage-normal .background-fade-in {
+#home-page-normal .background-fade-in {
   -webkit-animation: background-fade-in 2s;
           animation: background-fade-in 2s;
 }
@@ -2022,11 +2022,11 @@ table {
   }
 }
 
-#homePage-normal .opacity_one {
+#home-page-normal .opacity_one {
   opacity: 1;
 }
 
-#homePage-normal .background-fade-out {
+#home-page-normal .background-fade-out {
   -webkit-animation: background-fade-out 1s;
           animation: background-fade-out 1s;
 }
@@ -2049,7 +2049,7 @@ table {
   }
 }
 
-#homePage-normal .cursor {
+#home-page-normal .cursor {
   display: inline-block;
   width: 0.5vw;
   height: 4vw;
@@ -2070,10 +2070,10 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-  #homePage {
+  #home-page {
     height: 100vh;
   }
-  #homePage #container_logo {
+  #home-page #container-logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2085,7 +2085,7 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #homePage-normal {
+  #home-page-normal {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2097,7 +2097,7 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
-  #homePage-normal .container-logo-animation {
+  #home-page-normal .container-logo-animation {
     -webkit-animation: move-down 1s forwards;
             animation: move-down 1s forwards;
   }
@@ -2117,7 +2117,7 @@ table {
       top: 0vw;
     }
   }
-  #homePage-normal .container_logo {
+  #home-page-normal .container-logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2131,10 +2131,10 @@ table {
     position: relative;
     top: 0vw;
   }
-  #homePage-normal .container_logo .logo-position {
+  #home-page-normal .container-logo .logo-position {
     top: -15vw;
   }
-  #homePage-normal .container_logo .logo {
+  #home-page-normal .container-logo .logo {
     width: 25vw;
     height: 25vw;
     display: -webkit-box;
@@ -2148,21 +2148,21 @@ table {
             align-items: center;
     overflow: hidden;
   }
-  #homePage-normal .container_logo .logo .ribbon,
-  #homePage-normal .container_logo .logo .t,
-  #homePage-normal .container_logo .logo .dots,
-  #homePage-normal .container_logo .logo .logoImage {
+  #home-page-normal .container-logo .logo .ribbon,
+  #home-page-normal .container-logo .logo .t,
+  #home-page-normal .container-logo .logo .dots,
+  #home-page-normal .container-logo .logo .logoImage {
     width: 25vw;
     margin-bottom: 0vh;
     display: inline-block;
     position: absolute;
     z-index: 96;
   }
-  #homePage-normal .container_logo .logo .logo-animation {
+  #home-page-normal .container-logo .logo .logo-animation {
     -webkit-animation: grow forwards 1s;
             animation: grow forwards 1s;
   }
-  #homePage-normal .container_logo .logo .opacity_zero {
+  #home-page-normal .container-logo .logo .opacity_zero {
     opacity: 0;
   }
   @-webkit-keyframes grow {
@@ -2185,28 +2185,28 @@ table {
       opacity: 1;
     }
   }
-  #homePage-normal .container_logo .logo .ribbon {
+  #home-page-normal .container-logo .logo .ribbon {
     z-index: 98;
   }
-  #homePage-normal .container_logo .logo .ribbon-animation {
+  #home-page-normal .container-logo .logo .ribbon-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
-  #homePage-normal .container_logo .logo .dots {
+  #home-page-normal .container-logo .logo .dots {
     z-index: 97;
   }
-  #homePage-normal .container_logo .logo .dots-animation {
+  #home-page-normal .container-logo .logo .dots-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
-  #homePage-normal .container_logo .logo .t {
+  #home-page-normal .container-logo .logo .t {
     z-index: 97;
   }
-  #homePage-normal .container_logo .logo .t-animation {
+  #home-page-normal .container-logo .logo .t-animation {
     -webkit-animation: fade-in forwards 0.5s;
             animation: fade-in forwards 0.5s;
     -webkit-animation-delay: 1.5s;
@@ -2228,25 +2228,25 @@ table {
       opacity: 1;
     }
   }
-  #homePage-normal .container_logo .hero_message {
+  #home-page-normal .container-logo .hero-message {
     position: absolute;
     bottom: 9vw;
   }
-  #homePage-normal .container_logo .hero_message .hero_greeting {
+  #home-page-normal .container-logo .hero-message .hero_greeting {
     font-size: 1.3vw;
     line-height: 3vw;
   }
-  #homePage-normal .container_logo .hero_message .hero_text {
+  #home-page-normal .container-logo .hero-message .hero-text {
     font-size: 1.1vw;
     line-height: 1.5vw;
   }
-  #homePage-normal .container_logo .cursor {
+  #home-page-normal .container-logo .cursor {
     width: 0.15vw;
     height: 1.5vw;
   }
-  #homePage-normal .container-david .david,
-  #homePage-normal .container-david .above-logo,
-  #homePage-normal .container-david .david-background {
+  #home-page-normal .container-david .david,
+  #home-page-normal .container-david .above-logo,
+  #home-page-normal .container-david .david-background {
     display: none;
   }
 }

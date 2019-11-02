@@ -49,7 +49,7 @@ $("form.ajax").on("submit", function() {
 
 const text = "Clean & maintainable front-end code";
 const speed = 60;
-const heroText = document.getElementsByClassName("hero_text");
+const heroText = document.getElementsByClassName("hero-text");
 const heroGreeting = document.getElementsByClassName("hero_greeting");
 
 let l = 0;

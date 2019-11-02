@@ -7,7 +7,7 @@
         "base/_typography.scss",
         "utilities/_maxins.scss",
         "utilities/_variables.scss",
-        "pages/_homePage.scss",
+        "pages/_home-page.scss",
         "base/_normalize.scss",
         "utilities/_maxins.scss",
         "utilities/_variables.scss",
