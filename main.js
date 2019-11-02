@@ -46,7 +46,6 @@ $("form.ajax").on("submit", function() {
 });
 
 //*************************Type writter animation***********************
-
 const text = "Clean & maintainable front-end code";
 const speed = 60;
 const heroText = document.getElementsByClassName("hero-text");

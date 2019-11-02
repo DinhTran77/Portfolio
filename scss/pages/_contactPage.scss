@@ -1,5 +1,4 @@
 //**************************MOBILE***********************************************
-
 #contact-page {
     background-color: $color_background_yellow;
     .container-content {
@@ -16,6 +15,7 @@
         margin-bottom: 3vw;
         display: none;
     }
+
     #contact-greeting {
         font-family: $monsterrat-font;
         margin-top: 4vw;
@@ -23,9 +23,11 @@
         color: rgb(255, 255, 255);
         text-align: center;
     }
+
     .section-subheading {
         color: #212529;
     }
+
     form {
         font-family: $monsterrat-font;
 
@@ -77,6 +79,7 @@
     .container-content {
         margin-top: 8vw;
     }
+
     #contact-page {
         #success-message {
             font-size: 3.2vw;
@@ -110,6 +113,7 @@
         }
     } //end #contact-page
 }
+
 //**************************DESKTOP***********************************************
 @media only screen and (min-width: 992px) {
     #contact-page {
