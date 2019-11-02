@@ -7,15 +7,22 @@ $(function() {
         var template = $("#skills-template").html();
         var html = Mustache.to_html(template, data);
         $("#skill").html(html);
-        let p = JSON.stringify(data);
+        // let p = JSON.stringify(data);
 
         // alert(data.skills.length);
         // alert(data.skills[4].class);
 
-        for (let i = 0; i < data.skills.length; i++) {
-            alert(data.skills[i].class);
-        }
+        // for (let i = 0; i < data.skills.length; i++) {
+        //     alert(data.skills[i].class);
+        //     $("div")
+        //         .children()
+        //         .css("background", "red");
+        // }
     });
+});
+
+$("#skills-page").each(function() {
+    $(this).addClass("html");
 });
 
 $.getJSON("skills.json", function(json) {

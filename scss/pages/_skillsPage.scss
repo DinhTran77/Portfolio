@@ -4,7 +4,7 @@
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
     background: url(../../images/background-skills-page.png);
     background-image: url(../../images/background-skills-egg_shell.png);
-    background-size: 150px;
+    background-size: 100px;
     background-color: white;
 
     .container {
@@ -139,6 +139,7 @@
         $font-size-skill-title: 1.5vw;
         $progress-percentage-font-size: $font-size-skill-title * 0.9;
         height: 100vh;
+        background-size: 140px;
         #progress-bars-section {
             .progress-bar-container {
                 height: $font-size-skill-title * 1.2;
