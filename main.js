@@ -13,7 +13,7 @@ $(function() {
 //script to fill portfolio templates
 $(function() {
     $.getJSON("projects.json", function(data) {
-        var template = $("#portfolio_template").html();
+        var template = $("#portfolio-template").html();
         var html = Mustache.to_html(template, data);
         $("#project").html(html);
     });

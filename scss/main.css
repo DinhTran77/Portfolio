@@ -853,7 +853,7 @@ table {
   padding-left: 0.5vw;
 }
 
-#portfolio-page #projects .project-container .project-text .preview_link {
+#portfolio-page #projects .project-container .project-text .preview-link {
   background-color: #dbbd7f;
   padding: 2vw 6vw;
   text-align: center;
@@ -862,7 +862,7 @@ table {
   margin: 7vw 0;
 }
 
-#portfolio-page #projects .project-container .project-text .preview_link a {
+#portfolio-page #projects .project-container .project-text .preview-link a {
   color: #214261;
   font-size: 2.3vw;
   color: inherit;
@@ -935,7 +935,7 @@ table {
   #portfolio-page #projects .project-container .project-text .project-description ul li {
     padding-left: 0.3vw;
   }
-  #portfolio-page #projects .project-container .project-text .preview_link {
+  #portfolio-page #projects .project-container .project-text .preview-link {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
@@ -996,7 +996,7 @@ table {
   #portfolio-page #projects .project-container .project-text .project-description ul li {
     padding-left: 0.3vw;
   }
-  #portfolio-page #projects .project-container .project-text .preview_link {
+  #portfolio-page #projects .project-container .project-text .preview-link {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
