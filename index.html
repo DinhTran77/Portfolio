@@ -50,7 +50,7 @@
 
 <body id="container-page">
 	<main>
-		<!------------------ Header Section -------------------->
+		<!------------------Header Section -------------------->
 		<header id="header-main">
 			<div class="my-container">
 				<nav id="nav-bar">
@@ -65,7 +65,7 @@
 		</header>
 
 
-		<!------------------ Home page -------------------->
+		<!------------------Home page -------------------->
 		<article id="home-page">
 			<div class="container-logo">
 				<img class="logo-image" src="./images/logos/Logo_ribbon.svg" alt="Logo" />
@@ -77,8 +77,7 @@
 		</article>
 
 
-
-		<!------------------ About Page-------------------->
+		<!------------------About Page-------------------->
 		<article id='about-page'>
 			<div class="container">
 				<div class="row">
@@ -105,8 +104,7 @@
 		</article>
 
 
-
-		<!------------------ Skills Page-------------------->
+		<!------------------Skills Page-------------------->
 		<article id="skills-page" class="my-container">
 			<header class="section-title-area">
 				<h2 class="section-heading">Skills</h2>
@@ -115,43 +113,26 @@
 
 			<div id="progress-bars-section" class="container-content container">
 				<div id="skill" class="row">
-
 					<!-- Template for skills section -->
 					<script id="skills-template" type="text/template">
                             {{#skills}}
                                 <div class="col-lg-4 progress-bar-container">
-                                        <h4
-                                        class="skill-name"
-                                        data-aos="fade-in"
-                                        data-aos-duration="1100"
-																				data-aos-offset="-20">
+                                        <h4 class="skill-name" data-aos="fade-in" data-aos-duration="1100" data-aos-offset="-20">
 																						{{skill-title}}
 																				</h4>
 
-                                    <div class="progress-bar">
-                                            <div
-                                                class="container-progress-percentage"
-                                                data-aos="fade-in"
-                                                data-aos-duration="1100"
-                                                data-aos-offset="-20"
-                                            >
-                                                <div
-                                                    class="progressPercentage {{class}}"
-                                                    data-aos="slide-right"
-                                                    data-aos="fade-in"
-                                                    data-aos-duration="1100"
-                                                    data-aos-offset="-20"
-                                                >
-                                                {{percent}}
-                                            </div>
+                                    		<div class="progress-bar">
+                                            <div class="container-progress-percentage" data-aos="fade-in" data-aos-duration="1100" data-aos-offset="-20">
+                                                <div class="progressPercentage {{class}}" data-aos="slide-right" data-aos="fade-in" data-aos-duration="1100" data-aos-offset="-20">{{percent}}</div>
                                             </div>
                                         </div>
                                 </div>
                             {{/skills}}
-                        </script>
+          </script>
 				</div>
 			</div>
 		</article>
+
 
 		<!------------------ Portfolio Page-------------------->
 		<article id="portfolio-page" class="my-container">
@@ -164,33 +145,23 @@
 					<script id="portfolio-template" type="text/template">
                             {{#projects}}
                                 <div class="col-lg-4 col-md-6  progress-bar-container">
-
-                                        <a
-                                        href="{{link}}"
-                                        class="project-link"
-                                        target="_blank"
-                                    >
+                                        <a href="{{link}}" class="project-link" target="_blank">
                                         <div class="project-container">
                                             <div class="project_overlay"></div>
                                             <img src='{{image-source}}' class="project-image" />
                                             <article class="project-text">
                                                 <h4 class="project-name">{{name}}</h4>
-                                                <h5
-                                                    class="project-description"
-                                                >{{description}}
-                                                {{#items}}
-                                                    <ul >
-                                                        {{#name}}
-                                                        <li >{{.}}</li>
-                                                        {{/name}}
-                                                    </ul>
-                                                    {{/items}}
-
-
+                                                <h5 class="project-description">
+																									{{description}}
+																									{{#items}}
+																											<ul >
+																													{{#name}}
+																													<li >{{.}}</li>
+																													{{/name}}
+																											</ul>
+																											{{/items}}
                                                 </h5>
-                                                <div class="preview-link">
-                                                    live preview
-                                                </div>
+                                                <div class="preview-link">live preview</div>
                                             </article>
                                         </div>
                                     </a>
@@ -200,6 +171,7 @@
 				</div>
 			</div>
 		</article>
+
 
 		<!------------------ Contact Page-------------------->
 		<article id="contact-page" class="my-container">
@@ -223,14 +195,18 @@
 			</div>
 		</article>
 
+
+		<!------------------Footer-------------------->
 		<footer id="footerPage" class="my-container">
 			<img id="logo-image-footer" src="./images/logos/Logo_ribbon.svg" alt="Logo" />
 			<span class='copyRight'>&copy;Copyright 2019. &nbsp;DINH TRAN</span>
 		</footer>
 
-		<!------------------ Initialize animate on scroll library-------------------->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 	</main>
+
+	<!------------------ Initialize animate on scroll library-------------------->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
