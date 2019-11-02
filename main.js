@@ -38,8 +38,8 @@ $("form.ajax").on("submit", function() {
         type: type,
         data: data,
         success: function(response) {
-            $("#sucess_message").html(response);
-            $("#sucess_message").css("display", "inline-block");
+            $("#success-message").html(response);
+            $("#success-message").css("display", "inline-block");
         }
     });
     return false;

@@ -1020,7 +1020,7 @@ table {
   max-width: 100%;
 }
 
-#contact-page #sucess_message {
+#contact-page #success-message {
   font-size: 3.2vw;
   display: block;
   width: 100%;
@@ -1089,7 +1089,7 @@ table {
   .container-content {
     margin-top: 8vw;
   }
-  #contact-page #sucess_message {
+  #contact-page #success-message {
     font-size: 3.2vw;
     margin-bottom: 3vw;
     display: none;
@@ -1116,7 +1116,7 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #contact-page #sucess_message {
+  #contact-page #success-message {
     font-size: 1.1vw;
     margin-bottom: 1.5vw;
   }
@@ -1367,7 +1367,7 @@ table {
           justify-content: center;
 }
 
-#footerPage #logo-image_footer {
+#footerPage #logo-image-footer {
   width: 20vw;
   display: none;
   margin: 0;
@@ -1393,7 +1393,7 @@ table {
   #footerPage {
     height: 13vh;
   }
-  #footerPage #logo-image_footer {
+  #footerPage #logo-image-footer {
     width: 10vw;
     display: inline-block;
   }
@@ -1407,7 +1407,7 @@ table {
   #footerPage {
     height: 24vh;
   }
-  #footerPage #logo-image_footer {
+  #footerPage #logo-image-footer {
     width: 6vw;
     display: inline-block;
   }

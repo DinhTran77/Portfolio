@@ -9,7 +9,7 @@
         max-width: 100%;
     }
 
-    #sucess_message {
+    #success-message {
         font-size: 3.2vw;
         display: block;
         width: 100%;
@@ -78,7 +78,7 @@
         margin-top: 8vw;
     }
     #contact-page {
-        #sucess_message {
+        #success-message {
             font-size: 3.2vw;
             margin-bottom: 3vw;
             display: none;
@@ -113,7 +113,7 @@
 //**************************DESKTOP***********************************************
 @media only screen and (min-width: 992px) {
     #contact-page {
-        #sucess_message {
+        #success-message {
             font-size: 1.1vw;
             margin-bottom: 1.5vw;
         }
