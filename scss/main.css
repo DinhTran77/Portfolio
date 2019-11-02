@@ -525,17 +525,17 @@ table {
   }
 }
 
-#skillsPage {
+#skills-page {
   background: url(../../images/paper_fibers.png);
   background-size: 200px;
   background-color: white;
 }
 
-#skillsPage .container {
+#skills-page .container {
   max-width: 100%;
 }
 
-#skillsPage #progress-bars-section {
+#skills-page #progress-bars-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +546,7 @@ table {
   width: 100%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container {
+#skills-page #progress-bars-section .progress-bar-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,12 +558,12 @@ table {
   margin-bottom: 3.4vw;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .skill-name,
-#skillsPage #progress-bars-section .progress-bar-container .progressPercentage {
+#skills-page #progress-bars-section .progress-bar-container .skill-name,
+#skills-page #progress-bars-section .progress-bar-container .progressPercentage {
   color: #949393;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .skill-name {
+#skills-page #progress-bars-section .progress-bar-container .skill-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +586,7 @@ table {
   z-index: 2;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,7 +605,7 @@ table {
   overflow: hidden;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
   width: 100%;
   height: 100%;
   background-color: #e2e2e2;
@@ -618,7 +618,7 @@ table {
           align-items: flex-end;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
   height: 100%;
   border-radius: 0;
   display: -webkit-box;
@@ -637,71 +637,71 @@ table {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .html {
   width: 80%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .scss {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .scss {
   width: 75%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .javascript {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .javascript {
   width: 60%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jQuery {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jQuery {
   width: 65%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .bootstrap {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .bootstrap {
   width: 55%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .ajax {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .ajax {
   width: 50%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .responsive-design {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .responsive-design {
   width: 65%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .react {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .react {
   width: 75%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jest {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .jest {
   width: 55%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .typescript {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .typescript {
   width: 50%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .node {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .node {
   width: 75%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .express {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .express {
   width: 50%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .agile {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .agile {
   width: 90%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .git {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .git {
   width: 55%;
 }
 
-#skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .photoshop {
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .photoshop {
   width: 85%;
 }
 
 @media only screen and (min-width: 992px) {
-  #skillsPage {
+  #skills-page {
     height: 100vh;
   }
-  #skillsPage #progress-bars-section .progress-bar-container {
+  #skills-page #progress-bars-section .progress-bar-container {
     height: 1.8vw;
     width: 95%;
     margin-bottom: 1.9vw;
@@ -709,7 +709,7 @@ table {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  #skillsPage #progress-bars-section .progress-bar-container .skill-name {
+  #skills-page #progress-bars-section .progress-bar-container .skill-name {
     font-size: 0.9vw;
     width: 100%;
     position: absolute;
@@ -718,18 +718,18 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
-  #skillsPage #progress-bars-section .progress-bar-container .progress-bar {
+  #skills-page #progress-bars-section .progress-bar-container .progress-bar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%;
     height: 100%;
   }
-  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
+  #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
     width: 95%;
     height: 100%;
   }
-  #skillsPage #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
+  #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .progressPercentage {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -738,7 +738,7 @@ table {
   }
 }
 
-#portfolioPage {
+#portfolio-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,11 +756,11 @@ table {
   background-color: #214261;
 }
 
-#portfolioPage .container {
+#portfolio-page .container {
   max-width: 100%;
 }
 
-#portfolioPage #projects {
+#portfolio-page #projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,7 +774,7 @@ table {
   overflow: hidden;
 }
 
-#portfolioPage #projects .project-container {
+#portfolio-page #projects .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,17 +793,17 @@ table {
   overflow: hidden;
 }
 
-#portfolioPage #projects .project-container .myVideo {
+#portfolio-page #projects .project-container .myVideo {
   width: 100%;
   height: auto;
 }
 
-#portfolioPage #projects .project-container .project-image {
+#portfolio-page #projects .project-container .project-image {
   width: 100%;
   height: auto;
 }
 
-#portfolioPage #projects .project-container .project-text {
+#portfolio-page #projects .project-container .project-text {
   width: 100%;
   height: 100%;
   background-color: #fffdfd;
@@ -824,7 +824,7 @@ table {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#portfolioPage #projects .project-container .project-text .project-name {
+#portfolio-page #projects .project-container .project-text .project-name {
   margin-top: 8vw;
   font-size: 3.7vw;
   color: #214261;
@@ -833,7 +833,7 @@ table {
   text-transform: uppercase;
 }
 
-#portfolioPage #projects .project-container .project-text .project-description {
+#portfolio-page #projects .project-container .project-text .project-description {
   margin-top: 3vw;
   text-align: left;
   width: 100%;
@@ -844,16 +844,16 @@ table {
   font-weight: 400;
 }
 
-#portfolioPage #projects .project-container .project-text .project-description ul {
+#portfolio-page #projects .project-container .project-text .project-description ul {
   margin-top: 2vw;
   padding-left: 4.5vw;
 }
 
-#portfolioPage #projects .project-container .project-text .project-description ul li {
+#portfolio-page #projects .project-container .project-text .project-description ul li {
   padding-left: 0.5vw;
 }
 
-#portfolioPage #projects .project-container .project-text .preview_link {
+#portfolio-page #projects .project-container .project-text .preview_link {
   background-color: #dbbd7f;
   padding: 2vw 6vw;
   text-align: center;
@@ -862,7 +862,7 @@ table {
   margin: 7vw 0;
 }
 
-#portfolioPage #projects .project-container .project-text .preview_link a {
+#portfolio-page #projects .project-container .project-text .preview_link a {
   color: #214261;
   font-size: 2.3vw;
   color: inherit;
@@ -871,31 +871,31 @@ table {
   font-weight: 600;
 }
 
-#portfolioPage #projects .portfolio-site {
+#portfolio-page #projects .portfolio-site {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#portfolioPage #projects .e-commerce {
+#portfolio-page #projects .e-commerce {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#portfolioPage #projects .drum-machine {
+#portfolio-page #projects .drum-machine {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 768px) {
-  #portfolioPage #projects a {
+  #portfolio-page #projects a {
     text-decoration: none;
   }
-  #portfolioPage #projects .project-container {
+  #portfolio-page #projects .project-container {
     margin-bottom: 5vh;
     position: relative;
     background-color: white;
   }
-  #portfolioPage #projects .project-container .project_overlay {
+  #portfolio-page #projects .project-container .project_overlay {
     background: #070707;
     position: absolute;
     width: 100%;
@@ -903,10 +903,10 @@ table {
     opacity: 0;
     z-index: 10;
   }
-  #portfolioPage #projects .project-container .project_overlay:hover {
+  #portfolio-page #projects .project-container .project_overlay:hover {
     opacity: 0.2;
   }
-  #portfolioPage #projects .project-container .project-text {
+  #portfolio-page #projects .project-container .project-text {
     width: 95%;
     height: 100%;
     -webkit-box-pack: start;
@@ -914,11 +914,11 @@ table {
             justify-content: flex-start;
     position: relative;
   }
-  #portfolioPage #projects .project-container .project-text .project-name {
+  #portfolio-page #projects .project-container .project-text .project-name {
     margin-top: 6vw;
     font-size: 2vw;
   }
-  #portfolioPage #projects .project-container .project-text .project-description {
+  #portfolio-page #projects .project-container .project-text .project-description {
     margin-top: 1.2vw;
     text-align: justify;
     width: 100%;
@@ -928,14 +928,14 @@ table {
     line-height: 3.3vw;
     font-weight: 400;
   }
-  #portfolioPage #projects .project-container .project-text .project-description ul {
+  #portfolio-page #projects .project-container .project-text .project-description ul {
     margin-top: 1.5vw;
     padding-left: 1.5vw;
   }
-  #portfolioPage #projects .project-container .project-text .project-description ul li {
+  #portfolio-page #projects .project-container .project-text .project-description ul li {
     padding-left: 0.3vw;
   }
-  #portfolioPage #projects .project-container .project-text .preview_link {
+  #portfolio-page #projects .project-container .project-text .preview_link {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
@@ -948,15 +948,15 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #portfolioPage #projects a {
+  #portfolio-page #projects a {
     text-decoration: none;
   }
-  #portfolioPage #projects .project-container {
+  #portfolio-page #projects .project-container {
     margin-bottom: 5vh;
     position: relative;
     background-color: white;
   }
-  #portfolioPage #projects .project-container .project_overlay {
+  #portfolio-page #projects .project-container .project_overlay {
     background: #070707;
     position: absolute;
     width: 100%;
@@ -964,10 +964,10 @@ table {
     opacity: 0;
     z-index: 10;
   }
-  #portfolioPage #projects .project-container .project_overlay:hover {
+  #portfolio-page #projects .project-container .project_overlay:hover {
     opacity: 0.2;
   }
-  #portfolioPage #projects .project-container .project-text {
+  #portfolio-page #projects .project-container .project-text {
     width: 95%;
     height: 100%;
     -webkit-box-pack: start;
@@ -975,11 +975,11 @@ table {
             justify-content: flex-start;
     position: relative;
   }
-  #portfolioPage #projects .project-container .project-text .project-name {
+  #portfolio-page #projects .project-container .project-text .project-name {
     margin-top: 4vw;
     font-size: 1.3vw;
   }
-  #portfolioPage #projects .project-container .project-text .project-description {
+  #portfolio-page #projects .project-container .project-text .project-description {
     margin-top: 1.2vw;
     text-align: justify;
     width: 100%;
@@ -989,14 +989,14 @@ table {
     line-height: 2.2vw;
     font-weight: 400;
   }
-  #portfolioPage #projects .project-container .project-text .project-description ul {
+  #portfolio-page #projects .project-container .project-text .project-description ul {
     margin-top: 1vw;
     padding-left: 1.5vw;
   }
-  #portfolioPage #projects .project-container .project-text .project-description ul li {
+  #portfolio-page #projects .project-container .project-text .project-description ul li {
     padding-left: 0.3vw;
   }
-  #portfolioPage #projects .project-container .project-text .preview_link {
+  #portfolio-page #projects .project-container .project-text .preview_link {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
@@ -1008,19 +1008,19 @@ table {
   }
 }
 
-#contactPage {
+#contact-page {
   background-color: #ffd306;
 }
 
-#contactPage .container_content {
+#contact-page .container_content {
   margin-top: 8vw;
 }
 
-#contactPage .container {
+#contact-page .container {
   max-width: 100%;
 }
 
-#contactPage #sucess_message {
+#contact-page #sucess_message {
   font-size: 3.2vw;
   display: block;
   width: 100%;
@@ -1028,7 +1028,7 @@ table {
   display: none;
 }
 
-#contactPage #contact-greeting {
+#contact-page #contact-greeting {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 4vw;
   font-size: 4vw;
@@ -1036,16 +1036,16 @@ table {
   text-align: center;
 }
 
-#contactPage .section-subheading {
+#contact-page .section-subheading {
   color: #212529;
 }
 
-#contactPage form {
+#contact-page form {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#contactPage form input,
-#contactPage form textarea {
+#contact-page form input,
+#contact-page form textarea {
   border-style: solid;
   border-width: 0.2px;
   border-color: #bdbbbb;
@@ -1053,7 +1053,7 @@ table {
   font-size: 3vw;
 }
 
-#contactPage form input {
+#contact-page form input {
   outline: none;
   border: none;
   display: block;
@@ -1065,7 +1065,7 @@ table {
   color: grey;
 }
 
-#contactPage form textarea {
+#contact-page form textarea {
   outline: none;
   display: block;
   width: 100%;
@@ -1075,7 +1075,7 @@ table {
   text-align: left;
 }
 
-#contactPage form input[type="submit"] {
+#contact-page form input[type="submit"] {
   background-color: #214261;
   color: white;
   width: 33%;
@@ -1089,25 +1089,25 @@ table {
   .container_content {
     margin-top: 8vw;
   }
-  #contactPage #sucess_message {
+  #contact-page #sucess_message {
     font-size: 3.2vw;
     margin-bottom: 3vw;
     display: none;
   }
-  #contactPage form input,
-  #contactPage form textarea {
+  #contact-page form input,
+  #contact-page form textarea {
     border-width: 0.2px;
     margin-bottom: 2.5vw;
     font-size: 2vw;
   }
-  #contactPage form input {
+  #contact-page form input {
     padding: 0.5vw;
   }
-  #contactPage form textarea {
+  #contact-page form textarea {
     height: 20vw;
     padding: 0.5vw;
   }
-  #contactPage form input[type="submit"] {
+  #contact-page form input[type="submit"] {
     width: 23%;
     padding: 0.6vw;
     border-radius: 2vw;
@@ -1116,33 +1116,33 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-  #contactPage #sucess_message {
+  #contact-page #sucess_message {
     font-size: 1.1vw;
     margin-bottom: 1.5vw;
   }
-  #contactPage .container_content {
+  #contact-page .container_content {
     margin-top: 4vw;
   }
-  #contactPage form {
+  #contact-page form {
     margin-top: 0;
     width: 100%;
   }
-  #contactPage form input,
-  #contactPage form textarea {
+  #contact-page form input,
+  #contact-page form textarea {
     font-size: 0.8vw;
     padding: 0.3vw;
     border-width: 1px;
     width: 100%;
     margin-bottom: 1.5vw;
   }
-  #contactPage form textarea {
+  #contact-page form textarea {
     outline: none;
     display: block;
     width: 100%;
     height: 14vw;
     color: grey;
   }
-  #contactPage form input[type="submit"] {
+  #contact-page form input[type="submit"] {
     width: 8vw;
     padding: 0.2vw 0.2vw;
     border-radius: 6px;
@@ -2251,14 +2251,14 @@ table {
   }
 }
 
-#aboutPage {
+#about-page {
   width: 100%;
   background: #214261;
   background-size: cover;
   position: relative;
 }
 
-#aboutPage .container {
+#about-page .container {
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -2272,7 +2272,7 @@ table {
           justify-content: center;
 }
 
-#aboutPage .container .row {
+#about-page .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2281,11 +2281,11 @@ table {
           align-items: flex-end;
 }
 
-#aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+#about-page .container .row .ladyAndLogoContainer .ladyANDlogo {
   display: none;
 }
 
-#aboutPage .container .row .text-column {
+#about-page .container .row .text-column {
   width: 100%;
   margin: 0;
   display: -webkit-box;
@@ -2309,7 +2309,7 @@ table {
   z-index: 1;
 }
 
-#aboutPage .container .row .text-column h1 {
+#about-page .container .row .text-column h1 {
   font-size: 5.8vw;
   margin-bottom: 8vw;
   text-align: left;
@@ -2318,11 +2318,11 @@ table {
   text-align: center;
 }
 
-#aboutPage .container .row .text-column span {
+#about-page .container .row .text-column span {
   display: none;
 }
 
-#aboutPage .container .row .text-column a {
+#about-page .container .row .text-column a {
   text-align: center;
   display: inline-block;
   padding: 1vw 4.3vw;
@@ -2333,18 +2333,18 @@ table {
   font-size: 4vw;
 }
 
-#aboutPage .container .row .text-column a:hover {
+#about-page .container .row .text-column a:hover {
   background: #596860;
   text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
-  #aboutPage {
+  #about-page {
     height: 100vh;
     background-image: url(../../images/David-background.jpg);
     background-size: auto 100%;
   }
-  #aboutPage .container {
+  #about-page .container {
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -2355,7 +2355,7 @@ table {
     display: -ms-flexbox;
     display: flex;
   }
-  #aboutPage .container .row {
+  #about-page .container .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2364,7 +2364,7 @@ table {
     position: relative;
     padding: 6vw;
   }
-  #aboutPage .container .row .ladyAndLogoContainer {
+  #about-page .container .row .ladyAndLogoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2374,7 +2374,7 @@ table {
     overflow: hidden;
     bottom: 0;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -2384,7 +2384,7 @@ table {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
     height: 55%;
     position: absolute;
     bottom: 0;
@@ -2393,14 +2393,14 @@ table {
             transform: translateX(-50%);
     z-index: 4;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
     width: 24vh;
     position: absolute;
     top: 39.75vh;
     z-index: 2;
     opacity: 0.8;
   }
-  #aboutPage .container .row .text-column {
+  #about-page .container .row .text-column {
     -ms-flex-item-align: start;
         align-self: flex-start;
     -webkit-box-pack: center;
@@ -2418,32 +2418,32 @@ table {
     position: relative;
     top: 0;
   }
-  #aboutPage .container .row .text-column h1 {
+  #about-page .container .row .text-column h1 {
     font-size: 3.8vw;
     margin-bottom: 1.7vw;
     line-height: 6.6vw;
     width: 93%;
     text-align: center;
   }
-  #aboutPage .container .row .text-column span {
+  #about-page .container .row .text-column span {
     display: inline;
   }
-  #aboutPage .container .row .text-column a {
+  #about-page .container .row .text-column a {
     padding: 0.4vw 3vw;
     margin: 2vw 0;
     font-size: 2.3vw;
   }
-  #aboutPage .container .row .text-column p {
+  #about-page .container .row .text-column p {
     display: inline-block;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #aboutPage {
+  #about-page {
     background-size: cover;
     position: relative;
   }
-  #aboutPage .container {
+  #about-page .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2452,7 +2452,7 @@ table {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #aboutPage .container .row {
+  #about-page .container .row {
     margin: 0;
     padding: 0;
     height: 93vh;
@@ -2461,7 +2461,7 @@ table {
     display: flex;
     padding-right: 5vw;
   }
-  #aboutPage .container .row .ladyAndLogoContainer {
+  #about-page .container .row .ladyAndLogoContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2472,23 +2472,23 @@ table {
     margin: 0;
     padding: 0;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo {
     position: static;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
     height: 93vh;
     position: absolute;
     left: 50%;
     padding: 0;
     margin: 0;
   }
-  #aboutPage .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
     width: 18vw;
     top: -9vh;
     left: 13.5vw;
     opacity: 0.8;
   }
-  #aboutPage .container .row .text-column {
+  #about-page .container .row .text-column {
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -2513,24 +2513,24 @@ table {
     position: static;
     line-height: 2.4vw;
   }
-  #aboutPage .container .row .text-column h1 {
+  #about-page .container .row .text-column h1 {
     font-size: 1.8vw;
     margin-bottom: 0.7vw;
     text-align: left;
     line-height: 2.6vw;
     width: 93%;
   }
-  #aboutPage .container .row .text-column p {
+  #about-page .container .row .text-column p {
     display: inline-block;
   }
-  #aboutPage .container .row .text-column a {
+  #about-page .container .row .text-column a {
     padding: 0.1vw 1.1vw;
     margin-top: 2vw;
     color: #012040;
     font-size: 1.2vw;
     width: 30%;
   }
-  #aboutPage .container .row .text-column a:hover {
+  #about-page .container .row .text-column a:hover {
     background: #596860;
     text-decoration: none;
   }

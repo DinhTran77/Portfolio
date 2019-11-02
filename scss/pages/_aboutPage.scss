@@ -1,5 +1,5 @@
 //**************************MOBILE***********************************************
-#aboutPage {
+#about-page {
     width: 100%;
     background: $color_blue_background;
     background-size: cover;
@@ -67,7 +67,7 @@
 
 //**************************TABLET***********************************************
 @media only screen and (min-width: 768px) {
-    #aboutPage {
+    #about-page {
         height: 100vh;
         background-image: url(../../images/David-background.jpg);
         background-size: auto 100%;
@@ -162,7 +162,7 @@
 
 //**************************DESKTOP***********************************************
 @media only screen and (min-width: 992px) {
-    #aboutPage {
+    #about-page {
         background-size: cover;
         position: relative;
         $lady-height: 93vh;

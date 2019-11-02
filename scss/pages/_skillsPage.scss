@@ -1,5 +1,5 @@
 //**************************MOBILE***********************************************
-#skillsPage {
+#skills-page {
     $font-size-skill-title: 2.5vw;
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
     background: url(../../images/paper_fibers.png);
@@ -134,7 +134,7 @@
 
 //***********************Desktop************************************
 @media only screen and (min-width: 992px) {
-    #skillsPage {
+    #skills-page {
         $font-size-skill-title: 1.5vw;
         $progress-percentage-font-size: $font-size-skill-title * 0.9;
         height: 100vh;
