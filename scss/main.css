@@ -527,7 +527,8 @@ table {
 
 #skills-page {
   background: url(../../images/background-skills-page.png);
-  background-size: 200px;
+  background-image: url(../../images/egg_shell.png);
+  background-size: 150px;
   background-color: white;
 }
 
@@ -608,7 +609,7 @@ table {
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
   width: 100%;
   height: 100%;
-  background-color: #e2e2e2;
+  background-color: #e0e0e0;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1149,6 +1150,10 @@ table {
     font-size: 1.2vw;
     margin-top: 0vw;
   }
+  #contact-page form input[type="submit"]:hover {
+    background: #27527a;
+    color: #dad8d8;
+  }
 }
 
 #header-main {
@@ -1205,24 +1210,6 @@ table {
   opacity: 1;
 }
 
-@-webkit-keyframes nav-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes nav-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #header-main .my-container #nav-bar #menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,11 +1241,11 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 3vw;
-  padding: 7vw;
+  padding: 6vw;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
-  color: #6b6a6a;
+  color: #4e5f70;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1473,15 +1460,6 @@ table {
   opacity: 1;
 }
 
-@keyframes nav-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #header-main .my-container #nav-bar #menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,11 +1491,11 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 3vw;
-  padding: 7vw;
+  padding: 6vw;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
-  color: #6b6a6a;
+  color: #4e5f70;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2311,10 +2289,11 @@ table {
 
 #about-page .container .row .text-column h1 {
   font-size: 5.8vw;
-  margin-bottom: 8vw;
+  margin-bottom: 6vw;
   line-height: 2.6vw;
   width: 93%;
   text-align: center;
+  font-weight: bold;
 }
 
 #about-page .container .row .text-column span {
@@ -2405,7 +2384,7 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #879c91;
+    color: #acbdb4;
     text-align: justify;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;

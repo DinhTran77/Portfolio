@@ -153,6 +153,11 @@
                 border-radius: 6px;
                 font-size: 1.2vw;
                 margin-top: 0vw;
+
+                &:hover {
+                    background: #27527a;
+                    color: rgb(218, 216, 216);
+                }
             }
         }
     } //end #contact-page

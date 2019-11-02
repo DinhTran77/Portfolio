@@ -1,5 +1,4 @@
 //**************************MOBILE***********************************************
-
 #portfolio-page {
     display: flex;
     flex-direction: column;
@@ -112,7 +111,6 @@
 } //end #portfolio-page
 
 //**************************Tablet***********************************************
-
 @media only screen and (min-width: 768px) {
     #portfolio-page {
         #projects {
@@ -183,6 +181,7 @@
     }
 }
 
+//**************************Desktop***********************************************
 @media only screen and (min-width: 992px) {
     #portfolio-page {
         #projects {

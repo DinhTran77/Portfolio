@@ -1,11 +1,9 @@
 //***********************MOBILE************************************
-
 $height_nav-bar: 5vh;
 
 #header-main {
     background-color: $color_background_yellow;
     background-color: transparent;
-
     width: 100%;
     display: flex;
     align-items: center;
@@ -31,16 +29,6 @@ $height_nav-bar: 5vh;
             margin: 2vw;
             margin-top: 3vw;
             opacity: 1;
-            // animation: nav-fade-in 2s;
-
-            @keyframes nav-fade-in {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
 
             #menu {
                 display: flex;
@@ -52,11 +40,6 @@ $height_nav-bar: 5vh;
                 margin: 0;
                 padding: 0;
 
-                li:not(:first-child) {
-                    a {
-                        // margin-left: 11vw;
-                    }
-                }
                 li {
                     list-style-type: none;
                     height: 100%;
@@ -67,31 +50,19 @@ $height_nav-bar: 5vh;
                         text-decoration: none;
                         color: $color_font_nav;
                         font-size: 3vw;
-                        padding: 7vw;
+                        padding: 6vw;
 
                         &:hover {
-                            color: rgb(107, 106, 106);
+                            color: #4e5f70;
                         }
                     }
                 }
             }
-
-            // .slide-out {
-            //         @keyframes slide-out {
-            //                 from {
-            //                         left: 0%;
-            //                 }
-            //                 to {
-            //                         left: -100%;
-            //                 }
-            //         }
-            // }
         }
     }
 }
 
 //***********************TABLET************************************
-
 @media only screen and (min-width: 768px) {
     $height_nav-bar: 7vh;
     #header-main {
@@ -115,7 +86,6 @@ $height_nav-bar: 5vh;
 }
 
 //***********************Desktop************************************
-
 @media only screen and (min-width: 992px) {
     #header-main {
         justify-content: center;
