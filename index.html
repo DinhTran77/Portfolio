@@ -156,18 +156,9 @@
                             {{/skills}}
                         </script>
 
-					<script type="text/javascript">
-						$(function () {
-							$.getJSON("skills.json", function (data) {
-								var template = $("#skills_template").html();
-								var html = Mustache.to_html(template, data);
-								$("#skill").html(html);
-							});
-						});
-					</script>
+
 				</div>
 			</div>
-			<!--end progress bars section  -->
 		</article>
 
 		<!------------------ Portfolio Page-------------------->
@@ -214,18 +205,6 @@
                                 </div>
                             {{/projects}}
                         </script>
-
-					<script type="text/javascript">
-						$(function () {
-							$.getJSON("projects.json", function (data) {
-								var template = $(
-									"#portfolio_template"
-								).html();
-								var html = Mustache.to_html(template, data);
-								$("#project").html(html);
-							});
-						});
-					</script>
 				</div>
 			</div>
 		</article>
@@ -240,14 +219,11 @@
 			<div class="container container_content">
 				<div class="row justify-content-center">
 					<div class="col-lg-5 col-md-8">
-						<p id="sucess_message">sss</p>
+						<p id="sucess_message"></p>
 						<form action="contact.php" method="post" class="ajax">
 							<input required type="text" id="name" name="name" placeholder="Name:*" />
-
 							<input required type="email" id="email" name="email" placeholder="Email*" />
-							<!-- <textarea  name="comment"></textarea> -->
-							<textarea required rows="3" cols="22" name="comment" id="comment" placeholder="Message*">
-                                </textarea>
+							<textarea required rows="3" cols="22" name="comment" id="comment" placeholder="Message*"></textarea>
 							<input type="submit" value="Submit" />
 						</form>
 					</div>
@@ -256,10 +232,8 @@
 		</article>
 
 		<footer id="footerPage" class="my-container">
-
 			<img id="logoImage_footer" src="./images/logos/Logo_ribbon.svg" alt="Logo" />
 			<span class='copyRight'>&copy;Copyright 2019. &nbsp;DINH TRAN</span>
-			<!-- <span class="slogan">Clean Front-end Code</span> -->
 		</footer>
 
 		<!------------------ Initialize animate on scroll library-------------------->
