@@ -526,8 +526,8 @@ table {
 }
 
 #skillsPage {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: url(../../images/paper_fibers.png);
+  background-size: 200px;
   background-color: white;
 }
 
@@ -2310,12 +2310,16 @@ table {
 }
 
 #aboutPage .container .row .text-column h1 {
-  font-size: 7.8vw;
+  font-size: 6.8vw;
   margin-bottom: 8vw;
   text-align: left;
   line-height: 2.6vw;
   width: 93%;
   text-align: center;
+}
+
+#aboutPage .container .row .text-column span {
+  display: none;
 }
 
 #aboutPage .container .row .text-column a {
@@ -2326,6 +2330,7 @@ table {
   margin-top: 8vw;
   border-radius: 3vw;
   color: #012040;
+  color: #e9e9e9;
   font-size: 4vw;
 }
 
@@ -2434,6 +2439,9 @@ table {
     line-height: 6.6vw;
     width: 93%;
     text-align: center;
+  }
+  #aboutPage .container .row .text-column span {
+    display: inline;
   }
   #aboutPage .container .row .text-column a {
     color: red;

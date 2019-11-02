@@ -47,12 +47,15 @@
                 line-height: normal;
                 z-index: 1;
                 h1 {
-                    font-size: 7.8vw;
+                    font-size: 6.8vw;
                     margin-bottom: 8vw;
                     text-align: left;
                     line-height: 2.6vw;
                     width: 93%;
                     text-align: center;
+                }
+                span {
+                    display: none;
                 }
                 a {
                     text-align: center;
@@ -62,6 +65,8 @@
                     margin-top: 8vw;
                     border-radius: 3vw;
                     color: $color_font_nav;
+                    color: rgb(233, 233, 233);
+
                     font-size: 4vw;
 
                     &:hover {
@@ -167,7 +172,9 @@
                         width: 93%;
                         text-align: center;
                     }
-
+                    span {
+                        display: inline;
+                    }
                     a {
                         color: red;
                         display: none;
