@@ -43,7 +43,7 @@
                         height: $logo-image-width;
                         @include flex-center;
                         overflow: hidden;
-                        .logoImage,
+                        .logo-image,
                         .t,
                         .dots,
                         .ribbon {
@@ -51,7 +51,7 @@
                                 position: absolute;
                         }
 
-                        .logoImage {
+                        .logo-image {
                                 z-index: 96;
                                 animation: shrink forwards 1s;
                                 animation-delay: 2s;

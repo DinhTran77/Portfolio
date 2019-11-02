@@ -4,7 +4,7 @@ AOS.init();
 //script to fill skills templates
 $(function() {
     $.getJSON("skills.json", function(data) {
-        var template = $("#skills_template").html();
+        var template = $("#skills-template").html();
         var html = Mustache.to_html(template, data);
         $("#skill").html(html);
     });

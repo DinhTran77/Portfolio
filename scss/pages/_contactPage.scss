@@ -2,7 +2,7 @@
 
 #contact-page {
     background-color: $color_background_yellow;
-    .container_content {
+    .container-content {
         margin-top: 8vw;
     }
     .container {
@@ -74,7 +74,7 @@
 
 //**************************TABLET***********************************************
 @media only screen and (min-width: 768px) {
-    .container_content {
+    .container-content {
         margin-top: 8vw;
     }
     #contact-page {
@@ -118,7 +118,7 @@
             margin-bottom: 1.5vw;
         }
 
-        .container_content {
+        .container-content {
             margin-top: 4vw;
         }
 

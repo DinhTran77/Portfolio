@@ -1,27 +1,27 @@
 {
     "skills": [
-        { "skill_title": "HTML & SCSS", "percent": "80%", "class": "html" },
-        { "skill_title": "JS/jQuery", "percent": "60%", "class": "javascript" },
-        { "skill_title": "Bootstrap", "percent": "55%", "class": "bootstrap" },
-        { "skill_title": "Ajax", "percent": "50%", "class": "ajax" },
+        { "skill-title": "HTML & SCSS", "percent": "80%", "class": "html" },
+        { "skill-title": "JS/jQuery", "percent": "60%", "class": "javascript" },
+        { "skill-title": "Bootstrap", "percent": "55%", "class": "bootstrap" },
+        { "skill-title": "Ajax", "percent": "50%", "class": "ajax" },
         {
-            "skill_title": "Responsive Design",
+            "skill-title": "Responsive Design",
             "percent": "65%",
             "class": "responsive-design"
         },
-        { "skill_title": "REACT", "percent": "75%", "class": "react" },
-        { "skill_title": "Jest", "percent": "55%", "class": "scss" },
+        { "skill-title": "REACT", "percent": "75%", "class": "react" },
+        { "skill-title": "Jest", "percent": "55%", "class": "scss" },
         {
-            "skill_title": "Typescript",
+            "skill-title": "Typescript",
             "percent": "50%",
             "class": "typescript"
         },
-        { "skill_title": "Node", "percent": "75%", "class": "node" },
-        { "skill_title": "Express", "percent": "50%", "class": "express" },
-        { "skill_title": "Agile", "percent": "90%", "class": "agile" },
-        { "skill_title": "Git", "percent": "55%", "class": "git" },
+        { "skill-title": "Node", "percent": "75%", "class": "node" },
+        { "skill-title": "Express", "percent": "50%", "class": "express" },
+        { "skill-title": "Agile", "percent": "90%", "class": "agile" },
+        { "skill-title": "Git", "percent": "55%", "class": "git" },
         {
-            "skill_title": "Photoshop/Illustrator",
+            "skill-title": "Photoshop/Illustrator",
             "percent": "85%",
             "class": "photoshop"
         }

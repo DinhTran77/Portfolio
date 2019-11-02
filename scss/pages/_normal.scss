@@ -32,7 +32,7 @@
                         .ribbon,
                         .t,
                         .dots,
-                        .logoImage-grow {
+                        .logo-image-grow {
                                 width: $logo-image-width;
                                 margin-bottom: 0vh;
                                 display: inline-block;
@@ -51,7 +51,7 @@
                         .t {
                                 z-index: 97;
                         }
-                        .logoImage-grow {
+                        .logo-image-grow {
                                 width: $logo-image-width;
                                 justify-self: center;
                                 align-self: center;
@@ -164,7 +164,7 @@
                         top: 0;
                         left: 0;
                         margin: 0;
-                        // #logoImage {
+                        // #logo-image {
                         //         width: $logo-image-width;
                         //         margin-bottom: 0vh;
                         // }
@@ -206,7 +206,7 @@
                                 .ribbon,
                                 .t,
                                 .dots,
-                                .logoImage {
+                                .logo-image {
                                         width: $logo-image-width;
                                         margin-bottom: 0vh;
                                         display: inline-block;

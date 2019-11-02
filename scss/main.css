@@ -327,7 +327,7 @@ table {
   position: relative;
 }
 
-#home-page .container-logo .logoImage {
+#home-page .container-logo .logo-image {
   width: 70vw;
 }
 
@@ -396,7 +396,7 @@ table {
     left: 0;
     margin: 0;
   }
-  #home-page .container-logo .logoImage {
+  #home-page .container-logo .logo-image {
     width: 40vh;
     margin-bottom: 0vh;
   }
@@ -466,7 +466,7 @@ table {
             align-items: center;
     position: relative;
   }
-  #home-page .container-logo .logoImage {
+  #home-page .container-logo .logo-image {
     width: 25vw;
   }
   #home-page .container-logo .hero-message {
@@ -1012,7 +1012,7 @@ table {
   background-color: #ffd306;
 }
 
-#contact-page .container_content {
+#contact-page .container-content {
   margin-top: 8vw;
 }
 
@@ -1086,7 +1086,7 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-  .container_content {
+  .container-content {
     margin-top: 8vw;
   }
   #contact-page #sucess_message {
@@ -1120,7 +1120,7 @@ table {
     font-size: 1.1vw;
     margin-bottom: 1.5vw;
   }
-  #contact-page .container_content {
+  #contact-page .container-content {
     margin-top: 4vw;
   }
   #contact-page form {
@@ -1367,7 +1367,7 @@ table {
           justify-content: center;
 }
 
-#footerPage #logoImage_footer {
+#footerPage #logo-image_footer {
   width: 20vw;
   display: none;
   margin: 0;
@@ -1393,7 +1393,7 @@ table {
   #footerPage {
     height: 13vh;
   }
-  #footerPage #logoImage_footer {
+  #footerPage #logo-image_footer {
     width: 10vw;
     display: inline-block;
   }
@@ -1407,7 +1407,7 @@ table {
   #footerPage {
     height: 24vh;
   }
-  #footerPage #logoImage_footer {
+  #footerPage #logo-image_footer {
     width: 6vw;
     display: inline-block;
   }
@@ -1690,7 +1690,7 @@ table {
   overflow: hidden;
 }
 
-#home-page-david .container-logo .logo .logoImage,
+#home-page-david .container-logo .logo .logo-image,
 #home-page-david .container-logo .logo .t,
 #home-page-david .container-logo .logo .dots,
 #home-page-david .container-logo .logo .ribbon {
@@ -1698,7 +1698,7 @@ table {
   position: absolute;
 }
 
-#home-page-david .container-logo .logo .logoImage {
+#home-page-david .container-logo .logo .logo-image {
   z-index: 96;
   -webkit-animation: shrink forwards 1s;
           animation: shrink forwards 1s;
@@ -1920,7 +1920,7 @@ table {
 #home-page-normal .container-logo .logo .ribbon,
 #home-page-normal .container-logo .logo .t,
 #home-page-normal .container-logo .logo .dots,
-#home-page-normal .container-logo .logo .logoImage-grow {
+#home-page-normal .container-logo .logo .logo-image-grow {
   width: 60vw;
   margin-bottom: 0vh;
   display: inline-block;
@@ -1940,7 +1940,7 @@ table {
   z-index: 97;
 }
 
-#home-page-normal .container-logo .logo .logoImage-grow {
+#home-page-normal .container-logo .logo .logo-image-grow {
   width: 60vw;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -2151,7 +2151,7 @@ table {
   #home-page-normal .container-logo .logo .ribbon,
   #home-page-normal .container-logo .logo .t,
   #home-page-normal .container-logo .logo .dots,
-  #home-page-normal .container-logo .logo .logoImage {
+  #home-page-normal .container-logo .logo .logo-image {
     width: 25vw;
     margin-bottom: 0vh;
     display: inline-block;
@@ -2393,7 +2393,7 @@ table {
             transform: translateX(-50%);
     z-index: 4;
   }
-  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
     width: 24vh;
     position: absolute;
     top: 39.75vh;
@@ -2482,7 +2482,7 @@ table {
     padding: 0;
     margin: 0;
   }
-  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logoImage {
+  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
     width: 18vw;
     top: -9vh;
     left: 13.5vw;
@@ -2549,7 +2549,7 @@ html {
   padding: 13vw 7vw 13vw 7vw;
 }
 
-.container_content {
+.container-content {
   margin-top: 11vw;
 }
 
@@ -2594,7 +2594,7 @@ html {
   .my-container {
     padding: 13vw 7vw 13vw 7vw;
   }
-  .container_content {
+  .container-content {
     margin-top: 11vw;
   }
   .section-heading {
@@ -2617,7 +2617,7 @@ html {
   .my-container {
     padding: 6vw 7vw;
   }
-  .container_content {
+  .container-content {
     margin-top: 5vw;
   }
   .section-heading {
