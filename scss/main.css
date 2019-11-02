@@ -526,7 +526,7 @@ table {
 }
 
 #skills-page {
-  background: url(../../images/paper_fibers.png);
+  background: url(../../images/background-skills-page.png);
   background-size: 200px;
   background-color: white;
 }
@@ -631,7 +631,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 2vw;
-  background-color: #fdcb17;
+  background-color: #ffd306;
   padding-left: 1.5vw;
   font-size: 2vw;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -2340,7 +2340,7 @@ table {
 @media only screen and (min-width: 768px) {
   #about-page {
     height: 100vh;
-    background-image: url(../../images/David-background.jpg);
+    background-image: url(../../images/background-about-page.jpg);
     background-size: auto 100%;
   }
   #about-page .container {

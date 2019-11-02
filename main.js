@@ -1,7 +1,7 @@
 //************initialize AOS (Automate on Scroll) Plugin
 AOS.init();
 
-//script to fill skills templates
+//************script to fill skills templates
 $(function() {
     $.getJSON("skills.json", function(data) {
         var template = $("#skills-template").html();
@@ -10,7 +10,7 @@ $(function() {
     });
 });
 
-//script to fill portfolio templates
+//************script to fill portfolio templates
 $(function() {
     $.getJSON("projects.json", function(data) {
         var template = $("#portfolio-template").html();
@@ -19,7 +19,7 @@ $(function() {
     });
 });
 
-//Contact Form submission
+//************Contact Form submission
 $("form.ajax").on("submit", function() {
     let url = $(this).attr("action");
     let type = $(this).attr("method");

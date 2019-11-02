@@ -2,7 +2,7 @@
     "projects": [
         {
             "link": "http://www.dinhportfolio.com/",
-            "image-source": "./images/portfolio/personal_sight.png",
+            "image-source": "./images/portfolio/personal-sight.png",
             "name": "Portfolio Website",
             "description": "I am particularly proud of this website, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
             "items": {
@@ -67,7 +67,7 @@
         },
         {
             "link": "https://drum-shed.herokuapp.com/products",
-            "image-source": "./images/portfolio/circle_animation.png",
+            "image-source": "./images/portfolio/circle-animation.png",
             "name": "Javascript Animation",
             "description": "Canvas animation to sharpen my Javascript skills."
         }
