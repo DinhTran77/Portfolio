@@ -12,9 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // flex-direction: column;
-    // background-size: 100% auto;
-    // background-repeat: no-repeat;
     background-color: $color_background_yellow;
     position: relative;
     top: 0;
@@ -31,7 +28,6 @@
         position: relative;
         .logo-image {
             width: $logo-image-width;
-            //     position: absolute;
         }
 
         .hero-message {

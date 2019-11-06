@@ -128,22 +128,19 @@ $height_nav-bar: 5vh;
                 top: 0;
                 left: 0;
                 background: transparent;
-                // background: black;
                 z-index: 100;
 
                 #menu {
                     justify-content: flex-end;
                     li {
                         a {
-                            font-size: 0.9vw;
+                            font-size: 1.1vw;
                             color: inherit;
                             padding: 1.6vw;
                             margin: 0;
-                        }
-                    }
-                    li:not(:first-child) {
-                        a {
-                            //     margin-left: 4vw;
+                            color: $color_font_nav;
+                            // color: rgb(197, 194, 194);
+                            font-family: $type-writter-font;
                         }
                     }
                 }
