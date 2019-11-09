@@ -1244,10 +1244,11 @@ table {
   color: #012040;
   font-size: 3vw;
   padding: 6vw;
+  font-family: "Special Elite", cursive;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
-  color: #4e5f70;
+  color: #4d4d4d;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1336,7 +1337,6 @@ table {
     padding: 1.6vw;
     margin: 0;
     color: #012040;
-    font-family: "Special Elite", cursive;
   }
 }
 
@@ -1496,10 +1496,11 @@ table {
   color: #012040;
   font-size: 3vw;
   padding: 6vw;
+  font-family: "Special Elite", cursive;
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
-  color: #4e5f70;
+  color: #4d4d4d;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1588,7 +1589,6 @@ table {
     padding: 1.6vw;
     margin: 0;
     color: #012040;
-    font-family: "Special Elite", cursive;
   }
 }
 
@@ -2369,7 +2369,7 @@ table {
             justify-content: center;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 55%;
+    height: 50vh;
     position: absolute;
     bottom: 0;
     left: 45%;
@@ -2378,9 +2378,9 @@ table {
     z-index: 4;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
-    width: 24vh;
+    width: 23vh;
     position: absolute;
-    top: 39.75vh;
+    top: 45.4vh;
     z-index: 2;
     opacity: 0.8;
   }
@@ -2439,7 +2439,7 @@ table {
   #about-page .container .row {
     margin: 0;
     padding: 0;
-    height: 93vh;
+    height: 88vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2460,7 +2460,7 @@ table {
     position: static;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 93vh;
+    height: 88vh;
     position: absolute;
     left: 50%;
     padding: 0;
@@ -2468,7 +2468,7 @@ table {
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
     width: 18vw;
-    top: -9vh;
+    top: -8.5vh;
     left: 13.5vw;
     opacity: 0.8;
   }

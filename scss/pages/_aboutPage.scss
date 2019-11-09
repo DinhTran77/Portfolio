@@ -102,7 +102,7 @@
                         justify-content: center;
 
                         #lady {
-                            height: 55%;
+                            height: 50vh;
                             position: absolute;
                             bottom: 0;
                             left: 45%;
@@ -111,9 +111,9 @@
                         }
 
                         #logo-image {
-                            width: 24vh;
+                            width: 23vh;
                             position: absolute;
-                            top: 39.75vh;
+                            top: 45.4vh;
                             z-index: 2;
                             opacity: 0.8;
                         }
@@ -163,7 +163,7 @@
     #about-page {
         background-size: cover;
         position: relative;
-        $lady-height: 93vh;
+        $lady-height: 88vh;
 
         .container {
             flex-direction: row;
@@ -198,7 +198,7 @@
 
                         #logo-image {
                             width: 18vw;
-                            top: -9vh;
+                            top: -8.5vh;
                             left: 13.5vw;
                             opacity: 0.8;
                         }

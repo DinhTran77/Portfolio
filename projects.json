@@ -4,7 +4,7 @@
             "link": "http://www.dinhportfolio.com/",
             "image-source": "./images/portfolio/personal-sight.png",
             "name": "Portfolio Website",
-            "description": "I am particularly proud of this website, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
+            "description": "I am particularly proud of this project, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
             "items": {
                 "name": [
                     "SCSS",
@@ -16,28 +16,23 @@
         },
 
         {
-            "link": "https://drum-shed.herokuapp.com/products",
-            "image-source": "./images/portfolio/ecommerce.PNG",
-            "name": "React E-Commerce Website",
-            "description": "E-commerce website with the following features:",
+            "link": "https://drum-machine-dinh.herokuapp.com/",
+            "image-source": "./images/portfolio/drum-machine.PNG",
+            "name": "React Drum-Machine",
+            "description": "As a hobbiest drummer, I wanted to create a React-style calculator, except with a fun musical twist.",
             "items": {
                 "name": [
-                    "Shopping cart",
-                    "Checkout page",
-                    "Pagination",
-                    "Filter by brand or price"
+                    "Responsive layout, images, videos & Google Map",
+                    "Sticky navigation bar that fades in on scroll",
+                    "Smooth scroll",
+                    "Carousal jQuery plugin",
+                    "“Scroll to top” JQuery button"
                 ]
             }
         },
         {
-            "link": "https://drum-machine-dinh.herokuapp.com/",
-            "image-source": "./images/portfolio/drum-machine.PNG",
-            "name": "React Drum-Machine",
-            "description": "As a hobbiest drummer, I wanted to create a React-style calculator, except with a fun musical twist."
-        },
-        {
             "link": "https://drum-shed.herokuapp.com/products",
-            "image-source": "./images/portfolio/space-x.png",
+            "image-source": "./images/portfolio/SpaceX.jpg",
             "name": "React Space-X API",
             "description": "React application that retrieves & displays data, images & links from the Space-X api.",
             "items": {
@@ -51,8 +46,8 @@
             }
         },
         {
-            "link": "https://drum-shed.herokuapp.com/products",
-            "image-source": "./images/portfolio/waves.png",
+            "link": "https://dinhtran77.github.io/responsive-website/",
+            "image-source": "./images/portfolio/ResponsiveSite.jpg",
             "name": "Responsive Webpage",
 
             "items": {
@@ -67,9 +62,32 @@
         },
         {
             "link": "https://drum-shed.herokuapp.com/products",
+            "image-source": "./images/portfolio/Angular.jpg",
+            "name": "Angular API",
+            "items": {
+                "name": [
+                    "Responsive layout, images, videos & Google Map",
+                    "Sticky navigation bar that fades in on scroll",
+                    "Smooth scroll",
+                    "Carousal jQuery plugin",
+                    "“Scroll to top” JQuery button"
+                ]
+            }
+        },
+        {
+            "link": "https://drum-shed.herokuapp.com/products",
             "image-source": "./images/portfolio/circle-animation.png",
             "name": "Javascript Animation",
-            "description": "Canvas animation to sharpen my Javascript skills."
+            "description": "Canvas animation to sharpen my Javascript skills.",
+            "items": {
+                "name": [
+                    "Responsive layout, images, videos & Google Map",
+                    "Sticky navigation bar that fades in on scroll",
+                    "Smooth scroll",
+                    "Carousal jQuery plugin",
+                    "“Scroll to top” JQuery button"
+                ]
+            }
         }
     ]
 }
