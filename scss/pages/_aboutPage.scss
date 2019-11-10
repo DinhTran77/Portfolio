@@ -31,11 +31,11 @@ $text-color: rgb(207, 207, 207);
                 color: $text-color;
                 text-align: center;
                 padding: 18vw;
-                font-size: 4.6vw;
+                font-size: 2rem;
                 line-height: normal;
                 z-index: 1;
                 h1 {
-                    font-size: 6.8vw;
+                    font-size: 3.3rem;
                     margin-bottom: 6vw;
                     line-height: 2.6vw;
                     width: 93%;
@@ -49,12 +49,12 @@ $text-color: rgb(207, 207, 207);
                 #get-in-touch {
                     text-align: center;
                     display: inline-block;
-                    padding: 2svw 4.3vw;
+                    padding: 2vw 6.3vw;
                     margin-top: 8vw;
-                    border-radius: 3vw;
+                    border-radius: 7vw;
                     color: rgb(197, 197, 197);
                     background: #71837c;
-                    font-size: 4vw;
+                    font-size: 1.85rem;
 
                     &:hover {
                         background: #83978f;
@@ -69,7 +69,7 @@ $text-color: rgb(207, 207, 207);
 
 //--------------------------TABLET--------------------------//
 @media only screen and (min-width: 768px) {
-    $lady-height: 88vh;
+    $lady-height: 98vh;
     #about-page {
         height: 100vh;
         background-image: url(../../images/background-about-page.jpg);
@@ -100,21 +100,23 @@ $text-color: rgb(207, 207, 207);
                         justify-content: center;
 
                         #lady {
-                            height: 50vh;
+                            height: 50%;
                             position: absolute;
                             bottom: 0;
                             left: 45%;
                             transform: translateX(-50%);
                             z-index: 4;
+
+                            // background: red;
                         }
 
-                        #logo-image {
-                            width: 23vh;
-                            position: absolute;
-                            top: 45.4vh;
-                            z-index: 2;
-                            opacity: 0.8;
-                        }
+                        // #logo-image {
+                        //     width: 43vh;
+                        //     position: absolute;
+                        //     top: 45.4vh;
+                        //     z-index: 2;
+                        //     opacity: 0.8;
+                        // }
                     }
                 }
                 .text-column {
@@ -122,16 +124,16 @@ $text-color: rgb(207, 207, 207);
                     justify-content: center;
                     text-align: justify;
                     background: rgba(49, 49, 49, 0.2);
-                    font-size: 2.2vw;
+                    // font-size: 2.5rem;
                     line-height: 5.3vw;
-                    height: 40%;
+                    height: 50%;
                     padding: 6vw;
                     overflow: hidden;
                     position: relative;
                     top: 0;
 
                     h1 {
-                        font-size: 4.1vw;
+                        font-size: 3rem;
                         margin-bottom: 1.7vw;
                         line-height: 6.6vw;
                     }
@@ -141,10 +143,11 @@ $text-color: rgb(207, 207, 207);
                     #get-in-touch {
                         padding: 0.4vw 3vw;
                         margin: 2vw 0;
-                        font-size: 2.3vw;
+                        font-size: 2rem;
                     }
                     p {
                         display: inline-block;
+                        font-size: 1.7rem;
                     }
                 }
             }
@@ -181,11 +184,12 @@ $text-color: rgb(207, 207, 207);
                         position: static;
 
                         #lady {
-                            height: $lady-height;
+                            height: 100vh;
                             position: absolute;
                             left: 50%;
                             padding: 0;
                             margin: 0;
+                            // background: green;
                         }
 
                         #logo-image {
@@ -205,14 +209,13 @@ $text-color: rgb(207, 207, 207);
                     align-items: flex-start;
                     align-self: center;
                     position: static;
-                    font-size: 1.2vw;
                     margin: 0;
                     padding: 4vw 5vw;
                     position: static;
                     line-height: 2.4vw;
 
                     h1 {
-                        font-size: 1.8vw;
+                        font-size: 3.3rem;
                         margin-bottom: 0.7vw;
                         text-align: left;
                         line-height: 2.6vw;
@@ -223,10 +226,10 @@ $text-color: rgb(207, 207, 207);
                         display: inline-block;
                     }
                     #get-in-touch {
-                        padding: 0.1vw 1.1vw;
+                        padding: 0.6vw 2vw;
                         margin-top: 2vw;
-                        font-size: 1.2vw;
-                        width: 30%;
+                        font-size: 2.5rem;
+                        width: auto;
                     }
                 }
             }

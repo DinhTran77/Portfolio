@@ -1,8 +1,8 @@
 //***********************Mobile************************************
 
-body {
-    font-size: 1.6rem;
-}
+// body {
+//     font-size: 1.6rem;
+// }
 
 html {
     scroll-behavior: smooth;
@@ -29,7 +29,7 @@ html {
 }
 
 .section-heading {
-    font-size: 5.59vw;
+    font-size: 2.5rem;
     margin-top: 0;
     text-transform: uppercase !important;
     color: $font_dark_grey;
@@ -38,7 +38,7 @@ html {
 }
 
 .section-subheading {
-    font-size: 3vw;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-top: 1vw;
     font-style: italic;
@@ -58,12 +58,12 @@ html {
     }
 
     .section-heading {
-        font-size: 5.59vw;
+        font-size: 4rem;
         margin-top: 0;
     }
 
     .section-subheading {
-        font-size: 3vw;
+        font-size: 2.5rem;
         margin-top: 1vw;
     }
 }
@@ -87,12 +87,12 @@ html {
     }
 
     .section-heading {
-        font-size: 2.2vw;
+        font-size: 4rem;
         margin-top: 0;
     }
 
     .section-subheading {
-        font-size: 1.2vw;
+        font-size: 2.5rem;
         margin-top: 0.7vw;
     }
 }

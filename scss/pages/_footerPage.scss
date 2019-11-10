@@ -25,7 +25,7 @@
         color: white;
         font-family: $droid-font;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 1rem;
         margin-left: 2vw;
         width: auto;
         text-align: center;
@@ -34,7 +34,6 @@
 }
 
 //--------------------------Tablet--------------------------//
-
 @media only screen and (min-width: 768px) {
     #footerPage {
         height: 13vh;
@@ -44,7 +43,7 @@
         }
 
         .copyRight {
-            font-size: 1.5vw;
+            font-size: 1.5rem;
             margin-left: 1vw;
         }
     }
@@ -61,7 +60,7 @@
         }
 
         .copyRight {
-            font-size: 1vw;
+            font-size: 1.5rem;
             display: block;
             width: auto;
             margin-left: 1vw;

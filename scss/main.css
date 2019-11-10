@@ -331,33 +331,14 @@ table {
   width: 70vw;
 }
 
-#home-page .container-logo .hero-message {
-  text-align: center;
-  height: 3vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #home-page .container-logo .hero-message .hero-text {
-  color: #012040;
-  font-family: "Special Elite", cursive;
-  font-size: 4vw;
-  color: #012040;
-  line-height: 5vw;
+  font-size: 1.65rem;
 }
 
-#home-page .container-logo .cursor {
-  display: inline-block;
-  width: 0.2vw;
-  height: 4vw;
-  background-color: #212529;
+#home-page .container-logo .hero-message .cursor {
+  height: 2.5rem;
+  width: 0.2rem;
+  color: black;
   -webkit-animation: blink 0.75s step-end infinite;
           animation: blink 0.75s step-end infinite;
   opacity: 0.6;
@@ -400,41 +381,12 @@ table {
     width: 40vh;
     margin-bottom: 0vh;
   }
-  #home-page .container-logo .hero-message {
-    text-align: center;
-    height: 3vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #home-page .container-logo .hero-message .hero-text {
-    color: #012040;
-    font-family: "Special Elite", cursive;
-    font-size: 3vw;
-    color: #012040;
-    line-height: 5vw;
-  }
-  #home-page .container-logo .cursor {
-    display: inline-block;
-    width: 0.2vw;
-    height: 4vw;
-    background-color: #212529;
-    -webkit-animation: blink 0.75s step-end infinite;
-            animation: blink 0.75s step-end infinite;
-    opacity: 0.6;
-  }
 }
 
 @media only screen and (min-width: 992px) {
   #home-page {
     width: 100%;
-    height: 161.8vw;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -483,28 +435,6 @@ table {
             align-items: center;
     height: auto;
   }
-  #home-page .container-logo .hero-message .hero-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #012040;
-    line-height: 0.5vw;
-    height: 0vw;
-    font-size: 1.5vw;
-    color: #012040;
-  }
-  #home-page .container-logo .hero-message .cursor {
-    display: inline-block;
-    width: 0.2vw;
-    height: 2vw;
-    background-color: #212529;
-    -webkit-animation: blink 0.75s step-end infinite;
-            animation: blink 0.75s step-end infinite;
-    opacity: 0.6;
-  }
   @-webkit-keyframes blink {
     from,
     to {
@@ -526,9 +456,8 @@ table {
 }
 
 #skills-page {
-  background: url(../../images/background-skills-page.png);
-  background-image: url(../../images/egg_shell.png);
-  background-size: 150px;
+  background-image: url(../../images/background-egg-shell.png);
+  background-size: 200px;
   background-color: white;
 }
 
@@ -554,9 +483,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4vw;
+  height: 2.2rem;
   width: 100%;
-  margin-bottom: 3.4vw;
+  margin-bottom: 5.4vw;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .skill-name,
@@ -576,31 +505,36 @@ table {
           flex-grow: 6;
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
-  width: 0;
-  font-size: 2.5vw;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
   font-weight: 400;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   height: 100%;
   line-height: 100%;
+  width: 100%;
   overflow: visible;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   z-index: 2;
+  position: absolute;
+  padding: 1vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-flex: 7.7;
       -ms-flex-positive: 7.7;
           flex-grow: 7.7;
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
   width: 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   height: 100%;
   background-color: transparent;
   overflow: hidden;
@@ -609,7 +543,7 @@ table {
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage {
   width: 100%;
   height: 100%;
-  background-color: #e0e0e0;
+  background-color: #dadada;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,7 +568,7 @@ table {
   padding-right: 2vw;
   background-color: #ffd306;
   padding-left: 1.5vw;
-  font-size: 2vw;
+  font-size: 1rem;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -710,21 +644,22 @@ table {
   width: 75%;
 }
 
-@media only screen and (min-width: 992px) {
-  #skills-page {
-    height: 100vh;
-    background-size: 150px;
-  }
+@media only screen and (min-width: 768px) {
   #skills-page #progress-bars-section .progress-bar-container {
-    height: 1.8vw;
+    height: 2.64rem;
     width: 95%;
-    margin-bottom: 1.9vw;
+    margin-bottom: 2.9vw;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 3.4vw;
   }
   #skills-page #progress-bars-section .progress-bar-container .skill-name {
-    font-size: 0.9vw;
+    font-size: 1.32rem;
     width: 100%;
     position: absolute;
     padding-left: 0.75vw;
@@ -748,7 +683,7 @@ table {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0.7vw;
-    font-size: 0.9vw;
+    font-size: 1.32rem;
   }
 }
 
@@ -840,7 +775,7 @@ table {
 
 #portfolio-page #projects .project-container .project-text .project-name {
   margin-top: 8vw;
-  font-size: 3.7vw;
+  font-size: 1.75rem;
   color: #214261;
   text-align: center;
   font-weight: bold;
@@ -853,7 +788,7 @@ table {
   width: 100%;
   color: #214261;
   padding: 0 7vw;
-  font-size: 3.3vw;
+  font-size: 1.4rem;
   line-height: 7vw;
   font-weight: 400;
 }
@@ -873,17 +808,8 @@ table {
   padding: 2vw 6vw;
   text-align: center;
   border-radius: 6vw;
-  font-size: 3vw;
+  font-size: 1.4rem;
   margin: 7vw 0;
-}
-
-#portfolio-page #projects .project-container .project-text .preview-link a {
-  color: #214261;
-  font-size: 2.3vw;
-  color: inherit;
-  text-transform: uppercase;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
 }
 
 #portfolio-page #projects .portfolio-site {
@@ -931,7 +857,7 @@ table {
   }
   #portfolio-page #projects .project-container .project-text .project-name {
     margin-top: 6vw;
-    font-size: 2vw;
+    font-size: 1.75rem;
   }
   #portfolio-page #projects .project-container .project-text .project-description {
     margin-top: 1.2vw;
@@ -939,7 +865,7 @@ table {
     width: 100%;
     padding: 0 2vw;
     padding-bottom: 6vw;
-    font-size: 1.6vw;
+    font-size: 1.5rem;
     line-height: 3.3vw;
     font-weight: 400;
   }
@@ -954,7 +880,7 @@ table {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     color: inherit;
     font-weight: 600;
     position: absolute;
@@ -992,7 +918,7 @@ table {
   }
   #portfolio-page #projects .project-container .project-text .project-name {
     margin-top: 4vw;
-    font-size: 1.3vw;
+    font-size: 2.5rem;
   }
   #portfolio-page #projects .project-container .project-text .project-description {
     margin-top: 1.2vw;
@@ -1000,7 +926,7 @@ table {
     width: 100%;
     padding: 0 2vw;
     padding-bottom: 8vw;
-    font-size: 1vw;
+    font-size: 1.75rem;
     line-height: 2.2vw;
     font-weight: 400;
   }
@@ -1015,7 +941,7 @@ table {
     padding: 0.8vw 2.5vw;
     border-radius: 6vw;
     margin: 3vw 0;
-    font-size: 0.8vw;
+    font-size: 1.5rem;
     color: inherit;
     font-weight: 600;
     position: absolute;
@@ -1036,19 +962,11 @@ table {
 }
 
 #contact-page #success-message {
-  font-size: 3.2vw;
+  font-size: 1.5rem;
   display: block;
   width: 100%;
   margin-bottom: 3vw;
   display: none;
-}
-
-#contact-page #contact-greeting {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-top: 4vw;
-  font-size: 4vw;
-  color: white;
-  text-align: center;
 }
 
 #contact-page .section-subheading {
@@ -1065,7 +983,7 @@ table {
   border-width: 0.2px;
   border-color: #bdbbbb;
   margin-bottom: 4vw;
-  font-size: 3vw;
+  font-size: 1rem;
 }
 
 #contact-page form input {
@@ -1094,9 +1012,9 @@ table {
   background-color: #214261;
   color: white;
   width: 33%;
-  padding: 2.3vw 3.5vw;
+  padding: 2vw 3vw;
   border-radius: 6px;
-  font-size: 3vw;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -1105,15 +1023,15 @@ table {
     margin-top: 8vw;
   }
   #contact-page #success-message {
-    font-size: 3.2vw;
+    font-size: 1.7rem;
     margin-bottom: 3vw;
-    display: none;
+    display: inline-block;
   }
   #contact-page form input,
   #contact-page form textarea {
     border-width: 0.2px;
     margin-bottom: 2.5vw;
-    font-size: 2vw;
+    font-size: 1.7rem;
   }
   #contact-page form input {
     padding: 0.5vw;
@@ -1126,14 +1044,15 @@ table {
     width: 23%;
     padding: 0.6vw;
     border-radius: 2vw;
-    font-size: 2vw;
+    font-size: 1.7rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #contact-page #success-message {
-    font-size: 1.1vw;
+    font-size: 1.75rem;
     margin-bottom: 1.5vw;
+    display: inline-block;
   }
   #contact-page .container-content {
     margin-top: 4vw;
@@ -1144,7 +1063,7 @@ table {
   }
   #contact-page form input,
   #contact-page form textarea {
-    font-size: 0.8vw;
+    font-size: 1.75rem;
     padding: 0.3vw;
     border-width: 1px;
     width: 100%;
@@ -1161,7 +1080,7 @@ table {
     width: 8vw;
     padding: 0.2vw 0.2vw;
     border-radius: 6px;
-    font-size: 1.2vw;
+    font-size: 1.75rem;
     margin-top: 0vw;
   }
   #contact-page form input[type="submit"]:hover {
@@ -1253,8 +1172,9 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 1rem;
-  padding: 6vw;
+  padding: 5vw;
   font-family: "Special Elite", cursive;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
@@ -1343,7 +1263,7 @@ table {
     width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
@@ -1384,7 +1304,7 @@ table {
   color: white;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1rem;
   margin-left: 2vw;
   width: auto;
   text-align: center;
@@ -1400,7 +1320,7 @@ table {
     display: inline-block;
   }
   #footerPage .copyRight {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin-left: 1vw;
   }
 }
@@ -1414,7 +1334,7 @@ table {
     display: inline-block;
   }
   #footerPage .copyRight {
-    font-size: 1vw;
+    font-size: 1.5rem;
     display: block;
     width: auto;
     margin-left: 1vw;
@@ -1504,8 +1424,9 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 1rem;
-  padding: 6vw;
+  padding: 5vw;
   font-family: "Special Elite", cursive;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #header-main .my-container #nav-bar #menu li a:hover {
@@ -1594,654 +1515,11 @@ table {
     width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
     color: #012040;
-  }
-}
-
-.menu-david a {
-  color: white;
-}
-
-#button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 200;
-}
-
-#home-page-david {
-  width: 100%;
-  height: 100vh;
-  background: #ffd306;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-#home-page-david .container-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 0;
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  -webkit-animation: move-up 1s forwards;
-          animation: move-up 1s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-@-webkit-keyframes move-up {
-  from {
-  }
-  to {
-    top: -15vw;
-  }
-}
-
-@keyframes move-up {
-  from {
-  }
-  to {
-    top: -15vw;
-  }
-}
-
-#home-page-david .container-logo .logo {
-  width: 25vw;
-  height: 25vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-#home-page-david .container-logo .logo .logo-image,
-#home-page-david .container-logo .logo .t,
-#home-page-david .container-logo .logo .dots,
-#home-page-david .container-logo .logo .ribbon {
-  width: 25vw;
-  position: absolute;
-}
-
-#home-page-david .container-logo .logo .logo-image {
-  z-index: 96;
-  -webkit-animation: shrink forwards 1s;
-          animation: shrink forwards 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  width: 25vw;
-  overflow: hidden;
-}
-
-@-webkit-keyframes shrink {
-  from {
-    width: 25vw;
-    opacity: 1;
-  }
-  to {
-    width: 17vw;
-    opacity: 0.8;
-  }
-}
-
-@keyframes shrink {
-  from {
-    width: 25vw;
-    opacity: 1;
-  }
-  to {
-    width: 17vw;
-    opacity: 0.8;
-  }
-}
-
-#home-page-david .container-logo .logo .ribbon {
-  z-index: 98;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-#home-page-david .container-logo .logo .dots {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-#home-page-david .container-logo .logo .t {
-  z-index: 97;
-  -webkit-animation: fade-out forwards 0.5s;
-          animation: fade-out forwards 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#home-page-david .container-logo .hero-message {
-  display: none;
-}
-
-#home-page-david .container-david {
-  width: 100%;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#home-page-david .container-david .david {
-  position: absolute;
-  width: 59vw;
-  z-index: 102;
-  bottom: 0;
-  -webkit-transform: translateX(-77vw);
-          transform: translateX(-77vw);
-  -webkit-animation: david-in 1s forwards ease-in;
-          animation: david-in 1s forwards ease-in;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-#home-page-david .container-david .above-logo {
-  height: 100%;
-  z-index: 101;
-  -webkit-animation: background-fade-in 1s forwards ease-in;
-          animation: background-fade-in 1s forwards ease-in;
-  opacity: 0;
-  left: 0;
-  top: 0;
-}
-
-@-webkit-keyframes david-in {
-  from {
-    -webkit-transform: translateX(-77vw);
-            transform: translateX(-77vw);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes david-in {
-  from {
-    -webkit-transform: translateX(-77vw);
-            transform: translateX(-77vw);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-#home-page-david #background-david {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: 1;
-  opacity: 1;
-  left: 0;
-  top: 0;
-}
-
-@-webkit-keyframes background-out-in {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes background-out-in {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.menu-normal a {
-  color: #012040;
-}
-
-#home-page-normal {
-  overflow: hidden;
-  width: 100%;
-  height: 161.8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#home-page-normal .container-logo {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#home-page-normal .container-logo .logo {
-  width: 60vw;
-  height: 60vw;
-  display: relative;
-}
-
-#home-page-normal .container-logo .logo .ribbon,
-#home-page-normal .container-logo .logo .t,
-#home-page-normal .container-logo .logo .dots,
-#home-page-normal .container-logo .logo .logo-image-grow {
-  width: 60vw;
-  margin-bottom: 0vh;
-  display: inline-block;
-  position: absolute;
-  z-index: 96;
-}
-
-#home-page-normal .container-logo .logo .ribbon {
-  z-index: 98;
-}
-
-#home-page-normal .container-logo .logo .dots {
-  z-index: 97;
-}
-
-#home-page-normal .container-logo .logo .t {
-  z-index: 97;
-}
-
-#home-page-normal .container-logo .logo .logo-image-grow {
-  width: 60vw;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#home-page-normal .container-logo .hero-message {
-  width: 100vw;
-  text-align: center;
-  height: 3vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#home-page-normal .container-logo .hero-message .hero_greeting {
-  color: #012040;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 4vw;
-  font-weight: bolder;
-  line-height: 7vw;
-}
-
-#home-page-normal .container-logo .hero-message .hero-text {
-  color: #012040;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 3vw;
-  color: #012040;
-  line-height: 5vw;
-}
-
-#home-page-normal #background-david {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: -21;
-  opacity: 1;
-  left: 0;
-  top: 0;
-}
-
-#home-page-normal #background-normal {
-  background: #ffd306;
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-#home-page-normal .background-fade-in {
-  -webkit-animation: background-fade-in 2s;
-          animation: background-fade-in 2s;
-}
-
-@-webkit-keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes background-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#home-page-normal .opacity_one {
-  opacity: 1;
-}
-
-#home-page-normal .background-fade-out {
-  -webkit-animation: background-fade-out 1s;
-          animation: background-fade-out 1s;
-}
-
-@-webkit-keyframes background-fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes background-fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#home-page-normal .cursor {
-  display: inline-block;
-  width: 0.5vw;
-  height: 4vw;
-  background-color: #212529;
-  -webkit-animation: blink 0.75s step-end infinite;
-          animation: blink 0.75s step-end infinite;
-  opacity: 0.6;
-}
-
-@keyframes blink {
-  from,
-  to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: #212529;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #home-page {
-    height: 100vh;
-  }
-  #home-page #container-logo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #home-page-normal {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #home-page-normal .container-logo-animation {
-    -webkit-animation: move-down 1s forwards;
-            animation: move-down 1s forwards;
-  }
-  @-webkit-keyframes move-down {
-    from {
-      top: -15vw;
-    }
-    to {
-      top: 0vw;
-    }
-  }
-  @keyframes move-down {
-    from {
-      top: -15vw;
-    }
-    to {
-      top: 0vw;
-    }
-  }
-  #home-page-normal .container-logo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0vw;
-  }
-  #home-page-normal .container-logo .logo-position {
-    top: -15vw;
-  }
-  #home-page-normal .container-logo .logo {
-    width: 25vw;
-    height: 25vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
-  }
-  #home-page-normal .container-logo .logo .ribbon,
-  #home-page-normal .container-logo .logo .t,
-  #home-page-normal .container-logo .logo .dots,
-  #home-page-normal .container-logo .logo .logo-image {
-    width: 25vw;
-    margin-bottom: 0vh;
-    display: inline-block;
-    position: absolute;
-    z-index: 96;
-  }
-  #home-page-normal .container-logo .logo .logo-animation {
-    -webkit-animation: grow forwards 1s;
-            animation: grow forwards 1s;
-  }
-  #home-page-normal .container-logo .logo .opacity_zero {
-    opacity: 0;
-  }
-  @-webkit-keyframes grow {
-    from {
-      width: 17vw;
-      opacity: 0.8;
-    }
-    to {
-      width: 25vw;
-      opacity: 1;
-    }
-  }
-  @keyframes grow {
-    from {
-      width: 17vw;
-      opacity: 0.8;
-    }
-    to {
-      width: 25vw;
-      opacity: 1;
-    }
-  }
-  #home-page-normal .container-logo .logo .ribbon {
-    z-index: 98;
-  }
-  #home-page-normal .container-logo .logo .ribbon-animation {
-    -webkit-animation: fade-in forwards 0.5s;
-            animation: fade-in forwards 0.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  #home-page-normal .container-logo .logo .dots {
-    z-index: 97;
-  }
-  #home-page-normal .container-logo .logo .dots-animation {
-    -webkit-animation: fade-in forwards 0.5s;
-            animation: fade-in forwards 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  #home-page-normal .container-logo .logo .t {
-    z-index: 97;
-  }
-  #home-page-normal .container-logo .logo .t-animation {
-    -webkit-animation: fade-in forwards 0.5s;
-            animation: fade-in forwards 0.5s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-  }
-  @-webkit-keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  #home-page-normal .container-logo .hero-message {
-    position: absolute;
-    bottom: 9vw;
-  }
-  #home-page-normal .container-logo .hero-message .hero_greeting {
-    font-size: 1.3vw;
-    line-height: 3vw;
-  }
-  #home-page-normal .container-logo .hero-message .hero-text {
-    font-size: 1.1vw;
-    line-height: 1.5vw;
-  }
-  #home-page-normal .container-logo .cursor {
-    width: 0.15vw;
-    height: 1.5vw;
-  }
-  #home-page-normal .container-david .david,
-  #home-page-normal .container-david .above-logo,
-  #home-page-normal .container-david .david-background {
-    display: none;
   }
 }
 
@@ -2298,13 +1576,13 @@ table {
   color: #cfcfcf;
   text-align: center;
   padding: 18vw;
-  font-size: 4.6vw;
+  font-size: 2rem;
   line-height: normal;
   z-index: 1;
 }
 
 #about-page .container .row .text-column h1 {
-  font-size: 6.8vw;
+  font-size: 3.3rem;
   margin-bottom: 6vw;
   line-height: 2.6vw;
   width: 93%;
@@ -2319,12 +1597,12 @@ table {
 #about-page .container .row .text-column #get-in-touch {
   text-align: center;
   display: inline-block;
-  padding: 2svw 4.3vw;
+  padding: 2vw 6.3vw;
   margin-top: 8vw;
-  border-radius: 3vw;
+  border-radius: 7vw;
   color: #c5c5c5;
   background: #71837c;
-  font-size: 4vw;
+  font-size: 1.85rem;
 }
 
 #about-page .container .row .text-column #get-in-touch:hover {
@@ -2372,20 +1650,13 @@ table {
             justify-content: center;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 50vh;
+    height: 50%;
     position: absolute;
     bottom: 0;
     left: 45%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 4;
-  }
-  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
-    width: 23vh;
-    position: absolute;
-    top: 45.4vh;
-    z-index: 2;
-    opacity: 0.8;
   }
   #about-page .container .row .text-column {
     -ms-flex-item-align: start;
@@ -2395,16 +1666,15 @@ table {
             justify-content: center;
     text-align: justify;
     background: rgba(49, 49, 49, 0.2);
-    font-size: 2.2vw;
     line-height: 5.3vw;
-    height: 40%;
+    height: 50%;
     padding: 6vw;
     overflow: hidden;
     position: relative;
     top: 0;
   }
   #about-page .container .row .text-column h1 {
-    font-size: 4.1vw;
+    font-size: 3rem;
     margin-bottom: 1.7vw;
     line-height: 6.6vw;
   }
@@ -2414,10 +1684,11 @@ table {
   #about-page .container .row .text-column #get-in-touch {
     padding: 0.4vw 3vw;
     margin: 2vw 0;
-    font-size: 2.3vw;
+    font-size: 2rem;
   }
   #about-page .container .row .text-column p {
     display: inline-block;
+    font-size: 1.7rem;
   }
 }
 
@@ -2457,7 +1728,7 @@ table {
     position: static;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 88vh;
+    height: 100vh;
     position: absolute;
     left: 50%;
     padding: 0;
@@ -2485,14 +1756,13 @@ table {
     -ms-flex-item-align: center;
         align-self: center;
     position: static;
-    font-size: 1.2vw;
     margin: 0;
     padding: 4vw 5vw;
     position: static;
     line-height: 2.4vw;
   }
   #about-page .container .row .text-column h1 {
-    font-size: 1.8vw;
+    font-size: 3.3rem;
     margin-bottom: 0.7vw;
     text-align: left;
     line-height: 2.6vw;
@@ -2502,15 +1772,11 @@ table {
     display: inline-block;
   }
   #about-page .container .row .text-column #get-in-touch {
-    padding: 0.1vw 1.1vw;
+    padding: 0.6vw 2vw;
     margin-top: 2vw;
-    font-size: 1.2vw;
-    width: 30%;
+    font-size: 2.5rem;
+    width: auto;
   }
-}
-
-body {
-  font-size: 1.6rem;
 }
 
 html {
@@ -2545,7 +1811,7 @@ html {
 }
 
 .section-heading {
-  font-size: 5.59vw;
+  font-size: 2.5rem;
   margin-top: 0;
   text-transform: uppercase !important;
   color: #212529;
@@ -2554,7 +1820,7 @@ html {
 }
 
 .section-subheading {
-  font-size: 3vw;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-top: 1vw;
   font-style: italic;
@@ -2571,11 +1837,11 @@ html {
     margin-top: 11vw;
   }
   .section-heading {
-    font-size: 5.59vw;
+    font-size: 4rem;
     margin-top: 0;
   }
   .section-subheading {
-    font-size: 3vw;
+    font-size: 2.5rem;
     margin-top: 1vw;
   }
 }
@@ -2594,11 +1860,11 @@ html {
     margin-top: 5vw;
   }
   .section-heading {
-    font-size: 2.2vw;
+    font-size: 4rem;
     margin-top: 0;
   }
   .section-subheading {
-    font-size: 1.2vw;
+    font-size: 2.5rem;
     margin-top: 0.7vw;
   }
 }

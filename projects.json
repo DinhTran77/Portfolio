@@ -18,15 +18,16 @@
             "link": "https://drum-shed.herokuapp.com/products",
             "image-source": "./images/portfolio/SpaceX.jpg",
             "name": "React Space-X API",
-            "description": "React application that retrieves & displays data from the Space-X api in a custom React card.",
+            "description": "A React application that retrieves & displays data from the Space-X api in a custom React card.",
             "items": {
                 "name": [
+                    "Project for React course at Seneca College",
+                    "Function components",
                     "Custom card design",
                     "Axios HTTP client",
                     "React Hooks",
                     "TypeScript",
-                    "React Router",
-                    "Render tests in Jest"
+                    "React Router"
                 ]
             }
         },
@@ -37,6 +38,7 @@
             "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
             "items": {
                 "name": [
+                    "Project for React course at Seneca College",
                     "Props and State",
                     "Event handling",
                     "CSS",
@@ -52,6 +54,7 @@
 
             "items": {
                 "name": [
+                    "Project for a responsive web development course at Seneca College",
                     "Responsive layout, images, videos & Google Map",
                     "Sticky navigation bar that fades in on scroll",
                     "Smooth scroll",
@@ -66,6 +69,7 @@
             "name": "Angular API",
             "items": {
                 "name": [
+                    "Project for an Angular course at Seneca College",
                     "Routing",
                     "Search Bar that queries employee database",
                     "Mongo DB",

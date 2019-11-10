@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 240 365.5" style="enable-background:new 0 0 240 365.5;" xml:space="preserve">
+	 viewBox="0 0 160.8 266" style="enable-background:new 0 0 160.8 266;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#202429;}
-	.st1{fill:none;stroke:#FED136;stroke-width:2.6345;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-width:2.1696;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.7779;}
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:url(#background_4_);}
+	.st2{mask:url(#SVGID_1_);}
+	.st3{fill:#202429;}
+	.st4{fill:none;stroke:#FED136;stroke-width:1.7;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:1.4;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,7.4729;}
 </style>
-<g>
-	<g>
-		<g id="background">
-			<circle id="background_1_" class="st0" cx="146.2" cy="72.6" r="63.1"/>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="56.7" y="25.5" width="81.4" height="81.4">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.7" y="25.5" width="81.4" height="81.4" id="SVGID_1_">
+	<g class="st0">
+		<g id="background_2_">
+			<linearGradient id="background_4_" gradientUnits="userSpaceOnUse" x1="97.5" y1="25.55" x2="97.5" y2="106.95">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.2213" style="stop-color:#B3B3B3"/>
+				<stop  offset="0.4298" style="stop-color:#737373"/>
+				<stop  offset="0.6177" style="stop-color:#424242"/>
+				<stop  offset="0.7813" style="stop-color:#1E1E1E"/>
+				<stop  offset="0.9143" style="stop-color:#080808"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</linearGradient>
+			<circle id="background_3_" class="st1" cx="97.5" cy="66.3" r="40.7"/>
 		</g>
-		<g id="circle-inner">
-			<circle id="cirle-inner_3_" class="st1" cx="146.2" cy="72.6" r="48"/>
-		</g>
-		<g id="circle-outer_1_">
-			<circle id="cirle-inner_2_" class="st1" cx="146.2" cy="72.6" r="59.4"/>
-		</g>
-		<g id="spinning-dots">
-			<g id="spining-dots_1_">
-				<circle class="st2" cx="146.3" cy="72.6" r="53.5">
+	</g>
+</mask>
+<g class="st2">
+	<g id="background">
+		<circle id="background_1_" class="st3" cx="97.4" cy="66.3" r="40.7"/>
+	</g>
+	<g id="circle-inner">
+		<circle id="cirle-inner_3_" class="st4" cx="97.4" cy="66.3" r="31"/>
+	</g>
+	<g id="circle-outer_1_">
+		<circle id="cirle-inner_2_" class="st4" cx="97.4" cy="66.3" r="38.3"/>
+	</g>
+	<g id="spinning-dots">
+		<g id="spining-dots_1_">
+			<g>
+				<circle class="st5" cx="97.5" cy="66.3" r="34.5"/>
 				
-					<animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="XML" calcMode="linear" dur="50s" fill="remove" from="0 50 50" repeatCount="indefinite" restart="always" to="-360 50 50" type="rotate">
+					<animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="XML" calcMode="linear" dur="50s" fill="remove" from="0 97.5 66.25" repeatCount="indefinite" restart="always" to="-360 97.5 66.25" type="rotate">
 					</animateTransform>
-				</circle>
 			</g>
 		</g>
 	</g>
 </g>
-<g>
+<g id="Lady">
 	
 		<image style="overflow:visible;enable-background:new    ;" width="1000" height="1430" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAWWCAYAAAAfW41vAAAACXBIWXMAAC4jAAAuIwF4pT92AAAF
 +mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
@@ -37484,7 +37507,7 @@ ERhpiUTSkWVztUA4QZIZbJahR5oQI8vlDpV3dPWG+uaWuw9+zjBYvrp4ji1G3H/4Dl98+jvcsEWl
 h/uoqUkwCHSeEYeatPV0KPqkQPYDWvdEKej7Br8dCEpxfHREZnL6ITKejMF1OALT+ZyubGk2NbPD
 M7bLBS+/fMrJw7fJNweEQVIODeVFiTw6YNCGxeU1wrVIPWVyPKWqbmmqgcbsUF5jQiB4T4yw2+3j
 EVKlKOuREnq3RWCBBEmPlIam2b3RZAkk+ZtuiYH18xcczEdIYaLr/ZdKyOc9YfcPqnD/Ec3/Ao/R
-IaZQWnTAAAAAAElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 0 22.327)">
+IaZQWnTAAAAAAElFTkSuQmCC" transform="matrix(0.1608 0 0 0.1608 0 36.028)">
 	</image>
 </g>
 </svg>

@@ -30,28 +30,16 @@
         }
 
         .hero-message {
-            text-align: center;
-            height: 3vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
             .hero-text {
-                color: $color_font_nav;
-                font-family: "Special Elite", cursive;
-                font-size: 4vw;
-                color: $color_font_nav;
-                line-height: 5vw;
+                font-size: 1.65rem;
             }
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 0.2vw;
-            height: 4vw;
-            background-color: $nav-area-color;
-            animation: blink 0.75s step-end infinite;
-            opacity: 0.6;
+            .cursor {
+                height: 2.5rem;
+                width: 0.2rem;
+                color: black;
+                animation: blink 0.75s step-end infinite;
+                opacity: 0.6;
+            }
         }
     }
 
@@ -84,28 +72,6 @@
                 width: $logo-image-width;
                 margin-bottom: 0vh;
             }
-
-            .hero-message {
-                text-align: center;
-                height: 3vh;
-                @include flex-center;
-                .hero-text {
-                    color: $color_font_nav;
-                    font-family: "Special Elite", cursive;
-                    font-size: 3vw;
-                    color: $color_font_nav;
-                    line-height: 5vw;
-                }
-            }
-
-            .cursor {
-                display: inline-block;
-                width: 0.2vw;
-                height: 4vw;
-                background-color: $nav-area-color;
-                animation: blink 0.75s step-end infinite;
-                opacity: 0.6;
-            }
         }
     }
 }
@@ -116,7 +82,7 @@
         $logo-image-width: 25vw;
         $home-page_screen_height: 100vw * 1.618;
         width: 100%;
-        height: $home-page_screen_height;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,25 +107,6 @@
                 height: 3vh;
                 @include flex-center;
                 height: auto;
-                .hero-text {
-                    display: flex;
-                    justify-content: center;
-                    color: $color_font_nav;
-
-                    line-height: 0.5vw;
-                    height: 0vw;
-                    font-size: 1.5vw;
-                    color: $color_font_nav;
-                }
-
-                .cursor {
-                    display: inline-block;
-                    width: 0.2vw;
-                    height: 2vw;
-                    background-color: $nav-area-color;
-                    animation: blink 0.75s step-end infinite;
-                    opacity: 0.6;
-                }
             }
         }
 

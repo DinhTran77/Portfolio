@@ -1,11 +1,9 @@
 //--------------------------MOBILE----------------------//
 #skills-page {
-    $font-size-skill-title: 2.5vw;
+    $font-size-skill-title: 1.1rem;
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
-    background: url(../../images/background-skills-page.png);
-    background-image: url(../../images/egg_shell.png);
-
-    background-size: 150px;
+    background-image: url(../../images/background-egg-shell.png);
+    background-size: 200px;
     background-color: white;
 
     .container {
@@ -19,9 +17,9 @@
         .progress-bar-container {
             display: flex;
             align-items: center;
-            height: $font-size-skill-title * 1.6;
+            height: $font-size-skill-title * 2;
             width: 100%;
-            margin-bottom: 3.4vw;
+            margin-bottom: 5.4vw;
 
             .skill-name,
             .progressPercentage {
@@ -32,23 +30,26 @@
                 align-items: flex-end;
                 flex-grow: 6;
                 flex-basis: 1;
-                width: 0;
+                font-family: $monsterrat-font;
                 font-size: $font-size-skill-title;
                 font-weight: 400;
-                font-family: $droid-font;
                 height: 100%;
                 line-height: 100%;
+                width: 100%;
                 overflow: visible;
-                font-family: $monsterrat-font;
                 z-index: 2;
+                position: absolute;
+                padding: 1vw;
+                align-items: center;
+                margin: 0;
             }
 
             .progress-bar {
                 display: flex;
+                flex-direction: row;
                 flex-grow: 7.7;
                 flex-basis: 1;
                 width: 0;
-                flex-direction: row;
                 height: 100%;
                 background-color: transparent;
                 overflow: hidden;
@@ -56,13 +57,12 @@
                 .container-progress-percentage {
                     width: 100%;
                     height: 100%;
-                    background-color: #e0e0e0;
+                    background-color: #dadada;
                     overflow: hidden;
                     display: flex;
                     align-items: flex-end;
                     .progressPercentage {
                         height: 100%;
-
                         border-radius: 0;
                         display: flex;
                         justify-content: flex-end;
@@ -70,7 +70,7 @@
                         padding-right: 2vw;
                         background-color: $color_background_yellow;
                         padding-left: 1.5vw;
-                        font-size: 2vw;
+                        font-size: 1rem;
                         font-family: $monsterrat-font;
                     }
 
@@ -139,19 +139,20 @@
     }
 }
 
-//--------------------------Desktop--------------------------//
-@media only screen and (min-width: 992px) {
+//--------------------------TABLET--------------------------//
+@media only screen and (min-width: 768px) {
     #skills-page {
-        $font-size-skill-title: 1.5vw;
-        $progress-percentage-font-size: $font-size-skill-title * 0.9;
-        height: 100vh;
-        background-size: 150px;
+        $font-size-skill-title: 2.2rem;
+
         #progress-bars-section {
             .progress-bar-container {
                 height: $font-size-skill-title * 1.2;
                 width: 95%;
-                margin-bottom: 1.9vw;
+                margin-bottom: 2.9vw;
                 align-items: flex-start;
+                display: flex;
+                width: 100%;
+                margin-bottom: 3.4vw;
 
                 .skill-name {
                     font-size: $font-size-skill-title * 0.6;
@@ -179,5 +180,13 @@
                 }
             }
         }
+    }
+}
+
+//--------------------------Desktop--------------------------//
+@media only screen and (min-width: 992px) {
+    #skills-page {
+        $font-size-skill-title: 2.5rem;
+        $progress-percentage-font-size: $font-size-skill-title * 0.9;
     }
 }

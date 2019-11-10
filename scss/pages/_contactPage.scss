@@ -9,19 +9,11 @@
     }
 
     #success-message {
-        font-size: 3.2vw;
+        font-size: 1.5rem;
         display: block;
         width: 100%;
         margin-bottom: 3vw;
         display: none;
-    }
-
-    #contact-greeting {
-        font-family: $monsterrat-font;
-        margin-top: 4vw;
-        font-size: 4vw;
-        color: rgb(255, 255, 255);
-        text-align: center;
     }
 
     .section-subheading {
@@ -37,7 +29,7 @@
             border-width: 0.2px;
             border-color: rgb(189, 187, 187);
             margin-bottom: 4vw;
-            font-size: 3vw;
+            font-size: 1rem;
         }
 
         input {
@@ -66,9 +58,9 @@
             background-color: $color_font_blue;
             color: white;
             width: 33%;
-            padding: 2.3vw 3.5vw;
+            padding: 2vw 3vw;
             border-radius: 6px;
-            font-size: 3vw;
+            font-size: 1.3rem;
             cursor: pointer;
         }
     }
@@ -82,9 +74,10 @@
 
     #contact-page {
         #success-message {
-            font-size: 3.2vw;
+            font-size: 1.7rem;
             margin-bottom: 3vw;
-            display: none;
+            // display: none;
+            display: inline-block;
         }
 
         form {
@@ -92,7 +85,7 @@
             textarea {
                 border-width: 0.2px;
                 margin-bottom: 2.5vw;
-                font-size: 2vw;
+                font-size: 1.7rem;
             }
 
             input {
@@ -108,7 +101,7 @@
                 width: 23%;
                 padding: 0.6vw;
                 border-radius: 2vw;
-                font-size: 2vw;
+                font-size: 1.7rem;
             }
         }
     }
@@ -118,8 +111,9 @@
 @media only screen and (min-width: 992px) {
     #contact-page {
         #success-message {
-            font-size: 1.1vw;
+            font-size: 1.75rem;
             margin-bottom: 1.5vw;
+            display: inline-block;
         }
 
         .container-content {
@@ -132,7 +126,7 @@
 
             input,
             textarea {
-                font-size: 0.8vw;
+                font-size: 1.75rem;
                 padding: 0.3vw;
                 border-width: 1px;
                 width: 100%;
@@ -151,7 +145,7 @@
                 width: 8vw;
                 padding: 0.2vw 0.2vw;
                 border-radius: 6px;
-                font-size: 1.2vw;
+                font-size: 1.75rem;
                 margin-top: 0vw;
 
                 &:hover {
