@@ -677,7 +677,7 @@ table {
 
 @media only screen and (min-width: 768px) {
   #skills-page #progress-bars-section .progress-bar-container {
-    height: 2.64rem;
+    height: 3.08rem;
     width: 95%;
     margin-bottom: 2.9vw;
     -webkit-box-align: start;
@@ -687,13 +687,13 @@ table {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-bottom: 3.4vw;
+    margin-bottom: 2.5vw;
   }
   #skills-page #progress-bars-section .progress-bar-container .skill-name {
-    font-size: 1.32rem;
+    font-size: 1.54rem;
     width: 100%;
     position: absolute;
-    padding-left: 0.75vw;
+    padding-left: 1vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -713,8 +713,8 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 0.7vw;
-    font-size: 1.32rem;
+    padding-right: 0.8vw;
+    font-size: 1.43rem;
   }
 }
 
