@@ -331,14 +331,28 @@ table {
   width: 70vw;
 }
 
+#home-page .container-logo .hero-message {
+  text-align: center;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
 #home-page .container-logo .hero-message .hero-text {
   font-size: 1.65rem;
 }
 
 #home-page .container-logo .hero-message .cursor {
-  height: 2.5rem;
+  height: 1.7rem;
   width: 0.2rem;
-  color: black;
   -webkit-animation: blink 0.75s step-end infinite;
           animation: blink 0.75s step-end infinite;
   opacity: 0.6;
@@ -377,9 +391,16 @@ table {
     left: 0;
     margin: 0;
   }
-  #home-page .container-logo .logo-image {
-    width: 40vh;
-    margin-bottom: 0vh;
+  #home-page .container-logo .hero-message .hero-text {
+    font-size: 2.4rem;
+  }
+  #home-page .container-logo .hero-message .cursor {
+    height: 2.4rem;
+    width: 0.2rem;
+    color: black;
+    -webkit-animation: blink 0.75s step-end infinite;
+            animation: blink 0.75s step-end infinite;
+    opacity: 0.6;
   }
 }
 
@@ -434,6 +455,16 @@ table {
         -ms-flex-align: center;
             align-items: center;
     height: auto;
+  }
+  #home-page .container-logo .hero-message .hero-text {
+    font-size: 2rem;
+  }
+  #home-page .container-logo .hero-message .cursor {
+    height: 2.5rem;
+    width: 0.2rem;
+    -webkit-animation: blink 0.75s step-end infinite;
+            animation: blink 0.75s step-end infinite;
+    opacity: 0.6;
   }
   @-webkit-keyframes blink {
     from,
@@ -1012,8 +1043,8 @@ table {
   background-color: #214261;
   color: white;
   width: 33%;
-  padding: 2vw 3vw;
-  border-radius: 6px;
+  padding: 3vw 3vw;
+  border-radius: 3vw;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -1172,7 +1203,7 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 1rem;
-  padding: 5vw;
+  padding: 7vw;
   font-family: "Special Elite", cursive;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1184,6 +1215,7 @@ table {
 @media only screen and (min-width: 768px) {
   #header-main .my-container #nav-bar #menu li a {
     font-size: 1.8rem;
+    padding: 6vw;
   }
 }
 
@@ -1263,7 +1295,7 @@ table {
     width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
@@ -1424,7 +1456,7 @@ table {
   text-decoration: none;
   color: #012040;
   font-size: 1rem;
-  padding: 5vw;
+  padding: 7vw;
   font-family: "Special Elite", cursive;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1436,6 +1468,7 @@ table {
 @media only screen and (min-width: 768px) {
   #header-main .my-container #nav-bar #menu li a {
     font-size: 1.8rem;
+    padding: 6vw;
   }
 }
 
@@ -1515,7 +1548,7 @@ table {
     width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
@@ -1682,9 +1715,9 @@ table {
     display: inline;
   }
   #about-page .container .row .text-column #get-in-touch {
-    padding: 0.4vw 3vw;
+    padding: 0.2vw 2.5vw;
     margin: 2vw 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #about-page .container .row .text-column p {
     display: inline-block;
@@ -1772,9 +1805,9 @@ table {
     display: inline-block;
   }
   #about-page .container .row .text-column #get-in-touch {
-    padding: 0.6vw 2vw;
+    padding: 0.4vw 1.5vw;
     margin-top: 2vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: auto;
   }
 }

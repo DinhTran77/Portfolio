@@ -48,7 +48,7 @@ $height_nav-bar: 5vh;
                         text-decoration: none;
                         color: $color_font_nav;
                         font-size: 1rem;
-                        padding: 5vw;
+                        padding: 7vw;
                         font-family: $type-writter-font;
                         font-family: $monsterrat-font;
                         &:hover {
@@ -71,6 +71,7 @@ $height_nav-bar: 5vh;
                     li {
                         a {
                             font-size: 1.8rem;
+                            padding: 6vw;
                         }
                     }
                 }
@@ -129,7 +130,7 @@ $height_nav-bar: 5vh;
 
                     li {
                         a {
-                            font-size: 1.4rem;
+                            font-size: 1.5rem;
                             color: inherit;
                             padding: 1.6vw;
                             margin: 0;

@@ -106,17 +106,7 @@ $text-color: rgb(207, 207, 207);
                             left: 45%;
                             transform: translateX(-50%);
                             z-index: 4;
-
-                            // background: red;
                         }
-
-                        // #logo-image {
-                        //     width: 43vh;
-                        //     position: absolute;
-                        //     top: 45.4vh;
-                        //     z-index: 2;
-                        //     opacity: 0.8;
-                        // }
                     }
                 }
                 .text-column {
@@ -124,7 +114,6 @@ $text-color: rgb(207, 207, 207);
                     justify-content: center;
                     text-align: justify;
                     background: rgba(49, 49, 49, 0.2);
-                    // font-size: 2.5rem;
                     line-height: 5.3vw;
                     height: 50%;
                     padding: 6vw;
@@ -141,9 +130,9 @@ $text-color: rgb(207, 207, 207);
                         display: inline;
                     }
                     #get-in-touch {
-                        padding: 0.4vw 3vw;
+                        padding: 0.2vw 2.5vw;
                         margin: 2vw 0;
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                     }
                     p {
                         display: inline-block;
@@ -226,9 +215,9 @@ $text-color: rgb(207, 207, 207);
                         display: inline-block;
                     }
                     #get-in-touch {
-                        padding: 0.6vw 2vw;
+                        padding: 0.4vw 1.5vw;
                         margin-top: 2vw;
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         width: auto;
                     }
                 }

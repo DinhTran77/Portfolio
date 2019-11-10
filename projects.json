@@ -59,7 +59,7 @@
                     "Sticky navigation bar that fades in on scroll",
                     "Smooth scroll",
                     "Carousal jQuery plugin",
-                    "“Scroll to top” JQuery button"
+                    "“Scroll to top” jQuery button"
                 ]
             }
         },
@@ -80,7 +80,7 @@
         {
             "link": "https://drum-shed.herokuapp.com/products",
             "image-source": "./images/portfolio/circle-animation.png",
-            "name": "Javascript Animation",
+            "name": "JavaScript Animation",
             "description": "A fun canvas animation.",
             "items": {
                 "name": [
