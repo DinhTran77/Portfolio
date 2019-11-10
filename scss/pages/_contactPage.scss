@@ -1,4 +1,4 @@
-//**************************MOBILE***********************************************
+//--------------------------MOBILE--------------------------//
 #contact-page {
     background-color: $color_background_yellow;
     .container-content {
@@ -72,9 +72,9 @@
             cursor: pointer;
         }
     }
-} //end #contact-page
+}
 
-//**************************TABLET***********************************************
+//--------------------------TABLET--------------------------//
 @media only screen and (min-width: 768px) {
     .container-content {
         margin-top: 8vw;
@@ -111,10 +111,10 @@
                 font-size: 2vw;
             }
         }
-    } //end #contact-page
+    }
 }
 
-//**************************DESKTOP***********************************************
+//--------------------------DESKTOP--------------------------//
 @media only screen and (min-width: 992px) {
     #contact-page {
         #success-message {
@@ -160,5 +160,5 @@
                 }
             }
         }
-    } //end #contact-page
+    }
 }

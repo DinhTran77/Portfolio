@@ -528,8 +528,7 @@ table {
 #skills-page {
   background: url(../../images/background-skills-page.png);
   background-image: url(../../images/egg_shell.png);
-  background-image: url(../../images/white_wall.png);
-  background-size: 110px;
+  background-size: 150px;
   background-color: white;
 }
 
@@ -656,18 +655,22 @@ table {
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .bootstrap {
-  width: 55%;
+  width: 85%;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .ajax {
-  width: 50%;
+  width: 40%;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .responsive-design {
-  width: 65%;
+  width: 80%;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .react {
+  width: 75%;
+}
+
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .styledComponents {
   width: 75%;
 }
 
@@ -676,7 +679,7 @@ table {
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .typescript {
-  width: 50%;
+  width: 70%;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .node {
@@ -692,11 +695,19 @@ table {
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .git {
-  width: 55%;
+  width: 70%;
 }
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .photoshop {
   width: 85%;
+}
+
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .CSharp {
+  width: 75%;
+}
+
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .sql {
+  width: 75%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -854,6 +865,7 @@ table {
 
 #portfolio-page #projects .project-container .project-text .project-description ul li {
   padding-left: 0.5vw;
+  text-align: left;
 }
 
 #portfolio-page #projects .project-container .project-text .preview-link {
@@ -1176,7 +1188,6 @@ table {
 
 #header-main .my-container {
   width: 100%;
-  max-width: 1400px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -1239,10 +1250,9 @@ table {
 }
 
 #header-main .my-container #nav-bar #menu li a {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
   color: #012040;
-  font-size: 3vw;
+  font-size: 1rem;
   padding: 6vw;
   font-family: "Special Elite", cursive;
 }
@@ -1253,7 +1263,7 @@ table {
 
 @media only screen and (min-width: 768px) {
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 2.5vw;
+    font-size: 1.8rem;
   }
 }
 
@@ -1330,9 +1340,10 @@ table {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.1vw;
+    font-size: 1.7rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
@@ -1428,7 +1439,6 @@ table {
 
 #header-main .my-container {
   width: 100%;
-  max-width: 1400px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -1491,10 +1501,9 @@ table {
 }
 
 #header-main .my-container #nav-bar #menu li a {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
   color: #012040;
-  font-size: 3vw;
+  font-size: 1rem;
   padding: 6vw;
   font-family: "Special Elite", cursive;
 }
@@ -1505,7 +1514,7 @@ table {
 
 @media only screen and (min-width: 768px) {
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 2.5vw;
+    font-size: 1.8rem;
   }
 }
 
@@ -1582,9 +1591,10 @@ table {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    width: 100%;
   }
   #header-main .my-container #nav-bar #menu li a {
-    font-size: 1.1vw;
+    font-size: 1.7rem;
     color: inherit;
     padding: 1.6vw;
     margin: 0;
@@ -2285,7 +2295,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #cecece;
+  color: #cfcfcf;
   text-align: center;
   padding: 18vw;
   font-size: 4.6vw;
@@ -2294,7 +2304,7 @@ table {
 }
 
 #about-page .container .row .text-column h1 {
-  font-size: 5.8vw;
+  font-size: 6.8vw;
   margin-bottom: 6vw;
   line-height: 2.6vw;
   width: 93%;
@@ -2306,20 +2316,21 @@ table {
   display: none;
 }
 
-#about-page .container .row .text-column a {
+#about-page .container .row .text-column #get-in-touch {
   text-align: center;
   display: inline-block;
-  padding: 1vw 4.3vw;
+  padding: 2svw 4.3vw;
   margin-top: 8vw;
   border-radius: 3vw;
-  background: #879c91;
-  color: #e9e9e9;
+  color: #c5c5c5;
+  background: #71837c;
   font-size: 4vw;
 }
 
-#about-page .container .row .text-column a:hover {
-  background: #596860;
+#about-page .container .row .text-column #get-in-touch:hover {
+  background: #83978f;
   text-decoration: none;
+  color: #b8b7b7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2329,15 +2340,7 @@ table {
     background-size: auto 100%;
   }
   #about-page .container {
-    width: 100%;
-    max-width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   #about-page .container .row {
     -webkit-box-pack: center;
@@ -2390,10 +2393,8 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #acbdb4;
     text-align: justify;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    background: rgba(49, 49, 49, 0.2);
     font-size: 2.2vw;
     line-height: 5.3vw;
     height: 40%;
@@ -2403,16 +2404,14 @@ table {
     top: 0;
   }
   #about-page .container .row .text-column h1 {
-    font-size: 3.8vw;
+    font-size: 4.1vw;
     margin-bottom: 1.7vw;
     line-height: 6.6vw;
-    width: 93%;
-    text-align: center;
   }
   #about-page .container .row .text-column span {
     display: inline;
   }
-  #about-page .container .row .text-column a {
+  #about-page .container .row .text-column #get-in-touch {
     padding: 0.4vw 3vw;
     margin: 2vw 0;
     font-size: 2.3vw;
@@ -2437,7 +2436,6 @@ table {
             align-items: flex-end;
   }
   #about-page .container .row {
-    margin: 0;
     padding: 0;
     height: 88vh;
     display: -webkit-box;
@@ -2450,7 +2448,6 @@ table {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
-    width: 100%;
     overflow: visible;
     position: relative;
     margin: 0;
@@ -2469,7 +2466,7 @@ table {
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
     width: 18vw;
     top: -8.5vh;
-    left: 13.5vw;
+    left: 13.53vw;
     opacity: 0.8;
   }
   #about-page .container .row .text-column {
@@ -2487,10 +2484,7 @@ table {
             align-items: flex-start;
     -ms-flex-item-align: center;
         align-self: center;
-    text-align: justify;
-    color: #879c91;
     position: static;
-    background: rgba(5, 5, 5, 0.4);
     font-size: 1.2vw;
     margin: 0;
     padding: 4vw 5vw;
@@ -2507,16 +2501,11 @@ table {
   #about-page .container .row .text-column p {
     display: inline-block;
   }
-  #about-page .container .row .text-column a {
+  #about-page .container .row .text-column #get-in-touch {
     padding: 0.1vw 1.1vw;
     margin-top: 2vw;
-    color: #012040;
     font-size: 1.2vw;
     width: 30%;
-  }
-  #about-page .container .row .text-column a:hover {
-    background: #596860;
-    text-decoration: none;
   }
 }
 

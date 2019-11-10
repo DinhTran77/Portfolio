@@ -2,8 +2,7 @@
 @import "../../scss/utilities/maxins";
 @import "../../scss/utilities/variables";
 
-//**************************MOBILE***********************************************
-
+//--------------------------MOBILE--------------------------//
 #home-page {
     $logo-image-width: 70vw;
     $home-page_screen_height: 100vw * 1.618;
@@ -54,7 +53,7 @@
             animation: blink 0.75s step-end infinite;
             opacity: 0.6;
         }
-    } //end #container-logo
+    }
 
     @keyframes blink {
         from,
@@ -65,9 +64,9 @@
             background-color: $nav-area-color;
         }
     }
-} //end home page
+}
 
-//***********************TABLET************************************
+//--------------------------TABLET--------------------------//
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #home-page {
         $logo-image-width: 40vh;
@@ -110,7 +109,8 @@
         }
     }
 }
-//***********************Desktop************************************
+
+//--------------------------Desktop--------------------------//
 @media only screen and (min-width: 992px) {
     #home-page {
         $logo-image-width: 25vw;
@@ -120,9 +120,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // flex-direction: column;
-        // background-size: 100% auto;
-        // background-repeat: no-repeat;
         background-color: $color_background_yellow;
         position: relative;
         top: 0;
@@ -153,7 +150,6 @@
                     height: 0vw;
                     font-size: 1.5vw;
                     color: $color_font_nav;
-                    // line-height: 5vw;
                 }
 
                 .cursor {
@@ -165,7 +161,7 @@
                     opacity: 0.6;
                 }
             }
-        } //end #container-logo
+        }
 
         @keyframes blink {
             from,

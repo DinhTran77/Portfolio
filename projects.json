@@ -14,30 +14,15 @@
                 ]
             }
         },
-
-        {
-            "link": "https://drum-machine-dinh.herokuapp.com/",
-            "image-source": "./images/portfolio/drum-machine.PNG",
-            "name": "React Drum-Machine",
-            "description": "As a hobbiest drummer, I wanted to create a React-style calculator, except with a fun musical twist.",
-            "items": {
-                "name": [
-                    "Responsive layout, images, videos & Google Map",
-                    "Sticky navigation bar that fades in on scroll",
-                    "Smooth scroll",
-                    "Carousal jQuery plugin",
-                    "“Scroll to top” JQuery button"
-                ]
-            }
-        },
         {
             "link": "https://drum-shed.herokuapp.com/products",
             "image-source": "./images/portfolio/SpaceX.jpg",
             "name": "React Space-X API",
-            "description": "React application that retrieves & displays data, images & links from the Space-X api.",
+            "description": "React application that retrieves & displays data from the Space-X api in a custom React card.",
             "items": {
                 "name": [
-                    "Axios",
+                    "Custom card design",
+                    "Axios HTTP client",
                     "React Hooks",
                     "TypeScript",
                     "React Router",
@@ -45,6 +30,21 @@
                 ]
             }
         },
+        {
+            "link": "https://drum-machine-dinh.herokuapp.com/",
+            "image-source": "./images/portfolio/drum-machine.PNG",
+            "name": "React Drum-Machine",
+            "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
+            "items": {
+                "name": [
+                    "Props and State",
+                    "Event handling",
+                    "CSS",
+                    "Audio files"
+                ]
+            }
+        },
+
         {
             "link": "https://dinhtran77.github.io/responsive-website/",
             "image-source": "./images/portfolio/ResponsiveSite.jpg",
@@ -66,11 +66,10 @@
             "name": "Angular API",
             "items": {
                 "name": [
-                    "Responsive layout, images, videos & Google Map",
-                    "Sticky navigation bar that fades in on scroll",
-                    "Smooth scroll",
-                    "Carousal jQuery plugin",
-                    "“Scroll to top” JQuery button"
+                    "Routing",
+                    "Search Bar that queries employee database",
+                    "Mongo DB",
+                    "Templating"
                 ]
             }
         },
@@ -78,14 +77,11 @@
             "link": "https://drum-shed.herokuapp.com/products",
             "image-source": "./images/portfolio/circle-animation.png",
             "name": "Javascript Animation",
-            "description": "Canvas animation to sharpen my Javascript skills.",
+            "description": "A fun canvas animation.",
             "items": {
                 "name": [
-                    "Responsive layout, images, videos & Google Map",
-                    "Sticky navigation bar that fades in on scroll",
-                    "Smooth scroll",
-                    "Carousal jQuery plugin",
-                    "“Scroll to top” JQuery button"
+                    "HTML5 Canvas",
+                    "Circles respond dynamically to cursor movement"
                 ]
             }
         }

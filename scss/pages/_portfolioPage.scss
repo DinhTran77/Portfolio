@@ -1,4 +1,4 @@
-//**************************MOBILE***********************************************
+//--------------------------MOBILE--------------------------//
 #portfolio-page {
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@
                         padding-left: 4.5vw;
                         li {
                             padding-left: 0.5vw;
+                            text-align: left;
                         }
                     }
                 }
@@ -107,10 +108,10 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
-    } //end projects
-} //end #portfolio-page
+    }
+}
 
-//**************************Tablet***********************************************
+//--------------------------Tablet--------------------------//
 @media only screen and (min-width: 768px) {
     #portfolio-page {
         #projects {
@@ -181,7 +182,7 @@
     }
 }
 
-//**************************Desktop***********************************************
+//--------------------------Desktop--------------------------//
 @media only screen and (min-width: 992px) {
     #portfolio-page {
         #projects {

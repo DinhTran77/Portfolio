@@ -1,4 +1,4 @@
-//***********************MOBILE************************************
+//--------------------------MOBILE--------------------------//
 $height_nav-bar: 5vh;
 
 #header-main {
@@ -12,7 +12,6 @@ $height_nav-bar: 5vh;
 
     .my-container {
         width: 100%;
-        max-width: 1400px;
         @include padding-margin-zero;
         display: flex;
         justify-content: center;
@@ -46,12 +45,13 @@ $height_nav-bar: 5vh;
                     display: flex;
                     align-items: center;
                     a {
-                        font-family: $monsterrat-font;
                         text-decoration: none;
                         color: $color_font_nav;
-                        font-size: 3vw;
+                        font-size: 1rem;
                         padding: 6vw;
                         font-family: $type-writter-font;
+                        // font-family: $monsterrat-font;
+
                         &:hover {
                             color: #4d4d4d;
                         }
@@ -62,7 +62,7 @@ $height_nav-bar: 5vh;
     }
 }
 
-//***********************TABLET************************************
+//--------------------------TABLET--------------------------//
 @media only screen and (min-width: 768px) {
     $height_nav-bar: 7vh;
     #header-main {
@@ -71,7 +71,7 @@ $height_nav-bar: 5vh;
                 #menu {
                     li {
                         a {
-                            font-size: 2.5vw;
+                            font-size: 1.8rem;
                         }
                     }
                 }
@@ -80,13 +80,12 @@ $height_nav-bar: 5vh;
     }
 }
 
-//***********************Desktop************************************
+//--------------------------Desktop--------------------------//
 @media only screen and (min-width: 992px) {
     #header-main {
         justify-content: center;
         .my-container {
             justify-content: flex-end;
-
             .nav-fade-in-desktop {
                 animation: nav-fade-in-desktop 0.7s forwards;
                 background: transparent;
@@ -127,9 +126,11 @@ $height_nav-bar: 5vh;
 
                 #menu {
                     justify-content: flex-end;
+                    width: 100%;
+
                     li {
                         a {
-                            font-size: 1.1vw;
+                            font-size: 1.7rem;
                             color: inherit;
                             padding: 1.6vw;
                             margin: 0;

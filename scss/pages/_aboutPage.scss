@@ -1,4 +1,6 @@
-//**************************MOBILE***********************************************
+$text-color: rgb(207, 207, 207);
+
+//--------------------------MOBILE--------------------------//
 #about-page {
     width: 100%;
     background: $color_blue_background;
@@ -26,14 +28,14 @@
                 margin: 0;
                 @include flex-center;
                 flex-direction: column;
-                color: #cecece;
+                color: $text-color;
                 text-align: center;
                 padding: 18vw;
                 font-size: 4.6vw;
                 line-height: normal;
                 z-index: 1;
                 h1 {
-                    font-size: 5.8vw;
+                    font-size: 6.8vw;
                     margin-bottom: 6vw;
                     line-height: 2.6vw;
                     width: 93%;
@@ -43,19 +45,21 @@
                 span {
                     display: none;
                 }
-                a {
+
+                #get-in-touch {
                     text-align: center;
                     display: inline-block;
-                    padding: 1vw 4.3vw;
+                    padding: 2svw 4.3vw;
                     margin-top: 8vw;
                     border-radius: 3vw;
-                    background: #879c91;
-                    color: rgb(233, 233, 233);
+                    color: rgb(197, 197, 197);
+                    background: #71837c;
                     font-size: 4vw;
 
                     &:hover {
-                        background: #596860;
+                        background: #83978f;
                         text-decoration: none;
+                        color: rgb(184, 183, 183);
                     }
                 }
             }
@@ -63,22 +67,16 @@
     }
 }
 
-//**************************TABLET***********************************************
+//--------------------------TABLET--------------------------//
 @media only screen and (min-width: 768px) {
+    $lady-height: 88vh;
     #about-page {
         height: 100vh;
         background-image: url(../../images/background-about-page.jpg);
         background-size: auto 100%;
-        $lady-height: 88vh;
 
         .container {
-            width: 100%;
-            max-width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
 
             .row {
                 justify-content: center;
@@ -122,10 +120,8 @@
                 .text-column {
                     align-self: flex-start;
                     justify-content: center;
-                    color: #acbdb4;
                     text-align: justify;
-                    background: rgba(0, 0, 0, 0.4);
-                    z-index: 1;
+                    background: rgba(49, 49, 49, 0.2);
                     font-size: 2.2vw;
                     line-height: 5.3vw;
                     height: 40%;
@@ -135,16 +131,14 @@
                     top: 0;
 
                     h1 {
-                        font-size: 3.8vw;
+                        font-size: 4.1vw;
                         margin-bottom: 1.7vw;
                         line-height: 6.6vw;
-                        width: 93%;
-                        text-align: center;
                     }
                     span {
                         display: inline;
                     }
-                    a {
+                    #get-in-touch {
                         padding: 0.4vw 3vw;
                         margin: 2vw 0;
                         font-size: 2.3vw;
@@ -158,19 +152,18 @@
     }
 }
 
-//**************************DESKTOP***********************************************
+//--------------------------DESKTOP--------------------------//
 @media only screen and (min-width: 992px) {
+    $lady-height: 88vh;
     #about-page {
         background-size: cover;
         position: relative;
-        $lady-height: 88vh;
 
         .container {
             flex-direction: row;
             align-items: flex-end;
 
             .row {
-                margin: 0;
                 padding: 0;
                 height: $lady-height;
                 display: flex;
@@ -179,7 +172,6 @@
                 .ladyAndLogoContainer {
                     justify-content: center;
                     height: 100%;
-                    width: 100%;
                     overflow: visible;
                     position: relative;
                     margin: 0;
@@ -199,7 +191,7 @@
                         #logo-image {
                             width: 18vw;
                             top: -8.5vh;
-                            left: 13.5vw;
+                            left: 13.53vw;
                             opacity: 0.8;
                         }
                     }
@@ -212,10 +204,7 @@
                     flex-direction: column;
                     align-items: flex-start;
                     align-self: center;
-                    text-align: justify;
-                    color: #879c91;
                     position: static;
-                    background: rgba(5, 5, 5, 0.4);
                     font-size: 1.2vw;
                     margin: 0;
                     padding: 4vw 5vw;
@@ -233,17 +222,11 @@
                     p {
                         display: inline-block;
                     }
-                    a {
+                    #get-in-touch {
                         padding: 0.1vw 1.1vw;
                         margin-top: 2vw;
-                        color: $color_font_nav;
                         font-size: 1.2vw;
                         width: 30%;
-
-                        &:hover {
-                            background: #596860;
-                            text-decoration: none;
-                        }
                     }
                 }
             }

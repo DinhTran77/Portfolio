@@ -1,12 +1,11 @@
-//**************************MOBILE***********************************************
+//--------------------------MOBILE----------------------//
 #skills-page {
     $font-size-skill-title: 2.5vw;
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
     background: url(../../images/background-skills-page.png);
     background-image: url(../../images/egg_shell.png);
-    background-image: url(../../images/white_wall.png);
 
-    background-size: 110px;
+    background-size: 150px;
     background-color: white;
 
     .container {
@@ -61,7 +60,6 @@
                     overflow: hidden;
                     display: flex;
                     align-items: flex-end;
-
                     .progressPercentage {
                         height: 100%;
 
@@ -89,23 +87,27 @@
                         width: 65%;
                     }
                     .bootstrap {
-                        width: 55%;
+                        width: 85%;
                     }
                     .ajax {
-                        width: 50%;
+                        width: 40%;
                     }
                     .responsive-design {
-                        width: 65%;
+                        width: 80%;
                     }
 
                     .react {
+                        width: 75%;
+                    }
+
+                    .styledComponents {
                         width: 75%;
                     }
                     .jest {
                         width: 55%;
                     }
                     .typescript {
-                        width: 50%;
+                        width: 70%;
                     }
 
                     .node {
@@ -118,11 +120,18 @@
                         width: 90%;
                     }
                     .git {
-                        width: 55%;
+                        width: 70%;
                     }
 
                     .photoshop {
                         width: 85%;
+                    }
+                    .CSharp {
+                        width: 75%;
+                    }
+
+                    .sql {
+                        width: 75%;
                     }
                 }
             }
@@ -130,9 +139,7 @@
     }
 }
 
-//***********************TABLET************************************
-
-//***********************Desktop************************************
+//--------------------------Desktop--------------------------//
 @media only screen and (min-width: 992px) {
     #skills-page {
         $font-size-skill-title: 1.5vw;
