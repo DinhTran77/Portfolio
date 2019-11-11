@@ -10,175 +10,68 @@
         max-width: 100%;
     }
     #projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-
-        .project-container {
+        #project {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            margin-bottom: 4vh;
-            height: 96.5%;
             overflow: hidden;
 
-            .myVideo {
-                width: 100%;
-                height: auto;
-            }
-            .project-image {
-                width: 100%;
-                height: auto;
-            }
-
-            .project-text {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(255, 253, 253);
+            .project-container {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                color: $color_font_blue;
-                font-family: $monsterrat-font;
-                position: relative;
-                // background: green;
-
-                .project-name {
-                    margin-top: 8vw;
-                    font-size: 1.75rem;
-                    color: $color_font_blue;
-                    text-align: center;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                }
-
-                .project-description {
-                    margin-top: 3vw;
-                    text-align: left;
+                align-items: center;
+                margin-bottom: 4vh;
+                height: 100%;
+                overflow: hidden;
+                margin-bottom: 22vh;
+                .myVideo {
                     width: 100%;
-                    color: $color_font_blue;
-                    padding: 0 7vw;
-                    font-size: 1.4rem;
-                    line-height: 7vw;
-                    font-weight: 400;
-
-                    ul {
-                        margin-top: 2vw;
-                        padding-left: 4.5vw;
-                        li {
-                            padding-left: 0.5vw;
-                            text-align: left;
-                        }
-                    }
+                    height: auto;
                 }
-
-                .link-github {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    bottom: 0;
+                .project-image {
                     width: 100%;
-                    background: rgb(235, 235, 235);
-                    // background: green;
-                    height: 17%;
-                    overflow: hidden;
-                    div {
-                        width: 6vw;
-                        #github {
-                            height: 5vw;
-                            margin-left: 1vw;
-                        }
-                    }
-
-                    .preview-link {
-                        padding: 0.5vw 1.75vw;
-                        border-radius: 6vw;
-                        margin: 1vw 0;
-                        font-size: 1.2rem;
-                        font-weight: 600;
-                        width: 33vw;
-                        margin-right: 1vw;
-                        background-color: #dbbd7f;
-                        text-align: center;
-                        color: $color_font_blue;
-                    }
-                }
-            }
-        }
-
-        .portfolio-site {
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-        }
-
-        .e-commerce {
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-        }
-
-        .drum-machine {
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-        }
-    }
-}
-
-//--------------------------Tablet--------------------------//
-@media only screen and (min-width: 768px) {
-    #portfolio-page {
-        #projects {
-            a {
-                text-decoration: none;
-            }
-
-            .project-container {
-                margin-bottom: 5vh;
-                position: relative;
-                background-color: white;
-
-                .project_overlay {
-                    background: rgb(7, 7, 7);
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    z-index: 10;
-                    &:hover {
-                        opacity: 0.2;
-                    }
+                    height: auto;
                 }
 
                 .project-text {
                     width: 100%;
                     height: 100%;
-                    justify-content: flex-start;
+                    background-color: rgb(255, 253, 253);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color_font_blue;
+                    font-family: $monsterrat-font;
                     position: relative;
+                    // background: green;
 
                     .project-name {
-                        margin-top: 6vw;
+                        margin-top: 8vw;
                         font-size: 1.75rem;
+                        color: $color_font_blue;
+                        text-align: center;
+                        font-weight: bold;
+                        text-transform: uppercase;
                     }
 
                     .project-description {
-                        margin-top: 1.2vw;
-                        text-align: justify;
+                        margin-top: 3vw;
+                        text-align: left;
                         width: 100%;
-                        padding: 0 2vw;
-                        padding-bottom: 6vw;
-                        font-size: 1.5rem;
-                        line-height: 3.3vw;
+                        color: $color_font_blue;
+                        padding: 0 7vw;
+                        font-size: 1.4rem;
+                        line-height: 7vw;
                         font-weight: 400;
 
                         ul {
-                            margin-top: 1.5vw;
-                            padding-left: 1.5vw;
+                            margin-top: 2vw;
+                            padding-left: 4.5vw;
                             li {
-                                padding-left: 0.3vw;
+                                padding-left: 0.5vw;
+                                text-align: left;
                             }
                         }
                     }
@@ -188,31 +81,147 @@
                         flex-direction: row;
                         justify-content: center;
                         align-items: center;
-                        position: absolute;
-                        bottom: 0;
+                        // position: absolute;
+                        // bottom: 0;
                         width: 100%;
                         background: rgb(235, 235, 235);
-
+                        height: 9vh;
+                        overflow: hidden;
                         div {
-                            width: 6vw;
+                            width: auto;
                             #github {
-                                height: 5vw;
-                                margin-left: 1.5vw;
+                                height: 11vw;
+                                margin-left: 7vw;
                             }
                         }
 
                         .preview-link {
                             padding: 0.5vw 1.75vw;
                             border-radius: 6vw;
-                            margin: 3vw 0;
+                            // margin: 1vw 0;
                             font-size: 1.2rem;
                             font-weight: 600;
-                            width: 17vw;
-                            margin-right: 1.5vw;
+                            width: 30vw;
+                            margin-right: 7vw;
+                            background-color: #dbbd7f;
+                            text-align: center;
+                            color: $color_font_blue;
+                        }
+                    }
+                }
+            }
 
-                            &:hover {
-                                color: rgb(92, 90, 99);
-                            }
+            .portfolio-site {
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+
+            .e-commerce {
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+
+            .drum-machine {
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+//--------------------------Tablet--------------------------//
+@media only screen and (min-width: 768px) {
+    #portfolio-page {
+        a {
+            text-decoration: none;
+        }
+
+        .project-container {
+            // margin-bottom: 5vh;
+            position: relative;
+            background-color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background: pink;
+            margin-bottom: 7vh;
+            // .project_overlay {
+            //     background: rgb(7, 7, 7);
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            //     opacity: 0;
+            //     z-index: 10;
+            //     &:hover {
+            //         opacity: 0.2;
+            //     }
+            // }
+
+            .project-text {
+                width: 100%;
+                height: auto;
+                justify-content: flex-start;
+                position: relative;
+                // background: red;
+
+                .project-name {
+                    margin-top: 6vw;
+                    font-size: 1.75rem;
+                }
+
+                .project-description {
+                    margin-top: 1.2vw;
+                    text-align: justify;
+                    width: 100%;
+                    // padding-top: 2vw;
+                    // padding-bottom: 6vw;
+                    font-size: 1.5rem;
+                    line-height: 3.3vw;
+                    font-weight: 400;
+                    // background: green;
+
+                    // padding-bottom: 7vh;
+                    // margin-bottom: 7vh;
+                    position: relative;
+                    margin ul {
+                        margin-top: 1.5vw;
+                        padding-left: 1.5vw;
+                        li {
+                            padding-left: 0.3vw;
+                        }
+                    }
+                }
+
+                .link-github {
+                    display: flex;
+                    display: none;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background: rgb(235, 235, 235);
+                    height: 7vh;
+
+                    div {
+                        // width: 8vw;
+                        #github {
+                            height: 5vw;
+                            margin-left: 3vw;
+                        }
+                    }
+
+                    .preview-link {
+                        padding: 0.5vw 1.75vw;
+                        border-radius: 6vw;
+                        margin: 3vw 0;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        width: 17vw;
+                        margin-right: 3vw;
+
+                        &:hover {
+                            color: rgb(92, 90, 99);
                         }
                     }
                 }

@@ -740,7 +740,7 @@ table {
   max-width: 100%;
 }
 
-#portfolio-page #projects {
+#portfolio-page #projects #project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,7 +754,7 @@ table {
   overflow: hidden;
 }
 
-#portfolio-page #projects .project-container {
+#portfolio-page #projects #project .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,21 +769,22 @@ table {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 4vh;
-  height: 96.5%;
+  height: 100%;
   overflow: hidden;
+  margin-bottom: 22vh;
 }
 
-#portfolio-page #projects .project-container .myVideo {
+#portfolio-page #projects #project .project-container .myVideo {
   width: 100%;
   height: auto;
 }
 
-#portfolio-page #projects .project-container .project-image {
+#portfolio-page #projects #project .project-container .project-image {
   width: 100%;
   height: auto;
 }
 
-#portfolio-page #projects .project-container .project-text {
+#portfolio-page #projects #project .project-container .project-text {
   width: 100%;
   height: 100%;
   background-color: #fffdfd;
@@ -805,7 +806,7 @@ table {
   position: relative;
 }
 
-#portfolio-page #projects .project-container .project-text .project-name {
+#portfolio-page #projects #project .project-container .project-text .project-name {
   margin-top: 8vw;
   font-size: 1.75rem;
   color: #214261;
@@ -814,7 +815,7 @@ table {
   text-transform: uppercase;
 }
 
-#portfolio-page #projects .project-container .project-text .project-description {
+#portfolio-page #projects #project .project-container .project-text .project-description {
   margin-top: 3vw;
   text-align: left;
   width: 100%;
@@ -825,17 +826,17 @@ table {
   font-weight: 400;
 }
 
-#portfolio-page #projects .project-container .project-text .project-description ul {
+#portfolio-page #projects #project .project-container .project-text .project-description ul {
   margin-top: 2vw;
   padding-left: 4.5vw;
 }
 
-#portfolio-page #projects .project-container .project-text .project-description ul li {
+#portfolio-page #projects #project .project-container .project-text .project-description ul li {
   padding-left: 0.5vw;
   text-align: left;
 }
 
-#portfolio-page #projects .project-container .project-text .link-github {
+#portfolio-page #projects #project .project-container .project-text .link-github {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,104 +850,100 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: #ebebeb;
-  height: 17%;
+  height: 9vh;
   overflow: hidden;
 }
 
-#portfolio-page #projects .project-container .project-text .link-github div {
-  width: 6vw;
+#portfolio-page #projects #project .project-container .project-text .link-github div {
+  width: auto;
 }
 
-#portfolio-page #projects .project-container .project-text .link-github div #github {
-  height: 5vw;
-  margin-left: 1vw;
+#portfolio-page #projects #project .project-container .project-text .link-github div #github {
+  height: 11vw;
+  margin-left: 7vw;
 }
 
-#portfolio-page #projects .project-container .project-text .link-github .preview-link {
+#portfolio-page #projects #project .project-container .project-text .link-github .preview-link {
   padding: 0.5vw 1.75vw;
   border-radius: 6vw;
-  margin: 1vw 0;
   font-size: 1.2rem;
   font-weight: 600;
-  width: 33vw;
-  margin-right: 1vw;
+  width: 30vw;
+  margin-right: 7vw;
   background-color: #dbbd7f;
   text-align: center;
   color: #214261;
 }
 
-#portfolio-page #projects .portfolio-site {
+#portfolio-page #projects #project .portfolio-site {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#portfolio-page #projects .e-commerce {
+#portfolio-page #projects #project .e-commerce {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#portfolio-page #projects .drum-machine {
+#portfolio-page #projects #project .drum-machine {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 768px) {
-  #portfolio-page #projects a {
+  #portfolio-page a {
     text-decoration: none;
   }
-  #portfolio-page #projects .project-container {
-    margin-bottom: 5vh;
+  #portfolio-page .project-container {
     position: relative;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: pink;
+    margin-bottom: 7vh;
   }
-  #portfolio-page #projects .project-container .project_overlay {
-    background: #070707;
-    position: absolute;
+  #portfolio-page .project-container .project-text {
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 10;
-  }
-  #portfolio-page #projects .project-container .project_overlay:hover {
-    opacity: 0.2;
-  }
-  #portfolio-page #projects .project-container .project-text {
-    width: 100%;
-    height: 100%;
+    height: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     position: relative;
   }
-  #portfolio-page #projects .project-container .project-text .project-name {
+  #portfolio-page .project-container .project-text .project-name {
     margin-top: 6vw;
     font-size: 1.75rem;
   }
-  #portfolio-page #projects .project-container .project-text .project-description {
+  #portfolio-page .project-container .project-text .project-description {
     margin-top: 1.2vw;
     text-align: justify;
     width: 100%;
-    padding: 0 2vw;
-    padding-bottom: 6vw;
     font-size: 1.5rem;
     line-height: 3.3vw;
     font-weight: 400;
+    position: relative;
   }
-  #portfolio-page #projects .project-container .project-text .project-description ul {
+  #portfolio-page .project-container .project-text .project-description margin ul {
     margin-top: 1.5vw;
     padding-left: 1.5vw;
   }
-  #portfolio-page #projects .project-container .project-text .project-description ul li {
+  #portfolio-page .project-container .project-text .project-description margin ul li {
     padding-left: 0.3vw;
   }
-  #portfolio-page #projects .project-container .project-text .link-github {
+  #portfolio-page .project-container .project-text .link-github {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -961,24 +958,22 @@ table {
     bottom: 0;
     width: 100%;
     background: #ebebeb;
+    height: 7vh;
   }
-  #portfolio-page #projects .project-container .project-text .link-github div {
-    width: 6vw;
-  }
-  #portfolio-page #projects .project-container .project-text .link-github div #github {
+  #portfolio-page .project-container .project-text .link-github div #github {
     height: 5vw;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
   }
-  #portfolio-page #projects .project-container .project-text .link-github .preview-link {
+  #portfolio-page .project-container .project-text .link-github .preview-link {
     padding: 0.5vw 1.75vw;
     border-radius: 6vw;
     margin: 3vw 0;
     font-size: 1.2rem;
     font-weight: 600;
     width: 17vw;
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
-  #portfolio-page #projects .project-container .project-text .link-github .preview-link:hover {
+  #portfolio-page .project-container .project-text .link-github .preview-link:hover {
     color: #5c5a63;
   }
 }
@@ -1723,6 +1718,7 @@ table {
   font-size: 2rem;
   line-height: normal;
   z-index: 1;
+  background: green;
 }
 
 #about-page .container .row .text-column h1 {
