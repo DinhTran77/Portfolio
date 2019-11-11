@@ -43,7 +43,6 @@
                 justify-content: flex-end;
                 color: $color_font_blue;
                 font-family: $monsterrat-font;
-                background: green;
                 .project-name {
                     margin-top: 8vw;
                     font-size: 1.75rem;
@@ -78,13 +77,11 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-
                     bottom: 0;
                     width: 100%;
                     background: rgb(235, 235, 235);
                     height: 8vh;
 
-                    // background: green;
                     div {
                         display: flex;
                         justify-content: center;
@@ -203,13 +200,6 @@
                             #github {
                                 height: 4vw;
                                 margin-left: 1.5vw;
-                                // height: auto;
-                                // height: auto;
-                                // margin-bottom: 1vw;
-                                // background: rgb(177, 177, 177);
-                                // padding: 1vw;
-                                // border-radius: 2vw;
-                                // background-color: #dbbd7f;
                                 &:hover {
                                     transform: scale(1.1, 1.1);
                                 }
@@ -224,8 +214,6 @@
 
                             font-weight: 600;
                             width: 15vw;
-                            // position: absolute;
-                            // bottom: -0.5vw;
                             margin-right: 1.5vw;
                             &:hover {
                                 transform: scale(1.08, 1.08);
@@ -245,7 +233,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // background: green;
 
             a {
                 text-decoration: none;
@@ -313,12 +300,6 @@
                             #github {
                                 height: 4vw;
                                 margin-left: 1.5vw;
-                                // height: auto;
-                                // height: auto;
-                                // margin-bottom: 1vw;
-                                // background: rgb(177, 177, 177);
-                                // padding: 1vw;
-                                // border-radius: 2vw;
 
                                 &:hover {
                                     transform: scale(1.1, 1.1);
@@ -331,11 +312,8 @@
                             border-radius: 6vw;
                             margin: 3vw 0;
                             font-size: 1.4rem;
-
                             font-weight: 600;
                             width: 10vw;
-                            // position: absolute;
-                            // bottom: -0.5vw;
                             margin-right: 1.5vw;
                             background-color: #dbbd7f;
 
