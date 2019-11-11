@@ -43,6 +43,8 @@
                 justify-content: center;
                 color: $color_font_blue;
                 font-family: $monsterrat-font;
+                position: relative;
+                // background: green;
 
                 .project-name {
                     margin-top: 8vw;
@@ -73,14 +75,38 @@
                     }
                 }
 
-                .preview-link {
-                    background-color: #dbbd7f;
-                    padding: 2vw 6vw;
-                    text-align: center;
-                    border-radius: 6vw;
-                    font-size: 1.4rem;
-                    color: $color_font_blue;
-                    margin: 7vw 0;
+                .link-github {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background: rgb(235, 235, 235);
+                    // background: green;
+                    height: 17%;
+                    overflow: hidden;
+                    div {
+                        width: 6vw;
+                        #github {
+                            height: 5vw;
+                            margin-left: 1vw;
+                        }
+                    }
+
+                    .preview-link {
+                        padding: 0.5vw 1.75vw;
+                        border-radius: 6vw;
+                        margin: 1vw 0;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        width: 33vw;
+                        margin-right: 1vw;
+                        background-color: #dbbd7f;
+                        text-align: center;
+                        color: $color_font_blue;
+                    }
                 }
             }
         }
@@ -128,7 +154,7 @@
                 }
 
                 .project-text {
-                    width: 95%;
+                    width: 100%;
                     height: 100%;
                     justify-content: flex-start;
                     position: relative;
@@ -157,19 +183,36 @@
                         }
                     }
 
-                    .preview-link {
-                        padding: 0.8vw 2.5vw;
-                        border-radius: 6vw;
-                        margin: 3vw 0;
-                        font-size: 1.2rem;
-                        // color: inherit;
-                        font-weight: 600;
-                        // position: absolute;
-                        bottom: -0.5vw;
-                        color: $color_font_blue;
+                    .link-github {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        background: rgb(235, 235, 235);
 
-                        &:hover {
-                            color: rgb(84, 85, 84);
+                        div {
+                            width: 6vw;
+                            #github {
+                                height: 5vw;
+                                margin-left: 1.5vw;
+                            }
+                        }
+
+                        .preview-link {
+                            padding: 0.5vw 1.75vw;
+                            border-radius: 6vw;
+                            margin: 3vw 0;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            width: 17vw;
+                            margin-right: 1.5vw;
+
+                            &:hover {
+                                color: rgb(92, 90, 99);
+                            }
                         }
                     }
                 }
@@ -246,7 +289,7 @@
                         position: absolute;
                         bottom: 0;
                         width: 100%;
-                        background: rgb(235, 235, 235);
+                        background: rgb(207, 207, 207);
 
                         div {
                             width: 6vw;
@@ -277,6 +320,7 @@
                             // position: absolute;
                             // bottom: -0.5vw;
                             margin-right: 1.5vw;
+
                             &:hover {
                                 transform: scale(1.08, 1.08);
                             }
