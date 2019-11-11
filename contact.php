@@ -12,16 +12,16 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $from_name = $_POST['name'];
     $email = $_POST['email'];
     $msg = $_POST['message'];
-    $to = 'dinhtran77@hotmail.com'; //this email address that you want to receive the email
+    $to = 'dinh@programmingmonk.com'; //this email address that you want to receive the email
     $from = 'dinh@programmingmonk.com'; //this is who the email is from
 
     $mail = new PHPMailer();
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
 
-    $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = 'ssl';
     $mail->Host = 'mail.programmingmonk.com';
-    $mail->Port = 995;
+    $mail->Port = 465;
     $mail->Username = "dinh@programmingmonk.com";
     $mail->Password = 'Letme7777';
 
