@@ -12,7 +12,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $from_name = $_POST['name'];
     $email = $_POST['email'];
     $msg = $_POST['message'];
-    $to = 'dinh@programmingmonk.com'; //this email address that you want to receive the email
+    $to = 'dinhtran77@hotmail.com'; //this email address that you want to receive the email
     $from = 'dinh@programmingmonk.com'; //this is who the email is from
 
     $mail = new PHPMailer();
