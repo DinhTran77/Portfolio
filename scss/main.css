@@ -914,12 +914,22 @@ table {
     font-size: 1.2rem;
     color: inherit;
     font-weight: 600;
-    position: absolute;
     bottom: -0.5vw;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  #portfolio-page #projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #portfolio-page #projects a {
     text-decoration: none;
   }
@@ -968,15 +978,35 @@ table {
   #portfolio-page #projects .project-container .project-text .project-description ul li {
     padding-left: 0.3vw;
   }
-  #portfolio-page #projects .project-container .project-text .preview-link {
-    padding: 0.8vw 2.5vw;
+  #portfolio-page #projects .project-container .project-text .link-github {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  #portfolio-page #projects .project-container .project-text .link-github #github {
+    height: 4vw;
+    margin-left: 3vw;
+  }
+  #portfolio-page #projects .project-container .project-text .link-github .preview-link {
+    padding: 0.5vw 1.75vw;
     border-radius: 6vw;
     margin: 3vw 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: inherit;
     font-weight: 600;
-    position: absolute;
-    bottom: -0.5vw;
   }
 }
 

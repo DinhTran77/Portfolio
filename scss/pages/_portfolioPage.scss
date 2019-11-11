@@ -164,7 +164,7 @@
                         font-size: 1.2rem;
                         color: inherit;
                         font-weight: 600;
-                        position: absolute;
+                        // position: absolute;
                         bottom: -0.5vw;
                     }
                 }
@@ -177,6 +177,11 @@
 @media only screen and (min-width: 992px) {
     #portfolio-page {
         #projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background: green;
+
             a {
                 text-decoration: none;
             }
@@ -228,16 +233,36 @@
                             }
                         }
                     }
-
-                    .preview-link {
-                        padding: 0.8vw 2.5vw;
-                        border-radius: 6vw;
-                        margin: 3vw 0;
-                        font-size: 1.5rem;
-                        color: inherit;
-                        font-weight: 600;
+                    .link-github {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
                         position: absolute;
-                        bottom: -0.5vw;
+                        bottom: 0;
+                        // background: green;
+                        width: 100%;
+                        #github {
+                            height: 4vw;
+                            margin-left: 3vw;
+                            // height: auto;
+                            // height: auto;
+                            // margin-bottom: 1vw;
+                            // background: rgb(177, 177, 177);
+                            // padding: 1vw;
+                            // border-radius: 2vw;
+                            // background-color: #dbbd7f;
+                        }
+                        .preview-link {
+                            padding: 0.5vw 1.75vw;
+                            border-radius: 6vw;
+                            margin: 3vw 0;
+                            font-size: 1.4rem;
+                            color: inherit;
+                            font-weight: 600;
+                            // position: absolute;
+                            // bottom: -0.5vw;
+                        }
                     }
                 }
             }
