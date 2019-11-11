@@ -13,17 +13,17 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $email = $_POST['email'];
     $msg = $_POST['message'];
     $to = 'dinhtran77@hotmail.com'; //this email address that you want to receive the email
-    $from = 'dinhtran77@hotmail.com'; //this is who the email is from
+    $from = 'dinh@programmingmonk.com'; //this is who the email is from
 
     $mail = new PHPMailer();
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
 
     $mail->SMTPSecure = 'tls';
-    $mail->Host = 'smtp.live.com';
-    $mail->Port = 587;
-    $mail->Username = 'dinhtran77@hotmail.com';
-    $mail->Password = 'Letme8888';
+    $mail->Host = 'mail.programmingmonk.com';
+    $mail->Port = 995;
+    $mail->Username = "dinh@programmingmonk.com";
+    $mail->Password = 'Letme7777';
 
     $mail->IsHTML(true);
     $mail->From = $to;
@@ -36,7 +36,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $mail->Subject = 'Message from client: ' . $email;
 
     if (!$mail->Send()) {
-        print_r("Email failed");
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
 
     } else {
         print_r('Email sent successfully!');

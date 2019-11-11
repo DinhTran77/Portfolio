@@ -15,7 +15,7 @@
             }
         },
         {
-            "link": "https://drum-shed.herokuapp.com/products",
+            "link": "https://space-x-api.herokuapp.com/",
             "image-source": "./images/portfolio/SpaceX.jpg",
             "name": "React Space-X API",
             "description": "A React application that retrieves & displays data from the Space-X api in a custom React card.",
@@ -32,7 +32,7 @@
             }
         },
         {
-            "link": "https://drum-machine-dinh.herokuapp.com/",
+            "link": "https://dinh-drum-machine.herokuapp.com/",
             "image-source": "./images/portfolio/drum-machine.PNG",
             "name": "React Drum-Machine",
             "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
@@ -64,7 +64,7 @@
             }
         },
         {
-            "link": "https://drum-shed.herokuapp.com/products",
+            "link": "https://dinh-angular-project.herokuapp.com/home",
             "image-source": "./images/portfolio/Angular.jpg",
             "name": "Angular API",
             "items": {
@@ -78,7 +78,7 @@
             }
         },
         {
-            "link": "https://drum-shed.herokuapp.com/products",
+            "link": "https://dinhtran77.github.io/circle_animation/",
             "image-source": "./images/portfolio/circle-animation.png",
             "name": "JavaScript Animation",
             "description": "A fun canvas animation.",
