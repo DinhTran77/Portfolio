@@ -3,8 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 
 require './PHPMailer/src/Exception.php';
-require '.\PHPMailer\src\PHPMailer.php';
-require '.\PHPMailer\src\SMTP.php';
+require './PHPMailer/src/PHPMailer.php';
+require './PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
@@ -36,7 +36,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $mail->Subject = 'Message from client: ' . $email;
 
     if (!$mail->Send()) {
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        print_r('Mailer Error: ' . $mail->ErrorInfo);
 
     } else {
         print_r('Email sent successfully!');

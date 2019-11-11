@@ -7,6 +7,10 @@ $text-color: rgb(207, 207, 207);
     background-size: cover;
     position: relative;
     $lady-height: 41vw;
+    background-image: url(../../images/background-dots.png);
+    // background-image: url(../../images/background-dots-black.jpg);
+    // background-image: url(../../images/background-dots-blacker.jpg);
+    background-size: 40px;
     .container {
         width: 100%;
         max-width: 100%;
@@ -34,6 +38,7 @@ $text-color: rgb(207, 207, 207);
                 font-size: 2rem;
                 line-height: normal;
                 z-index: 1;
+
                 h1 {
                     font-size: 3.3rem;
                     margin-bottom: 6vw;
@@ -72,9 +77,6 @@ $text-color: rgb(207, 207, 207);
     $lady-height: 98vh;
     #about-page {
         height: 100vh;
-        background-image: url(../../images/background-about-page.jpg);
-        background-size: auto 100%;
-
         .container {
             height: 100%;
 
@@ -87,7 +89,7 @@ $text-color: rgb(207, 207, 207);
 
                 .ladyAndLogoContainer {
                     display: flex;
-                    height: 100vh;
+                    height: 105vh;
                     width: 100%;
                     position: absolute;
                     overflow: hidden;
@@ -113,13 +115,16 @@ $text-color: rgb(207, 207, 207);
                     align-self: flex-start;
                     justify-content: center;
                     text-align: justify;
-                    background: rgba(49, 49, 49, 0.2);
+
                     line-height: 5.3vw;
                     height: 50%;
                     padding: 6vw;
                     overflow: hidden;
                     position: relative;
                     top: 0;
+                    background: rgba(255, 254, 254, 0.03);
+                    box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.2);
+                    border: 0.1px solid rgba(255, 255, 255, 0.05);
 
                     h1 {
                         font-size: 3rem;
@@ -136,7 +141,7 @@ $text-color: rgb(207, 207, 207);
                     }
                     p {
                         display: inline-block;
-                        font-size: 1.7rem;
+                        font-size: 2rem;
                     }
                 }
             }
@@ -148,9 +153,7 @@ $text-color: rgb(207, 207, 207);
 @media only screen and (min-width: 992px) {
     $lady-height: 88vh;
     #about-page {
-        background-size: cover;
         position: relative;
-
         .container {
             flex-direction: row;
             align-items: flex-end;
@@ -173,19 +176,15 @@ $text-color: rgb(207, 207, 207);
                         position: static;
 
                         #lady {
-                            height: 100vh;
+                            height: 108vh;
                             position: absolute;
                             left: 50%;
                             padding: 0;
                             margin: 0;
                             // background: green;
-                        }
-
-                        #logo-image {
-                            width: 18vw;
-                            top: -8.5vh;
-                            left: 13.53vw;
-                            opacity: 0.8;
+                            filter: drop-shadow(
+                                -3px 6px 5px rgba(0, 0, 0, 0.8)
+                            );
                         }
                     }
                 }
@@ -199,7 +198,7 @@ $text-color: rgb(207, 207, 207);
                     align-self: center;
                     position: static;
                     margin: 0;
-                    padding: 4vw 5vw;
+                    padding: 4vw 6vw;
                     position: static;
                     line-height: 2.4vw;
 

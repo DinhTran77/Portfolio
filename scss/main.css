@@ -1562,6 +1562,8 @@ table {
   background: #214261;
   background-size: cover;
   position: relative;
+  background-image: url(../../images/background-dots.png);
+  background-size: 40px;
 }
 
 #about-page .container {
@@ -1648,8 +1650,6 @@ table {
 @media only screen and (min-width: 768px) {
   #about-page {
     height: 100vh;
-    background-image: url(../../images/background-about-page.jpg);
-    background-size: auto 100%;
   }
   #about-page .container {
     height: 100%;
@@ -1667,7 +1667,7 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     position: absolute;
     overflow: hidden;
@@ -1699,13 +1699,16 @@ table {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: justify;
-    background: rgba(49, 49, 49, 0.2);
     line-height: 5.3vw;
     height: 50%;
     padding: 6vw;
     overflow: hidden;
     position: relative;
     top: 0;
+    background: rgba(255, 254, 254, 0.03);
+    -webkit-box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.2);
+    border: 0.1px solid rgba(255, 255, 255, 0.05);
   }
   #about-page .container .row .text-column h1 {
     font-size: 3rem;
@@ -1722,13 +1725,12 @@ table {
   }
   #about-page .container .row .text-column p {
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #about-page {
-    background-size: cover;
     position: relative;
   }
   #about-page .container {
@@ -1762,17 +1764,13 @@ table {
     position: static;
   }
   #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #lady {
-    height: 100vh;
+    height: 108vh;
     position: absolute;
     left: 50%;
     padding: 0;
     margin: 0;
-  }
-  #about-page .container .row .ladyAndLogoContainer .ladyANDlogo #logo-image {
-    width: 18vw;
-    top: -8.5vh;
-    left: 13.53vw;
-    opacity: 0.8;
+    -webkit-filter: drop-shadow(-3px 6px 5px rgba(0, 0, 0, 0.8));
+            filter: drop-shadow(-3px 6px 5px rgba(0, 0, 0, 0.8));
   }
   #about-page .container .row .text-column {
     width: 100%;
@@ -1791,7 +1789,7 @@ table {
         align-self: center;
     position: static;
     margin: 0;
-    padding: 4vw 5vw;
+    padding: 4vw 6vw;
     position: static;
     line-height: 2.4vw;
   }
