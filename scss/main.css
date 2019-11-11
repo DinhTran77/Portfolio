@@ -840,6 +840,7 @@ table {
   text-align: center;
   border-radius: 6vw;
   font-size: 1.4rem;
+  color: #214261;
   margin: 7vw 0;
 }
 
@@ -912,9 +913,12 @@ table {
     border-radius: 6vw;
     margin: 3vw 0;
     font-size: 1.2rem;
-    color: inherit;
     font-weight: 600;
     bottom: -0.5vw;
+    color: #214261;
+  }
+  #portfolio-page #projects .project-container .project-text .preview-link:hover {
+    color: #545554;
   }
 }
 
@@ -950,7 +954,7 @@ table {
     opacity: 0.2;
   }
   #portfolio-page #projects .project-container .project-text {
-    width: 95%;
+    width: 100%;
     height: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -995,18 +999,31 @@ table {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background: #ebebeb;
   }
-  #portfolio-page #projects .project-container .project-text .link-github #github {
+  #portfolio-page #projects .project-container .project-text .link-github div {
+    width: 6vw;
+  }
+  #portfolio-page #projects .project-container .project-text .link-github div #github {
     height: 4vw;
-    margin-left: 3vw;
+    margin-left: 1.5vw;
+  }
+  #portfolio-page #projects .project-container .project-text .link-github div #github:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   #portfolio-page #projects .project-container .project-text .link-github .preview-link {
     padding: 0.5vw 1.75vw;
     border-radius: 6vw;
     margin: 3vw 0;
     font-size: 1.4rem;
-    color: inherit;
     font-weight: 600;
+    width: 10vw;
+    margin-right: 1.5vw;
+  }
+  #portfolio-page #projects .project-container .project-text .link-github .preview-link:hover {
+    -webkit-transform: scale(1.08, 1.08);
+            transform: scale(1.08, 1.08);
   }
 }
 

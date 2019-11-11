@@ -2,6 +2,7 @@
     "projects": [
         {
             "link": "http://www.dinhportfolio.com/",
+            "github": "https://github.com/DinhTran77/Portfolio",
             "image-source": "./images/portfolio/personal-sight.png",
             "name": "Portfolio Website",
             "description": "I am particularly proud of this project, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
@@ -16,6 +17,7 @@
         },
         {
             "link": "https://space-x-api.herokuapp.com/",
+            "github": "https://github.com/DinhTran77/React-SpaceX",
             "image-source": "./images/portfolio/SpaceX.jpg",
             "name": "React Space-X API",
             "description": "A React application that retrieves & displays data from the Space-X api in a custom React card.",
@@ -33,6 +35,7 @@
         },
         {
             "link": "https://dinh-drum-machine.herokuapp.com/",
+            "github": "https://github.com/DinhTran77/React-SpaceX",
             "image-source": "./images/portfolio/drum-machine.PNG",
             "name": "React Drum-Machine",
             "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
