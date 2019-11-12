@@ -1,96 +1,94 @@
 {
-    "projects": [
-        {
-            "link": "http://www.dinhportfolio.com/",
-            "github": "https://github.com/DinhTran77/Portfolio",
-            "image-source": "./images/portfolio/personal-sight.png",
-            "name": "Portfolio Website",
-            "description": "I am particularly proud of this project, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
-            "items": {
-                "name": [
-                    "SCSS",
-                    "PHP contact form",
-                    "Ajax",
-                    "Mustache templating"
-                ]
-            }
-        },
-        {
-            "link": "https://space-x-api.herokuapp.com/",
-            "github": "https://github.com/DinhTran77/React-SpaceX",
-            "image-source": "./images/portfolio/SpaceX.jpg",
-            "name": "React Space-X API",
-            "description": "A React application that retrieves & displays data from the Space-X api in a custom React card.",
-            "items": {
-                "name": [
-                    "Project for React course at Seneca College",
-                    "Function components",
-                    "Custom card design",
-                    "Axios HTTP client",
-                    "React Hooks",
-                    "TypeScript",
-                    "React Router"
-                ]
-            }
-        },
-        {
-            "link": "https://dinh-drum-machine.herokuapp.com/",
-            "github": "https://github.com/DinhTran77/React-SpaceX",
-            "image-source": "./images/portfolio/drum-machine.PNG",
-            "name": "React Drum-Machine",
-            "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
-            "items": {
-                "name": [
-                    "Project for React course at Seneca College",
-                    "Props and State",
-                    "Event handling",
-                    "CSS",
-                    "Audio files"
-                ]
-            }
-        },
+  "projects": [
+    {
+      "link": "http://www.dinhportfolio.com/",
+      "github": "https://github.com/DinhTran77/Portfolio",
+      "image-source": "./images/portfolio/personal-sight.png",
+      "name": "Portfolio Website",
+      "description": "I am particularly proud of this project, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
+      "items": {
+        "name": ["SCSS", "PHP contact form", "Ajax", "Mustache templating"]
+      }
+    },
+    {
+      "link": "https://space-x-api.herokuapp.com/",
+      "github": "https://github.com/DinhTran77/SpaceX",
+      "image-source": "./images/portfolio/SpaceX.jpg",
+      "name": "React Space-X API",
+      "description": "A React application that retrieves & displays data from the Space-X api in a custom React card.",
+      "items": {
+        "name": [
+          "Project for React course at Seneca College",
+          "Function components",
+          "Custom card design",
+          "Axios HTTP client",
+          "React Hooks",
+          "TypeScript",
+          "React Router"
+        ]
+      }
+    },
+    {
+      "link": "https://dinh-drum-machine.herokuapp.com/",
+      "github": "https://github.com/DinhTran77/drum-machine",
+      "image-source": "./images/portfolio/drum-machine.PNG",
+      "name": "React Drum-Machine",
+      "description": "As a hobbiest drummer, I wanted to create a react application with a fun musical twist.",
+      "items": {
+        "name": [
+          "Project for React course at Seneca College",
+          "Props and State",
+          "Event handling",
+          "CSS",
+          "Audio files"
+        ]
+      }
+    },
 
-        {
-            "link": "https://dinhtran77.github.io/responsive-website/",
-            "image-source": "./images/portfolio/ResponsiveSite.jpg",
-            "name": "Responsive Webpage",
+    {
+      "link": "https://dinhtran77.github.io/responsive-website/",
+      "github": "https://github.com/DinhTran77/responsive-website",
+      "image-source": "./images/portfolio/ResponsiveSite.jpg",
+      "name": "Responsive Webpage",
 
-            "items": {
-                "name": [
-                    "Project for a responsive web development course at Seneca College",
-                    "Responsive layout, images, videos & Google Map",
-                    "Sticky navigation bar that fades in on scroll",
-                    "Smooth scroll",
-                    "Carousal jQuery plugin",
-                    "“Scroll to top” jQuery button"
-                ]
-            }
-        },
-        {
-            "link": "https://dinh-angular-project.herokuapp.com/home",
-            "image-source": "./images/portfolio/Angular.jpg",
-            "name": "Angular API",
-            "items": {
-                "name": [
-                    "Project for an Angular course at Seneca College",
-                    "Routing",
-                    "Search Bar that queries employee database",
-                    "Mongo DB",
-                    "Templating"
-                ]
-            }
-        },
-        {
-            "link": "https://dinhtran77.github.io/circle_animation/",
-            "image-source": "./images/portfolio/circle-animation.png",
-            "name": "JavaScript Animation",
-            "description": "A fun canvas animation.",
-            "items": {
-                "name": [
-                    "HTML5 Canvas",
-                    "Circles respond dynamically to cursor movement"
-                ]
-            }
-        }
-    ]
+      "items": {
+        "name": [
+          "Project for a responsive web development course at Seneca College",
+          "Responsive layout, images, videos & Google Map",
+          "Sticky navigation bar that fades in on scroll",
+          "Smooth scroll",
+          "Carousal jQuery plugin",
+          "“Scroll to top” jQuery button"
+        ]
+      }
+    },
+    {
+      "link": "https://dinh-angular-project.herokuapp.com/home",
+      "image-source": "./images/portfolio/Angular.jpg",
+      "github": "https://github.com/DinhTran77/angular-app",
+      "name": "Angular API",
+      "items": {
+        "name": [
+          "Project for an Angular course at Seneca College",
+          "Routing",
+          "Search Bar that queries employee database",
+          "Mongo DB",
+          "Templating"
+        ]
+      }
+    },
+    {
+      "link": "https://dinhtran77.github.io/circle_animation/",
+      "github": "https://github.com/DinhTran77/circle_animation",
+      "image-source": "./images/portfolio/circle-animation.png",
+      "name": "JavaScript Animation",
+      "description": "A fun canvas animation.",
+      "items": {
+        "name": [
+          "HTML5 Canvas",
+          "Circles respond dynamically to cursor movement"
+        ]
+      }
+    }
+  ]
 }
