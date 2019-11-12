@@ -7,7 +7,12 @@
       "name": "Portfolio Website",
       "description": "I am particularly proud of this project, because I developed everything from scratch, including the design, logo, graphics, animations & PHP code.",
       "items": {
-        "name": ["SCSS", "PHP contact form", "Ajax", "Mustache templating"]
+        "name": [
+          "SCSS",
+          "PHP contact form",
+          "Ajax",
+          "Mustache templating"
+        ]
       }
     },
     {
@@ -44,13 +49,11 @@
         ]
       }
     },
-
     {
       "link": "https://dinhtran77.github.io/responsive-website/",
       "github": "https://github.com/DinhTran77/responsive-website",
       "image-source": "./images/portfolio/ResponsiveSite.jpg",
       "name": "Responsive Webpage",
-
       "items": {
         "name": [
           "Project for a responsive web development course at Seneca College",
