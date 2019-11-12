@@ -1,6 +1,8 @@
 # Project Name
 Dinh's Portfolio
 
+![Porfolio site image](./images/portfolio/personal-sight.png)
+
 ---
 
 
@@ -8,7 +10,7 @@ Dinh's Portfolio
 - [Live Preview](#live-preview)
 - [Description](#description)
 - [How to use](#how-to-use)
-- [License](#installation)
+- [License](#license)
 
 ---
 
@@ -16,18 +18,20 @@ Dinh's Portfolio
 http://www.dinhportfolio.com/
 
 ---
-## Desciption
+## Description
 A portfolio that tells you a little about me and some of my work.
 
 ---
 
-## Installation
+## How to use
 1. Download respository
 2. Open index.html
 
 ---
 
 ## License
+
 Copyright 2019. Dinh Tran
+
 ---
 
