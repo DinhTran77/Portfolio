@@ -71,41 +71,56 @@
                         }
                     }
                 }
-
                 .link-github {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
+                    position: relative;
                     bottom: 0;
                     width: 100%;
                     background: rgb(235, 235, 235);
                     height: 8vh;
-
+                    
                     div {
-                        display: flex;
-                        justify-content: center;
-
-                        #github {
-                            height: 10vw;
-                            margin-left: 8vw;
+                        
+                        // padding: 0.75vw 1.75vw;
+                            border-radius: 5vw;
+                            background-color: #dbbd7f;
+                             height: 8vw;
+                             display: flex;
+                           
+                            justify-content: center;
+                            align-items: center;
+                         margin-left: 2vw;
+                            width: 30vw;
                             &:hover {
                                 transform: scale(1.1, 1.1);
                             }
+                        #github {
+                            height: 5vw;
+                            padding: 0;
+                            margin: 0;
                         }
                     }
 
                     .preview-link {
-                        padding: 0.5vw 1.75vw;
+                        display: flex;
+                        align-items: center;
+                        // padding: 0.5vw 1.75vw;
                         border-radius: 6vw;
+                        // margin: 3vw 0;
+                        padding: 0;
+                        margin: 0;
                         font-size: 1.2rem;
-                        text-align: center;
                         font-weight: 600;
-                        width: 30vw;
-                        margin-right: 8vw;
                         color: $color_font_blue;
+                        margin-right: 2vw;
                         background-color: #dbbd7f;
+                        height: 8vw;
+                        width: 30vw;
                         &:hover {
+                            color: rgb(94, 94, 95);
                             transform: scale(1.08, 1.08);
                         }
                     }
@@ -194,28 +209,48 @@
                         bottom: 0;
                         width: 100%;
                         background: rgb(235, 235, 235);
-
+                        height: 9vh;
                         div {
-                            width: 6vw;
-                            #github {
-                                height: 4vw;
-                                margin-left: 1.5vw;
+                            
+                            // padding: 0.75vw 1.75vw;
+                                border-radius: 2vw;
+                                background-color: #dbbd7f;
+                                 height: 4vw;
+                                 display: flex;
+                               
+                                justify-content: center;
+                                align-items: center;
+                             
+                                width: 15vw;
+                                margin-left: 1vw;
                                 &:hover {
                                     transform: scale(1.1, 1.1);
                                 }
+                            #github {
+                                height: 2.5vw;
+                                padding: 0;
+                                margin: 0;
+                                margin-right: 1vw;
                             }
                         }
 
                         .preview-link {
-                            padding: 0.5vw 1.75vw;
+                            display: flex;
+                            align-items: center;
+                            // padding: 0.5vw 1.75vw;
                             border-radius: 6vw;
-                            margin: 3vw 0;
+                            // margin: 3vw 0;
+                            padding: 0;
+                            margin: 0;
                             font-size: 1.2rem;
-
                             font-weight: 600;
-                            width: 15vw;
+                            
                             margin-right: 1.5vw;
+                            background-color: #dbbd7f;
+                            height: 4vw;
+                            width: 15vw;
                             &:hover {
+                                color: rgb(94, 94, 95);
                                 transform: scale(1.08, 1.08);
                             }
                         }
@@ -296,26 +331,41 @@
                         background: rgb(235, 235, 235);
                         height: 15vh;
                         div {
-                            width: 6vw;
-                            #github {
-                                height: 4vw;
-                                margin-left: 1.5vw;
-
+                            width: 7vw;
+                            // padding: 0.75vw 1.75vw;
+                                border-radius: 2vw;
+                                background-color: #dbbd7f;
+                                display: flex;
+                                height: 2.5vw;
+                                // justify-content: center;
+                                align-items: center;
+                                width: 9vw;
+                                margin-left: 1vw;
                                 &:hover {
                                     transform: scale(1.1, 1.1);
                                 }
+                            #github {
+                                height: 1.5vw;
+                                padding: 0;
+                                // background: green;
+                          
                             }
                         }
 
                         .preview-link {
-                            padding: 0.5vw 1.75vw;
+                            display: flex;
+                            align-items: center;
+                            // padding: 0.5vw 1.75vw;
                             border-radius: 6vw;
-                            margin: 3vw 0;
+                            // margin: 3vw 0;
+                            padding: 0;
+                            margin: 0;
                             font-size: 1.4rem;
                             font-weight: 600;
-                            width: 10vw;
-                            margin-right: 1.5vw;
+                            width: 9vw;
+                            margin-right: 1vw;
                             background-color: #dbbd7f;
+                            height: 2.5vw;
 
                             &:hover {
                                 color: rgb(94, 94, 95);

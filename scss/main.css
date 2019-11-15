@@ -848,6 +848,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: #ebebeb;
@@ -855,37 +856,54 @@ table {
 }
 
 #portfolio-page #projects .project-container .project-text .link-github div {
+  border-radius: 5vw;
+  background-color: #dbbd7f;
+  height: 8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2vw;
+  width: 30vw;
 }
 
-#portfolio-page #projects .project-container .project-text .link-github div #github {
-  height: 10vw;
-  margin-left: 8vw;
-}
-
-#portfolio-page #projects .project-container .project-text .link-github div #github:hover {
+#portfolio-page #projects .project-container .project-text .link-github div:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
 
+#portfolio-page #projects .project-container .project-text .link-github div #github {
+  height: 5vw;
+  padding: 0;
+  margin: 0;
+}
+
 #portfolio-page #projects .project-container .project-text .link-github .preview-link {
-  padding: 0.5vw 1.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 6vw;
+  padding: 0;
+  margin: 0;
   font-size: 1.2rem;
-  text-align: center;
   font-weight: 600;
-  width: 30vw;
-  margin-right: 8vw;
   color: #214261;
+  margin-right: 2vw;
   background-color: #dbbd7f;
+  height: 8vw;
+  width: 30vw;
 }
 
 #portfolio-page #projects .project-container .project-text .link-github .preview-link:hover {
+  color: #5e5e5f;
   -webkit-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
 }
@@ -972,28 +990,53 @@ table {
     bottom: 0;
     width: 100%;
     background: #ebebeb;
+    height: 9vh;
   }
   #portfolio-page #projects .project-container .project-text .link-github div {
-    width: 6vw;
-  }
-  #portfolio-page #projects .project-container .project-text .link-github div #github {
+    border-radius: 2vw;
+    background-color: #dbbd7f;
     height: 4vw;
-    margin-left: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15vw;
+    margin-left: 1vw;
   }
-  #portfolio-page #projects .project-container .project-text .link-github div #github:hover {
+  #portfolio-page #projects .project-container .project-text .link-github div:hover {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
   }
+  #portfolio-page #projects .project-container .project-text .link-github div #github {
+    height: 2.5vw;
+    padding: 0;
+    margin: 0;
+    margin-right: 1vw;
+  }
   #portfolio-page #projects .project-container .project-text .link-github .preview-link {
-    padding: 0.5vw 1.75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6vw;
-    margin: 3vw 0;
+    padding: 0;
+    margin: 0;
     font-size: 1.2rem;
     font-weight: 600;
-    width: 15vw;
     margin-right: 1.5vw;
+    background-color: #dbbd7f;
+    height: 4vw;
+    width: 15vw;
   }
   #portfolio-page #projects .project-container .project-text .link-github .preview-link:hover {
+    color: #5e5e5f;
     -webkit-transform: scale(1.08, 1.08);
             transform: scale(1.08, 1.08);
   }
@@ -1080,25 +1123,43 @@ table {
     height: 15vh;
   }
   #portfolio-page #projects .project-container .project-text .link-github div {
-    width: 6vw;
+    width: 7vw;
+    border-radius: 2vw;
+    background-color: #dbbd7f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 9vw;
+    margin-left: 1vw;
   }
-  #portfolio-page #projects .project-container .project-text .link-github div #github {
-    height: 4vw;
-    margin-left: 1.5vw;
-  }
-  #portfolio-page #projects .project-container .project-text .link-github div #github:hover {
+  #portfolio-page #projects .project-container .project-text .link-github div:hover {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
   }
+  #portfolio-page #projects .project-container .project-text .link-github div #github {
+    height: 1.5vw;
+    padding: 0;
+  }
   #portfolio-page #projects .project-container .project-text .link-github .preview-link {
-    padding: 0.5vw 1.75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6vw;
-    margin: 3vw 0;
+    padding: 0;
+    margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
-    width: 10vw;
-    margin-right: 1.5vw;
+    width: 9vw;
+    margin-right: 1vw;
     background-color: #dbbd7f;
+    height: 2.5vw;
   }
   #portfolio-page #projects .project-container .project-text .link-github .preview-link:hover {
     color: #5e5e5f;
