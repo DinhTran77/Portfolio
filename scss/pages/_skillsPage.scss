@@ -3,7 +3,7 @@
     $font-size-skill-title: 1.1rem;
     $progress-percentage-font-size: $font-size-skill-title * 0.9;
     background-image: url(../../images/background-egg-shell.png);
-    background-size: 200px;
+    background-size: 170px;
     background-color: white;
 
     .container {
@@ -132,6 +132,10 @@
 
                     .sql {
                         width: 75%;
+                    }
+
+                    .nosql{
+                        width: 50%;
                     }
                 }
             }

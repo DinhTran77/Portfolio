@@ -1,40 +1,74 @@
 {
     "skills": [
-        { "skill-title": "HTML & SCSS", "percent": "80%", "class": "html" },
-
         {
-            "skill-title": "Responsive Design",
-            "percent": "80%",
-            "class": "responsive-design"
+            "skill-title": "REACT",
+            "percent": "85%",
+            "class": "react"
         },
-        { "skill-title": "REACT", "percent": "85%", "class": "react" },
         {
             "skill-title": "Styled Components",
             "percent": "75%",
             "class": "styledComponents"
         },
-        { "skill-title": "Jest", "percent": "55%", "class": "scss" },
+        {
+            "skill-title": "HTML & SCSS",
+            "percent": "80%",
+            "class": "html"
+        },
+        {
+            "skill-title": "Responsive Design",
+            "percent": "80%",
+            "class": "responsive-design"
+        },
+        {
+            "skill-title": "JavaScript",
+            "percent": "60%",
+            "class": "javascript"
+        },
+        {
+            "skill-title": "Jest",
+            "percent": "55%",
+            "class": "scss"
+        },
         {
             "skill-title": "Typescript",
             "percent": "70%",
             "class": "typescript"
         },
-        { "skill-title": "JS/jQuery", "percent": "60%", "class": "javascript" },
         {
-            "skill-title": "Bootstrap Grid",
-            "percent": "75%",
-            "class": "bootstrap"
+            "skill-title": "Express APIs",
+            "percent": "50%",
+            "class": "express"
         },
-        { "skill-title": "Ajax", "percent": "40%", "class": "ajax" },
-
-        { "skill-title": "Agile", "percent": "90%", "class": "agile" },
-        { "skill-title": "Git", "percent": "70%", "class": "git" },
+        {
+            "skill-title": "Agile",
+            "percent": "90%",
+            "class": "agile"
+        },
+        {
+            "skill-title": "Git",
+            "percent": "70%",
+            "class": "git"
+        },
+        {
+            "skill-title": "C#",
+            "percent": "75%",
+            "class": "CSharp"
+        },
+        {
+            "skill-title": "SQL",
+            "percent": "75%",
+            "class": "sql"
+        },
+        {
+            "skill-title": "NoSQL(Mongo)",
+            "percent": "50%",
+            "class": "nosql"
+        },
         {
             "skill-title": "Photoshop/Illustrator",
             "percent": "85%",
             "class": "photoshop"
-        },
-        { "skill-title": "C#", "percent": "75%", "class": "CSharp" },
-        { "skill-title": "SQL", "percent": "75%", "class": "sql" }
+        }
     ]
 }

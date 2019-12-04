@@ -488,7 +488,7 @@ table {
 
 #skills-page {
   background-image: url(../../images/background-egg-shell.png);
-  background-size: 200px;
+  background-size: 170px;
   background-color: white;
 }
 
@@ -673,6 +673,10 @@ table {
 
 #skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .sql {
   width: 75%;
+}
+
+#skills-page #progress-bars-section .progress-bar-container .progress-bar .container-progress-percentage .nosql {
+  width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1154,7 +1158,7 @@ table {
     border-radius: 6vw;
     padding: 0;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     width: 9vw;
     margin-right: 1vw;
