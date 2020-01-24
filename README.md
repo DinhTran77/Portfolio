@@ -1,5 +1,4 @@
-# Project Name
-Dinh's Portfolio
+# Dinh's Portfolio
 
 ![Porfolio site image](./images/portfolio/personal-sight.png)
 
